@@ -267,7 +267,7 @@ export default async function HomePage() {
                   excerpt={article.excerpt}
                   date={article.date}
                   category={article.category}
-                  image={article.image}
+                  image={(article as any).image}
                   slug={article.slug}
                   lang={locale}
                 />
