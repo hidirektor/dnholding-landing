@@ -1,76 +1,53 @@
-'use client';
+"use client";
 
-import {type CSSProperties, useRef} from 'react';
-import {useIntersectionObserver} from '@/hooks/useIntersectionObserver';
-import {cn} from '@/lib/utils';
+import {useRef} from "react";
+import {cn} from "@/lib/utils";
+import {useIntersectionObserver} from "@/hooks/useIntersectionObserver";
 
-/* ─── Types ─── */
-export type ScrollRevealDirection = 'up' | 'down' | 'left' | 'right' | 'fade';
-
-export interface ScrollRevealProps {
+interface ScrollRevealProps {
   children: React.ReactNode;
-  /** Direction the element animates from. Default: 'up' */
-  direction?: ScrollRevealDirection;
-  /** Delay before animation starts (ms). Default: 0 */
+  direction?: "up" | "down" | "left" | "right" | "fade";
   delay?: number;
-  /** Animation duration (ms). Default: 800 */
   duration?: number;
-  /** Distance of the translate transform (px). Default: 32 */
-  distance?: number;
-  /** Intersection Observer threshold. Default: 0.1 */
-  threshold?: number;
-  /** HTML element to render. Default: 'div' */
-  as?: React.ElementType;
   className?: string;
 }
 
-/* ─── Transform Map ─── */
-const initialTransforms: Record<ScrollRevealDirection, string> = {
-  up: 'translate3d(0, var(--reveal-distance), 0)',
-  down: 'translate3d(0, calc(var(--reveal-distance) * -1), 0)',
-  left: 'translate3d(var(--reveal-distance), 0, 0)',
-  right: 'translate3d(calc(var(--reveal-distance) * -1), 0, 0)',
-  fade: 'translate3d(0, 0, 0)',
-};
-
-/* ─── Component ─── */
 export function ScrollReveal({
   children,
-  direction = 'up',
+  direction = "up",
   delay = 0,
   duration = 800,
-  distance = 32,
-  threshold = 0.1,
-  as: Component = 'div',
   className,
 }: ScrollRevealProps) {
-  const elementRef = useRef<HTMLDivElement>(null);
-  const isVisible = useIntersectionObserver(elementRef, {
-    threshold,
-    triggerOnce: true,
+  const ref = useRef<HTMLDivElement>(null);
+  const isVisible = useIntersectionObserver(ref, {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
   });
 
-  const style: CSSProperties = {
-    '--reveal-distance': `${distance}px`,
-    opacity: isVisible ? 1 : 0,
-    transform: isVisible ? 'translate3d(0, 0, 0)' : initialTransforms[direction],
-    transition: `opacity ${duration}ms var(--ease-premium) ${delay}ms, transform ${duration}ms var(--ease-premium) ${delay}ms`,
-    willChange: isVisible ? 'auto' : 'opacity, transform',
-  } as CSSProperties;
+  const getTransform = () => {
+    if (isVisible) return "translate(0, 0) scale(1)";
+    switch (direction) {
+      case "up": return "translateY(30px)";
+      case "down": return "translateY(-30px)";
+      case "left": return "translateX(30px)";
+      case "right": return "translateX(-30px)";
+      case "fade": return "scale(0.95)";
+      default: return "translateY(30px)";
+    }
+  };
 
   return (
-    <Component
-      ref={elementRef}
-      className={cn(
-        // Respect prefers-reduced-motion at CSS level too
-        'motion-reduce:!opacity-100 motion-reduce:!transform-none motion-reduce:!transition-none',
-        className,
-      )}
-      style={style}
+    <div
+      ref={ref}
+      className={cn("will-change-[opacity,transform]", className)}
+      style={{
+        opacity: isVisible ? 1 : 0,
+        transform: getTransform(),
+        transition: `opacity ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
+      }}
     >
       {children}
-    </Component>
+    </div>
   );
 }
-
-export default ScrollReveal;
