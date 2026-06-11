@@ -1,8 +1,8 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import { useRef } from "react";
-import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import {cn} from "@/lib/utils";
+import {useRef} from "react";
+import {useIntersectionObserver} from "@/hooks/useIntersectionObserver";
 
 type SectionVariant = "default" | "dark" | "accent" | "surface";
 

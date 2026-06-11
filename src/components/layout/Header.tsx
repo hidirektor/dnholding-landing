@@ -1,12 +1,12 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import {useCallback, useEffect, useState} from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
-import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
-import { useScrollDirection } from "@/hooks/useScrollDirection";
-import type { Locale } from "@/app/[lang]/dictionaries";
+import {usePathname} from "next/navigation";
+import {cn} from "@/lib/utils";
+import {LanguageSwitcher} from "@/components/ui/LanguageSwitcher";
+import {useScrollDirection} from "@/hooks/useScrollDirection";
+import type {Locale} from "@/app/[lang]/dictionaries";
 import styles from "./Header.module.css";
 
 interface HeaderProps {
