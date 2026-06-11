@@ -5,7 +5,7 @@ import {Header} from "@/components/layout/Header";
 import {Footer} from "@/components/layout/Footer";
 import {CookieWidget} from "@/components/layout/CookieWidget";
 import {PreferencesWidget} from "@/components/layout/PreferencesWidget";
-import {getCurrentLocale} from "./dictionaries";
+import {getCurrentLocale, getDictionary} from "./dictionaries";
 
 import {ThemeProvider} from "@/components/layout/ThemeProvider";
 
@@ -83,6 +83,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const lang = await getCurrentLocale();
+  const dict = await getDictionary();
 
   return (
     <html
@@ -95,7 +96,7 @@ export default async function RootLayout({
           <Header lang={lang} />
           <main className="flex-1">{children}</main>
           <Footer lang={lang} />
-          <CookieWidget />
+          <CookieWidget dict={dict.cookie} />
           <PreferencesWidget currentLang={lang.toUpperCase()} />
         </ThemeProvider>
       </body>
