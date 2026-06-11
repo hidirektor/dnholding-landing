@@ -7,6 +7,7 @@ import {Container} from "@/components/layout/Container";
 import {Heading} from "@/components/ui/Heading";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
+import {IconGlobal, IconInnovation, IconTrust} from "@/components/ui/Icons";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const lang = await getCurrentLocale();
@@ -149,19 +150,24 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
               (
                 value: { title: string; description: string; icon: string },
                 index: number
-              ) => (
-                <ScrollReveal key={value.title} delay={index * 100}>
-                  <div className="group p-8 rounded-[var(--radius-xl)] border border-border hover:border-accent/30 transition-all duration-[var(--duration-medium)] hover:shadow-[var(--shadow-large)]">
-                    <div className="text-3xl mb-4">{value.icon}</div>
-                    <h3 className="text-xl font-semibold mb-3 group-hover:text-accent transition-colors">
-                      {value.title}
-                    </h3>
-                    <p className="text-text-secondary leading-relaxed">
-                      {value.description}
-                    </p>
-                  </div>
-                </ScrollReveal>
-              )
+              ) => {
+                const IconComponent = index === 0 ? IconTrust : index === 1 ? IconInnovation : IconGlobal;
+                return (
+                  <ScrollReveal key={value.title} delay={index * 100}>
+                    <div className="group p-8 rounded-[var(--radius-xl)] border border-border bg-surface hover:border-accent transition-all duration-[var(--duration-medium)] hover:shadow-[var(--shadow-large)] flex flex-col items-center text-center">
+                      <div className="w-16 h-16 rounded-full bg-surface-dark flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform duration-500">
+                        <IconComponent />
+                      </div>
+                      <h3 className="text-xl font-semibold mb-3 group-hover:text-accent transition-colors">
+                        {value.title}
+                      </h3>
+                      <p className="text-text-secondary leading-relaxed">
+                        {value.description}
+                      </p>
+                    </div>
+                  </ScrollReveal>
+                );
+              }
             )}
           </div>
         </Container>
