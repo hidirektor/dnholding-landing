@@ -64,14 +64,33 @@
 :root {
   --background: #ffffff;
   --foreground: #0f172a;
-  color-scheme: light;
+  
+  /* Horizontal Accordion Variables */
+  --accordion-bg: #ffffff;
+  --accordion-bg-hover: #f8fafc;
+  --accordion-bg-active: #ffffff;
+  --accordion-border: #e2e8f0;
+  --accordion-border-hover: #2563eb;
+  --accordion-icon-bg: #f1f5f9;
+  --accordion-icon-color: #475569;
+  --accordion-text: #0f172a;
+  --accordion-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a192f;
-    --foreground: #f8fafc;
-  }
+.dark {
+  --background: #0a192f;
+  --foreground: #f8fafc;
+  
+  /* Horizontal Accordion Variables */
+  --accordion-bg: #0f2b4c;
+  --accordion-bg-hover: #163f6e;
+  --accordion-bg-active: #0f2b4c;
+  --accordion-border: #1e3a8a;
+  --accordion-border-hover: #3b82f6;
+  --accordion-icon-bg: rgba(255, 255, 255, 0.1);
+  --accordion-icon-color: #f8fafc;
+  --accordion-text: #ffffff;
+  --accordion-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
 }
 
 *,
