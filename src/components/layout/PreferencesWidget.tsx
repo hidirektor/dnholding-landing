@@ -9,7 +9,7 @@ export function PreferencesWidget({ currentLang = "TR" }: { currentLang?: string
   const [isExpanded, setIsExpanded] = useState(false);
   const [mounted, setMounted] = useState(false);
   const router = useRouter();
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -21,7 +21,7 @@ export function PreferencesWidget({ currentLang = "TR" }: { currentLang?: string
   };
 
   const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
   };
 
   return (
@@ -69,7 +69,7 @@ export function PreferencesWidget({ currentLang = "TR" }: { currentLang?: string
             className="text-text-secondary dark:text-text-light hover:text-primary dark:hover:text-white transition-colors"
             aria-label="Toggle theme"
           >
-            {mounted && theme === "dark" ? (
+            {mounted && resolvedTheme === "dark" ? (
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="5" />
                 <line x1="12" y1="1" x2="12" y2="3" />
