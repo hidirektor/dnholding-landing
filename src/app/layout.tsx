@@ -7,6 +7,8 @@ import {CookieWidget} from "@/components/layout/CookieWidget";
 import {PreferencesWidget} from "@/components/layout/PreferencesWidget";
 import {getCurrentLocale} from "./dictionaries";
 
+import {ThemeProvider} from "@/components/layout/ThemeProvider";
+
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin", "latin-ext"],
@@ -88,12 +90,14 @@ export default async function RootLayout({
       className={`${outfit.variable} antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen flex flex-col bg-surface text-text">
-        <Header lang={lang} />
-        <main className="flex-1">{children}</main>
-        <Footer lang={lang} />
-        <CookieWidget />
-        <PreferencesWidget currentLang={lang.toUpperCase()} />
+      <body className="min-h-screen flex flex-col bg-surface text-text transition-colors duration-300">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header lang={lang} />
+          <main className="flex-1">{children}</main>
+          <Footer lang={lang} />
+          <CookieWidget />
+          <PreferencesWidget currentLang={lang.toUpperCase()} />
+        </ThemeProvider>
       </body>
     </html>
   );
