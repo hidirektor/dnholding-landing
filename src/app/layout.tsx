@@ -1,5 +1,4 @@
 import type {Metadata, Viewport} from "next";
-import {Outfit} from "next/font/google";
 import "./globals.css";
 import {Header} from "@/components/layout/Header";
 import {Footer} from "@/components/layout/Footer";
@@ -8,12 +7,6 @@ import {PreferencesWidget} from "@/components/layout/PreferencesWidget";
 import {getCurrentLocale, getDictionary} from "./dictionaries";
 
 import {ThemeProvider} from "@/components/layout/ThemeProvider";
-
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin", "latin-ext"],
-  display: "swap",
-});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -88,9 +81,14 @@ export default async function RootLayout({
   return (
     <html
       lang={lang}
-      className={`${outfit.variable} antialiased`}
+      className="antialiased"
       suppressHydrationWarning
     >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+      </head>
       <body className="min-h-screen flex flex-col bg-surface text-text transition-colors duration-300">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <Header lang={lang} />
