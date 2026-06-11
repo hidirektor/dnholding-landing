@@ -1,19 +1,15 @@
 "use client";
 
-import {usePathname, useRouter} from "next/navigation";
+import {useRouter} from "next/navigation";
 import {cn} from "@/lib/utils";
 
 export function LanguageSwitcher({ lang }: { lang: string }) {
-  const pathname = usePathname();
   const router = useRouter();
 
   const handleSwitch = () => {
     const newLang = lang === "tr" ? "en" : "tr";
-    if (pathname.startsWith(`/${lang}`)) {
-      router.push(pathname.replace(`/${lang}`, `/${newLang}`));
-    } else {
-      router.push(`/${newLang}`);
-    }
+    document.cookie = `NEXT_LOCALE=${newLang}; path=/; max-age=31536000`;
+    router.refresh();
   };
 
   return (

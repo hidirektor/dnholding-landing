@@ -1,28 +1,16 @@
 "use client";
 
 import {useState} from "react";
-import {usePathname, useRouter} from "next/navigation";
+import {useRouter} from "next/navigation";
 import {cn} from "@/lib/utils";
 
-export function PreferencesWidget() {
+export function PreferencesWidget({ currentLang = "TR" }: { currentLang?: string }) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const pathname = usePathname();
   const router = useRouter();
 
-  const currentLang = pathname.startsWith("/en") ? "EN" : "TR";
-
   const switchLanguage = (lang: string) => {
-    const newLangPath = lang.toLowerCase();
-    const currentLangPath = currentLang.toLowerCase();
-    
-    let newPath = pathname;
-    if (pathname.startsWith(`/${currentLangPath}`)) {
-      newPath = pathname.replace(`/${currentLangPath}`, `/${newLangPath}`);
-    } else if (pathname === `/${currentLangPath}`) {
-      newPath = `/${newLangPath}`;
-    }
-    
-    router.push(newPath);
+    document.cookie = `NEXT_LOCALE=${lang.toLowerCase()}; path=/; max-age=31536000`;
+    router.refresh();
   };
 
   return (

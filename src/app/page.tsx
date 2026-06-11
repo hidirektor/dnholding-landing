@@ -1,8 +1,7 @@
-import {getDictionary, hasLocale, type Locale} from "./dictionaries";
-import {notFound} from "next/navigation";
+import {getCurrentLocale, getDictionary} from "./dictionaries";
 import {HeroSection} from "@/components/content/HeroSection";
-import {StatsBar} from "@/components/content/StatsBar";
 import {CompanyCard} from "@/components/content/CompanyCard";
+import {StatsBar} from "@/components/content/StatsBar";
 import {ProjectCard} from "@/components/content/ProjectCard";
 import {NewsCard} from "@/components/content/NewsCard";
 import {Section} from "@/components/layout/Section";
@@ -11,21 +10,25 @@ import {Heading} from "@/components/ui/Heading";
 import {Button} from "@/components/ui/Button";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {SectionDivider} from "@/components/content/SectionDivider";
+
 import {companies} from "@/data/companies";
 import {projects} from "@/data/projects";
 import {news} from "@/data/news";
 import {globalStats} from "@/data/stats";
 
-export default async function HomePage({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
-  const { lang } = await params;
-  if (!hasLocale(lang)) notFound();
+export async function generateMetadata() {
+  const lang = await getCurrentLocale();
+  const dict = await getDictionary();
+  return {
+    title: dict.home.hero.title,
+    description: dict.home.hero.subtitle,
+  };
+}
 
-  const dict = await getDictionary(lang as Locale);
-  const locale = lang as Locale;
+export default async function HomePage() {
+  const lang = await getCurrentLocale();
+  const dict = await getDictionary();
+  const locale = lang;
   const featuredCompanies = companies.filter((c) => c.featured).slice(0, 6);
   const featuredProjects = projects.slice(0, 3);
   const latestNews = news.filter((n) => n.featured).slice(0, 3);
@@ -37,9 +40,9 @@ export default async function HomePage({
         title={dict.home.hero.title}
         subtitle={dict.home.hero.subtitle}
         ctaText={dict.home.hero.cta}
-        ctaHref={`/${lang}/hakkimizda`}
+        ctaHref={`/hakkimizda`}
         secondaryCtaText={dict.home.hero.secondaryCta}
-        secondaryCtaHref={`/${lang}/grup-sirketleri`}
+        secondaryCtaHref={`/grup-sirketleri`}
       />
 
       {/* ─── Stats Bar ─── */}
@@ -312,7 +315,7 @@ export default async function HomePage({
                     {dict.home.cta.button}
                   </Button>
                   <Button
-                    href={`/${lang}/projeler`}
+                    href={`/projeler`}
                     variant="secondary"
                     size="lg"
                   >
