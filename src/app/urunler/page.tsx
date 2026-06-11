@@ -6,7 +6,6 @@ import {Badge} from "@/components/ui/Badge";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
 import {Button} from "@/components/ui/Button";
-import {companies} from "@/data/companies";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const lang = await getCurrentLocale();
@@ -61,7 +60,7 @@ export default async function ProductsPage({ params }: { params: Promise<{ slug:
       <Section variant="default">
         <Container>
           <div className="space-y-16">
-            {companies.map((company, index) => (
+            {dict.data.companies.map((company: any, index: number) => (
               <ScrollReveal key={company.slug} delay={index * 100}>
                 <div className="group p-8 lg:p-12 rounded-[var(--radius-xl)] border border-border hover:border-accent/20 transition-all duration-[var(--duration-medium)] hover:shadow-[var(--shadow-large)]">
                   <div className="flex flex-col lg:flex-row lg:items-start gap-8">
@@ -74,10 +73,10 @@ export default async function ProductsPage({ params }: { params: Promise<{ slug:
                     <div className="flex-1 space-y-4">
                       <div className="flex flex-wrap items-center gap-3">
                         <h3 className="text-xl font-semibold">{company.name}</h3>
-                        <Badge variant="outline">{company.sector[locale]}</Badge>
+                        <Badge variant="outline">{company.sector}</Badge>
                       </div>
                       <p className="text-text-secondary leading-relaxed">
-                        {company.description[locale]}
+                        {company.description}
                       </p>
                       <Button
                         href={`/grup-sirketleri/${company.slug}`}
