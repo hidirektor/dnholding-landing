@@ -66,7 +66,7 @@ export default async function MediaPage({ params }: { params: Promise<{ slug: st
                   excerpt={article.excerpt}
                   date={article.date}
                   category={article.category}
-                  image={article.image}
+                  image={(article as any).image}
                   slug={article.slug}
                   lang={locale}
                 />
