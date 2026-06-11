@@ -53,6 +53,46 @@ const navItems = {
     { label: "Media", href: "/medya" },
     { label: "Contact", href: "/iletisim" },
   ],
+  de: [
+    { label: "Startseite", href: "" },
+    { label: "Über Uns", href: "/hakkimizda" },
+    {
+      label: "Konzerngesellschaften",
+      href: "/grup-sirketleri",
+      children: [
+        { label: "DN Bau", href: "/grup-sirketleri/dn-insaat" },
+        { label: "DN Energie", href: "/grup-sirketleri/dn-enerji" },
+        { label: "DN Bergbau", href: "/grup-sirketleri/dn-madencilik" },
+        { label: "DN Lebensmittel", href: "/grup-sirketleri/dn-gida" },
+        { label: "DN Technologie", href: "/grup-sirketleri/dn-teknoloji" },
+        { label: "DN Immobilien", href: "/grup-sirketleri/dn-gayrimenkul" },
+      ],
+    },
+    { label: "Tätigkeitsbereiche", href: "/faaliyet-alanlari" },
+    { label: "Projekte", href: "/projeler" },
+    { label: "Medien", href: "/medya" },
+    { label: "Kontakt", href: "/iletisim" },
+  ],
+  fr: [
+    { label: "Accueil", href: "" },
+    { label: "À Propos", href: "/hakkimizda" },
+    {
+      label: "Entreprises du Groupe",
+      href: "/grup-sirketleri",
+      children: [
+        { label: "DN Construction", href: "/grup-sirketleri/dn-insaat" },
+        { label: "DN Énergie", href: "/grup-sirketleri/dn-enerji" },
+        { label: "DN Exploitation", href: "/grup-sirketleri/dn-madencilik" },
+        { label: "DN Alimentation", href: "/grup-sirketleri/dn-gida" },
+        { label: "DN Technologie", href: "/grup-sirketleri/dn-teknoloji" },
+        { label: "DN Immobilier", href: "/grup-sirketleri/dn-gayrimenkul" },
+      ],
+    },
+    { label: "Domaines d'Activité", href: "/faaliyet-alanlari" },
+    { label: "Projets", href: "/projeler" },
+    { label: "Médias", href: "/medya" },
+    { label: "Contact", href: "/iletisim" },
+  ]
 };
 
 export function Header({ lang }: HeaderProps) {
