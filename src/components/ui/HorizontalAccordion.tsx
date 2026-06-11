@@ -26,33 +26,53 @@ export function HorizontalAccordion({ items, className }: HorizontalAccordionPro
             onMouseEnter={() => setActiveIndex(index)}
             onClick={() => setActiveIndex(index)}
             className={cn(
-              "relative cursor-pointer transition-all duration-[800ms] ease-[var(--ease-premium)] rounded-[var(--radius-xl)] overflow-hidden border border-white/10 group flex flex-col justify-end p-6",
+              "relative cursor-pointer transition-all duration-[800ms] ease-[var(--ease-premium)] rounded-[var(--radius-xl)] overflow-hidden group flex flex-col justify-end p-6 border",
               isActive 
-                ? "flex-[4] sm:flex-[5] bg-primary-light shadow-[var(--shadow-large)]" 
-                : "flex-1 bg-white/5 hover:bg-white/10"
+                ? "flex-[4] sm:flex-[5]" 
+                : "flex-1"
             )}
+            style={{
+              backgroundColor: isActive ? "var(--accordion-bg-active)" : "var(--accordion-bg)",
+              borderColor: isActive ? "var(--accordion-border-hover)" : "var(--accordion-border)",
+              boxShadow: isActive ? "var(--accordion-shadow)" : "none",
+            }}
           >
-            {/* Dark gradient overlay for better text readability if we add images later */}
-            <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/80 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+            {/* Hover overlay for inactive state */}
+            {!isActive && (
+              <div 
+                className="absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100 pointer-events-none" 
+                style={{ backgroundColor: "var(--accordion-bg-hover)" }}
+              />
+            )}
+            
+            {/* Gradient overlay for text readability if an image is added behind */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[var(--background)]/50 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none" />
             
             <div className={cn(
               "relative z-10 flex flex-col transition-all duration-500",
               isActive ? "items-start" : "items-center"
             )}>
-              <div className={cn(
-                "flex items-center justify-center rounded-full bg-white/10 transition-all duration-500",
-                isActive ? "w-14 h-14 mb-4 text-3xl" : "w-12 h-12 text-2xl mb-0"
-              )}>
+              <div 
+                className={cn(
+                  "flex items-center justify-center rounded-full transition-all duration-500",
+                  isActive ? "w-14 h-14 mb-4 text-3xl" : "w-12 h-12 text-2xl mb-0"
+                )}
+                style={{
+                  backgroundColor: "var(--accordion-icon-bg)",
+                  color: "var(--accordion-icon-color)"
+                }}
+              >
                 {item.icon}
               </div>
               
               <h3 
                 className={cn(
-                  "font-bold text-white whitespace-nowrap transition-all duration-500",
+                  "font-bold whitespace-nowrap transition-all duration-500",
                   isActive 
                     ? "opacity-100 translate-y-0 text-2xl" 
                     : "opacity-0 translate-y-4 w-0 h-0 overflow-hidden"
                 )}
+                style={{ color: "var(--accordion-text)" }}
               >
                 {item.label}
               </h3>
