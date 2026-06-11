@@ -91,7 +91,7 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-screen flex flex-col bg-surface text-text transition-colors duration-300">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <Header lang={lang} />
           <main className="flex-1">{children}</main>
           <Footer lang={lang} />
