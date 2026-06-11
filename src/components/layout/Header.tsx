@@ -5,7 +5,7 @@ import Link from "next/link";
 import {usePathname} from "next/navigation";
 import {cn} from "@/lib/utils";
 import {useScrollDirection} from "@/hooks/useScrollDirection";
-import type {Locale} from "@/app/[lang]/dictionaries";
+import type {Locale} from "@/app/dictionaries";
 import styles from "./Header.module.css";
 
 interface HeaderProps {

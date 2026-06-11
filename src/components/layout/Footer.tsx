@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {Container} from "./Container";
-import type {Locale} from "@/app/[lang]/dictionaries";
+import type {Locale} from "@/app/dictionaries";
 import styles from "./Footer.module.css";
 
 interface FooterProps {
