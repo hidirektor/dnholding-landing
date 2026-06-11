@@ -9,8 +9,6 @@ export type Locale = keyof typeof dictionaries;
 
 export const locales: Locale[] = ['tr', 'en'];
 
-export const defaultLocale: Locale = 'tr';
-
 export const hasLocale = (locale: string): locale is Locale =>
   locale in dictionaries;
 

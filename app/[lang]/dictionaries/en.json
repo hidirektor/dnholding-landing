@@ -4,318 +4,173 @@
     "about": "About Us",
     "companies": "Group Companies",
     "areas": "Business Areas",
+    "products": "Products & Services",
     "projects": "Projects",
-    "products": "Products",
     "media": "Media",
-    "contact": "Contact",
-    "dnInsaat": "DN Construction",
-    "dnEnerji": "DN Energy",
-    "dnMadencilik": "DN Mining",
-    "dnGida": "DN Food",
-    "dnTeknoloji": "DN Technology",
-    "dnGayrimenkul": "DN Real Estate",
-    "langSwitch": "Türkçe",
-    "menu": "Menu",
-    "close": "Close"
+    "contact": "Contact"
   },
   "home": {
     "hero": {
       "title": "Building the Future",
-      "subtitle": "A powerful holding company operating at international standards across construction, energy, mining, food, technology, and real estate.",
-      "cta": "Explore",
-      "ctaSecondary": "Get to Know Us"
+      "subtitle": "As DN Holding, we are shaping the world of tomorrow with our sustainable growth and innovative vision.",
+      "cta": "About Us",
+      "secondaryCta": "Group Companies"
     },
     "about": {
-      "sectionTitle": "About DN Holding",
-      "teaser": "Since 2001, DN Holding has been making pioneering investments across six different sectors, confidently advancing toward the future with its sustainable growth strategy.",
-      "cta": "Learn More"
-    },
-    "stats": {
-      "sectionTitle": "DN Holding in Numbers",
-      "experience": "Years of Experience",
-      "countries": "Countries",
-      "employees": "Employees",
-      "companies": "Group Companies",
-      "projects": "Completed Projects",
-      "revenue": "Consolidated Revenue"
+      "tagline": "Our Vision",
+      "title": "Deep Roots, Strong Future",
+      "description": "With over half a century of experience, we move forward with the vision of being a pioneer in every sector we operate.",
+      "description2": "We continue to add value to our stakeholders with our global standard service approach and innovative mindset.",
+      "imageCaption": "DN Holding Headquarters"
     },
     "companies": {
-      "sectionTitle": "Our Group Companies",
-      "subtitle": "With strong subsidiaries operating at international standards across six diverse sectors, DN Holding is one of Turkey's most dynamic holding structures.",
-      "cta": "View All"
+      "tagline": "Our Companies",
+      "title": "Strength in Diversity",
+      "subtitle": "We offer integrated solutions with our specialized companies in various sectors."
+    },
+    "areas": {
+      "tagline": "Sectors",
+      "title": "Business Areas",
+      "items": [
+        "Construction & Infra",
+        "Energy",
+        "Mining",
+        "Food & Agriculture",
+        "Technology",
+        "Real Estate"
+      ]
     },
     "projects": {
-      "sectionTitle": "Featured Projects",
-      "subtitle": "A selection of our prestigious projects carried out in Turkey and abroad.",
-      "cta": "All Projects"
+      "tagline": "References",
+      "title": "Featured Projects",
+      "subtitle": "Our completed and ongoing visionary projects."
     },
     "news": {
-      "sectionTitle": "News & Announcements",
-      "subtitle": "Latest updates from the DN Holding world.",
-      "cta": "All News"
+      "tagline": "Agenda",
+      "title": "Latest News"
     },
     "cta": {
-      "sectionTitle": "Let's Build the Future Together",
-      "description": "Get in touch with us for your projects and partnership opportunities.",
-      "button": "Contact Us"
+      "title": "Let's Build the Future Together",
+      "subtitle": "Contact us for your projects and collaborations.",
+      "button": "Contact Us",
+      "secondaryButton": "View Projects"
     }
   },
   "about": {
-    "pageTitle": "About Us",
-    "pageSubtitle": "The story, vision, and values of DN Holding.",
-    "intro": "DN Holding is an international holding company founded in 2001, now operating across six different sectors. Guided by the principles of sustainability, innovation, and social responsibility, our group aims to be one of Turkey's strongest holding structures.",
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Growing with our values."
+    },
     "vision": {
       "title": "Our Vision",
-      "content": "To be one of Turkey's strongest representatives on the global stage by creating value at international standards in every sector we operate in."
+      "description": "To be the leading holding that guides the future with sustainable investments on a global scale."
     },
     "mission": {
       "title": "Our Mission",
-      "content": "To add value to society, the environment, and our stakeholders through a sustainable growth strategy; to maintain our leadership in our sectors with innovative solutions."
+      "description": "To create value by producing innovative, reliable and high quality solutions for all our stakeholders."
     },
-    "values": {
-      "title": "Our Values",
-      "list": [
+    "story": {
+      "tagline": "Our Story",
+      "title": "From Past to Present",
+      "subtitle": "Milestones of our journey full of success."
+    },
+    "timeline": {
+      "items": [
         {
-          "title": "Reliability",
-          "description": "We operate with transparency and integrity in all our business processes."
+          "year": "1998",
+          "title": "Foundation",
+          "description": "DN Holding was established."
         },
         {
-          "title": "Innovation",
-          "description": "We closely follow technological developments and pioneer innovation in our sectors."
-        },
-        {
-          "title": "Sustainability",
-          "description": "We create value for future generations with environmental and social responsibility awareness."
-        },
-        {
-          "title": "Excellence",
-          "description": "We aim for the highest quality standards in every project we undertake."
-        },
-        {
-          "title": "People-Centric",
-          "description": "We prioritize the development and well-being of our employees."
-        },
-        {
-          "title": "Collaboration",
-          "description": "We build strong and long-term partnerships with our stakeholders."
+          "year": "2005",
+          "title": "Globalization",
+          "description": "First international investments began."
         }
       ]
     },
-    "timeline": {
-      "title": "Our History",
-      "subtitle": "The journey of DN Holding from its founding to today.",
-      "milestones": [
-        { "year": "2001", "title": "Foundation", "description": "DN Holding was established in Istanbul. The first company, DN Construction, commenced operations." },
-        { "year": "2003", "title": "Mining Investment", "description": "DN Mining was founded, marking entry into the natural resources sector." },
-        { "year": "2005", "title": "Entering the Energy Sector", "description": "First investments in renewable energy were made through DN Energy." },
-        { "year": "2007", "title": "Food Sector", "description": "DN Food was established, beginning operations in agriculture and food processing." },
-        { "year": "2009", "title": "Real Estate Investments", "description": "Premium residential and commercial projects were added to the portfolio with DN Real Estate." },
-        { "year": "2015", "title": "Digital Transformation", "description": "DN Technology was founded, initiating the group's digital transformation journey." },
-        { "year": "2020", "title": "International Expansion", "description": "Transformed into a global holding structure with operations in 15 countries." },
-        { "year": "2025", "title": "Record Growth", "description": "Historic records were set with over 3,000 employees and ₺4.2 billion consolidated revenue." }
+    "values": {
+      "title": "Our Values",
+      "items": [
+        {
+          "icon": "🤝",
+          "title": "Reliability",
+          "description": "We act with transparency and honesty in all our business processes."
+        },
+        {
+          "icon": "💡",
+          "title": "Innovation",
+          "description": "We support innovative approaches for continuous improvement."
+        },
+        {
+          "icon": "🌍",
+          "title": "Sustainability",
+          "description": "We adopt environmentally and socially sensitive sustainable policies."
+        }
       ]
     }
   },
   "companies": {
-    "pageTitle": "Our Group Companies",
-    "pageSubtitle": "With subsidiaries operating at international standards across six different sectors, DN Holding represents sustainable growth.",
-    "filterAll": "All",
-    "filterConstruction": "Construction",
-    "filterEnergy": "Energy",
-    "filterMining": "Mining",
-    "filterFood": "Food",
-    "filterTechnology": "Technology",
-    "filterRealEstate": "Real Estate",
-    "visitWebsite": "Visit Website",
-    "companyDetails": "Learn More",
-    "founded": "Year Founded"
+    "tagline": "Subsidiaries",
+    "title": "Group Companies",
+    "subtitle": "Our innovative companies, each an expert in their field."
   },
   "areas": {
-    "pageTitle": "Business Areas",
-    "pageSubtitle": "The sectors DN Holding operates in and our strategic position in each area.",
-    "construction": {
-      "name": "Construction & Infrastructure",
-      "description": "Large-scale infrastructure projects, residential complexes, and commercial buildings. Highway, bridge, tunnel, and airport projects."
-    },
-    "energy": {
-      "name": "Energy & Renewables",
-      "description": "Wind, solar, and hydroelectric power generation. Sustainable energy solutions and carbon-neutral targets."
-    },
-    "mining": {
-      "name": "Mining & Natural Resources",
-      "description": "Copper, chrome, and gold mining. Environmentally responsible modern mining technologies."
-    },
-    "food": {
-      "name": "Food & Agriculture",
-      "description": "Organic farming, food processing, and international exports. Integrated farm-to-table production chain."
-    },
-    "technology": {
-      "name": "Technology & Digital Solutions",
-      "description": "Artificial intelligence, IoT, cloud computing, and enterprise software solutions. Industrial digital transformation."
-    },
-    "realEstate": {
-      "name": "Real Estate & Investment",
-      "description": "Premium residential, office, and shopping mall projects. Sustainable architecture and smart building technologies."
-    }
+    "tagline": "Sectors",
+    "title": "Business Areas",
+    "subtitle": "We create value by offering services in a wide range."
   },
   "products": {
-    "pageTitle": "Products",
-    "pageSubtitle": "Products and services offered by our group companies.",
-    "filterAll": "All Products",
-    "filterByCompany": "Filter by Company",
-    "filterByCategory": "Filter by Category",
-    "noProducts": "No products found matching these criteria.",
-    "details": "Product Details",
-    "specifications": "Specifications",
-    "catalog": "Download Catalog"
+    "tagline": "Services",
+    "title": "Products & Services",
+    "subtitle": "Products and services we offer with quality and assurance."
   },
   "projects": {
-    "pageTitle": "Our Projects",
-    "pageSubtitle": "Prestigious projects carried out in Turkey and on the international stage.",
-    "filterAll": "All Projects",
-    "filterByCompany": "By Company",
-    "filterByStatus": "By Status",
-    "filterByYear": "By Year",
-    "statusCompleted": "Completed",
-    "statusOngoing": "Ongoing",
-    "statusPlanned": "Planned",
-    "location": "Location",
-    "year": "Year",
-    "company": "Company",
-    "projectValue": "Project Value",
-    "noProjects": "No projects found matching these criteria."
+    "tagline": "References",
+    "title": "Projects",
+    "subtitle": "Visionary projects we have signed.",
+    "detail": {
+      "category": "Category",
+      "year": "Year",
+      "location": "Location",
+      "company": "Company",
+      "related": "Related Projects"
+    }
   },
   "media": {
-    "pageTitle": "Media Center",
-    "pageSubtitle": "News, press releases, and announcements from the DN Holding world.",
-    "categories": {
-      "all": "All",
-      "corporate": "Corporate",
-      "project": "Project",
-      "award": "Award",
-      "sustainability": "Sustainability",
-      "press": "Press"
-    },
-    "publishDate": "Published",
-    "relatedNews": "Related News",
-    "pressKit": "Press Kit",
-    "downloadPressKit": "Download Press Kit"
+    "tagline": "Agenda",
+    "title": "Media & News",
+    "subtitle": "Latest updates about our holding.",
+    "related": "Other News"
   },
   "contact": {
-    "pageTitle": "Contact",
-    "pageSubtitle": "Get in touch with us for your projects, partnership opportunities, and inquiries.",
+    "tagline": "Reach Out",
+    "title": "Contact",
+    "subtitle": "We are here for your questions and feedback.",
     "form": {
       "name": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "email": "Email Address",
-      "emailPlaceholder": "example@email.com",
-      "phone": "Phone Number",
-      "phonePlaceholder": "+90 (5XX) XXX XX XX",
-      "company": "Company / Organization",
-      "companyPlaceholder": "Your company or organization name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
       "subject": "Subject",
-      "subjectPlaceholder": "Subject of your message",
       "message": "Message",
-      "messagePlaceholder": "Write your message here...",
-      "submit": "Send Message",
-      "submitting": "Sending...",
-      "subjectOptions": {
-        "general": "General Inquiry",
-        "partnership": "Partnership",
-        "career": "Careers",
-        "press": "Press / Media",
-        "other": "Other"
-      }
-    },
-    "validation": {
-      "nameRequired": "Please enter your full name.",
-      "emailRequired": "Please enter your email address.",
-      "emailInvalid": "Please enter a valid email address.",
-      "phoneInvalid": "Please enter a valid phone number.",
-      "subjectRequired": "Please select a subject.",
-      "messageRequired": "Please enter your message.",
-      "messageMinLength": "Your message must be at least 20 characters."
-    },
-    "success": {
-      "title": "Message Received",
-      "message": "We will contact you as soon as possible. Thank you for your interest."
-    },
-    "error": {
-      "title": "An Error Occurred",
-      "message": "Your message could not be sent. Please try again later."
+      "submit": "Send"
     },
     "info": {
-      "address": "Address",
-      "addressValue": "Levent Mah. Büyükdere Cad. No: 185, Şişli / Istanbul",
-      "phone": "Phone",
-      "phoneValue": "+90 (212) 345 67 89",
-      "email": "Email",
-      "emailValue": "info@dnholding.com.tr",
-      "workingHours": "Working Hours",
-      "workingHoursValue": "Monday - Friday: 09:00 AM - 06:00 PM"
+      "addressTitle": "Address",
+      "address": "Levent, Istanbul, Turkey",
+      "phoneTitle": "Phone",
+      "emailTitle": "Email",
+      "hoursTitle": "Working Hours",
+      "hours": "Mon - Fri: 09:00 - 18:00"
     }
   },
   "common": {
     "readMore": "Read More",
     "discover": "Discover",
     "viewAll": "View All",
-    "loading": "Loading...",
-    "back": "Back",
-    "backToHome": "Back to Home",
-    "share": "Share",
-    "search": "Search",
-    "searchPlaceholder": "Search...",
-    "noResults": "No results found.",
+    "contactCta": "Would you like to get in touch?",
     "contactUs": "Contact Us",
-    "learnMore": "Learn More",
-    "download": "Download",
-    "seeDetails": "See Details",
-    "showMore": "Show More",
-    "showLess": "Show Less",
-    "prev": "Previous",
-    "next": "Next",
-    "all": "All",
-    "yes": "Yes",
-    "no": "No",
-    "scrollToTop": "Scroll to Top",
-    "copyright": "© 2026 DN Holding. All rights reserved.",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service",
-    "cookiePolicy": "Cookie Policy"
-  },
-  "footer": {
-    "corporate": "Corporate",
-    "companies": "Our Companies",
-    "quickLinks": "Quick Links",
-    "about": "About Us",
-    "vision": "Vision",
-    "mission": "Mission",
-    "values": "Values",
-    "history": "History",
-    "dnInsaat": "DN Construction",
-    "dnEnerji": "DN Energy",
-    "dnMadencilik": "DN Mining",
-    "dnGida": "DN Food",
-    "dnTeknoloji": "DN Technology",
-    "dnGayrimenkul": "DN Real Estate",
     "projects": "Projects",
-    "media": "Media",
-    "careers": "Careers",
-    "contact": "Contact",
-    "newsletter": {
-      "title": "Subscribe to Our Newsletter",
-      "description": "Sign up for our email newsletter to receive the latest news and updates from DN Holding.",
-      "placeholder": "Your email address",
-      "subscribe": "Subscribe",
-      "success": "Your subscription has been created successfully!",
-      "error": "An error occurred. Please try again."
-    },
-    "description": "DN Holding is an international holding company operating across construction, energy, mining, food, technology, and real estate sectors.",
-    "copyright": "© 2026 DN Holding. All rights reserved."
-  },
-  "404": {
-    "title": "Page Not Found",
-    "description": "The page you are looking for does not exist or may have been moved.",
-    "backHome": "Back to Home"
+    "share": "Share"
   }
 }

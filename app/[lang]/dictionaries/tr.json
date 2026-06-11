@@ -4,318 +4,173 @@
     "about": "Hakkımızda",
     "companies": "Grup Şirketleri",
     "areas": "Faaliyet Alanları",
+    "products": "Ürünler & Hizmetler",
     "projects": "Projeler",
-    "products": "Ürünler",
     "media": "Medya",
-    "contact": "İletişim",
-    "dnInsaat": "DN İnşaat",
-    "dnEnerji": "DN Enerji",
-    "dnMadencilik": "DN Madencilik",
-    "dnGida": "DN Gıda",
-    "dnTeknoloji": "DN Teknoloji",
-    "dnGayrimenkul": "DN Gayrimenkul",
-    "langSwitch": "English",
-    "menu": "Menü",
-    "close": "Kapat"
+    "contact": "İletişim"
   },
   "home": {
     "hero": {
       "title": "Geleceği İnşa Ediyoruz",
-      "subtitle": "İnşaat, enerji, madencilik, gıda, teknoloji ve gayrimenkul alanlarında uluslararası standartlarda faaliyet gösteren güçlü bir holding.",
-      "cta": "Keşfedin",
-      "ctaSecondary": "Bizi Tanıyın"
+      "subtitle": "DN Holding olarak sürdürülebilir büyüme ve yenilikçi vizyonumuzla yarının dünyasını şekillendiriyoruz.",
+      "cta": "Hakkımızda",
+      "secondaryCta": "Grup Şirketleri"
     },
     "about": {
-      "sectionTitle": "DN Holding Hakkında",
-      "teaser": "2001 yılından bu yana altı farklı sektörde öncü yatırımlar gerçekleştiren DN Holding, sürdürülebilir büyüme stratejisiyle geleceğe güvenle yürümektedir.",
-      "cta": "Daha Fazla"
-    },
-    "stats": {
-      "sectionTitle": "Rakamlarla DN Holding",
-      "experience": "Yıllık Deneyim",
-      "countries": "Ülke",
-      "employees": "Çalışan",
-      "companies": "Grup Şirketi",
-      "projects": "Tamamlanan Proje",
-      "revenue": "Konsolide Ciro"
+      "tagline": "Vizyonumuz",
+      "title": "Köklü Geçmiş, Güçlü Gelecek",
+      "description": "Yarım asrı aşan tecrübemizle, faaliyet gösterdiğimiz her sektörde öncü olma vizyonuyla ilerliyoruz.",
+      "description2": "Küresel standartlarda hizmet anlayışımız ve yenilikçi yaklaşımımızla paydaşlarımıza değer katmaya devam ediyoruz.",
+      "imageCaption": "DN Holding Genel Merkezi"
     },
     "companies": {
-      "sectionTitle": "Grup Şirketlerimiz",
-      "subtitle": "Altı farklı sektörde uluslararası standartlarda faaliyet gösteren güçlü iştirakleri ile DN Holding, Türkiye'nin en dinamik holding yapılarından biridir.",
-      "cta": "Tümünü Gör"
+      "tagline": "Grup Şirketlerimiz",
+      "title": "Gücümüzü Çeşitlilikten Alıyoruz",
+      "subtitle": "Farklı sektörlerdeki uzman şirketlerimizle entegre çözümler sunuyoruz."
+    },
+    "areas": {
+      "tagline": "Sektörler",
+      "title": "Faaliyet Alanlarımız",
+      "items": [
+        "İnşaat & Altyapı",
+        "Enerji",
+        "Madencilik",
+        "Gıda & Tarım",
+        "Teknoloji",
+        "Gayrimenkul"
+      ]
     },
     "projects": {
-      "sectionTitle": "Öne Çıkan Projeler",
-      "subtitle": "Türkiye ve çevre ülkelerde gerçekleştirdiğimiz prestijli projelerimizden bazıları.",
-      "cta": "Tüm Projeler"
+      "tagline": "Referanslar",
+      "title": "Öne Çıkan Projeler",
+      "subtitle": "Tamamladığımız ve devam eden vizyoner projelerimiz."
     },
     "news": {
-      "sectionTitle": "Haberler ve Duyurular",
-      "subtitle": "DN Holding dünyasından son gelişmeler.",
-      "cta": "Tüm Haberler"
+      "tagline": "Gündem",
+      "title": "Bizden Haberler"
     },
     "cta": {
-      "sectionTitle": "Birlikte Geleceği İnşa Edelim",
-      "description": "Projeleriniz ve iş birliği fırsatları için bizimle iletişime geçin.",
-      "button": "İletişime Geçin"
+      "title": "Geleceği Birlikte İnşa Edelim",
+      "subtitle": "Projeleriniz ve işbirlikleri için bizimle iletişime geçin.",
+      "button": "Bize Ulaşın",
+      "secondaryButton": "Projelerimizi İnceleyin"
     }
   },
   "about": {
-    "pageTitle": "Hakkımızda",
-    "pageSubtitle": "DN Holding'in hikâyesi, vizyonu ve değerleri.",
-    "intro": "DN Holding, 2001 yılında kurulan ve bugün altı farklı sektörde faaliyet gösteren uluslararası bir holding şirketidir. Sürdürülebilirlik, inovasyon ve toplumsal sorumluluk ilkeleriyle hareket eden grubumuz, Türkiye'nin en güçlü holding yapılarından biri olmayı hedeflemektedir.",
+    "hero": {
+      "title": "Hakkımızda",
+      "subtitle": "Değerlerimizle büyüyoruz."
+    },
     "vision": {
       "title": "Vizyonumuz",
-      "content": "Faaliyet gösterdiğimiz her sektörde uluslararası standartlarda değer üreterek, Türkiye'nin küresel arenada en güçlü temsilcilerinden biri olmak."
+      "description": "Küresel ölçekte sürdürülebilir yatırımlarla geleceğe yön veren lider holding olmak."
     },
     "mission": {
       "title": "Misyonumuz",
-      "content": "Sürdürülebilir büyüme stratejisiyle topluma, çevreye ve paydaşlarımıza değer katmak; yenilikçi çözümlerle sektörlerimizde öncü konumumuzu sürdürmek."
+      "description": "Tüm paydaşlarımız için yenilikçi, güvenilir ve yüksek kaliteli çözümler üreterek değer yaratmak."
+    },
+    "story": {
+      "tagline": "Hikayemiz",
+      "title": "Dünden Bugüne",
+      "subtitle": "Başarılarla dolu yolculuğumuzun kilometre taşları."
+    },
+    "timeline": {
+      "items": [
+        {
+          "year": "1998",
+          "title": "Kuruluş",
+          "description": "DN Holding temelleri atıldı."
+        },
+        {
+          "year": "2005",
+          "title": "Globalleşme",
+          "description": "İlk uluslararası yatırımlar başladı."
+        }
+      ]
     },
     "values": {
       "title": "Değerlerimiz",
-      "list": [
+      "items": [
         {
+          "icon": "🤝",
           "title": "Güvenilirlik",
           "description": "Tüm iş süreçlerimizde şeffaflık ve dürüstlük ilkesiyle hareket ederiz."
         },
         {
-          "title": "İnovasyon",
-          "description": "Teknolojik gelişmeleri yakından takip eder, sektörlerimizde yeniliğin öncüsü oluruz."
+          "icon": "💡",
+          "title": "Yenilikçilik",
+          "description": "Sürekli gelişim için inovatif yaklaşımları destekleriz."
         },
         {
+          "icon": "🌍",
           "title": "Sürdürülebilirlik",
-          "description": "Çevresel ve sosyal sorumluluk bilinciyle gelecek nesiller için değer yaratırız."
-        },
-        {
-          "title": "Mükemmellik",
-          "description": "Her projemizde en yüksek kalite standartlarını hedefleriz."
-        },
-        {
-          "title": "İnsan Odaklılık",
-          "description": "Çalışanlarımızın gelişimini ve mutluluğunu öncelik olarak görürüz."
-        },
-        {
-          "title": "İş Birliği",
-          "description": "Paydaşlarımızla güçlü ve uzun vadeli iş birlikleri kurarız."
+          "description": "Çevreye ve topluma duyarlı sürdürülebilir politikalar benimseriz."
         }
-      ]
-    },
-    "timeline": {
-      "title": "Tarihçemiz",
-      "subtitle": "DN Holding'in kuruluşundan bugüne uzanan yolculuğu.",
-      "milestones": [
-        { "year": "2001", "title": "Kuruluş", "description": "DN Holding, İstanbul'da kuruldu. İlk şirket DN İnşaat faaliyete geçti." },
-        { "year": "2003", "title": "Madencilik Yatırımı", "description": "DN Madencilik kurularak doğal kaynaklar sektörüne adım atıldı." },
-        { "year": "2005", "title": "Enerji Sektörüne Giriş", "description": "DN Enerji ile yenilenebilir enerji alanında ilk yatırımlar gerçekleştirildi." },
-        { "year": "2007", "title": "Gıda Sektörü", "description": "DN Gıda kurularak tarım ve gıda işleme alanında faaliyetlere başlandı." },
-        { "year": "2009", "title": "Gayrimenkul Yatırımları", "description": "DN Gayrimenkul ile premium konut ve ticari projeler portföye eklendi." },
-        { "year": "2015", "title": "Dijital Dönüşüm", "description": "DN Teknoloji kurularak grubun dijital dönüşüm süreci başlatıldı." },
-        { "year": "2020", "title": "Uluslararası Genişleme", "description": "15 ülkede operasyonlarla küresel bir holding yapısına dönüşüldü." },
-        { "year": "2025", "title": "Rekor Büyüme", "description": "3.000'den fazla çalışan ve ₺4.2 milyar konsolide ciro ile tarihi rekor kırıldı." }
       ]
     }
   },
   "companies": {
-    "pageTitle": "Grup Şirketlerimiz",
-    "pageSubtitle": "Altı farklı sektörde uluslararası standartlarda faaliyet gösteren iştirakleri ile DN Holding, sürdürülebilir büyümenin temsilcisidir.",
-    "filterAll": "Tümü",
-    "filterConstruction": "İnşaat",
-    "filterEnergy": "Enerji",
-    "filterMining": "Madencilik",
-    "filterFood": "Gıda",
-    "filterTechnology": "Teknoloji",
-    "filterRealEstate": "Gayrimenkul",
-    "visitWebsite": "Web Sitesini Ziyaret Et",
-    "companyDetails": "Detaylı Bilgi",
-    "founded": "Kuruluş Yılı"
+    "tagline": "Bağlı Ortaklıklar",
+    "title": "Grup Şirketlerimiz",
+    "subtitle": "Her biri kendi alanında uzman, yenilikçi şirketlerimiz."
   },
   "areas": {
-    "pageTitle": "Faaliyet Alanları",
-    "pageSubtitle": "DN Holding'in faaliyet gösterdiği sektörler ve her alandaki stratejik konumumuz.",
-    "construction": {
-      "name": "İnşaat & Altyapı",
-      "description": "Büyük ölçekli altyapı projeleri, konut kompleksleri ve ticari yapılar. Otoyol, köprü, tünel ve havalimanı projeleri."
-    },
-    "energy": {
-      "name": "Enerji & Yenilenebilir Kaynaklar",
-      "description": "Rüzgâr, güneş ve hidroelektrik enerji üretimi. Sürdürülebilir enerji çözümleri ve karbon-nötr hedefler."
-    },
-    "mining": {
-      "name": "Madencilik & Doğal Kaynaklar",
-      "description": "Bakır, krom ve altın madenciliği. Çevreye duyarlı modern madencilik teknolojileri."
-    },
-    "food": {
-      "name": "Gıda & Tarım",
-      "description": "Organik tarım, gıda işleme ve uluslararası ihracat. Çiftlikten sofraya entegre üretim zinciri."
-    },
-    "technology": {
-      "name": "Teknoloji & Dijital Çözümler",
-      "description": "Yapay zekâ, IoT, bulut bilişim ve kurumsal yazılım çözümleri. Endüstriyel dijital dönüşüm."
-    },
-    "realEstate": {
-      "name": "Gayrimenkul & Yatırım",
-      "description": "Premium konut, ofis ve AVM projeleri. Sürdürülebilir mimari ve akıllı bina teknolojileri."
-    }
+    "tagline": "Sektörler",
+    "title": "Faaliyet Alanlarımız",
+    "subtitle": "Geniş bir yelpazede hizmet sunarak değer yaratıyoruz."
   },
   "products": {
-    "pageTitle": "Ürünler",
-    "pageSubtitle": "Grup şirketlerimizin sunduğu ürün ve hizmetler.",
-    "filterAll": "Tüm Ürünler",
-    "filterByCompany": "Şirkete Göre Filtrele",
-    "filterByCategory": "Kategoriye Göre Filtrele",
-    "noProducts": "Bu kriterlere uygun ürün bulunamadı.",
-    "details": "Ürün Detayı",
-    "specifications": "Teknik Özellikler",
-    "catalog": "Katalog İndir"
+    "tagline": "Hizmetlerimiz",
+    "title": "Ürünler & Hizmetler",
+    "subtitle": "Kalite ve güvenceyle sunduğumuz ürün ve hizmetler."
   },
   "projects": {
-    "pageTitle": "Projelerimiz",
-    "pageSubtitle": "Türkiye ve uluslararası arenada gerçekleştirdiğimiz prestijli projeler.",
-    "filterAll": "Tüm Projeler",
-    "filterByCompany": "Şirkete Göre",
-    "filterByStatus": "Duruma Göre",
-    "filterByYear": "Yıla Göre",
-    "statusCompleted": "Tamamlandı",
-    "statusOngoing": "Devam Ediyor",
-    "statusPlanned": "Planlanan",
-    "location": "Konum",
-    "year": "Yıl",
-    "company": "Şirket",
-    "projectValue": "Proje Değeri",
-    "noProjects": "Bu kriterlere uygun proje bulunamadı."
+    "tagline": "Referanslar",
+    "title": "Projeler",
+    "subtitle": "İmza attığımız vizyoner projeler.",
+    "detail": {
+      "category": "Kategori",
+      "year": "Yıl",
+      "location": "Konum",
+      "company": "Şirket",
+      "related": "İlgili Projeler"
+    }
   },
   "media": {
-    "pageTitle": "Medya Merkezi",
-    "pageSubtitle": "DN Holding dünyasından haberler, basın bültenleri ve duyurular.",
-    "categories": {
-      "all": "Tümü",
-      "corporate": "Kurumsal",
-      "project": "Proje",
-      "award": "Ödül",
-      "sustainability": "Sürdürülebilirlik",
-      "press": "Basın"
-    },
-    "publishDate": "Yayın Tarihi",
-    "relatedNews": "İlgili Haberler",
-    "pressKit": "Basın Kiti",
-    "downloadPressKit": "Basın Kitini İndir"
+    "tagline": "Gündem",
+    "title": "Medya & Haberler",
+    "subtitle": "Holdingimizle ilgili en son gelişmeler.",
+    "related": "Diğer Haberler"
   },
   "contact": {
-    "pageTitle": "İletişim",
-    "pageSubtitle": "Projeleriniz, iş birliği fırsatları ve sorularınız için bizimle iletişime geçin.",
+    "tagline": "Bize Ulaşın",
+    "title": "İletişim",
+    "subtitle": "Sorularınız ve görüşleriniz için buradayız.",
     "form": {
-      "name": "Adınız Soyadınız",
-      "namePlaceholder": "Adınızı ve soyadınızı girin",
-      "email": "E-posta Adresiniz",
-      "emailPlaceholder": "ornek@email.com",
-      "phone": "Telefon Numaranız",
-      "phonePlaceholder": "+90 (5XX) XXX XX XX",
-      "company": "Şirket / Kurum",
-      "companyPlaceholder": "Şirket veya kurum adınız",
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "company": "Şirket",
       "subject": "Konu",
-      "subjectPlaceholder": "Mesajınızın konusu",
       "message": "Mesajınız",
-      "messagePlaceholder": "Mesajınızı buraya yazın...",
-      "submit": "Gönder",
-      "submitting": "Gönderiliyor...",
-      "subjectOptions": {
-        "general": "Genel Bilgi",
-        "partnership": "İş Birliği",
-        "career": "Kariyer",
-        "press": "Basın / Medya",
-        "other": "Diğer"
-      }
-    },
-    "validation": {
-      "nameRequired": "Lütfen adınızı ve soyadınızı girin.",
-      "emailRequired": "Lütfen e-posta adresinizi girin.",
-      "emailInvalid": "Lütfen geçerli bir e-posta adresi girin.",
-      "phoneInvalid": "Lütfen geçerli bir telefon numarası girin.",
-      "subjectRequired": "Lütfen bir konu seçin.",
-      "messageRequired": "Lütfen mesajınızı yazın.",
-      "messageMinLength": "Mesajınız en az 20 karakter olmalıdır."
-    },
-    "success": {
-      "title": "Mesajınız Alındı",
-      "message": "En kısa sürede sizinle iletişime geçeceğiz. İlginiz için teşekkür ederiz."
-    },
-    "error": {
-      "title": "Bir Hata Oluştu",
-      "message": "Mesajınız gönderilemedi. Lütfen daha sonra tekrar deneyin."
+      "submit": "Gönder"
     },
     "info": {
-      "address": "Adres",
-      "addressValue": "Levent Mah. Büyükdere Cad. No: 185, Şişli / İstanbul",
-      "phone": "Telefon",
-      "phoneValue": "+90 (212) 345 67 89",
-      "email": "E-posta",
-      "emailValue": "info@dnholding.com.tr",
-      "workingHours": "Çalışma Saatleri",
-      "workingHoursValue": "Pazartesi - Cuma: 09:00 - 18:00"
+      "addressTitle": "Adres",
+      "address": "Levent, İstanbul, Türkiye",
+      "phoneTitle": "Telefon",
+      "emailTitle": "E-posta",
+      "hoursTitle": "Çalışma Saatleri",
+      "hours": "Pzt - Cum: 09:00 - 18:00"
     }
   },
   "common": {
     "readMore": "Devamını Oku",
     "discover": "Keşfet",
     "viewAll": "Tümünü Gör",
-    "loading": "Yükleniyor...",
-    "back": "Geri",
-    "backToHome": "Ana Sayfaya Dön",
-    "share": "Paylaş",
-    "search": "Ara",
-    "searchPlaceholder": "Arama yapın...",
-    "noResults": "Sonuç bulunamadı.",
+    "contactCta": "Bizimle iletişime geçmek ister misiniz?",
     "contactUs": "Bize Ulaşın",
-    "learnMore": "Daha Fazla Bilgi",
-    "download": "İndir",
-    "seeDetails": "Detayları Gör",
-    "showMore": "Daha Fazla Göster",
-    "showLess": "Daha Az Göster",
-    "prev": "Önceki",
-    "next": "Sonraki",
-    "all": "Tümü",
-    "yes": "Evet",
-    "no": "Hayır",
-    "scrollToTop": "Yukarı Çık",
-    "copyright": "© 2026 DN Holding. Tüm hakları saklıdır.",
-    "privacyPolicy": "Gizlilik Politikası",
-    "termsOfService": "Kullanım Koşulları",
-    "cookiePolicy": "Çerez Politikası"
-  },
-  "footer": {
-    "corporate": "Kurumsal",
-    "companies": "Şirketlerimiz",
-    "quickLinks": "Hızlı Bağlantılar",
-    "about": "Hakkımızda",
-    "vision": "Vizyon",
-    "mission": "Misyon",
-    "values": "Değerler",
-    "history": "Tarihçe",
-    "dnInsaat": "DN İnşaat",
-    "dnEnerji": "DN Enerji",
-    "dnMadencilik": "DN Madencilik",
-    "dnGida": "DN Gıda",
-    "dnTeknoloji": "DN Teknoloji",
-    "dnGayrimenkul": "DN Gayrimenkul",
     "projects": "Projeler",
-    "media": "Medya",
-    "careers": "Kariyer",
-    "contact": "İletişim",
-    "newsletter": {
-      "title": "Bültenimize Abone Olun",
-      "description": "DN Holding'den güncel haberler ve gelişmeler için e-posta bültenimize kayıt olun.",
-      "placeholder": "E-posta adresiniz",
-      "subscribe": "Abone Ol",
-      "success": "Aboneliğiniz başarıyla oluşturuldu!",
-      "error": "Bir hata oluştu. Lütfen tekrar deneyin."
-    },
-    "description": "DN Holding, inşaat, enerji, madencilik, gıda, teknoloji ve gayrimenkul alanlarında faaliyet gösteren uluslararası bir holding şirketidir.",
-    "copyright": "© 2026 DN Holding. Tüm hakları saklıdır."
-  },
-  "404": {
-    "title": "Sayfa Bulunamadı",
-    "description": "Aradığınız sayfa mevcut değil veya taşınmış olabilir.",
-    "backHome": "Ana Sayfaya Dön"
+    "share": "Paylaş"
   }
 }
