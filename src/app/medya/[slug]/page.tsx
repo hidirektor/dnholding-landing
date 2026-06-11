@@ -1,5 +1,4 @@
-import {getDictionary, hasLocale, type Locale} from "../../dictionaries";
-import {notFound} from "next/navigation";
+import {getCurrentLocale, getDictionary} from "@/app/dictionaries";
 import {Section} from "@/components/layout/Section";
 import {Container} from "@/components/layout/Container";
 import {Heading} from "@/components/ui/Heading";
@@ -14,12 +13,9 @@ export async function generateStaticParams() {
   return news.map((article) => ({ slug: article.slug }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ lang: string; slug: string }>;
-}) {
-  const { lang, slug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const lang = await getCurrentLocale();
   const article = news.find((n) => n.slug === slug);
   if (!article) return { title: "Not Found" };
   const locale = (lang === "en" ? "en" : "tr") as Locale;
@@ -29,19 +25,15 @@ export async function generateMetadata({
   };
 }
 
-export default async function NewsDetailPage({
-  params,
-}: {
-  params: Promise<{ lang: string; slug: string }>;
-}) {
-  const { lang, slug } = await params;
-  if (!hasLocale(lang)) notFound();
-
+export default async function NewsDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const lang = await getCurrentLocale();
+  
   const article = news.find((n) => n.slug === slug);
   if (!article) notFound();
 
-  const dict = await getDictionary(lang as Locale);
-  const locale = lang as Locale;
+  const dict = await getDictionary();
+  const locale = lang;
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `/${lang}` },
@@ -132,7 +124,7 @@ export default async function NewsDetailPage({
               {relatedArticles.map((ra) => (
                 <ScrollReveal key={ra.slug}>
                   <a
-                    href={`/${lang}/medya/${ra.slug}`}
+                    href={`/medya/${ra.slug}`}
                     className="group block p-6 rounded-[var(--radius-xl)] border border-border hover:border-accent/20 transition-all hover:shadow-[var(--shadow-medium)]"
                   >
                     <div className="flex items-center gap-3 mb-3">
@@ -161,7 +153,7 @@ export default async function NewsDetailPage({
           <ScrollReveal>
             <div className="text-center space-y-4">
               <Button
-                href={`/${lang}/medya`}
+                href={`/medya`}
                 variant="secondary"
                 icon="arrow"
               >

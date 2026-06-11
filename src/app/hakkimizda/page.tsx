@@ -1,5 +1,4 @@
-import {getDictionary, hasLocale, type Locale} from "../dictionaries";
-import {notFound} from "next/navigation";
+import {getCurrentLocale, getDictionary} from "@/app/dictionaries";
 import {HeroSection} from "@/components/content/HeroSection";
 import {Timeline} from "@/components/content/Timeline";
 import {StatsBar} from "@/components/content/StatsBar";
@@ -10,12 +9,8 @@ import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
 import {globalStats} from "@/data/stats";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
-  const { lang } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const lang = await getCurrentLocale();
   const isTR = lang === "tr";
   return {
     title: isTR ? "Hakkımızda" : "About Us",
@@ -25,16 +20,11 @@ export async function generateMetadata({
   };
 }
 
-export default async function AboutPage({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
-  const { lang } = await params;
-  if (!hasLocale(lang)) notFound();
-
-  const dict = await getDictionary(lang as Locale);
-  const locale = lang as Locale;
+export default async function AboutPage({ params }: { params: Promise<{ slug: string }> }) {
+  const lang = await getCurrentLocale();
+  
+  const dict = await getDictionary();
+  const locale = lang;
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `/${lang}` },

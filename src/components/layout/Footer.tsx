@@ -94,7 +94,7 @@ export function Footer({ lang }: FooterProps) {
         <div className={styles.grid}>
           {/* About Column */}
           <div className={styles.aboutCol}>
-            <Link href={`/${lang}`} className={styles.footerLogo}>
+            <Link href={`/`} className={styles.footerLogo}>
               <span className={styles.logoIcon}>DN</span>
               <span className={styles.logoText}>HOLDING</span>
             </Link>
@@ -184,11 +184,11 @@ export function Footer({ lang }: FooterProps) {
           <div className={styles.bottomContent}>
             <p className={styles.copyright}>{data.copyright}</p>
             <div className={styles.legalLinks}>
-              <Link href={`/${lang}`} className={styles.legalLink}>
+              <Link href={`/`} className={styles.legalLink}>
                 {data.privacy}
               </Link>
               <span className={styles.legalDivider}>|</span>
-              <Link href={`/${lang}`} className={styles.legalLink}>
+              <Link href={`/`} className={styles.legalLink}>
                 {data.terms}
               </Link>
             </div>

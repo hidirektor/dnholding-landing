@@ -75,7 +75,7 @@ export default async function HomePage() {
                   {dict.home.about.description2}
                 </p>
                 <Button
-                  href={`/${lang}/hakkimizda`}
+                  href={`/hakkimizda`}
                   variant="secondary"
                   icon="arrow"
                 >
@@ -140,7 +140,7 @@ export default async function HomePage() {
           <ScrollReveal>
             <div className="text-center mt-12">
               <Button
-                href={`/${lang}/grup-sirketleri`}
+                href={`/grup-sirketleri`}
                 variant="secondary"
                 icon="arrow"
               >
@@ -188,7 +188,7 @@ export default async function HomePage() {
           <ScrollReveal>
             <div className="text-center mt-12">
               <Button
-                href={`/${lang}/faaliyet-alanlari`}
+                href={`/faaliyet-alanlari`}
                 variant="primary"
                 icon="arrow"
               >
@@ -235,7 +235,7 @@ export default async function HomePage() {
           <ScrollReveal>
             <div className="text-center mt-12">
               <Button
-                href={`/${lang}/projeler`}
+                href={`/projeler`}
                 variant="secondary"
                 icon="arrow"
               >
@@ -281,7 +281,7 @@ export default async function HomePage() {
           <ScrollReveal>
             <div className="text-center mt-12">
               <Button
-                href={`/${lang}/medya`}
+                href={`/medya`}
                 variant="secondary"
                 icon="arrow"
               >
@@ -307,7 +307,7 @@ export default async function HomePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <Button
-                    href={`/${lang}/iletisim`}
+                    href={`/iletisim`}
                     variant="primary"
                     size="lg"
                     icon="arrow"

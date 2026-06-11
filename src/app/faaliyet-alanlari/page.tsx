@@ -1,5 +1,4 @@
-import {getDictionary, hasLocale, type Locale} from "../dictionaries";
-import {notFound} from "next/navigation";
+import {getCurrentLocale, getDictionary} from "@/app/dictionaries";
 import {Section} from "@/components/layout/Section";
 import {Container} from "@/components/layout/Container";
 import {Heading} from "@/components/ui/Heading";
@@ -7,12 +6,8 @@ import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
 import {Button} from "@/components/ui/Button";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
-  const { lang } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const lang = await getCurrentLocale();
   const isTR = lang === "tr";
   return {
     title: isTR ? "Faaliyet Alanları" : "Business Areas",
@@ -101,16 +96,11 @@ const businessAreas = {
   ],
 };
 
-export default async function BusinessAreasPage({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
-  const { lang } = await params;
-  if (!hasLocale(lang)) notFound();
-
-  const dict = await getDictionary(lang as Locale);
-  const locale = lang as Locale;
+export default async function BusinessAreasPage({ params }: { params: Promise<{ slug: string }> }) {
+  const lang = await getCurrentLocale();
+  
+  const dict = await getDictionary();
+  const locale = lang;
   const areas = businessAreas[locale];
 
   const breadcrumbs = [
@@ -174,7 +164,7 @@ export default async function BusinessAreasPage({
                 {dict.common.contactCta}
               </Heading>
               <Button
-                href={`/${lang}/iletisim`}
+                href={`/iletisim`}
                 variant="primary"
                 size="lg"
                 icon="arrow"

@@ -1,5 +1,4 @@
-import {getDictionary, hasLocale, type Locale} from "../dictionaries";
-import {notFound} from "next/navigation";
+import {getCurrentLocale, getDictionary} from "@/app/dictionaries";
 import {Section} from "@/components/layout/Section";
 import {Container} from "@/components/layout/Container";
 import {Heading} from "@/components/ui/Heading";
@@ -9,12 +8,8 @@ import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
 import {Button} from "@/components/ui/Button";
 import {companies} from "@/data/companies";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
-  const { lang } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const lang = await getCurrentLocale();
   const isTR = lang === "tr";
   return {
     title: isTR ? "Ürünler & Hizmetler" : "Products & Services",
@@ -24,16 +19,11 @@ export async function generateMetadata({
   };
 }
 
-export default async function ProductsPage({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
-  const { lang } = await params;
-  if (!hasLocale(lang)) notFound();
-
-  const dict = await getDictionary(lang as Locale);
-  const locale = lang as Locale;
+export default async function ProductsPage({ params }: { params: Promise<{ slug: string }> }) {
+  const lang = await getCurrentLocale();
+  
+  const dict = await getDictionary();
+  const locale = lang;
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `/${lang}` },
@@ -90,7 +80,7 @@ export default async function ProductsPage({
                         {company.description[locale]}
                       </p>
                       <Button
-                        href={`/${lang}/grup-sirketleri/${company.slug}`}
+                        href={`/grup-sirketleri/${company.slug}`}
                         variant="ghost"
                         size="sm"
                         icon="arrow"

@@ -92,7 +92,7 @@ export function Header({ lang }: HeaderProps) {
 
   const isActive = (href: string) => {
     const fullPath = `/${lang}${href}`;
-    if (href === "") return pathname === `/${lang}` || pathname === `/${lang}/`;
+    if (href === "") return pathname === `/` || pathname === `/`;
     return pathname.startsWith(fullPath);
   };
 
@@ -113,7 +113,7 @@ export function Header({ lang }: HeaderProps) {
           >
             {/* Logo */}
             <Link
-              href={`/${lang}`}
+              href={`/`}
               className={styles.logo}
               onClick={closeMobile}
               aria-label="DN Holding Home"

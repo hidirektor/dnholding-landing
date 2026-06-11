@@ -13,7 +13,7 @@ interface CompanyCardProps {
 
 export function CompanyCard({ name, slug, description, sector, accentColor, lang }: CompanyCardProps) {
   return (
-    <Link href={`/${lang}/grup-sirketleri/${slug}`} className="block h-full group">
+    <Link href={`/grup-sirketleri/${slug}`} className="block h-full group">
       <Card className="h-full p-8 border border-border hover:border-transparent transition-all duration-300 relative overflow-hidden">
         {/* Accent Top Border */}
         <div className="absolute top-0 left-0 right-0 h-1 transition-all duration-300 transform origin-left scale-x-0 group-hover:scale-x-100" style={{ backgroundColor: accentColor }} />

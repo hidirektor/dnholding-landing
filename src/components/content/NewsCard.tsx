@@ -15,7 +15,7 @@ interface NewsCardProps {
 
 export function NewsCard({ title, excerpt, date, category, image, slug, lang }: NewsCardProps) {
   return (
-    <Link href={`/${lang}/medya/${slug}`} className="block h-full group">
+    <Link href={`/medya/${slug}`} className="block h-full group">
       <Card className="h-full flex flex-col border border-border hover:border-transparent transition-all duration-300 hover:shadow-[var(--shadow-large)]">
         <div className="relative aspect-[16/9] overflow-hidden rounded-t-[var(--radius-xl)] bg-surface-dark">
           {image ? (

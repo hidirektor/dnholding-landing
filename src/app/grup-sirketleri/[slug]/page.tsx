@@ -1,5 +1,4 @@
-import {getDictionary, hasLocale, type Locale} from "../../dictionaries";
-import {notFound} from "next/navigation";
+import {getCurrentLocale, getDictionary} from "@/app/dictionaries";
 import {Section} from "@/components/layout/Section";
 import {Container} from "@/components/layout/Container";
 import {Heading} from "@/components/ui/Heading";
@@ -16,12 +15,9 @@ export async function generateStaticParams() {
   return companies.map((company) => ({ slug: company.slug }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ lang: string; slug: string }>;
-}) {
-  const { lang, slug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const lang = await getCurrentLocale();
   const company = companies.find((c) => c.slug === slug);
   if (!company) return { title: "Not Found" };
   const locale = (lang === "en" ? "en" : "tr") as Locale;
@@ -31,19 +27,15 @@ export async function generateMetadata({
   };
 }
 
-export default async function CompanyDetailPage({
-  params,
-}: {
-  params: Promise<{ lang: string; slug: string }>;
-}) {
-  const { lang, slug } = await params;
-  if (!hasLocale(lang)) notFound();
-
+export default async function CompanyDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const lang = await getCurrentLocale();
+  
   const company = companies.find((c) => c.slug === slug);
   if (!company) notFound();
 
-  const dict = await getDictionary(lang as Locale);
-  const locale = lang as Locale;
+  const dict = await getDictionary();
+  const locale = lang;
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `/${lang}` },
@@ -152,7 +144,7 @@ export default async function CompanyDetailPage({
                 {dict.common.contactCta}
               </Heading>
               <Button
-                href={`/${lang}/iletisim`}
+                href={`/iletisim`}
                 variant="primary"
                 size="lg"
                 icon="arrow"
