@@ -59,7 +59,7 @@ export default function NotFound() {
             Aradığınız sayfa bulunamadı. Ana sayfaya dönerek devam edebilirsiniz.
           </p>
           <Link
-            href="/tr"
+            href="/"
             style={{
               display: "inline-flex",
               alignItems: "center",
