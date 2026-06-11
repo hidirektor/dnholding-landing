@@ -183,8 +183,16 @@
         "accentColor": "#2563eb",
         "featured": true,
         "stats": [
-          { "label": "Projets Achevés", "value": 250, "suffix": "+" },
-          { "label": "Employés", "value": 1500, "suffix": "+" }
+          {
+            "label": "Projets Achevés",
+            "value": 250,
+            "suffix": "+"
+          },
+          {
+            "label": "Employés",
+            "value": 1500,
+            "suffix": "+"
+          }
         ]
       },
       {
@@ -195,8 +203,14 @@
         "accentColor": "#059669",
         "featured": true,
         "stats": [
-          { "label": "Capacité Installée (MW)", "value": 850 },
-          { "label": "Installations", "value": 12 }
+          {
+            "label": "Capacité Installée (MW)",
+            "value": 850
+          },
+          {
+            "label": "Installations",
+            "value": 12
+          }
         ]
       },
       {
@@ -207,8 +221,15 @@
         "accentColor": "#d97706",
         "featured": true,
         "stats": [
-          { "label": "Mines Actives", "value": 8 },
-          { "label": "Pays d'Exportation", "value": 35, "suffix": "+" }
+          {
+            "label": "Mines Actives",
+            "value": 8
+          },
+          {
+            "label": "Pays d'Exportation",
+            "value": 35,
+            "suffix": "+"
+          }
         ]
       },
       {
@@ -219,8 +240,15 @@
         "accentColor": "#dc2626",
         "featured": true,
         "stats": [
-          { "label": "Types de Produits", "value": 120, "suffix": "+" },
-          { "label": "Installations de Production", "value": 5 }
+          {
+            "label": "Types de Produits",
+            "value": 120,
+            "suffix": "+"
+          },
+          {
+            "label": "Installations de Production",
+            "value": 5
+          }
         ]
       },
       {
@@ -231,8 +259,16 @@
         "accentColor": "#7c3aed",
         "featured": true,
         "stats": [
-          { "label": "Projets R&D", "value": 45, "suffix": "+" },
-          { "label": "Ingénieurs", "value": 300, "suffix": "+" }
+          {
+            "label": "Projets R&D",
+            "value": 45,
+            "suffix": "+"
+          },
+          {
+            "label": "Ingénieurs",
+            "value": 300,
+            "suffix": "+"
+          }
         ]
       },
       {
@@ -243,8 +279,15 @@
         "accentColor": "#0891b2",
         "featured": true,
         "stats": [
-          { "label": "Surface Développée (m²)", "value": 2000000, "suffix": "+" },
-          { "label": "Projets Récompensés", "value": 15 }
+          {
+            "label": "Surface Développée (m²)",
+            "value": 2000000,
+            "suffix": "+"
+          },
+          {
+            "label": "Projets Récompensés",
+            "value": 15
+          }
         ]
       }
     ],
@@ -331,10 +374,32 @@
       }
     ],
     "stats": [
-      { "label": "Chiffre d'affaires (Mrd USD)", "value": 2.4, "prefix": "$" },
-      { "label": "Employés", "value": 15, "suffix": "k+" },
-      { "label": "Pays", "value": 18, "suffix": "+" },
-      { "label": "Expérience (Années)", "value": 25, "suffix": "+" }
+      {
+        "label": "Chiffre d'affaires (Mrd USD)",
+        "value": 2.4,
+        "prefix": "$"
+      },
+      {
+        "label": "Employés",
+        "value": 15,
+        "suffix": "k+"
+      },
+      {
+        "label": "Pays",
+        "value": 18,
+        "suffix": "+"
+      },
+      {
+        "label": "Expérience (Années)",
+        "value": 25,
+        "suffix": "+"
+      }
     ]
+  },
+  "cookie": {
+    "title": "Préférences de cookies",
+    "description": "Nous utilisons des cookies sur notre site pour améliorer l'expérience utilisateur et analyser le trafic.",
+    "accept": "Tout accepter",
+    "decline": "Refuser"
   }
 }

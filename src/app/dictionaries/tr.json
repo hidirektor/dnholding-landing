@@ -183,8 +183,16 @@
         "accentColor": "#2563eb",
         "featured": true,
         "stats": [
-          { "label": "Tamamlanan Proje", "value": 250, "suffix": "+" },
-          { "label": "Çalışan", "value": 1500, "suffix": "+" }
+          {
+            "label": "Tamamlanan Proje",
+            "value": 250,
+            "suffix": "+"
+          },
+          {
+            "label": "Çalışan",
+            "value": 1500,
+            "suffix": "+"
+          }
         ]
       },
       {
@@ -195,8 +203,14 @@
         "accentColor": "#059669",
         "featured": true,
         "stats": [
-          { "label": "Kurulu Güç (MW)", "value": 850 },
-          { "label": "Tesis", "value": 12 }
+          {
+            "label": "Kurulu Güç (MW)",
+            "value": 850
+          },
+          {
+            "label": "Tesis",
+            "value": 12
+          }
         ]
       },
       {
@@ -207,8 +221,15 @@
         "accentColor": "#d97706",
         "featured": true,
         "stats": [
-          { "label": "Aktif Ocak", "value": 8 },
-          { "label": "İhracat Ülkesi", "value": 35, "suffix": "+" }
+          {
+            "label": "Aktif Ocak",
+            "value": 8
+          },
+          {
+            "label": "İhracat Ülkesi",
+            "value": 35,
+            "suffix": "+"
+          }
         ]
       },
       {
@@ -219,8 +240,15 @@
         "accentColor": "#dc2626",
         "featured": true,
         "stats": [
-          { "label": "Ürün Çeşidi", "value": 120, "suffix": "+" },
-          { "label": "Üretim Tesisi", "value": 5 }
+          {
+            "label": "Ürün Çeşidi",
+            "value": 120,
+            "suffix": "+"
+          },
+          {
+            "label": "Üretim Tesisi",
+            "value": 5
+          }
         ]
       },
       {
@@ -231,8 +259,16 @@
         "accentColor": "#7c3aed",
         "featured": true,
         "stats": [
-          { "label": "Ar-Ge Projesi", "value": 45, "suffix": "+" },
-          { "label": "Mühendis", "value": 300, "suffix": "+" }
+          {
+            "label": "Ar-Ge Projesi",
+            "value": 45,
+            "suffix": "+"
+          },
+          {
+            "label": "Mühendis",
+            "value": 300,
+            "suffix": "+"
+          }
         ]
       },
       {
@@ -243,8 +279,15 @@
         "accentColor": "#0891b2",
         "featured": true,
         "stats": [
-          { "label": "Geliştirilen Alan (m²)", "value": 2000000, "suffix": "+" },
-          { "label": "Ödüllü Proje", "value": 15 }
+          {
+            "label": "Geliştirilen Alan (m²)",
+            "value": 2000000,
+            "suffix": "+"
+          },
+          {
+            "label": "Ödüllü Proje",
+            "value": 15
+          }
         ]
       }
     ],
@@ -331,10 +374,32 @@
       }
     ],
     "stats": [
-      { "label": "Ciro (Milyar $)", "value": 2.4, "prefix": "$" },
-      { "label": "Çalışan", "value": 15, "suffix": "k+" },
-      { "label": "Ülke", "value": 18, "suffix": "+" },
-      { "label": "Yıllık Tecrübe", "value": 25, "suffix": "+" }
+      {
+        "label": "Ciro (Milyar $)",
+        "value": 2.4,
+        "prefix": "$"
+      },
+      {
+        "label": "Çalışan",
+        "value": 15,
+        "suffix": "k+"
+      },
+      {
+        "label": "Ülke",
+        "value": 18,
+        "suffix": "+"
+      },
+      {
+        "label": "Yıllık Tecrübe",
+        "value": 25,
+        "suffix": "+"
+      }
     ]
+  },
+  "cookie": {
+    "title": "Çerez Tercihleri",
+    "description": "Sitemizde, kullanıcı deneyimini geliştirmek ve site trafiğini analiz etmek için çerezler kullanıyoruz.",
+    "accept": "Tümünü Kabul Et",
+    "decline": "Reddet"
   }
 }

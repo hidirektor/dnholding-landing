@@ -183,8 +183,16 @@
         "accentColor": "#2563eb",
         "featured": true,
         "stats": [
-          { "label": "Abgeschlossene Projekte", "value": 250, "suffix": "+" },
-          { "label": "Mitarbeiter", "value": 1500, "suffix": "+" }
+          {
+            "label": "Abgeschlossene Projekte",
+            "value": 250,
+            "suffix": "+"
+          },
+          {
+            "label": "Mitarbeiter",
+            "value": 1500,
+            "suffix": "+"
+          }
         ]
       },
       {
@@ -195,8 +203,14 @@
         "accentColor": "#059669",
         "featured": true,
         "stats": [
-          { "label": "Installierte Leistung (MW)", "value": 850 },
-          { "label": "Anlagen", "value": 12 }
+          {
+            "label": "Installierte Leistung (MW)",
+            "value": 850
+          },
+          {
+            "label": "Anlagen",
+            "value": 12
+          }
         ]
       },
       {
@@ -207,8 +221,15 @@
         "accentColor": "#d97706",
         "featured": true,
         "stats": [
-          { "label": "Aktive Minen", "value": 8 },
-          { "label": "Exportländer", "value": 35, "suffix": "+" }
+          {
+            "label": "Aktive Minen",
+            "value": 8
+          },
+          {
+            "label": "Exportländer",
+            "value": 35,
+            "suffix": "+"
+          }
         ]
       },
       {
@@ -219,8 +240,15 @@
         "accentColor": "#dc2626",
         "featured": true,
         "stats": [
-          { "label": "Produktarten", "value": 120, "suffix": "+" },
-          { "label": "Produktionsstätten", "value": 5 }
+          {
+            "label": "Produktarten",
+            "value": 120,
+            "suffix": "+"
+          },
+          {
+            "label": "Produktionsstätten",
+            "value": 5
+          }
         ]
       },
       {
@@ -231,8 +259,16 @@
         "accentColor": "#7c3aed",
         "featured": true,
         "stats": [
-          { "label": "F&E-Projekte", "value": 45, "suffix": "+" },
-          { "label": "Ingenieure", "value": 300, "suffix": "+" }
+          {
+            "label": "F&E-Projekte",
+            "value": 45,
+            "suffix": "+"
+          },
+          {
+            "label": "Ingenieure",
+            "value": 300,
+            "suffix": "+"
+          }
         ]
       },
       {
@@ -243,8 +279,15 @@
         "accentColor": "#0891b2",
         "featured": true,
         "stats": [
-          { "label": "Erschlossene Fläche (m²)", "value": 2000000, "suffix": "+" },
-          { "label": "Ausgezeichnete Projekte", "value": 15 }
+          {
+            "label": "Erschlossene Fläche (m²)",
+            "value": 2000000,
+            "suffix": "+"
+          },
+          {
+            "label": "Ausgezeichnete Projekte",
+            "value": 15
+          }
         ]
       }
     ],
@@ -331,10 +374,32 @@
       }
     ],
     "stats": [
-      { "label": "Umsatz (Mrd. USD)", "value": 2.4, "prefix": "$" },
-      { "label": "Mitarbeiter", "value": 15, "suffix": "k+" },
-      { "label": "Länder", "value": 18, "suffix": "+" },
-      { "label": "Erfahrung (Jahre)", "value": 25, "suffix": "+" }
+      {
+        "label": "Umsatz (Mrd. USD)",
+        "value": 2.4,
+        "prefix": "$"
+      },
+      {
+        "label": "Mitarbeiter",
+        "value": 15,
+        "suffix": "k+"
+      },
+      {
+        "label": "Länder",
+        "value": 18,
+        "suffix": "+"
+      },
+      {
+        "label": "Erfahrung (Jahre)",
+        "value": 25,
+        "suffix": "+"
+      }
     ]
+  },
+  "cookie": {
+    "title": "Cookie-Einstellungen",
+    "description": "Wir verwenden Cookies auf unserer Website, um die Benutzererfahrung zu verbessern und den Datenverkehr zu analysieren.",
+    "accept": "Alle akzeptieren",
+    "decline": "Ablehnen"
   }
 }
