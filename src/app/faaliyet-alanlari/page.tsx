@@ -104,8 +104,8 @@ export default async function BusinessAreasPage({ params }: { params: Promise<{ 
   const areas = businessAreas[locale];
 
   const breadcrumbs = [
-    { label: dict.nav.home, href: `/${lang}` },
-    { label: dict.nav.areas, href: `/${lang}/faaliyet-alanlari` },
+    { label: dict.nav.home, href: `` },
+    { label: dict.nav.areas, href: `/faaliyet-alanlari` },
   ];
 
   return (

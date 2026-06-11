@@ -25,8 +25,8 @@ export default async function GroupCompaniesPage({ params }: { params: Promise<{
   const locale = lang;
 
   const breadcrumbs = [
-    { label: dict.nav.home, href: `/${lang}` },
-    { label: dict.nav.companies, href: `/${lang}/grup-sirketleri` },
+    { label: dict.nav.home, href: `` },
+    { label: dict.nav.companies, href: `/grup-sirketleri` },
   ];
 
   return (

@@ -27,8 +27,8 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
   const locale = lang;
 
   const breadcrumbs = [
-    { label: dict.nav.home, href: `/${lang}` },
-    { label: dict.nav.about, href: `/${lang}/hakkimizda` },
+    { label: dict.nav.home, href: `` },
+    { label: dict.nav.about, href: `/hakkimizda` },
   ];
 
   const timelineItems = dict.about.timeline.items.map(

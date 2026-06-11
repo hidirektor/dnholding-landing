@@ -38,9 +38,9 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
   const locale = lang;
 
   const breadcrumbs = [
-    { label: dict.nav.home, href: `/${lang}` },
-    { label: dict.nav.companies, href: `/${lang}/grup-sirketleri` },
-    { label: company.name, href: `/${lang}/grup-sirketleri/${slug}` },
+    { label: dict.nav.home, href: `` },
+    { label: dict.nav.companies, href: `/grup-sirketleri` },
+    { label: company.name, href: `/grup-sirketleri/${slug}` },
   ];
 
   const companyProjects = projects.filter((p) => p.company === slug).slice(0, 3);

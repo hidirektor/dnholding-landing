@@ -36,9 +36,9 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
   const locale = lang;
 
   const breadcrumbs = [
-    { label: dict.nav.home, href: `/${lang}` },
-    { label: dict.nav.media, href: `/${lang}/medya` },
-    { label: article.title[locale], href: `/${lang}/medya/${slug}` },
+    { label: dict.nav.home, href: `` },
+    { label: dict.nav.media, href: `/medya` },
+    { label: article.title[locale], href: `/medya/${slug}` },
   ];
 
   const relatedArticles = news

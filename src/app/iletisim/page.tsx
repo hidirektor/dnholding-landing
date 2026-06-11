@@ -24,8 +24,8 @@ export default async function ContactPage({ params }: { params: Promise<{ slug: 
   const locale = lang;
 
   const breadcrumbs = [
-    { label: dict.nav.home, href: `/${lang}` },
-    { label: dict.nav.contact, href: `/${lang}/iletisim` },
+    { label: dict.nav.home, href: `` },
+    { label: dict.nav.contact, href: `/iletisim` },
   ];
 
   return (

@@ -26,8 +26,8 @@ export default async function ProductsPage({ params }: { params: Promise<{ slug:
   const locale = lang;
 
   const breadcrumbs = [
-    { label: dict.nav.home, href: `/${lang}` },
-    { label: dict.nav.products, href: `/${lang}/urunler` },
+    { label: dict.nav.home, href: `` },
+    { label: dict.nav.products, href: `/urunler` },
   ];
 
   return (

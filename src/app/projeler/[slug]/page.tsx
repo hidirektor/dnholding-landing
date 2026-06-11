@@ -35,9 +35,9 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
   const locale = lang;
 
   const breadcrumbs = [
-    { label: dict.nav.home, href: `/${lang}` },
-    { label: dict.nav.projects, href: `/${lang}/projeler` },
-    { label: project.title[locale], href: `/${lang}/projeler/${slug}` },
+    { label: dict.nav.home, href: `` },
+    { label: dict.nav.projects, href: `/projeler` },
+    { label: project.title[locale], href: `/projeler/${slug}` },
   ];
 
   const relatedProjects = projects

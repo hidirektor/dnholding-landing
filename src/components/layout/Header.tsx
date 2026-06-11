@@ -91,7 +91,7 @@ export function Header({ lang }: HeaderProps) {
   }, []);
 
   const isActive = (href: string) => {
-    const fullPath = `/${lang}${href}`;
+    const fullPath = `${href}`;
     if (href === "") return pathname === `/` || pathname === `/`;
     return pathname.startsWith(fullPath);
   };
@@ -136,7 +136,7 @@ export function Header({ lang }: HeaderProps) {
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
                   <Link
-                    href={`/${lang}${item.href}`}
+                    href={`${item.href}`}
                     className={cn(
                       styles.navLink,
                       isActive(item.href) && styles.navLinkActive
@@ -177,7 +177,7 @@ export function Header({ lang }: HeaderProps) {
                         {item.children.map((child) => (
                           <Link
                             key={child.href}
-                            href={`/${lang}${child.href}`}
+                            href={`${child.href}`}
                             className={styles.dropdownLink}
                           >
                             <span className={styles.dropdownDot} />
@@ -241,7 +241,7 @@ export function Header({ lang }: HeaderProps) {
               style={{ animationDelay: `${index * 60}ms` }}
             >
               <Link
-                href={`/${lang}${item.href}`}
+                href={`${item.href}`}
                 className={cn(
                   styles.mobileNavLink,
                   isActive(item.href) && styles.mobileNavLinkActive
@@ -256,7 +256,7 @@ export function Header({ lang }: HeaderProps) {
                   {item.children.map((child) => (
                     <Link
                       key={child.href}
-                      href={`/${lang}${child.href}`}
+                      href={`${child.href}`}
                       className={styles.mobileSubnavLink}
                       onClick={closeMobile}
                     >

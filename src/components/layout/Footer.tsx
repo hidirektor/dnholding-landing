@@ -137,7 +137,7 @@ export function Footer({ lang }: FooterProps) {
               {data.quickLinks.links.map((link) => (
                 <li key={link.href}>
                   <Link
-                    href={`/${lang}${link.href}`}
+                    href={`${link.href}`}
                     className={styles.footerLink}
                   >
                     {link.label}
@@ -154,7 +154,7 @@ export function Footer({ lang }: FooterProps) {
               {data.companies.links.map((link) => (
                 <li key={link.href}>
                   <Link
-                    href={`/${lang}${link.href}`}
+                    href={`${link.href}`}
                     className={styles.footerLink}
                   >
                     {link.label}

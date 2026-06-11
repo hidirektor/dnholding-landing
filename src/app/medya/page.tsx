@@ -25,8 +25,8 @@ export default async function MediaPage({ params }: { params: Promise<{ slug: st
   const locale = lang;
 
   const breadcrumbs = [
-    { label: dict.nav.home, href: `/${lang}` },
-    { label: dict.nav.media, href: `/${lang}/medya` },
+    { label: dict.nav.home, href: `` },
+    { label: dict.nav.media, href: `/medya` },
   ];
 
   return (
