@@ -6,43 +6,42 @@ import {Badge} from "@/components/ui/Badge";
 import {Button} from "@/components/ui/Button";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
-import {news} from "@/data/news";
 import {formatDate} from "@/lib/utils";
+import trDict from "@/app/dictionaries/tr.json";
+import {notFound} from "next/navigation";
 
 export async function generateStaticParams() {
-  return news.map((article) => ({ slug: article.slug }));
+  return trDict.data.news.map((article) => ({ slug: article.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const lang = await getCurrentLocale();
-  const article = news.find((n) => n.slug === slug);
+  const dict = await getDictionary();
+  const article = dict.data.news.find((n: any) => n.slug === slug);
   if (!article) return { title: "Not Found" };
-  const locale = (lang === "en" ? "en" : "tr") as Locale;
   return {
-    title: article.title[locale],
-    description: article.excerpt[locale],
+    title: article.title,
+    description: article.excerpt,
   };
 }
 
 export default async function NewsDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const lang = await getCurrentLocale();
-  
-  const article = news.find((n) => n.slug === slug);
-  if (!article) notFound();
-
   const dict = await getDictionary();
   const locale = lang;
+  
+  const article = dict.data.news.find((n: any) => n.slug === slug);
+  if (!article) notFound();
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `` },
     { label: dict.nav.media, href: `/medya` },
-    { label: article.title[locale], href: `/medya/${slug}` },
+    { label: article.title, href: `/medya/${slug}` },
   ];
 
-  const relatedArticles = news
-    .filter((n) => n.slug !== slug)
+  const relatedArticles = dict.data.news
+    .filter((n: any) => n.slug !== slug)
     .slice(0, 2);
 
   return (
@@ -59,7 +58,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
                 </time>
               </div>
               <Heading level="h1" display className="text-white">
-                {article.title[locale]}
+                {article.title}
               </Heading>
             </ScrollReveal>
           </Container>
@@ -80,11 +79,11 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
           <ScrollReveal>
             <article className="space-y-6">
               <p className="text-lg text-text-secondary leading-relaxed font-medium">
-                {article.excerpt[locale]}
+                {article.excerpt}
               </p>
               <div className="border-t border-border pt-6">
                 <p className="text-text-secondary leading-relaxed whitespace-pre-line">
-                  {article.content[locale]}
+                  {article.content || article.excerpt}
                 </p>
               </div>
             </article>
@@ -134,10 +133,10 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
                       </time>
                     </div>
                     <h4 className="text-lg font-semibold group-hover:text-accent transition-colors">
-                      {ra.title[locale]}
+                      {ra.title}
                     </h4>
                     <p className="text-text-secondary text-sm mt-2 line-clamp-2">
-                      {ra.excerpt[locale]}
+                      {ra.excerpt}
                     </p>
                   </a>
                 </ScrollReveal>

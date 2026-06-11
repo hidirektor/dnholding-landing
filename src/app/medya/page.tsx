@@ -5,7 +5,6 @@ import {Heading} from "@/components/ui/Heading";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
 import {NewsCard} from "@/components/content/NewsCard";
-import {news} from "@/data/news";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const lang = await getCurrentLocale();
@@ -60,11 +59,11 @@ export default async function MediaPage({ params }: { params: Promise<{ slug: st
       <Section variant="default">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {news.map((article, index) => (
+            {dict.data.news.map((article: any, index: number) => (
               <ScrollReveal key={article.slug} delay={index * 80}>
                 <NewsCard
-                  title={article.title[locale]}
-                  excerpt={article.excerpt[locale]}
+                  title={article.title}
+                  excerpt={article.excerpt}
                   date={article.date}
                   category={article.category}
                   image={article.image}
