@@ -221,7 +221,7 @@ export default async function HomePage() {
                   description={project.description}
                   company={project.company}
                   category={project.category}
-                  image={project.image}
+                  image={(project as any).image}
                   slug={project.slug}
                   lang={locale}
                 />
