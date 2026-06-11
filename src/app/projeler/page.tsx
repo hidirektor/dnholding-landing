@@ -5,7 +5,6 @@ import {Heading} from "@/components/ui/Heading";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
 import {ProjectCard} from "@/components/content/ProjectCard";
-import {projects} from "@/data/projects";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const lang = await getCurrentLocale();
@@ -60,13 +59,13 @@ export default async function ProjectsPage({ params }: { params: Promise<{ slug:
       <Section variant="default">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
+            {dict.data.projects.map((project: any, index: number) => (
               <ScrollReveal key={project.slug} delay={index * 80}>
                 <ProjectCard
-                  title={project.title[locale]}
-                  description={project.description[locale]}
+                  title={project.title}
+                  description={project.description}
                   company={project.company}
-                  category={project.category[locale]}
+                  category={project.category}
                   image={project.image}
                   slug={project.slug}
                   lang={locale}

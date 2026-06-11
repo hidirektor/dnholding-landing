@@ -8,34 +8,32 @@ import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {StatsBar} from "@/components/content/StatsBar";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
 import {ProjectCard} from "@/components/content/ProjectCard";
-import {companies} from "@/data/companies";
-import {projects} from "@/data/projects";
+import trDict from "@/app/dictionaries/tr.json";
+import {notFound} from "next/navigation";
 
 export async function generateStaticParams() {
-  return companies.map((company) => ({ slug: company.slug }));
+  return trDict.data.companies.map((company) => ({ slug: company.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const lang = await getCurrentLocale();
-  const company = companies.find((c) => c.slug === slug);
+  const dict = await getDictionary();
+  const company = dict.data.companies.find((c: any) => c.slug === slug);
   if (!company) return { title: "Not Found" };
-  const locale = (lang === "en" ? "en" : "tr") as Locale;
   return {
     title: company.name,
-    description: company.description[locale],
+    description: company.description,
   };
 }
 
 export default async function CompanyDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const lang = await getCurrentLocale();
-  
-  const company = companies.find((c) => c.slug === slug);
-  if (!company) notFound();
-
   const dict = await getDictionary();
   const locale = lang;
+  
+  const company = dict.data.companies.find((c: any) => c.slug === slug);
+  if (!company) notFound();
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `` },
@@ -43,7 +41,7 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
     { label: company.name, href: `/grup-sirketleri/${slug}` },
   ];
 
-  const companyProjects = projects.filter((p) => p.company === slug).slice(0, 3);
+  const companyProjects = dict.data.projects.filter((p: any) => p.company === company.name).slice(0, 3);
 
   return (
     <>
@@ -69,13 +67,13 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
                     variant="outline"
                     className="mb-3"
                   >
-                    {company.sector[locale]}
+                    {company.sector}
                   </Badge>
                   <Heading level="h1" display>
                     {company.name}
                   </Heading>
                   <p className="text-text-secondary text-lg mt-4 max-w-2xl">
-                    {company.description[locale]}
+                    {company.description}
                   </p>
                 </div>
               </div>
@@ -96,9 +94,9 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
       {/* Company Stats */}
       {company.stats && company.stats.length > 0 && (
         <StatsBar
-          stats={company.stats.map((stat) => ({
+          stats={company.stats.map((stat: any) => ({
             value: stat.value,
-            label: stat.label[locale],
+            label: stat.label,
             suffix: stat.suffix,
           }))}
           variant="default"
@@ -120,10 +118,10 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
               {companyProjects.map((project, index) => (
                 <ScrollReveal key={project.slug} delay={index * 100}>
                   <ProjectCard
-                    title={project.title[locale]}
-                    description={project.description[locale]}
+                    title={project.title}
+                    description={project.description}
                     company={project.company}
-                    category={project.category[locale]}
+                    category={project.category}
                     image={project.image}
                     slug={project.slug}
                     lang={locale}
