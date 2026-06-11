@@ -82,6 +82,80 @@ const footerData = {
     privacy: "Privacy Policy",
     terms: "Terms of Use",
   },
+  de: {
+    about: {
+      title: "DN Holding",
+      description:
+        "Eine internationale Holdinggesellschaft, die in den Bereichen Bau, Energie, Bergbau, Lebensmittel, Technologie und Immobilien tätig ist.",
+    },
+    quickLinks: {
+      title: "Schnelle Links",
+      links: [
+        { label: "Über Uns", href: "/hakkimizda" },
+        { label: "Tätigkeitsbereiche", href: "/faaliyet-alanlari" },
+        { label: "Projekte", href: "/projeler" },
+        { label: "Medien", href: "/medya" },
+        { label: "Kontakt", href: "/iletisim" },
+      ],
+    },
+    companies: {
+      title: "Konzerngesellschaften",
+      links: [
+        { label: "DN Bau", href: "/grup-sirketleri/dn-insaat" },
+        { label: "DN Energie", href: "/grup-sirketleri/dn-enerji" },
+        { label: "DN Bergbau", href: "/grup-sirketleri/dn-madencilik" },
+        { label: "DN Lebensmittel", href: "/grup-sirketleri/dn-gida" },
+        { label: "DN Technologie", href: "/grup-sirketleri/dn-teknoloji" },
+        { label: "DN Immobilien", href: "/grup-sirketleri/dn-gayrimenkul" },
+      ],
+    },
+    contact: {
+      title: "Kontakt",
+      address: "Levent, Istanbul, Türkei",
+      phone: "+90 (212) 000 00 00",
+      email: "info@dnholding.com",
+    },
+    copyright: `© ${new Date().getFullYear()} DN Holding. Alle Rechte vorbehalten.`,
+    privacy: "Datenschutzrichtlinie",
+    terms: "Nutzungsbedingungen",
+  },
+  fr: {
+    about: {
+      title: "DN Holding",
+      description:
+        "Une holding internationale opérant dans les secteurs de la construction, de l'énergie, de l'exploitation minière, de l'alimentation, de la technologie et de l'immobilier.",
+    },
+    quickLinks: {
+      title: "Liens Rapides",
+      links: [
+        { label: "À Propos", href: "/hakkimizda" },
+        { label: "Domaines d'Activité", href: "/faaliyet-alanlari" },
+        { label: "Projets", href: "/projeler" },
+        { label: "Médias", href: "/medya" },
+        { label: "Contact", href: "/iletisim" },
+      ],
+    },
+    companies: {
+      title: "Entreprises du Groupe",
+      links: [
+        { label: "DN Construction", href: "/grup-sirketleri/dn-insaat" },
+        { label: "DN Énergie", href: "/grup-sirketleri/dn-enerji" },
+        { label: "DN Exploitation", href: "/grup-sirketleri/dn-madencilik" },
+        { label: "DN Alimentation", href: "/grup-sirketleri/dn-gida" },
+        { label: "DN Technologie", href: "/grup-sirketleri/dn-teknoloji" },
+        { label: "DN Immobilier", href: "/grup-sirketleri/dn-gayrimenkul" },
+      ],
+    },
+    contact: {
+      title: "Contact",
+      address: "Levent, Istanbul, Turquie",
+      phone: "+90 (212) 000 00 00",
+      email: "info@dnholding.com",
+    },
+    copyright: `© ${new Date().getFullYear()} DN Holding. Tous droits réservés.`,
+    privacy: "Politique de Confidentialité",
+    terms: "Conditions d'Utilisation",
+  },
 };
 
 export function Footer({ lang }: FooterProps) {
