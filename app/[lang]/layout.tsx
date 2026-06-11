@@ -1,10 +1,12 @@
-import type { Metadata, Viewport } from "next";
-import { Outfit, Playfair_Display } from "next/font/google";
+import type {Metadata, Viewport} from "next";
+import {Outfit, Playfair_Display} from "next/font/google";
 import "../globals.css";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
-import { hasLocale, type Locale } from "./dictionaries";
-import { notFound } from "next/navigation";
+import {Header} from "@/components/layout/Header";
+import {Footer} from "@/components/layout/Footer";
+import {CookieWidget} from "@/components/layout/CookieWidget";
+import {PreferencesWidget} from "@/components/layout/PreferencesWidget";
+import {hasLocale, type Locale} from "./dictionaries";
+import {notFound} from "next/navigation";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -117,6 +119,8 @@ export default async function RootLayout({
         <Header lang={lang as Locale} />
         <main className="flex-1">{children}</main>
         <Footer lang={lang as Locale} />
+        <CookieWidget />
+        <PreferencesWidget />
       </body>
     </html>
   );
