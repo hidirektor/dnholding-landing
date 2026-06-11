@@ -1,73 +1,42 @@
-import {cn} from '@/lib/utils';
+import React from "react";
+import {cn} from "@/lib/utils";
 
-/* ─── Types ─── */
-export type HeadingLevel = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
-
-export interface HeadingProps {
-  children: React.ReactNode;
-  /** Semantic heading level. Default: 'h2' */
-  level?: HeadingLevel;
-  /** Use Playfair Display font for a premium editorial feel */
+interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
+  level?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   display?: boolean;
-  /** Show a gold underline decoration below the heading */
   accent?: boolean;
-  /** Render as a different element while keeping semantic level for styling */
-  as?: HeadingLevel;
-  className?: string;
-  id?: string;
 }
 
-/* ─── Responsive Size Map ─── */
-const levelStyles: Record<HeadingLevel, string> = {
-  h1: 'text-4xl sm:text-5xl md:text-6xl lg:text-7xl',
-  h2: 'text-3xl sm:text-4xl md:text-5xl',
-  h3: 'text-2xl sm:text-3xl md:text-4xl',
-  h4: 'text-xl sm:text-2xl',
-  h5: 'text-lg sm:text-xl',
-  h6: 'text-base sm:text-lg',
-};
+export const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>(
+  ({ className, level = "h2", display = false, accent = false, children, ...props }, ref) => {
+    const Component = level;
+    
+    const baseStyles = "text-text font-bold leading-tight dark:text-white";
+    
+    const sizes = {
+      h1: "text-4xl sm:text-5xl lg:text-6xl",
+      h2: "text-3xl sm:text-4xl lg:text-5xl",
+      h3: "text-2xl sm:text-3xl lg:text-4xl",
+      h4: "text-xl sm:text-2xl lg:text-3xl",
+      h5: "text-lg sm:text-xl lg:text-2xl",
+      h6: "text-base sm:text-lg lg:text-xl",
+    };
 
-/* ─── Component ─── */
-export function Heading({
-  children,
-  level = 'h2',
-  display = false,
-  accent = false,
-  as,
-  className,
-  id,
-}: HeadingProps) {
-  const Tag = as ?? level;
-
-  return (
-    <Tag
-      id={id}
-      className={cn(
-        // Base typography
-        'font-bold tracking-tight text-balance text-text dark:text-text-inverse',
-        // Responsive sizing
-        levelStyles[level],
-        // Display variant — Playfair Display
-        display && 'font-display leading-[1.1] tracking-[-0.02em]',
-        // Sans variant
-        !display && 'font-sans leading-tight',
-        // Accent: reserve space for the underline decoration
-        accent && 'relative pb-5',
-        className,
-      )}
-    >
-      {children}
-      {accent && (
-        <span
-          className={cn(
-            'absolute bottom-0 left-0 h-[3px] w-12 rounded-full',
-            'bg-gradient-to-r from-accent to-accent-light',
-          )}
-          aria-hidden="true"
-        />
-      )}
-    </Tag>
-  );
-}
-
-export default Heading;
+    return (
+      <Component
+        ref={ref}
+        className={cn(
+          baseStyles,
+          sizes[level],
+          display && "font-display tracking-tight text-balance",
+          accent && "relative pb-4 after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-accent after:rounded-full",
+          className
+        )}
+        {...props}
+      >
+        {children}
+      </Component>
+    );
+  }
+);
+Heading.displayName = "Heading";
