@@ -83,7 +83,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
               </p>
               <div className="border-t border-border pt-6">
                 <p className="text-text-secondary leading-relaxed whitespace-pre-line">
-                  {article.content || article.excerpt}
+                  {(article as any).content || article.excerpt}
                 </p>
               </div>
             </article>
