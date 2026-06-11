@@ -10,6 +10,7 @@ import {Heading} from "@/components/ui/Heading";
 import {Button} from "@/components/ui/Button";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {SectionDivider} from "@/components/content/SectionDivider";
+import {HorizontalAccordion} from "@/components/ui/HorizontalAccordion";
 
 import {companies} from "@/data/companies";
 import {projects} from "@/data/projects";
@@ -165,25 +166,18 @@ export default async function HomePage() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {[
-              { icon: "🏗️", label: dict.home.areas.items[0] },
-              { icon: "⚡", label: dict.home.areas.items[1] },
-              { icon: "⛏️", label: dict.home.areas.items[2] },
-              { icon: "🍃", label: dict.home.areas.items[3] },
-              { icon: "💻", label: dict.home.areas.items[4] },
-              { icon: "🏢", label: dict.home.areas.items[5] },
-            ].map((area, index) => (
-              <ScrollReveal key={area.label} delay={index * 80}>
-                <div className="group text-center p-6 rounded-[var(--radius-lg)] bg-white/5 hover:bg-white/10 transition-all duration-[var(--duration-medium)] cursor-pointer border border-white/5 hover:border-accent/20">
-                  <div className="text-3xl mb-3">{area.icon}</div>
-                  <p className="text-sm font-medium text-white/80 group-hover:text-accent transition-colors">
-                    {area.label}
-                  </p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
+          <ScrollReveal delay={200}>
+            <HorizontalAccordion 
+              items={[
+                { icon: "🏗️", label: dict.home.areas.items[0] },
+                { icon: "⚡", label: dict.home.areas.items[1] },
+                { icon: "⛏️", label: dict.home.areas.items[2] },
+                { icon: "🍃", label: dict.home.areas.items[3] },
+                { icon: "💻", label: dict.home.areas.items[4] },
+                { icon: "🏢", label: dict.home.areas.items[5] },
+              ]}
+            />
+          </ScrollReveal>
 
           <ScrollReveal>
             <div className="text-center mt-12">
