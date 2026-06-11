@@ -1,0 +1,193 @@
+import {getDictionary, hasLocale, type Locale} from "../dictionaries";
+import {notFound} from "next/navigation";
+import {HeroSection} from "@/components/content/HeroSection";
+import {Timeline} from "@/components/content/Timeline";
+import {StatsBar} from "@/components/content/StatsBar";
+import {Section} from "@/components/layout/Section";
+import {Container} from "@/components/layout/Container";
+import {Heading} from "@/components/ui/Heading";
+import {ScrollReveal} from "@/components/ui/ScrollReveal";
+import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
+import {globalStats} from "@/data/stats";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const isTR = lang === "tr";
+  return {
+    title: isTR ? "Hakkımızda" : "About Us",
+    description: isTR
+      ? "DN Holding'in hikayesi, vizyonu, misyonu ve değerleri."
+      : "The story, vision, mission, and values of DN Holding.",
+  };
+}
+
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  if (!hasLocale(lang)) notFound();
+
+  const dict = await getDictionary(lang as Locale);
+  const locale = lang as Locale;
+
+  const breadcrumbs = [
+    { label: dict.nav.home, href: `/${lang}` },
+    { label: dict.nav.about, href: `/${lang}/hakkimizda` },
+  ];
+
+  const timelineItems = dict.about.timeline.items.map(
+    (item: { year: string; title: string; description: string }) => ({
+      year: item.year,
+      title: item.title,
+      description: item.description,
+    })
+  );
+
+  return (
+    <>
+      {/* Page Hero */}
+      <HeroSection
+        title={dict.about.hero.title}
+        subtitle={dict.about.hero.subtitle}
+        variant="short"
+      />
+
+      {/* Breadcrumb */}
+      <Section variant="default" padding="none">
+        <Container>
+          <div className="py-6">
+            <BreadcrumbNav items={breadcrumbs} lang={locale} />
+          </div>
+        </Container>
+      </Section>
+
+      {/* Vision & Mission */}
+      <Section variant="default">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <ScrollReveal direction="left">
+              <div className="space-y-6">
+                <div className="w-12 h-12 rounded-[var(--radius-md)] bg-accent/10 flex items-center justify-center">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    className="text-accent"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4M12 8h.01" />
+                  </svg>
+                </div>
+                <Heading level="h3" display>
+                  {dict.about.vision.title}
+                </Heading>
+                <p className="text-text-secondary text-lg leading-relaxed">
+                  {dict.about.vision.description}
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal direction="right" delay={200}>
+              <div className="space-y-6">
+                <div className="w-12 h-12 rounded-[var(--radius-md)] bg-accent/10 flex items-center justify-center">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    className="text-accent"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                </div>
+                <Heading level="h3" display>
+                  {dict.about.mission.title}
+                </Heading>
+                <p className="text-text-secondary text-lg leading-relaxed">
+                  {dict.about.mission.description}
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Company Story */}
+      <Section variant="surface" id="story">
+        <Container>
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-4">
+                {dict.about.story.tagline}
+              </p>
+              <Heading level="h2" display>
+                {dict.about.story.title}
+              </Heading>
+              <p className="text-text-secondary text-lg mt-4 max-w-2xl mx-auto">
+                {dict.about.story.subtitle}
+              </p>
+            </div>
+          </ScrollReveal>
+          <Timeline items={timelineItems} />
+        </Container>
+      </Section>
+
+      {/* Values */}
+      <Section variant="default">
+        <Container>
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <Heading level="h2" display>
+                {dict.about.values.title}
+              </Heading>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {dict.about.values.items.map(
+              (
+                value: { title: string; description: string; icon: string },
+                index: number
+              ) => (
+                <ScrollReveal key={value.title} delay={index * 100}>
+                  <div className="group p-8 rounded-[var(--radius-xl)] border border-border hover:border-accent/30 transition-all duration-[var(--duration-medium)] hover:shadow-[var(--shadow-large)]">
+                    <div className="text-3xl mb-4">{value.icon}</div>
+                    <h3 className="text-xl font-semibold mb-3 group-hover:text-accent transition-colors">
+                      {value.title}
+                    </h3>
+                    <p className="text-text-secondary leading-relaxed">
+                      {value.description}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              )
+            )}
+          </div>
+        </Container>
+      </Section>
+
+      {/* Stats */}
+      <StatsBar
+        stats={globalStats.map((stat) => ({
+          value: stat.value,
+          label: stat.label[locale],
+          suffix: stat.suffix,
+          prefix: stat.prefix,
+        }))}
+        variant="dark"
+      />
+    </>
+  );
+}
