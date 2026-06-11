@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type {NextConfig} from "next";
 
 const nextConfig: NextConfig = {
   /* Image optimization */
@@ -8,16 +8,7 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
 
-  /* Redirects */
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/tr",
-        permanent: false,
-      },
-    ];
-  },
+
 
   /* Security headers */
   async headers() {
