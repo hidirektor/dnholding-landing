@@ -4,11 +4,13 @@ import {cookies} from 'next/headers';
 const dictionaries = {
   tr: () => import('./dictionaries/tr.json').then((m) => m.default),
   en: () => import('./dictionaries/en.json').then((m) => m.default),
+  de: () => import('./dictionaries/de.json').then((m) => m.default),
+  fr: () => import('./dictionaries/fr.json').then((m) => m.default),
 };
 
 export type Locale = keyof typeof dictionaries;
 
-export const locales: Locale[] = ['tr', 'en'];
+export const locales: Locale[] = ['tr', 'en', 'de', 'fr'];
 
 export const hasLocale = (locale: string): locale is Locale =>
   locale in dictionaries;

@@ -1,0 +1,340 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "companies": "Entreprises du Groupe",
+    "areas": "Domaines d'Activité",
+    "products": "Produits & Services",
+    "projects": "Projets",
+    "media": "Médias",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Nous Construisons l'Avenir",
+      "subtitle": "En tant que DN Holding, nous façonnons le monde de demain avec notre croissance durable et notre vision innovante.",
+      "cta": "À Propos de Nous",
+      "secondaryCta": "Entreprises du Groupe"
+    },
+    "about": {
+      "tagline": "Notre Vision",
+      "title": "Un Passé Enraciné, un Avenir Solide",
+      "description": "Avec plus d'un demi-siècle d'expérience, nous avançons avec la vision d'être des pionniers dans chaque secteur où nous opérons.",
+      "description2": "Avec notre niveau de service mondial et notre approche innovante, nous continuons à créer de la valeur pour nos parties prenantes.",
+      "imageCaption": "Siège de DN Holding"
+    },
+    "companies": {
+      "tagline": "Nos Entreprises du Groupe",
+      "title": "Nous Tirons Notre Force de la Diversité",
+      "subtitle": "Nous proposons des solutions intégrées avec nos entreprises expertes dans différents secteurs."
+    },
+    "areas": {
+      "tagline": "Secteurs",
+      "title": "Nos Domaines d'Activité",
+      "items": [
+        "Construction & Infrastructure",
+        "Énergie",
+        "Exploitation Minière",
+        "Alimentation & Agriculture",
+        "Technologie",
+        "Immobilier"
+      ]
+    },
+    "projects": {
+      "tagline": "Références",
+      "title": "Projets Phares",
+      "subtitle": "Nos projets visionnaires achevés et en cours."
+    },
+    "news": {
+      "tagline": "Actualités",
+      "title": "Nos Nouvelles"
+    },
+    "cta": {
+      "title": "Construisons l'Avenir Ensemble",
+      "subtitle": "Contactez-nous pour vos projets et collaborations.",
+      "button": "Contactez-Nous",
+      "secondaryButton": "Consultez Nos Projets"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "À Propos",
+      "subtitle": "Nous grandissons avec nos valeurs."
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "description": "Être la holding leader qui oriente l'avenir avec des investissements durables à l'échelle mondiale."
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Créer de la valeur en produisant des solutions innovantes, fiables et de haute qualité pour toutes nos parties prenantes."
+    },
+    "story": {
+      "tagline": "Notre Histoire",
+      "title": "D'Hier à Aujourd'hui",
+      "subtitle": "Les jalons de notre parcours plein de succès."
+    },
+    "timeline": {
+      "items": [
+        {
+          "year": "1998",
+          "title": "Fondation",
+          "description": "Les bases de DN Holding ont été posées."
+        },
+        {
+          "year": "2005",
+          "title": "Mondialisation",
+          "description": "Les premiers investissements internationaux ont commencé."
+        }
+      ]
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "items": [
+        {
+          "icon": "🤝",
+          "title": "Fiabilité",
+          "description": "Nous agissons selon le principe de transparence et d'honnêteté dans tous nos processus d'affaires."
+        },
+        {
+          "icon": "💡",
+          "title": "Innovation",
+          "description": "Nous soutenons les approches innovantes pour un développement continu."
+        },
+        {
+          "icon": "🌍",
+          "title": "Durabilité",
+          "description": "Nous adoptons des politiques durables respectueuses de l'environnement et de la société."
+        }
+      ]
+    }
+  },
+  "companies": {
+    "tagline": "Filiales",
+    "title": "Entreprises du Groupe",
+    "subtitle": "Nos entreprises innovantes, chacune experte dans son domaine."
+  },
+  "areas": {
+    "tagline": "Secteurs",
+    "title": "Domaines d'Activité",
+    "subtitle": "Nous créons de la valeur en offrant une large gamme de services."
+  },
+  "products": {
+    "tagline": "Nos Services",
+    "title": "Produits & Services",
+    "subtitle": "Produits et services que nous offrons avec qualité et assurance."
+  },
+  "projects": {
+    "tagline": "Références",
+    "title": "Projets",
+    "subtitle": "Des projets visionnaires que nous avons signés.",
+    "detail": {
+      "category": "Catégorie",
+      "year": "Année",
+      "location": "Lieu",
+      "company": "Entreprise",
+      "related": "Projets Connexes"
+    }
+  },
+  "media": {
+    "tagline": "Actualités",
+    "title": "Médias & Nouvelles",
+    "subtitle": "Les derniers développements concernant notre holding.",
+    "related": "Autres Nouvelles"
+  },
+  "contact": {
+    "tagline": "Contactez-Nous",
+    "title": "Contact",
+    "subtitle": "Nous sommes là pour vos questions et opinions.",
+    "form": {
+      "name": "Nom et Prénom",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "company": "Entreprise",
+      "subject": "Sujet",
+      "message": "Votre Message",
+      "submit": "Envoyer"
+    },
+    "info": {
+      "addressTitle": "Adresse",
+      "address": "Levent, Istanbul, Turquie",
+      "phoneTitle": "Téléphone",
+      "emailTitle": "E-mail",
+      "hoursTitle": "Heures de Travail",
+      "hours": "Lun - Ven: 09:00 - 18:00"
+    }
+  },
+  "common": {
+    "readMore": "Lire la Suite",
+    "discover": "Découvrir",
+    "viewAll": "Voir Tout",
+    "contactCta": "Voulez-vous nous contacter?",
+    "contactUs": "Contactez-Nous",
+    "projects": "Projets",
+    "share": "Partager"
+  },
+  "data": {
+    "companies": [
+      {
+        "slug": "dn-insaat",
+        "name": "DN Construction",
+        "description": "Notre entreprise phare qui a entrepris des mégaprojets à travers la Turquie et dans le monde avec un demi-siècle d'expérience.",
+        "sector": "Construction & Infrastructure",
+        "accentColor": "#2563eb",
+        "featured": true,
+        "stats": [
+          { "label": "Projets Achevés", "value": 250, "suffix": "+" },
+          { "label": "Employés", "value": 1500, "suffix": "+" }
+        ]
+      },
+      {
+        "slug": "dn-enerji",
+        "name": "DN Énergie",
+        "description": "Nous investissons dans les sources d'énergie renouvelable pour un avenir durable et répondons aux besoins énergétiques de la Turquie.",
+        "sector": "Énergie",
+        "accentColor": "#059669",
+        "featured": true,
+        "stats": [
+          { "label": "Capacité Installée (MW)", "value": 850 },
+          { "label": "Installations", "value": 12 }
+        ]
+      },
+      {
+        "slug": "dn-madencilik",
+        "name": "DN Exploitation Minière",
+        "description": "Nous intégrons nos ressources naturelles à l'économie avec des technologies minières modernes et respectueuses de l'environnement.",
+        "sector": "Exploitation Minière",
+        "accentColor": "#d97706",
+        "featured": true,
+        "stats": [
+          { "label": "Mines Actives", "value": 8 },
+          { "label": "Pays d'Exportation", "value": 35, "suffix": "+" }
+        ]
+      },
+      {
+        "slug": "dn-gida",
+        "name": "DN Alimentation",
+        "description": "Nous contribuons à la santé publique avec des produits alimentaires fiables, sains et innovants, de la ferme à la table.",
+        "sector": "Alimentation & Agriculture",
+        "accentColor": "#dc2626",
+        "featured": true,
+        "stats": [
+          { "label": "Types de Produits", "value": 120, "suffix": "+" },
+          { "label": "Installations de Production", "value": 5 }
+        ]
+      },
+      {
+        "slug": "dn-teknoloji",
+        "name": "DN Technologie",
+        "description": "Pionnier de la transformation numérique de nos entreprises du groupe et développant des solutions logicielles pour les marchés mondiaux.",
+        "sector": "Technologie",
+        "accentColor": "#7c3aed",
+        "featured": true,
+        "stats": [
+          { "label": "Projets R&D", "value": 45, "suffix": "+" },
+          { "label": "Ingénieurs", "value": 300, "suffix": "+" }
+        ]
+      },
+      {
+        "slug": "dn-gayrimenkul",
+        "name": "DN Immobilier",
+        "description": "Nous développons des projets immobiliers résidentiels et commerciaux haut de gamme qui modifient l'horizon des villes et ajoutent de la valeur à la vie.",
+        "sector": "Immobilier",
+        "accentColor": "#0891b2",
+        "featured": true,
+        "stats": [
+          { "label": "Surface Développée (m²)", "value": 2000000, "suffix": "+" },
+          { "label": "Projets Récompensés", "value": 15 }
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "slug": "dn-tower-istanbul",
+        "title": "DN Tower Istanbul",
+        "description": "Projet de tour de bureaux intelligente de 45 étages, certifiée LEED Gold, située dans le nouveau centre financier d'Istanbul.",
+        "company": "DN Immobilier",
+        "category": "Commercial",
+        "year": "2024",
+        "location": "Istanbul, Turquie"
+      },
+      {
+        "slug": "ege-ruzgar-santrali",
+        "title": "Centrale Éolienne de la mer Égée",
+        "description": "Centrale éolienne de 120 MW établie dans la région d'Izmir, répondant aux besoins en électricité de 150 000 foyers par an.",
+        "company": "DN Énergie",
+        "category": "Énergie Renouvelable",
+        "year": "2023",
+        "location": "Izmir, Turquie"
+      },
+      {
+        "slug": "avrasya-lojistik-merkezi",
+        "title": "Centre Logistique Eurasie",
+        "description": "Une base logistique géante de 250 000 mètres carrés reliant les continents, équipée de systèmes d'automatisation de pointe.",
+        "company": "DN Construction",
+        "category": "Infrastructure",
+        "year": "2022",
+        "location": "Kocaeli, Turquie"
+      },
+      {
+        "slug": "organik-tarim-vadisi",
+        "title": "Vallée de l'Agriculture Biologique",
+        "description": "La plus grande installation d'agriculture biologique intégrée de Turquie, soutenue par des pratiques agricoles intelligentes et une gestion durable de l'eau.",
+        "company": "DN Alimentation",
+        "category": "Installation",
+        "year": "2023",
+        "location": "Manisa, Turquie"
+      },
+      {
+        "slug": "smart-city-platform",
+        "title": "Plateforme Smart City",
+        "description": "Une plateforme basée sur l'IA développée pour les municipalités métropolitaines qui optimise la gestion de la circulation, de l'énergie et des déchets à partir d'un centre unique.",
+        "company": "DN Technologie",
+        "category": "Logiciel",
+        "year": "2024",
+        "location": "Mondial"
+      },
+      {
+        "slug": "anadolu-mermer-kompleksi",
+        "title": "Complexe de Traitement du Marbre d'Anatolie",
+        "description": "L'installation de traitement du marbre la plus moderne d'Europe, fonctionnant selon le principe du zéro déchet et équipée de machines CNC de pointe.",
+        "company": "DN Exploitation Minière",
+        "category": "Industriel",
+        "year": "2021",
+        "location": "Afyon, Turquie"
+      }
+    ],
+    "news": [
+      {
+        "slug": "2024-sustainability-report",
+        "title": "DN Holding Publie le Rapport de Durabilité 2024",
+        "excerpt": "Nous avons réduit nos émissions de carbone de 15 % l'année dernière.",
+        "date": "2024-02-15",
+        "category": "Durabilité",
+        "featured": true
+      },
+      {
+        "slug": "new-solar-farm",
+        "title": "Nouveau Parc Solaire Prévu à Konya",
+        "excerpt": "DN Énergie prévoit de construire le plus grand parc solaire d'Anatolie centrale.",
+        "date": "2024-01-20",
+        "category": "Investissements",
+        "featured": true
+      },
+      {
+        "slug": "smart-city-award",
+        "title": "DN Technologie Remporte le Prix Smart City",
+        "excerpt": "Notre plateforme Smart City a été récompensée au Sommet Mondial des Technologies.",
+        "date": "2023-11-10",
+        "category": "Récompenses",
+        "featured": true
+      }
+    ],
+    "stats": [
+      { "label": "Chiffre d'affaires (Mrd USD)", "value": 2.4, "prefix": "$" },
+      { "label": "Employés", "value": 15, "suffix": "k+" },
+      { "label": "Pays", "value": 18, "suffix": "+" },
+      { "label": "Expérience (Années)", "value": 25, "suffix": "+" }
+    ]
+  }
+}

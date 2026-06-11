@@ -7,7 +7,6 @@ import {Container} from "@/components/layout/Container";
 import {Heading} from "@/components/ui/Heading";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
-import {globalStats} from "@/data/stats";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const lang = await getCurrentLocale();
@@ -170,9 +169,9 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
 
       {/* Stats */}
       <StatsBar
-        stats={globalStats.map((stat) => ({
+        stats={dict.data.stats.map((stat: any) => ({
           value: stat.value,
-          label: stat.label[locale],
+          label: stat.label,
           suffix: stat.suffix,
           prefix: stat.prefix,
         }))}

@@ -172,5 +172,169 @@
     "contactUs": "Bize Ulaşın",
     "projects": "Projeler",
     "share": "Paylaş"
+  },
+  "data": {
+    "companies": [
+      {
+        "slug": "dn-insaat",
+        "name": "DN İnşaat",
+        "description": "Yarım asırlık tecrübesiyle Türkiye'nin ve dünyanın dört bir yanında mega projelere imza atan amiral gemisi şirketimiz.",
+        "sector": "İnşaat & Altyapı",
+        "accentColor": "#2563eb",
+        "featured": true,
+        "stats": [
+          { "label": "Tamamlanan Proje", "value": 250, "suffix": "+" },
+          { "label": "Çalışan", "value": 1500, "suffix": "+" }
+        ]
+      },
+      {
+        "slug": "dn-enerji",
+        "name": "DN Enerji",
+        "description": "Sürdürülebilir bir gelecek için yenilenebilir enerji kaynaklarına yatırım yapıyor, Türkiye'nin enerji ihtiyacını karşılıyoruz.",
+        "sector": "Enerji",
+        "accentColor": "#059669",
+        "featured": true,
+        "stats": [
+          { "label": "Kurulu Güç (MW)", "value": 850 },
+          { "label": "Tesis", "value": 12 }
+        ]
+      },
+      {
+        "slug": "dn-madencilik",
+        "name": "DN Madencilik",
+        "description": "Çevreye duyarlı modern madencilik teknolojileriyle doğal kaynaklarımızı ekonomiye kazandırıyoruz.",
+        "sector": "Madencilik",
+        "accentColor": "#d97706",
+        "featured": true,
+        "stats": [
+          { "label": "Aktif Ocak", "value": 8 },
+          { "label": "İhracat Ülkesi", "value": 35, "suffix": "+" }
+        ]
+      },
+      {
+        "slug": "dn-gida",
+        "name": "DN Gıda",
+        "description": "Tarladan sofraya güvenilir, sağlıklı ve yenilikçi gıda ürünleriyle toplum sağlığına katkıda bulunuyoruz.",
+        "sector": "Gıda & Tarım",
+        "accentColor": "#dc2626",
+        "featured": true,
+        "stats": [
+          { "label": "Ürün Çeşidi", "value": 120, "suffix": "+" },
+          { "label": "Üretim Tesisi", "value": 5 }
+        ]
+      },
+      {
+        "slug": "dn-teknoloji",
+        "name": "DN Teknoloji",
+        "description": "Grup şirketlerimizin dijital dönüşümüne öncülük ediyor ve küresel pazarlar için yazılım çözümleri geliştiriyoruz.",
+        "sector": "Teknoloji",
+        "accentColor": "#7c3aed",
+        "featured": true,
+        "stats": [
+          { "label": "Ar-Ge Projesi", "value": 45, "suffix": "+" },
+          { "label": "Mühendis", "value": 300, "suffix": "+" }
+        ]
+      },
+      {
+        "slug": "dn-gayrimenkul",
+        "name": "DN Gayrimenkul",
+        "description": "Şehirlerin siluetini değiştiren, yaşama değer katan premium konut ve ticari gayrimenkul projeleri geliştiriyoruz.",
+        "sector": "Gayrimenkul",
+        "accentColor": "#0891b2",
+        "featured": true,
+        "stats": [
+          { "label": "Geliştirilen Alan (m²)", "value": 2000000, "suffix": "+" },
+          { "label": "Ödüllü Proje", "value": 15 }
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "slug": "dn-tower-istanbul",
+        "title": "DN Tower İstanbul",
+        "description": "İstanbul'un yeni finans merkezinde yer alan, LEED Gold sertifikalı 45 katlı akıllı ofis kulesi projesi.",
+        "company": "DN Gayrimenkul",
+        "category": "Ticari",
+        "year": "2024",
+        "location": "İstanbul, Türkiye"
+      },
+      {
+        "slug": "ege-ruzgar-santrali",
+        "title": "Ege Rüzgar Enerjisi Santrali",
+        "description": "İzmir bölgesinde kurulan ve yıllık 150.000 hanenin elektrik ihtiyacını karşılayan 120MW kapasiteli rüzgar santrali.",
+        "company": "DN Enerji",
+        "category": "Yenilenebilir Enerji",
+        "year": "2023",
+        "location": "İzmir, Türkiye"
+      },
+      {
+        "slug": "avrasya-lojistik-merkezi",
+        "title": "Avrasya Lojistik Merkezi",
+        "description": "Kıtaları birbirine bağlayan, son teknoloji otomasyon sistemleriyle donatılmış 250.000 metrekarelik dev lojistik üssü.",
+        "company": "DN İnşaat",
+        "category": "Altyapı",
+        "year": "2022",
+        "location": "Kocaeli, Türkiye"
+      },
+      {
+        "slug": "organik-tarim-vadisi",
+        "title": "Organik Tarım Vadisi",
+        "description": "Akıllı tarım uygulamaları ve sürdürülebilir su yönetimi ile desteklenen Türkiye'nin en büyük entegre organik tarım tesisi.",
+        "company": "DN Gıda",
+        "category": "Tesis",
+        "year": "2023",
+        "location": "Manisa, Türkiye"
+      },
+      {
+        "slug": "smart-city-platform",
+        "title": "Akıllı Şehir Platformu",
+        "description": "Büyükşehir belediyeleri için geliştirilen, trafik, enerji ve atık yönetimini tek merkezden optimize eden yapay zeka destekli platform.",
+        "company": "DN Teknoloji",
+        "category": "Yazılım",
+        "year": "2024",
+        "location": "Global"
+      },
+      {
+        "slug": "anadolu-mermer-kompleksi",
+        "title": "Anadolu Mermer İşleme Kompleksi",
+        "description": "Sıfır atık prensibiyle çalışan, son teknoloji CNC makineleriyle donatılmış Avrupa'nın en modern mermer işleme tesisi.",
+        "company": "DN Madencilik",
+        "category": "Endüstriyel",
+        "year": "2021",
+        "location": "Afyon, Türkiye"
+      }
+    ],
+    "news": [
+      {
+        "slug": "2024-surdurulebilirlik-raporu",
+        "title": "DN Holding 2024 Sürdürülebilirlik Raporu Yayınlandı",
+        "excerpt": "Geçtiğimiz yıl karbon ayak izimizi %15 azaltmayı başardık.",
+        "date": "2024-02-15",
+        "category": "Sürdürülebilirlik",
+        "featured": true
+      },
+      {
+        "slug": "yeni-gunes-enerjisi-santrali",
+        "title": "İç Anadolu'nun En Büyük Güneş Enerjisi Santrali Kuruluyor",
+        "excerpt": "DN Enerji, Konya'da kurulacak olan yeni güneş enerjisi santrali için imzaları attı.",
+        "date": "2024-01-20",
+        "category": "Yatırım",
+        "featured": true
+      },
+      {
+        "slug": "akilli-sehirler-odulu",
+        "title": "DN Teknoloji'ye Uluslararası Akıllı Şehirler Ödülü",
+        "excerpt": "Geliştirdiğimiz Akıllı Şehir Platformu, Londra'daki teknoloji zirvesinde ödüle layık görüldü.",
+        "date": "2023-11-10",
+        "category": "Ödül",
+        "featured": true
+      }
+    ],
+    "stats": [
+      { "label": "Ciro (Milyar $)", "value": 2.4, "prefix": "$" },
+      { "label": "Çalışan", "value": 15, "suffix": "k+" },
+      { "label": "Ülke", "value": 18, "suffix": "+" },
+      { "label": "Yıllık Tecrübe", "value": 25, "suffix": "+" }
+    ]
   }
 }

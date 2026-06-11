@@ -12,11 +12,6 @@ import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {SectionDivider} from "@/components/content/SectionDivider";
 import {HorizontalAccordion} from "@/components/ui/HorizontalAccordion";
 
-import {companies} from "@/data/companies";
-import {projects} from "@/data/projects";
-import {news} from "@/data/news";
-import {globalStats} from "@/data/stats";
-
 export async function generateMetadata() {
   const lang = await getCurrentLocale();
   const dict = await getDictionary();
@@ -30,9 +25,9 @@ export default async function HomePage() {
   const lang = await getCurrentLocale();
   const dict = await getDictionary();
   const locale = lang;
-  const featuredCompanies = companies.filter((c) => c.featured).slice(0, 6);
-  const featuredProjects = projects.slice(0, 3);
-  const latestNews = news.filter((n) => n.featured).slice(0, 3);
+  const featuredCompanies = dict.data.companies.filter((c: any) => c.featured).slice(0, 6);
+  const featuredProjects = dict.data.projects.slice(0, 3);
+  const latestNews = dict.data.news.filter((n: any) => n.featured).slice(0, 3);
 
   return (
     <>
@@ -48,9 +43,9 @@ export default async function HomePage() {
 
       {/* ─── Stats Bar ─── */}
       <StatsBar
-        stats={globalStats.map((stat) => ({
+        stats={dict.data.stats.map((stat: any) => ({
           value: stat.value,
-          label: stat.label[locale],
+          label: stat.label,
           suffix: stat.suffix,
           prefix: stat.prefix,
         }))}
@@ -129,8 +124,8 @@ export default async function HomePage() {
                 <CompanyCard
                   name={company.name}
                   slug={company.slug}
-                  description={company.description[locale]}
-                  sector={company.sector[locale]}
+                  description={company.description}
+                  sector={company.sector}
                   accentColor={company.accentColor}
                   lang={locale}
                 />
@@ -214,10 +209,10 @@ export default async function HomePage() {
             {featuredProjects.map((project, index) => (
               <ScrollReveal key={project.slug} delay={index * 100}>
                 <ProjectCard
-                  title={project.title[locale]}
-                  description={project.description[locale]}
+                  title={project.title}
+                  description={project.description}
                   company={project.company}
-                  category={project.category[locale]}
+                  category={project.category}
                   image={project.image}
                   slug={project.slug}
                   lang={locale}
@@ -260,8 +255,8 @@ export default async function HomePage() {
             {latestNews.map((article, index) => (
               <ScrollReveal key={article.slug} delay={index * 100}>
                 <NewsCard
-                  title={article.title[locale]}
-                  excerpt={article.excerpt[locale]}
+                  title={article.title}
+                  excerpt={article.excerpt}
                   date={article.date}
                   category={article.category}
                   image={article.image}

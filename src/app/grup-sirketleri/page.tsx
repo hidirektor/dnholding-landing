@@ -5,7 +5,6 @@ import {Heading} from "@/components/ui/Heading";
 import {CompanyCard} from "@/components/content/CompanyCard";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
-import {companies} from "@/data/companies";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const lang = await getCurrentLocale();
@@ -63,13 +62,13 @@ export default async function GroupCompaniesPage({ params }: { params: Promise<{
       <Section variant="default">
         <Container>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {companies.map((company, index) => (
+            {dict.data.companies.map((company: any, index: number) => (
               <ScrollReveal key={company.slug} delay={index * 100}>
                 <CompanyCard
                   name={company.name}
                   slug={company.slug}
-                  description={company.description[locale]}
-                  sector={company.sector[locale]}
+                  description={company.description}
+                  sector={company.sector}
                   accentColor={company.accentColor}
                   lang={locale}
                 />

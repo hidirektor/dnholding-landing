@@ -172,5 +172,169 @@
     "contactUs": "Contact Us",
     "projects": "Projects",
     "share": "Share"
+  },
+  "data": {
+    "companies": [
+      {
+        "slug": "dn-insaat",
+        "name": "DN Construction",
+        "description": "Our flagship company that has undertaken mega projects across Turkey and the world with half a century of experience.",
+        "sector": "Construction & Infra",
+        "accentColor": "#2563eb",
+        "featured": true,
+        "stats": [
+          { "label": "Completed Projects", "value": 250, "suffix": "+" },
+          { "label": "Employees", "value": 1500, "suffix": "+" }
+        ]
+      },
+      {
+        "slug": "dn-enerji",
+        "name": "DN Energy",
+        "description": "Investing in renewable energy sources for a sustainable future and meeting Turkey's energy needs.",
+        "sector": "Energy",
+        "accentColor": "#059669",
+        "featured": true,
+        "stats": [
+          { "label": "Installed Capacity (MW)", "value": 850 },
+          { "label": "Facilities", "value": 12 }
+        ]
+      },
+      {
+        "slug": "dn-madencilik",
+        "name": "DN Mining",
+        "description": "Bringing our natural resources to the economy with environmentally friendly modern mining technologies.",
+        "sector": "Mining",
+        "accentColor": "#d97706",
+        "featured": true,
+        "stats": [
+          { "label": "Active Mines", "value": 8 },
+          { "label": "Export Countries", "value": 35, "suffix": "+" }
+        ]
+      },
+      {
+        "slug": "dn-gida",
+        "name": "DN Food",
+        "description": "Contributing to public health with reliable, healthy, and innovative food products from farm to table.",
+        "sector": "Food & Agriculture",
+        "accentColor": "#dc2626",
+        "featured": true,
+        "stats": [
+          { "label": "Product Types", "value": 120, "suffix": "+" },
+          { "label": "Production Facilities", "value": 5 }
+        ]
+      },
+      {
+        "slug": "dn-teknoloji",
+        "name": "DN Technology",
+        "description": "Pioneering the digital transformation of our group companies and developing software solutions for global markets.",
+        "sector": "Technology",
+        "accentColor": "#7c3aed",
+        "featured": true,
+        "stats": [
+          { "label": "R&D Projects", "value": 45, "suffix": "+" },
+          { "label": "Engineers", "value": 300, "suffix": "+" }
+        ]
+      },
+      {
+        "slug": "dn-gayrimenkul",
+        "name": "DN Real Estate",
+        "description": "Developing premium residential and commercial real estate projects that change city skylines and add value to life.",
+        "sector": "Real Estate",
+        "accentColor": "#0891b2",
+        "featured": true,
+        "stats": [
+          { "label": "Developed Area (sqm)", "value": 2000000, "suffix": "+" },
+          { "label": "Awarded Projects", "value": 15 }
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "slug": "dn-tower-istanbul",
+        "title": "DN Tower Istanbul",
+        "description": "LEED Gold certified 45-story smart office tower project located in Istanbul's new financial center.",
+        "company": "DN Real Estate",
+        "category": "Commercial",
+        "year": "2024",
+        "location": "Istanbul, Turkey"
+      },
+      {
+        "slug": "ege-ruzgar-santrali",
+        "title": "Aegean Wind Power Plant",
+        "description": "120MW capacity wind power plant established in the Izmir region, meeting the electricity needs of 150,000 households annually.",
+        "company": "DN Energy",
+        "category": "Renewable Energy",
+        "year": "2023",
+        "location": "Izmir, Turkey"
+      },
+      {
+        "slug": "avrasya-lojistik-merkezi",
+        "title": "Eurasia Logistics Center",
+        "description": "A giant 250,000 square meter logistics base connecting continents, equipped with state-of-the-art automation systems.",
+        "company": "DN Construction",
+        "category": "Infrastructure",
+        "year": "2022",
+        "location": "Kocaeli, Turkey"
+      },
+      {
+        "slug": "organik-tarim-vadisi",
+        "title": "Organic Farming Valley",
+        "description": "Turkey's largest integrated organic farming facility supported by smart agricultural practices and sustainable water management.",
+        "company": "DN Food",
+        "category": "Facility",
+        "year": "2023",
+        "location": "Manisa, Turkey"
+      },
+      {
+        "slug": "smart-city-platform",
+        "title": "Smart City Platform",
+        "description": "An AI-supported platform developed for metropolitan municipalities that optimizes traffic, energy, and waste management from a single center.",
+        "company": "DN Technology",
+        "category": "Software",
+        "year": "2024",
+        "location": "Global"
+      },
+      {
+        "slug": "anadolu-mermer-kompleksi",
+        "title": "Anatolia Marble Processing Complex",
+        "description": "Europe's most modern marble processing facility, working with a zero-waste principle and equipped with state-of-the-art CNC machines.",
+        "company": "DN Mining",
+        "category": "Industrial",
+        "year": "2021",
+        "location": "Afyon, Turkey"
+      }
+    ],
+    "news": [
+      {
+        "slug": "2024-sustainability-report",
+        "title": "DN Holding Publishes 2024 Sustainability Report",
+        "excerpt": "We successfully reduced our carbon footprint by 15% last year.",
+        "date": "2024-02-15",
+        "category": "Sustainability",
+        "featured": true
+      },
+      {
+        "slug": "new-solar-farm",
+        "title": "Central Anatolia's Largest Solar Power Plant Being Built",
+        "excerpt": "DN Energy has signed the agreements for the new solar power plant to be established in Konya.",
+        "date": "2024-01-20",
+        "category": "Investment",
+        "featured": true
+      },
+      {
+        "slug": "smart-city-award",
+        "title": "International Smart Cities Award to DN Technology",
+        "excerpt": "Our Smart City Platform was deemed worthy of an award at the technology summit in London.",
+        "date": "2023-11-10",
+        "category": "Award",
+        "featured": true
+      }
+    ],
+    "stats": [
+      { "label": "Revenue (Billion $)", "value": 2.4, "prefix": "$" },
+      { "label": "Employees", "value": 15, "suffix": "k+" },
+      { "label": "Countries", "value": 18, "suffix": "+" },
+      { "label": "Years Experience", "value": 25, "suffix": "+" }
+    ]
   }
 }
