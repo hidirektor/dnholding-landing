@@ -1,43 +1,46 @@
-import Link from "next/link";
-import {cn} from "@/lib/utils";
+import Link from 'next/link';
+import {cn} from '@/lib/utils';
 
-type ButtonVariant = "primary" | "secondary" | "ghost";
-type ButtonSize = "sm" | "md" | "lg";
+/* ─── Types ─── */
+export type ButtonVariant = 'primary' | 'secondary' | 'ghost';
+export type ButtonSize = 'sm' | 'md' | 'lg';
 
 export interface ButtonProps {
   children: React.ReactNode;
+  /** Visual variant. primary = gold fill, secondary = outline, ghost = text-only */
   variant?: ButtonVariant;
+  /** Size preset */
   size?: ButtonSize;
-  icon?: "arrow" | string;
+  /** Show an arrow-right icon */
+  icon?: boolean;
+  /** Icon position relative to label */
+  iconPosition?: 'left' | 'right';
+  /** Render as a Next.js Link when provided */
   href?: string;
-  className?: string;
-  type?: "button" | "submit" | "reset";
+  /** Full width */
+  fullWidth?: boolean;
+  /** Loading state — shows spinner and disables interaction */
+  loading?: boolean;
+  /** External link — opens in new tab */
+  external?: boolean;
+  /** Standard button disabled */
   disabled?: boolean;
+  className?: string;
+  type?: 'button' | 'submit' | 'reset';
   onClick?: () => void;
-  "aria-label"?: string;
+  'aria-label'?: string;
 }
 
-const variantStyles: Record<ButtonVariant, string> = {
-  primary:
-    "bg-accent text-primary hover:bg-accent-light shadow-[var(--shadow-medium)] hover:shadow-[var(--shadow-glow)] dark:text-primary-dark",
-  secondary:
-    "bg-transparent text-text border border-border hover:border-accent hover:text-accent dark:text-text-inverse dark:border-white/20 dark:hover:border-accent",
-  ghost:
-    "bg-transparent text-text-secondary hover:text-accent hover:bg-accent/5 dark:text-text-light dark:hover:text-accent",
-};
-
-const sizeStyles: Record<ButtonSize, string> = {
-  sm: "px-4 py-2 text-sm gap-1.5",
-  md: "px-6 py-2.5 text-sm gap-2",
-  lg: "px-8 py-3.5 text-base gap-2.5",
-};
-
-function ArrowIcon({ className }: { className?: string }) {
+/* ─── Arrow Icon (inline SVG) ─── */
+function ArrowRightIcon({ className }: { className?: string }) {
   return (
     <svg
-      className={cn("w-4 h-4 transition-transform duration-[var(--duration-fast)] ease-[var(--ease-premium)] group-hover:translate-x-1", className)}
+      className={cn('shrink-0', className)}
+      width="16"
+      height="16"
       viewBox="0 0 16 16"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
       <path
@@ -51,37 +54,141 @@ function ArrowIcon({ className }: { className?: string }) {
   );
 }
 
+/* ─── Spinner Icon ─── */
+function SpinnerIcon() {
+  return (
+    <svg
+      className="animate-spin shrink-0 w-4 h-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+        stroke="currentColor"
+        strokeWidth="3"
+        strokeLinecap="round"
+        className="opacity-25"
+      />
+      <path
+        d="M4 12a8 8 0 018-8"
+        stroke="currentColor"
+        strokeWidth="3"
+        strokeLinecap="round"
+        className="opacity-75"
+      />
+    </svg>
+  );
+}
+
+/* ─── Style Maps ─── */
+const variantStyles: Record<ButtonVariant, string> = {
+  primary: [
+    'bg-accent text-primary font-semibold',
+    'shadow-[var(--shadow-medium)]',
+    'hover:bg-accent-light hover:shadow-[var(--shadow-glow)]',
+    'active:bg-accent-dark',
+    'dark:text-primary-dark',
+  ].join(' '),
+  secondary: [
+    'bg-transparent text-text border-2 border-accent font-semibold',
+    'hover:bg-accent hover:text-primary hover:shadow-[var(--shadow-glow)]',
+    'dark:text-text-inverse dark:border-accent dark:hover:text-primary-dark',
+  ].join(' '),
+  ghost: [
+    'bg-transparent text-text-secondary font-medium',
+    'hover:text-accent hover:bg-accent/5',
+    'dark:text-text-light dark:hover:text-accent',
+  ].join(' '),
+};
+
+const sizeStyles: Record<ButtonSize, string> = {
+  sm: 'px-4 py-2 text-sm gap-1.5 rounded-[var(--radius-sm)]',
+  md: 'px-6 py-3 text-sm gap-2 rounded-[var(--radius-md)]',
+  lg: 'px-8 py-4 text-base gap-2.5 rounded-[var(--radius-md)]',
+};
+
+const iconSizeStyles: Record<ButtonSize, string> = {
+  sm: 'w-3.5 h-3.5',
+  md: 'w-4 h-4',
+  lg: 'w-5 h-5',
+};
+
+/* ─── Component ─── */
 export function Button({
   children,
-  variant = "primary",
-  size = "md",
-  icon,
+  variant = 'primary',
+  size = 'md',
+  icon = false,
+  iconPosition = 'right',
   href,
-  className,
-  type = "button",
+  fullWidth = false,
+  loading = false,
+  external = false,
   disabled = false,
+  className,
+  type = 'button',
   onClick,
-  "aria-label": ariaLabel,
+  'aria-label': ariaLabel,
 }: ButtonProps) {
+  const isDisabled = disabled || loading;
+
   const classes = cn(
-    "group inline-flex items-center justify-center font-medium rounded-[var(--radius-md)]",
-    "transition-all duration-[var(--duration-medium)] ease-[var(--ease-premium)]",
-    "focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-2",
-    "active:scale-[0.97]",
-    "disabled:opacity-50 disabled:pointer-events-none",
+    // Base
+    'group inline-flex items-center justify-center',
+    'whitespace-nowrap leading-tight select-none',
+    'transition-all duration-[var(--duration-fast)] ease-[var(--ease-premium)]',
+    // Hover scale + active press
+    !isDisabled && 'hover:scale-[1.02] active:scale-[0.97]',
+    // Focus ring
+    'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent',
+    // Variant & size
     variantStyles[variant],
     sizeStyles[size],
-    className
+    // Modifiers
+    fullWidth && 'w-full',
+    isDisabled && 'opacity-50 cursor-not-allowed pointer-events-none',
+    className,
+  );
+
+  const arrowIcon = icon && (
+    <ArrowRightIcon
+      className={cn(
+        iconSizeStyles[size],
+        'transition-transform duration-[var(--duration-fast)] ease-[var(--ease-premium)]',
+        iconPosition === 'right' && 'group-hover:translate-x-1',
+        iconPosition === 'left' && 'group-hover:-translate-x-1',
+      )}
+    />
   );
 
   const content = (
     <>
-      {children}
-      {icon === "arrow" && <ArrowIcon />}
+      {loading && <SpinnerIcon />}
+      {icon && iconPosition === 'left' && arrowIcon}
+      <span>{children}</span>
+      {icon && iconPosition === 'right' && arrowIcon}
     </>
   );
 
-  if (href) {
+  // Link rendering
+  if (href && !isDisabled) {
+    if (external) {
+      return (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes}
+          aria-label={ariaLabel}
+        >
+          {content}
+        </a>
+      );
+    }
+
     return (
       <Link href={href} className={classes} aria-label={ariaLabel}>
         {content}
@@ -93,7 +200,7 @@ export function Button({
     <button
       type={type}
       className={classes}
-      disabled={disabled}
+      disabled={isDisabled}
       onClick={onClick}
       aria-label={ariaLabel}
     >
