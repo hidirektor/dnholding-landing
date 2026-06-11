@@ -29,7 +29,7 @@ export const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>(
           baseStyles,
           sizes[level],
           display && "font-display tracking-tight text-balance",
-          accent && "relative pb-4 after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-accent after:rounded-full",
+          accent && "flex items-center gap-3 before:block before:w-2 before:h-2 before:rounded-full before:bg-accent",
           className
         )}
         {...props}

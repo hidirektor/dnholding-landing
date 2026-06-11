@@ -14,7 +14,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const baseStyles = "inline-flex items-center justify-center gap-2 font-semibold transition-all duration-300 rounded-[var(--radius-md)]";
     
     const variants = {
-      primary: "bg-gradient-to-r from-accent to-accent-light text-white hover:shadow-[var(--shadow-glow)] hover:-translate-y-0.5",
+      primary: "bg-accent text-white hover:bg-accent-light hover:shadow-md hover:-translate-y-0.5",
       secondary: "border-2 border-primary text-primary hover:bg-primary hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-primary",
       ghost: "text-text hover:text-accent bg-transparent hover:bg-surface dark:text-white dark:hover:bg-white/10",
     };

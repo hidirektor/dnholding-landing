@@ -1,6 +1,6 @@
 import type {Metadata, Viewport} from "next";
-import {Outfit, Playfair_Display} from "next/font/google";
-import "../globals.css";
+import {Outfit} from "next/font/google";
+import "./globals.css";
 import {Header} from "@/components/layout/Header";
 import {Footer} from "@/components/layout/Footer";
 import {CookieWidget} from "@/components/layout/CookieWidget";
@@ -10,12 +10,6 @@ import {getCurrentLocale} from "./dictionaries";
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin", "latin-ext"],
-  display: "swap",
-});
-
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
   display: "swap",
 });
 
@@ -91,7 +85,7 @@ export default async function RootLayout({
   return (
     <html
       lang={lang}
-      className={`${outfit.variable} ${playfair.variable} antialiased`}
+      className={`${outfit.variable} antialiased`}
       suppressHydrationWarning
     >
       <body className="min-h-screen flex flex-col bg-surface text-text">
