@@ -43,7 +43,7 @@ export function CookieWidget({ dict }: CookieWidgetProps) {
       {/* Expanded Panel */}
       <div 
         className={cn(
-          "absolute bottom-0 left-0 bg-white dark:bg-primary-dark shadow-[var(--shadow-large)] border border-border dark:border-white/10 rounded-2xl p-6 w-[320px] transition-all duration-500 ease-[var(--ease-premium)] origin-bottom-left",
+          "absolute bottom-0 left-0 bg-white dark:bg-primary-dark shadow-[var(--shadow-large)] border border-border dark:border-white/10 rounded-2xl p-6 w-[360px] transition-all duration-500 ease-[var(--ease-premium)] origin-bottom-left",
           isExpanded ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-90 translate-y-8 pointer-events-none"
         )}
       >
