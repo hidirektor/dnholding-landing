@@ -6,42 +6,41 @@ import {Badge} from "@/components/ui/Badge";
 import {Button} from "@/components/ui/Button";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
-import {projects} from "@/data/projects";
+import trDict from "@/app/dictionaries/tr.json";
+import {notFound} from "next/navigation";
 
 export async function generateStaticParams() {
-  return projects.map((project) => ({ slug: project.slug }));
+  return trDict.data.projects.map((project) => ({ slug: project.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const lang = await getCurrentLocale();
-  const project = projects.find((p) => p.slug === slug);
+  const dict = await getDictionary();
+  const project = dict.data.projects.find((p: any) => p.slug === slug);
   if (!project) return { title: "Not Found" };
-  const locale = (lang === "en" ? "en" : "tr") as Locale;
   return {
-    title: project.title[locale],
-    description: project.description[locale],
+    title: project.title,
+    description: project.description,
   };
 }
 
 export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const lang = await getCurrentLocale();
-  
-  const project = projects.find((p) => p.slug === slug);
-  if (!project) notFound();
-
   const dict = await getDictionary();
   const locale = lang;
+  
+  const project = dict.data.projects.find((p: any) => p.slug === slug);
+  if (!project) notFound();
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `` },
     { label: dict.nav.projects, href: `/projeler` },
-    { label: project.title[locale], href: `/projeler/${slug}` },
+    { label: project.title, href: `/projeler/${slug}` },
   ];
 
-  const relatedProjects = projects
-    .filter((p) => p.slug !== slug && p.company === project.company)
+  const relatedProjects = dict.data.projects
+    .filter((p: any) => p.slug !== slug && p.company === project.company)
     .slice(0, 2);
 
   return (
@@ -52,14 +51,14 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           <Container>
             <ScrollReveal>
               <div className="flex flex-wrap gap-3 mb-4">
-                <Badge variant="accent">{project.category[locale]}</Badge>
+                <Badge variant="accent">{project.category}</Badge>
                 <Badge variant="outline">{project.year}</Badge>
                 {project.location && (
-                  <Badge variant="outline">{project.location[locale]}</Badge>
+                  <Badge variant="outline">{project.location}</Badge>
                 )}
               </div>
               <Heading level="h1" display className="text-white max-w-4xl">
-                {project.title[locale]}
+                {project.title}
               </Heading>
             </ScrollReveal>
           </Container>
@@ -80,7 +79,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           <ScrollReveal>
             <div className="prose prose-lg max-w-none">
               <p className="text-text-secondary text-lg leading-relaxed">
-                {project.description[locale]}
+                {project.description}
               </p>
             </div>
           </ScrollReveal>
@@ -90,7 +89,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div>
                   <p className="text-sm text-text-light mb-1">{dict.projects.detail.category}</p>
-                  <p className="font-semibold">{project.category[locale]}</p>
+                  <p className="font-semibold">{project.category}</p>
                 </div>
                 <div>
                   <p className="text-sm text-text-light mb-1">{dict.projects.detail.year}</p>
@@ -98,7 +97,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                 </div>
                 <div>
                   <p className="text-sm text-text-light mb-1">{dict.projects.detail.location}</p>
-                  <p className="font-semibold">{project.location?.[locale] || "—"}</p>
+                  <p className="font-semibold">{project.location || "—"}</p>
                 </div>
                 <div>
                   <p className="text-sm text-text-light mb-1">{dict.projects.detail.company}</p>
@@ -127,13 +126,13 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                     className="group block p-6 rounded-[var(--radius-xl)] border border-border hover:border-accent/20 transition-all hover:shadow-[var(--shadow-medium)]"
                   >
                     <Badge variant="outline" className="mb-3">
-                      {rp.category[locale]}
+                      {rp.category}
                     </Badge>
                     <h4 className="text-lg font-semibold group-hover:text-accent transition-colors">
-                      {rp.title[locale]}
+                      {rp.title}
                     </h4>
                     <p className="text-text-secondary text-sm mt-2 line-clamp-2">
-                      {rp.description[locale]}
+                      {rp.description}
                     </p>
                   </a>
                 </ScrollReveal>
