@@ -25,7 +25,7 @@ export default async function GroupCompaniesPage({ params }: { params: Promise<{
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `` },
-    { label: dict.nav.companies, href: `/grup-sirketleri` },
+    { label: dict.nav.companies, href: `/companies` },
   ];
 
   return (

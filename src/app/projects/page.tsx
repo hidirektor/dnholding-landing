@@ -25,7 +25,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ slug:
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `` },
-    { label: dict.nav.projects, href: `/projeler` },
+    { label: dict.nav.projects, href: `/projects` },
   ];
 
   return (

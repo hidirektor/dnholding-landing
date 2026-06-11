@@ -113,7 +113,7 @@ export default async function BusinessAreasPage({ params }: { params: Promise<{ 
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `` },
-    { label: dict.nav.areas, href: `/faaliyet-alanlari` },
+    { label: dict.nav.areas, href: `/business-areas` },
   ];
 
   return (
@@ -174,7 +174,7 @@ export default async function BusinessAreasPage({ params }: { params: Promise<{ 
                 {dict.common.contactCta}
               </Heading>
               <Button
-                href={`/iletisim`}
+                href={`/contact`}
                 variant="primary"
                 size="lg"
                 icon="arrow"

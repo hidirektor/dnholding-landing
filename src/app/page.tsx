@@ -44,9 +44,9 @@ export default async function HomePage() {
         title={dict.home.hero.title}
         subtitle={dict.home.hero.subtitle}
         ctaText={dict.home.hero.cta}
-        ctaHref={`/hakkimizda`}
+        ctaHref={`/about`}
         secondaryCtaText={dict.home.hero.secondaryCta}
-        secondaryCtaHref={`/grup-sirketleri`}
+        secondaryCtaHref={`/companies`}
       />
 
       {/* ─── Stats Bar ─── */}
@@ -79,7 +79,7 @@ export default async function HomePage() {
                   {dict.home.about.description2}
                 </p>
                 <Button
-                  href={`/hakkimizda`}
+                  href={`/about`}
                   variant="secondary"
                   icon="arrow"
                 >
@@ -144,7 +144,7 @@ export default async function HomePage() {
           <ScrollReveal>
             <div className="text-center mt-12">
               <Button
-                href={`/grup-sirketleri`}
+                href={`/companies`}
                 variant="secondary"
                 icon="arrow"
               >
@@ -185,7 +185,7 @@ export default async function HomePage() {
           <ScrollReveal>
             <div className="text-center mt-12">
               <Button
-                href={`/faaliyet-alanlari`}
+                href={`/business-areas`}
                 variant="primary"
                 icon="arrow"
               >
@@ -232,7 +232,7 @@ export default async function HomePage() {
           <ScrollReveal>
             <div className="text-center mt-12">
               <Button
-                href={`/projeler`}
+                href={`/projects`}
                 variant="secondary"
                 icon="arrow"
               >
@@ -278,7 +278,7 @@ export default async function HomePage() {
           <ScrollReveal>
             <div className="text-center mt-12">
               <Button
-                href={`/medya`}
+                href={`/media`}
                 variant="secondary"
                 icon="arrow"
               >
@@ -304,7 +304,7 @@ export default async function HomePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <Button
-                    href={`/iletisim`}
+                    href={`/contact`}
                     variant="primary"
                     size="lg"
                     icon="arrow"
@@ -312,7 +312,7 @@ export default async function HomePage() {
                     {dict.home.cta.button}
                   </Button>
                   <Button
-                    href={`/projeler`}
+                    href={`/projects`}
                     variant="secondary"
                     size="lg"
                   >

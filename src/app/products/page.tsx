@@ -26,7 +26,7 @@ export default async function ProductsPage({ params }: { params: Promise<{ slug:
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `` },
-    { label: dict.nav.products, href: `/urunler` },
+    { label: dict.nav.products, href: `/products` },
   ];
 
   return (
@@ -79,7 +79,7 @@ export default async function ProductsPage({ params }: { params: Promise<{ slug:
                         {company.description}
                       </p>
                       <Button
-                        href={`/grup-sirketleri/${company.slug}`}
+                        href={`/companies/${company.slug}`}
                         variant="ghost"
                         size="sm"
                         icon="arrow"

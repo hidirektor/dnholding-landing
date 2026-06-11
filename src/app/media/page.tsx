@@ -25,7 +25,7 @@ export default async function MediaPage({ params }: { params: Promise<{ slug: st
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `` },
-    { label: dict.nav.media, href: `/medya` },
+    { label: dict.nav.media, href: `/media` },
   ];
 
   return (

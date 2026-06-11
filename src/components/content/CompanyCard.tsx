@@ -13,7 +13,7 @@ interface CompanyCardProps {
 
 export function CompanyCard({ name, slug, description, sector, accentColor, lang }: CompanyCardProps) {
   return (
-    <Link href={`/grup-sirketleri/${slug}`} className="block h-full group">
+    <Link href={`/companies/${slug}`} className="block h-full group">
       <Card className="h-full p-8 border border-border/50 hover:border-border transition-all duration-300 relative overflow-hidden bg-white dark:bg-white/5 group-hover:shadow-lg group-hover:-translate-y-1">
         
         <div className="flex flex-col h-full gap-6 relative z-10">

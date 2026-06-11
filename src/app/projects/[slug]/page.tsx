@@ -35,8 +35,8 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `` },
-    { label: dict.nav.projects, href: `/projeler` },
-    { label: project.title, href: `/projeler/${slug}` },
+    { label: dict.nav.projects, href: `/projects` },
+    { label: project.title, href: `/projects/${slug}` },
   ];
 
   const relatedProjects = dict.data.projects
@@ -122,7 +122,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
               {relatedProjects.map((rp) => (
                 <ScrollReveal key={rp.slug}>
                   <a
-                    href={`/projeler/${rp.slug}`}
+                    href={`/projects/${rp.slug}`}
                     className="group block p-6 rounded-[var(--radius-xl)] border border-border hover:border-accent/20 transition-all hover:shadow-[var(--shadow-medium)]"
                   >
                     <Badge variant="outline" className="mb-3">
@@ -148,7 +148,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           <ScrollReveal>
             <div className="text-center space-y-4">
               <Button
-                href={`/projeler`}
+                href={`/projects`}
                 variant="secondary"
                 icon="arrow"
               >

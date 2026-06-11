@@ -28,7 +28,7 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `` },
-    { label: dict.nav.about, href: `/hakkimizda` },
+    { label: dict.nav.about, href: `/about` },
   ];
 
   const timelineItems = dict.about.timeline.items.map(

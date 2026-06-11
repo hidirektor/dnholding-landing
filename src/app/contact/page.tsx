@@ -25,7 +25,7 @@ export default async function ContactPage({ params }: { params: Promise<{ slug: 
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `` },
-    { label: dict.nav.contact, href: `/iletisim` },
+    { label: dict.nav.contact, href: `/contact` },
   ];
 
   return (

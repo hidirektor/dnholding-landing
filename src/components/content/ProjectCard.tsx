@@ -13,7 +13,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, description, company, category, image, slug, lang }: ProjectCardProps) {
   return (
-    <Link href={`/projeler/${slug}`} className="block group h-[400px] w-full rounded-[var(--radius-xl)] overflow-hidden relative">
+    <Link href={`/projects/${slug}`} className="block group h-[400px] w-full rounded-[var(--radius-xl)] overflow-hidden relative">
       <div className="absolute inset-0 bg-surface-dark z-0">
         {image ? (
           <div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: `url(${image})` }} />

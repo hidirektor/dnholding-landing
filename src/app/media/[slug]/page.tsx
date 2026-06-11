@@ -36,8 +36,8 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `` },
-    { label: dict.nav.media, href: `/medya` },
-    { label: article.title, href: `/medya/${slug}` },
+    { label: dict.nav.media, href: `/media` },
+    { label: article.title, href: `/media/${slug}` },
   ];
 
   const relatedArticles = dict.data.news
@@ -123,7 +123,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
               {relatedArticles.map((ra) => (
                 <ScrollReveal key={ra.slug}>
                   <a
-                    href={`/medya/${ra.slug}`}
+                    href={`/media/${ra.slug}`}
                     className="group block p-6 rounded-[var(--radius-xl)] border border-border hover:border-accent/20 transition-all hover:shadow-[var(--shadow-medium)]"
                   >
                     <div className="flex items-center gap-3 mb-3">
@@ -152,7 +152,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
           <ScrollReveal>
             <div className="text-center space-y-4">
               <Button
-                href={`/medya`}
+                href={`/media`}
                 variant="secondary"
                 icon="arrow"
               >

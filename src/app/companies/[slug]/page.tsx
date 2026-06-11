@@ -37,8 +37,8 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
 
   const breadcrumbs = [
     { label: dict.nav.home, href: `` },
-    { label: dict.nav.companies, href: `/grup-sirketleri` },
-    { label: company.name, href: `/grup-sirketleri/${slug}` },
+    { label: dict.nav.companies, href: `/companies` },
+    { label: company.name, href: `/companies/${slug}` },
   ];
 
   const companyProjects = dict.data.projects.filter((p: any) => p.company === company.name).slice(0, 3);
@@ -142,7 +142,7 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
                 {dict.common.contactCta}
               </Heading>
               <Button
-                href={`/iletisim`}
+                href={`/contact`}
                 variant="primary"
                 size="lg"
                 icon="arrow"
