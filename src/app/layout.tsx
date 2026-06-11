@@ -5,8 +5,7 @@ import {Header} from "@/components/layout/Header";
 import {Footer} from "@/components/layout/Footer";
 import {CookieWidget} from "@/components/layout/CookieWidget";
 import {PreferencesWidget} from "@/components/layout/PreferencesWidget";
-import {hasLocale, type Locale} from "./dictionaries";
-import {notFound} from "next/navigation";
+import {getCurrentLocale} from "./dictionaries";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -26,16 +25,8 @@ export const viewport: Viewport = {
   themeColor: "#1a1a2e",
 };
 
-export async function generateStaticParams() {
-  return [{ lang: "tr" }, { lang: "en" }];
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}): Promise<Metadata> {
-  const { lang } = await params;
+export async function generateMetadata(): Promise<Metadata> {
+  const lang = await getCurrentLocale();
   const isTR = lang === "tr";
 
   return {
@@ -87,27 +78,15 @@ export async function generateMetadata({
       index: true,
       follow: true,
     },
-    alternates: {
-      languages: {
-        tr: "/tr",
-        en: "/en",
-      },
-    },
   };
 }
 
 export default async function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ lang: string }>;
 }) {
-  const { lang } = await params;
-
-  if (!hasLocale(lang)) {
-    notFound();
-  }
+  const lang = await getCurrentLocale();
 
   return (
     <html
@@ -116,11 +95,11 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-screen flex flex-col bg-surface text-text">
-        <Header lang={lang as Locale} />
+        <Header lang={lang} />
         <main className="flex-1">{children}</main>
-        <Footer lang={lang as Locale} />
+        <Footer lang={lang} />
         <CookieWidget />
-        <PreferencesWidget />
+        <PreferencesWidget currentLang={lang.toUpperCase()} />
       </body>
     </html>
   );
