@@ -48,7 +48,7 @@ export function HeroSection({
                 </Button>
               )}
               {secondaryCtaText && secondaryCtaHref && (
-                <Button href={secondaryCtaHref} variant="secondary" size="lg" className="w-full sm:w-auto">
+                <Button href={secondaryCtaHref} variant="outline-white" size="lg" className="w-full sm:w-auto">
                   {secondaryCtaText}
                 </Button>
               )}
