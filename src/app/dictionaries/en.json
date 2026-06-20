@@ -175,7 +175,7 @@
             {
                 "sector": "Mermer",
                 "slug": "dn-mermer",
-                "description": "YÃ¼ksek kaliteli mermer Ã¼retimi ve ihracatÄ± alanÄ±nda sektÃ¶rÃ¼n Ã¶ncÃ¼ markalarÄ±ndan biridir.",
+                "description": "Yüksek kaliteli mermer üretimi ve ihracatı alanında sektörün öncü markalarından biridir.",
                 "accentColor": "#4b5563",
                 "name": "DN MERMER A.Åž.",
                 "stats": [
@@ -190,12 +190,12 @@
             {
                 "sector": "Maden",
                 "slug": "2m-uluslararasi-madencilik",
-                "description": "UluslararasÄ± standartlarda, sÃ¼rdÃ¼rÃ¼lebilir madencilik faaliyetleri yÃ¼rÃ¼tmektedir.",
+                "description": "Uluslararası standartlarda, sürdürülebilir madencilik faaliyetleri yürütmektedir.",
                 "accentColor": "#b45309",
                 "name": "2M ULUSLARASI MADENCÄ°LÄ°K A.Åž.",
                 "stats": [
                     {
-                        "label": "Ä°hracat",
+                        "label": "İhracat",
                         "suffix": "+",
                         "value": 20
                     }
@@ -234,7 +234,7 @@
             {
                 "sector": "Mermer & Maden",
                 "slug": "hd-maden-mermer",
-                "description": "Maden ve mermer sektÃ¶rlerinde entegre Ã¼retim tesisleriyle global pazara hitap etmektedir.",
+                "description": "Maden ve mermer sektörlerinde entegre üretim tesisleriyle global pazara hitap etmektedir.",
                 "accentColor": "#57534e",
                 "name": "HD MADEN MERMER A.Åž.",
                 "stats": [
@@ -283,7 +283,7 @@
                 "stats": [
                     {
                         "value": 450,
-                        "label": "Kurulu GÃ¼Ã§ MW"
+                        "label": "Kurulu Güç MW"
                     }
                 ],
                 "featured": true
@@ -296,7 +296,7 @@
                 "name": "YNR MADEN A.Åž.",
                 "stats": [
                     {
-                        "label": "Ä°stihdam",
+                        "label": "İstihdam",
                         "suffix": "+",
                         "value": 300
                     }
@@ -421,7 +421,7 @@
             {
                 "id": "p1",
                 "name": "Blok Mermer",
-                "description": "YÃ¼ksek kaliteli ve homojen renk yapÄ±sÄ±na sahip, uluslararasÄ± standartlarda blok mermer.",
+                "description": "Yüksek kaliteli ve homojen renk yapısına sahip, uluslararası standartlarda blok mermer.",
                 "companySlug": "dn-mermer",
                 "image": "/media/marble-block.jpg",
                 "category": "Mermer"
@@ -429,7 +429,7 @@
             {
                 "id": "p2",
                 "name": "Krom Cevheri",
-                "description": "Sanayi Ã¼retiminde kullanÄ±lan yÃ¼ksek saflÄ±kta krom cevheri.",
+                "description": "Sanayi üretiminde kullanılan yüksek saflıkta krom cevheri.",
                 "companySlug": "2m-uluslararasi-madencilik",
                 "image": "/media/chrome-ore.jpg",
                 "category": "Maden"
@@ -444,8 +444,8 @@
             },
             {
                 "id": "p4",
-                "name": "Sanayi Tipi KÃ¶mÃ¼r",
-                "description": "YÃ¼ksek kalorili ve Ã§evre standartlarÄ±na uygun sanayi tipi linyit kÃ¶mÃ¼rÃ¼.",
+                "name": "Sanayi Tipi Kömür",
+                "description": "Yüksek kalorili ve çevre standartlarına uygun sanayi tipi linyit kömürü.",
                 "companySlug": "ynr-maden",
                 "image": "/media/coal.jpg",
                 "category": "Maden"
