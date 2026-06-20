@@ -7,7 +7,13 @@ import {PreferencesWidget} from "@/components/layout/PreferencesWidget";
 import {getCurrentLocale, getDictionary} from "./dictionaries";
 
 import {ThemeProvider} from "@/components/layout/ThemeProvider";
+import {Outfit} from "next/font/google";
 
+const outfit = Outfit({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-outfit",
+  display: "swap",
+});
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -81,13 +87,10 @@ export default async function RootLayout({
   return (
     <html
       lang={lang}
-      className="antialiased"
+      className={`antialiased ${outfit.variable}`}
       suppressHydrationWarning
     >
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
       </head>
       <body className="min-h-screen flex flex-col bg-surface text-text transition-colors duration-300">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>

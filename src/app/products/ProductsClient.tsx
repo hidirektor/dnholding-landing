@@ -57,7 +57,7 @@ export function ProductsClient({
         <Container>
           <div className="mb-12 flex flex-wrap gap-2">
             <Button
-              variant={activeCompany === "all" ? "primary" : "outline"}
+              variant={activeCompany === "all" ? "primary" : "secondary"}
               onClick={() => setActiveCompany("all")}
             >
               {dict.common?.viewAll || "Tümünü Gör"}
@@ -65,7 +65,7 @@ export function ProductsClient({
             {companies.map((company) => (
               <Button
                 key={company.slug}
-                variant={activeCompany === company.slug ? "primary" : "outline"}
+                variant={activeCompany === company.slug ? "primary" : "secondary"}
                 onClick={() => setActiveCompany(company.slug)}
               >
                 {company.name}
