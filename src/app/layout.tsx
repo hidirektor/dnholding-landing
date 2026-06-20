@@ -27,8 +27,8 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: {
       default: isTR
-        ? "DN Holding — Geleceği İnşa Ediyoruz"
-        : "DN Holding — Building the Future",
+        ? "DN Holding — Hamdan Mükemmele"
+        : "DN Holding — From Raw to Perfect",
       template: isTR ? "%s | DN Holding" : "%s | DN Holding",
     },
     description: isTR
@@ -60,8 +60,8 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: isTR ? "tr_TR" : "en_US",
       siteName: "DN Holding",
       title: isTR
-        ? "DN Holding — Geleceği İnşa Ediyoruz"
-        : "DN Holding — Building the Future",
+        ? "DN Holding — Hamdan Mükemmele"
+        : "DN Holding — From Raw to Perfect",
       description: isTR
         ? "DN Holding, inşaat, enerji, madencilik, gıda, teknoloji ve gayrimenkul alanlarında faaliyet gösteren uluslararası bir holding şirketidir."
         : "DN Holding is an international holding company operating across construction, energy, mining, food, technology, and real estate sectors.",
