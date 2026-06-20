@@ -13,7 +13,7 @@ const footerData = {
     about: {
       title: "DN Holding",
       description:
-        "İnşaat, enerji, madencilik, gıda, teknoloji ve gayrimenkul sektörlerinde faaliyet gösteren uluslararası bir holding şirketi.",
+        "Maden, enerji ve mermer sektörlerinde faaliyet gösteren uluslararası bir holding şirketi.",
     },
     quickLinks: {
       title: "Hızlı Bağlantılar",
@@ -54,7 +54,7 @@ const footerData = {
     about: {
       title: "DN Holding",
       description:
-        "An international holding company operating across construction, energy, mining, food, technology, and real estate sectors.",
+        "An international holding company operating in the mining, energy, and marble sectors.",
     },
     quickLinks: {
       title: "Quick Links",
@@ -95,7 +95,7 @@ const footerData = {
     about: {
       title: "DN Holding",
       description:
-        "Eine internationale Holdinggesellschaft, die in den Bereichen Bau, Energie, Bergbau, Lebensmittel, Technologie und Immobilien tätig ist.",
+        "Eine internationale Holdinggesellschaft, die in den Bereichen Bergbau, Energie und Marmor tätig ist.",
     },
     quickLinks: {
       title: "Schnelle Links",
@@ -136,7 +136,7 @@ const footerData = {
     about: {
       title: "DN Holding",
       description:
-        "Une holding internationale opérant dans les secteurs de la construction, de l'énergie, de l'exploitation minière, de l'alimentation, de la technologie et de l'immobilier.",
+        "Une holding internationale opérant dans les secteurs de l'exploitation minière, de l'énergie et du marbre.",
     },
     quickLinks: {
       title: "Liens Rapides",
@@ -187,7 +187,7 @@ export function Footer({ lang }: FooterProps) {
           <div className={styles.aboutCol}>
             <Link href={`/`} className={styles.footerLogo}>
               <Image 
-                src="/logo_dnholding.png" 
+                src="/logo_dnholding-text.png" 
                 alt="DN Holding Logo" 
                 width={200} 
                 height={50} 
