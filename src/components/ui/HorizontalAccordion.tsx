@@ -3,9 +3,12 @@
 import React, {useState} from "react";
 import {cn} from "@/lib/utils";
 
+import Image from "next/image";
+
 interface AccordionItem {
   icon: React.ReactNode;
   label: string;
+  image?: string;
 }
 
 interface HorizontalAccordionProps {
@@ -40,48 +43,55 @@ export function HorizontalAccordion({ items, className }: HorizontalAccordionPro
             {/* Hover overlay for inactive state */}
             {!isActive && (
               <div 
-                className="absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100 pointer-events-none" 
+                className="absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100 pointer-events-none z-10" 
                 style={{ backgroundColor: "var(--accordion-bg-hover)" }}
               />
             )}
             
-            {/* Gradient overlay for text readability if an image is added behind */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[var(--background)]/50 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none" />
+            {/* Background Image */}
+            {item.image && (
+              <div className={cn(
+                "absolute inset-0 transition-opacity duration-[800ms] pointer-events-none z-0",
+                isActive ? "opacity-100" : "opacity-30 group-hover:opacity-50"
+              )}>
+                <Image src={item.image} alt={item.label} fill className="object-cover" />
+                <div className="absolute inset-0 bg-black/40" />
+              </div>
+            )}
             
-            <div className={cn(
-              "relative z-10 flex flex-col transition-all duration-500",
-              isActive ? "items-start" : "items-center"
-            )}>
+            {/* Gradient overlay for text readability if an image is added behind */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent transition-opacity duration-500 pointer-events-none z-10" />
+            
+            {/* Content Container */}
+            <div className="relative z-20 flex flex-col items-center justify-end h-full">
+              {/* Icon Container */}
               <div 
                 className={cn(
-                  "flex items-center justify-center rounded-full transition-all duration-500",
-                  isActive ? "w-14 h-14 mb-4 text-3xl" : "w-12 h-12 text-2xl mb-0"
+                  "flex items-center justify-center transition-all duration-[800ms] ease-[var(--ease-premium)] text-white bg-white/20 backdrop-blur-md rounded-full",
+                  isActive 
+                    ? "w-16 h-16 mb-4 translate-y-0 opacity-100" 
+                    : "w-12 h-12 mb-0 translate-y-4 sm:translate-y-0 opacity-100 sm:opacity-50 group-hover:opacity-100"
                 )}
-                style={{
-                  backgroundColor: "var(--accordion-icon-bg)",
-                  color: "var(--accordion-icon-color)"
-                }}
               >
                 {item.icon}
               </div>
               
+              {/* Label */}
               <h3 
                 className={cn(
-                  "font-bold whitespace-nowrap transition-all duration-500",
+                  "font-bold text-center transition-all duration-[800ms] ease-[var(--ease-premium)] text-white",
                   isActive 
-                    ? "opacity-100 translate-y-0 text-2xl" 
-                    : "opacity-0 translate-y-4 w-0 h-0 overflow-hidden"
+                    ? "text-xl sm:text-2xl opacity-100 translate-y-0 h-auto" 
+                    : "text-sm sm:text-base opacity-0 sm:opacity-100 translate-y-8 sm:translate-y-0 h-0 sm:h-auto overflow-hidden sm:overflow-visible -rotate-90 sm:rotate-0 whitespace-nowrap mb-6 sm:mb-0"
                 )}
-                style={{ color: "var(--accordion-text)" }}
               >
                 {item.label}
               </h3>
-              
+            </div>  
               {isActive && (
                 <div className="w-12 h-1 bg-accent mt-4 rounded-full animate-fade-in-up" />
               )}
             </div>
-          </div>
         );
       })}
     </div>

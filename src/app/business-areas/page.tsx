@@ -6,6 +6,7 @@ import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
 import {Button} from "@/components/ui/Button";
 import {IconConstruction, IconEnergy, IconMining} from "@/components/ui/Icons";
+import Image from "next/image";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const lang = await getCurrentLocale();
@@ -18,22 +19,25 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-const businessAreas: Record<string, { icon: React.ReactNode; title: string; description: string }[]> = {
+const businessAreas: Record<string, { icon: React.ReactNode; image: string; title: string; description: string }[]> = {
   tr: [
     {
       icon: <IconConstruction />,
+      image: "/media/marble-block.jpg",
       title: "Mermer",
       description:
         "Dünya standartlarında yüksek kaliteli mermer üretimi ve ihracatıyla projelerinize estetik ve değer katıyoruz.",
     },
     {
       icon: <IconMining />,
+      image: "/media/chrome-ore.jpg",
       title: "Maden",
       description:
         "Çevreye duyarlı ve sürdürülebilir madencilik faaliyetleri ile ülkemizin yeraltı zenginliklerini ekonomiye kazandırıyoruz.",
     },
     {
       icon: <IconEnergy />,
+      image: "/media/solar-plant.jpg",
       title: "Enerji",
       description:
         "Yenilenebilir enerji yatırımları, enerji üretim tesisleri ve enerji dağıtım altyapıları ile sürdürülebilir geleceğe katkıda bulunuyoruz.",
@@ -42,18 +46,21 @@ const businessAreas: Record<string, { icon: React.ReactNode; title: string; desc
   en: [
     {
       icon: <IconConstruction />,
+      image: "/media/marble-block.jpg",
       title: "Marble",
       description:
         "We add aesthetics and value to your projects with our world-class high-quality marble production and export.",
     },
     {
       icon: <IconMining />,
+      image: "/media/chrome-ore.jpg",
       title: "Mining",
       description:
         "We bring our country's underground riches to the economy with environmentally friendly and sustainable mining activities.",
     },
     {
       icon: <IconEnergy />,
+      image: "/media/solar-plant.jpg",
       title: "Energy",
       description:
         "Contributing to a sustainable future with renewable energy investments, power generation facilities, and energy distribution infrastructure.",
@@ -106,16 +113,22 @@ export default async function BusinessAreasPage({ params }: { params: Promise<{ 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {areas.map((area, index) => (
               <ScrollReveal key={area.title} delay={index * 80}>
-                <div className="group h-full p-8 rounded-[var(--radius-xl)] border border-border hover:border-accent/30 bg-surface hover:shadow-[var(--shadow-large)] transition-all duration-[var(--duration-medium)] text-center flex flex-col items-center">
-                  <div className="w-16 h-16 rounded-full bg-surface-dark flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform duration-500">
-                    {area.icon}
+                <div className="group h-full rounded-[var(--radius-xl)] border border-border hover:border-accent/30 bg-surface hover:shadow-[var(--shadow-large)] transition-all duration-[var(--duration-medium)] flex flex-col items-center overflow-hidden">
+                  <div className="relative w-full h-48 sm:h-56 mb-6 overflow-hidden">
+                    <Image src={area.image} alt={area.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    <div className="absolute bottom-4 left-4 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white">
+                      {area.icon}
+                    </div>
                   </div>
-                  <h3 className="text-xl font-semibold mb-4 group-hover:text-accent transition-colors">
-                    {area.title}
-                  </h3>
-                  <p className="text-text-secondary leading-relaxed">
-                    {area.description}
-                  </p>
+                  <div className="px-8 pb-8 text-center flex flex-col items-center flex-1">
+                    <h3 className="text-xl font-semibold mb-4 group-hover:text-accent transition-colors">
+                      {area.title}
+                    </h3>
+                    <p className="text-text-secondary leading-relaxed">
+                      {area.description}
+                    </p>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}

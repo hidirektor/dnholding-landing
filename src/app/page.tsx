@@ -165,9 +165,9 @@ export default async function HomePage() {
           <ScrollReveal delay={200}>
             <HorizontalAccordion 
               items={[
-                { icon: <IconConstruction />, label: dict.home.areas.items[0] },
-                { icon: <IconEnergy />, label: dict.home.areas.items[1] },
-                { icon: <IconMining />, label: dict.home.areas.items[2] },
+                { icon: <IconConstruction />, label: dict.home.areas.items[0], image: "/media/marble-block.jpg" },
+                { icon: <IconEnergy />, label: dict.home.areas.items[1], image: "/media/solar-plant.jpg" },
+                { icon: <IconMining />, label: dict.home.areas.items[2], image: "/media/chrome-ore.jpg" },
               ]}
             />
           </ScrollReveal>
