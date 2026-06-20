@@ -229,10 +229,6 @@
 
 .womaText {
   font-family: var(--font-display);
-  font-weight: 800;
-  background: linear-gradient(to right, #5c1938, #e33156);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: 0.02em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
 }
