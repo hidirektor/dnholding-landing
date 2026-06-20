@@ -11,14 +11,7 @@ import {Button} from "@/components/ui/Button";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {SectionDivider} from "@/components/content/SectionDivider";
 import {HorizontalAccordion} from "@/components/ui/HorizontalAccordion";
-import {
-  IconConstruction,
-  IconEnergy,
-  IconFood,
-  IconMining,
-  IconRealEstate,
-  IconTechnology
-} from "@/components/ui/Icons";
+import {IconConstruction, IconEnergy, IconMining} from "@/components/ui/Icons";
 
 export async function generateMetadata() {
   const lang = await getCurrentLocale();
@@ -175,9 +168,6 @@ export default async function HomePage() {
                 { icon: <IconConstruction />, label: dict.home.areas.items[0] },
                 { icon: <IconEnergy />, label: dict.home.areas.items[1] },
                 { icon: <IconMining />, label: dict.home.areas.items[2] },
-                { icon: <IconFood />, label: dict.home.areas.items[3] },
-                { icon: <IconTechnology />, label: dict.home.areas.items[4] },
-                { icon: <IconRealEstate />, label: dict.home.areas.items[5] },
               ]}
             />
           </ScrollReveal>
