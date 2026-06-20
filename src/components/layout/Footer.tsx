@@ -279,6 +279,14 @@ export function Footer({ lang }: FooterProps) {
         <Container>
           <div className={styles.bottomContent}>
             <p className={styles.copyright}>{data.copyright}</p>
+            <a
+              href="https://woma.com.tr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.poweredBy}
+            >
+              Powered by <span className={styles.womaText}>WOMA</span>
+            </a>
             <div className={styles.legalLinks}>
               <Link href={`/`} className={styles.legalLink}>
                 {data.privacy}
