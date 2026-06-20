@@ -157,9 +157,9 @@ export function Header({ lang }: HeaderProps) {
       <header
         className={cn(
           styles.header,
-          isScrolled && styles.scrolled,
+          (isScrolled || pathname !== "/") && styles.scrolled,
           scrollDirection === "down" && isScrolled && styles.hidden,
-          !isScrolled && styles.transparent
+          !isScrolled && pathname === "/" && styles.transparent
         )}
       >
         <div className="container-base">
@@ -175,7 +175,7 @@ export function Header({ lang }: HeaderProps) {
               aria-label="DN Holding Home"
             >
               <Image 
-                src="/logo_dnholding.png" 
+                src="/logo_dnholding-text.png" 
                 alt="DN Holding Logo" 
                 width={200} 
                 height={50} 
