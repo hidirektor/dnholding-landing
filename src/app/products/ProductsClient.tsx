@@ -53,7 +53,7 @@ export function ProductsClient({
         </div>
       </Section>
 
-      <Section variant="default" padding="large">
+      <Section variant="default" padding="default">
         <Container>
           <div className="mb-12 flex flex-wrap gap-2">
             <Button
