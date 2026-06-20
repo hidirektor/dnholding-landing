@@ -5,11 +5,10 @@ import {Heading} from "@/components/ui/Heading";
 import {Button} from "@/components/ui/Button";
 import {Badge} from "@/components/ui/Badge";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
-import {StatsBar} from "@/components/content/StatsBar";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
-import {ProjectCard} from "@/components/content/ProjectCard";
 import trDict from "@/app/dictionaries/tr.json";
 import {notFound} from "next/navigation";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return trDict.data.companies.map((company) => ({ slug: company.slug }));
@@ -56,11 +55,8 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
           <Container>
             <ScrollReveal>
               <div className="flex flex-col gap-6">
-                <div
-                  className="w-16 h-16 rounded-[var(--radius-lg)] flex items-center justify-center text-white font-bold text-xl"
-                  style={{ backgroundColor: company.accentColor }}
-                >
-                  {company.name.split(" ").pop()?.charAt(0)}
+                <div className="w-32 h-32 rounded-lg bg-white border border-border/50 shadow-sm flex items-center justify-center overflow-hidden p-4">
+                  <Image src="/logo_dnholding.png" alt={`${company.name} logo`} width={128} height={128} className="object-contain" />
                 </div>
                 <div>
                   <Badge
@@ -91,47 +87,7 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
         </Container>
       </Section>
 
-      {/* Company Stats */}
-      {company.stats && company.stats.length > 0 && (
-        <StatsBar
-          stats={company.stats.map((stat: any) => ({
-            value: stat.value,
-            label: stat.label,
-            suffix: stat.suffix,
-          }))}
-          variant="default"
-        />
-      )}
 
-      {/* Company Projects */}
-      {companyProjects.length > 0 && (
-        <Section variant="surface">
-          <Container>
-            <ScrollReveal>
-              <div className="text-center mb-16">
-                <Heading level="h2" display>
-                  {dict.common.projects}
-                </Heading>
-              </div>
-            </ScrollReveal>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {companyProjects.map((project, index) => (
-                <ScrollReveal key={project.slug} delay={index * 100}>
-                  <ProjectCard
-                    title={project.title}
-                    description={project.description}
-                    company={project.company}
-                    category={project.category}
-                    image={(project as any).image}
-                    slug={project.slug}
-                    lang={locale}
-                  />
-                </ScrollReveal>
-              ))}
-            </div>
-          </Container>
-        </Section>
-      )}
 
       {/* CTA */}
       <Section variant="default">

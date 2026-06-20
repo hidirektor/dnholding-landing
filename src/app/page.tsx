@@ -26,7 +26,7 @@ export default async function HomePage() {
   const lang = await getCurrentLocale();
   const dict = await getDictionary();
   const locale = lang;
-  const featuredCompanies = dict.data.companies.filter((c: any) => c.featured).slice(0, 6);
+  const featuredCompanies = dict.data.companies;
   const featuredProjects = dict.data.projects.slice(0, 3);
   const latestNews = dict.data.news.filter((n: any) => n.featured).slice(0, 3);
 
