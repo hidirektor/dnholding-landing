@@ -42,7 +42,7 @@ const footerData = {
     },
     contact: {
       title: "İletişim",
-      address: "Levent, İstanbul, Türkiye",
+      address: "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
       phone: "+90 (212) 000 00 00",
       email: "info@dnholding.com",
     },
@@ -83,7 +83,7 @@ const footerData = {
     },
     contact: {
       title: "Contact",
-      address: "Levent, Istanbul, Turkey",
+      address: "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
       phone: "+90 (212) 000 00 00",
       email: "info@dnholding.com",
     },
@@ -124,7 +124,7 @@ const footerData = {
     },
     contact: {
       title: "Kontakt",
-      address: "Levent, Istanbul, Türkei",
+      address: "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
       phone: "+90 (212) 000 00 00",
       email: "info@dnholding.com",
     },
@@ -165,7 +165,7 @@ const footerData = {
     },
     contact: {
       title: "Contact",
-      address: "Levent, Istanbul, Turquie",
+      address: "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
       phone: "+90 (212) 000 00 00",
       email: "info@dnholding.com",
     },
