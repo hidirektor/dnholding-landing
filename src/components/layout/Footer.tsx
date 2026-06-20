@@ -20,6 +20,7 @@ const footerData = {
       links: [
         { label: "Hakkımızda", href: "/about" },
         { label: "Faaliyet Alanları", href: "/business-areas" },
+        { label: "Ürünler / Hizmetler", href: "/products" },
         { label: "Projeler", href: "/projects" },
         { label: "Medya", href: "/media" },
         { label: "İletişim", href: "/contact" },
@@ -28,12 +29,15 @@ const footerData = {
     companies: {
       title: "Grup Şirketleri",
       links: [
-        { label: "DN İnşaat", href: "/companies/dn-insaat" },
-        { label: "DN Enerji", href: "/companies/dn-enerji" },
-        { label: "DN Madencilik", href: "/companies/dn-madencilik" },
-        { label: "DN Gıda", href: "/companies/dn-gida" },
-        { label: "DN Teknoloji", href: "/companies/dn-teknoloji" },
-        { label: "DN Gayrimenkul", href: "/companies/dn-gayrimenkul" },
+        { label: "DN MERMER A.Ş.", href: "/companies/dn-mermer" },
+        { label: "2M ULUSLARASI MADENCİLİK", href: "/companies/2m-uluslararasi-madencilik" },
+        { label: "4T MADENCİLİK A.Ş.", href: "/companies/4t-madencilik" },
+        { label: "ALM MADEN A.Ş.", href: "/companies/alm-maden" },
+        { label: "HD MADEN MERMER A.Ş.", href: "/companies/hd-maden-mermer" },
+        { label: "MBY MADEN A.Ş.", href: "/companies/mby-maden" },
+        { label: "YAMAN MADEN A.Ş.", href: "/companies/yaman-maden" },
+        { label: "YMY ENERJİ A.Ş.", href: "/companies/ymy-enerji" },
+        { label: "YNR MADEN A.Ş.", href: "/companies/ynr-maden" },
       ],
     },
     contact: {
@@ -57,6 +61,7 @@ const footerData = {
       links: [
         { label: "About Us", href: "/about" },
         { label: "Business Areas", href: "/business-areas" },
+        { label: "Products / Services", href: "/products" },
         { label: "Projects", href: "/projects" },
         { label: "Media", href: "/media" },
         { label: "Contact", href: "/contact" },
@@ -65,12 +70,15 @@ const footerData = {
     companies: {
       title: "Group Companies",
       links: [
-        { label: "DN Construction", href: "/companies/dn-insaat" },
-        { label: "DN Energy", href: "/companies/dn-enerji" },
-        { label: "DN Mining", href: "/companies/dn-madencilik" },
-        { label: "DN Food", href: "/companies/dn-gida" },
-        { label: "DN Technology", href: "/companies/dn-teknoloji" },
-        { label: "DN Real Estate", href: "/companies/dn-gayrimenkul" },
+        { label: "DN MARBLE INC.", href: "/companies/dn-mermer" },
+        { label: "2M INTL. MINING", href: "/companies/2m-uluslararasi-madencilik" },
+        { label: "4T MINING INC.", href: "/companies/4t-madencilik" },
+        { label: "ALM MINING INC.", href: "/companies/alm-maden" },
+        { label: "HD MINING MARBLE INC.", href: "/companies/hd-maden-mermer" },
+        { label: "MBY MINING INC.", href: "/companies/mby-maden" },
+        { label: "YAMAN MINING INC.", href: "/companies/yaman-maden" },
+        { label: "YMY ENERGY INC.", href: "/companies/ymy-enerji" },
+        { label: "YNR MINING INC.", href: "/companies/ynr-maden" },
       ],
     },
     contact: {
@@ -94,6 +102,7 @@ const footerData = {
       links: [
         { label: "Über Uns", href: "/about" },
         { label: "Tätigkeitsbereiche", href: "/business-areas" },
+        { label: "Produkte / Dienstleistungen", href: "/products" },
         { label: "Projekte", href: "/projects" },
         { label: "Medien", href: "/media" },
         { label: "Kontakt", href: "/contact" },
@@ -102,12 +111,15 @@ const footerData = {
     companies: {
       title: "Konzerngesellschaften",
       links: [
-        { label: "DN Bau", href: "/companies/dn-insaat" },
-        { label: "DN Energie", href: "/companies/dn-enerji" },
-        { label: "DN Bergbau", href: "/companies/dn-madencilik" },
-        { label: "DN Lebensmittel", href: "/companies/dn-gida" },
-        { label: "DN Technologie", href: "/companies/dn-teknoloji" },
-        { label: "DN Immobilien", href: "/companies/dn-gayrimenkul" },
+        { label: "DN MARMOR", href: "/companies/dn-mermer" },
+        { label: "2M INTL. BERGBAU", href: "/companies/2m-uluslararasi-madencilik" },
+        { label: "4T BERGBAU", href: "/companies/4t-madencilik" },
+        { label: "ALM BERGBAU", href: "/companies/alm-maden" },
+        { label: "HD BERGBAU MARMOR", href: "/companies/hd-maden-mermer" },
+        { label: "MBY BERGBAU", href: "/companies/mby-maden" },
+        { label: "YAMAN BERGBAU", href: "/companies/yaman-maden" },
+        { label: "YMY ENERGIE", href: "/companies/ymy-enerji" },
+        { label: "YNR BERGBAU", href: "/companies/ynr-maden" },
       ],
     },
     contact: {
@@ -131,6 +143,7 @@ const footerData = {
       links: [
         { label: "À Propos", href: "/about" },
         { label: "Domaines d'Activité", href: "/business-areas" },
+        { label: "Produits / Services", href: "/products" },
         { label: "Projets", href: "/projects" },
         { label: "Médias", href: "/media" },
         { label: "Contact", href: "/contact" },
@@ -139,12 +152,15 @@ const footerData = {
     companies: {
       title: "Entreprises du Groupe",
       links: [
-        { label: "DN Construction", href: "/companies/dn-insaat" },
-        { label: "DN Énergie", href: "/companies/dn-enerji" },
-        { label: "DN Exploitation", href: "/companies/dn-madencilik" },
-        { label: "DN Alimentation", href: "/companies/dn-gida" },
-        { label: "DN Technologie", href: "/companies/dn-teknoloji" },
-        { label: "DN Immobilier", href: "/companies/dn-gayrimenkul" },
+        { label: "DN MARBRE", href: "/companies/dn-mermer" },
+        { label: "2M INTL. EXPLOITATION", href: "/companies/2m-uluslararasi-madencilik" },
+        { label: "4T EXPLOITATION", href: "/companies/4t-madencilik" },
+        { label: "ALM EXPLOITATION", href: "/companies/alm-maden" },
+        { label: "HD EXPLOITATION MARBRE", href: "/companies/hd-maden-mermer" },
+        { label: "MBY EXPLOITATION", href: "/companies/mby-maden" },
+        { label: "YAMAN EXPLOITATION", href: "/companies/yaman-maden" },
+        { label: "YMY ÉNERGIE", href: "/companies/ymy-enerji" },
+        { label: "YNR EXPLOITATION", href: "/companies/ynr-maden" },
       ],
     },
     contact: {

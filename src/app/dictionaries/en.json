@@ -1,405 +1,455 @@
-{
-  "nav": {
-    "home": "Home",
-    "about": "About Us",
-    "companies": "Group Companies",
-    "areas": "Business Areas",
-    "products": "Products & Services",
-    "projects": "Projects",
-    "media": "Media",
-    "contact": "Contact"
-  },
-  "home": {
-    "hero": {
-      "title": "Building the Future",
-      "subtitle": "As DN Holding, we are shaping the world of tomorrow with our sustainable growth and innovative vision.",
-      "cta": "About Us",
-      "secondaryCta": "Group Companies"
-    },
-    "about": {
-      "tagline": "Our Vision",
-      "title": "Deep Roots, Strong Future",
-      "description": "With over half a century of experience, we move forward with the vision of being a pioneer in every sector we operate.",
-      "description2": "We continue to add value to our stakeholders with our global standard service approach and innovative mindset.",
-      "imageCaption": "DN Holding Headquarters"
-    },
-    "companies": {
-      "tagline": "Our Companies",
-      "title": "Strength in Diversity",
-      "subtitle": "We offer integrated solutions with our specialized companies in various sectors."
-    },
-    "areas": {
-      "tagline": "Sectors",
-      "title": "Business Areas",
-      "items": [
-        "Construction & Infra",
-        "Energy",
-        "Mining",
-        "Food & Agriculture",
-        "Technology",
-        "Real Estate"
-      ]
-    },
-    "projects": {
-      "tagline": "References",
-      "title": "Featured Projects",
-      "subtitle": "Our completed and ongoing visionary projects."
-    },
-    "news": {
-      "tagline": "Agenda",
-      "title": "Latest News"
-    },
-    "cta": {
-      "title": "Let's Build the Future Together",
-      "subtitle": "Contact us for your projects and collaborations.",
-      "button": "Contact Us",
-      "secondaryButton": "View Projects"
-    }
-  },
-  "about": {
-    "hero": {
-      "title": "About Us",
-      "subtitle": "Growing with our values."
-    },
-    "vision": {
-      "title": "Our Vision",
-      "description": "To be the leading holding that guides the future with sustainable investments on a global scale."
-    },
-    "mission": {
-      "title": "Our Mission",
-      "description": "To create value by producing innovative, reliable and high quality solutions for all our stakeholders."
-    },
-    "story": {
-      "tagline": "Our Story",
-      "title": "From Past to Present",
-      "subtitle": "Milestones of our journey full of success."
-    },
-    "timeline": {
-      "items": [
-        {
-          "year": "1998",
-          "title": "Foundation",
-          "description": "DN Holding was established."
-        },
-        {
-          "year": "2005",
-          "title": "Globalization",
-          "description": "First international investments began."
-        }
-      ]
-    },
-    "values": {
-      "title": "Our Values",
-      "items": [
-        {
-          "icon": "🤝",
-          "title": "Reliability",
-          "description": "We act with transparency and honesty in all our business processes."
-        },
-        {
-          "icon": "💡",
-          "title": "Innovation",
-          "description": "We support innovative approaches for continuous improvement."
-        },
-        {
-          "icon": "🌍",
-          "title": "Sustainability",
-          "description": "We adopt environmentally and socially sensitive sustainable policies."
-        }
-      ]
-    }
-  },
-  "companies": {
-    "tagline": "Subsidiaries",
-    "title": "Group Companies",
-    "subtitle": "Our innovative companies, each an expert in their field."
-  },
-  "areas": {
-    "tagline": "Sectors",
-    "title": "Business Areas",
-    "subtitle": "We create value by offering services in a wide range."
-  },
-  "products": {
-    "tagline": "Services",
-    "title": "Products & Services",
-    "subtitle": "Products and services we offer with quality and assurance."
-  },
-  "projects": {
-    "tagline": "References",
-    "title": "Projects",
-    "subtitle": "Visionary projects we have signed.",
-    "detail": {
-      "category": "Category",
-      "year": "Year",
-      "location": "Location",
-      "company": "Company",
-      "related": "Related Projects"
-    }
-  },
-  "media": {
-    "tagline": "Agenda",
-    "title": "Media & News",
-    "subtitle": "Latest updates about our holding.",
-    "related": "Other News"
-  },
-  "contact": {
-    "tagline": "Reach Out",
-    "title": "Contact",
-    "subtitle": "We are here for your questions and feedback.",
-    "form": {
-      "name": "Full Name",
-      "email": "Email",
-      "phone": "Phone",
-      "company": "Company",
-      "subject": "Subject",
-      "message": "Message",
-      "submit": "Send"
-    },
-    "info": {
-      "addressTitle": "Address",
-      "address": "Levent, Istanbul, Turkey",
-      "phoneTitle": "Phone",
-      "emailTitle": "Email",
-      "hoursTitle": "Working Hours",
-      "hours": "Mon - Fri: 09:00 - 18:00"
-    }
-  },
-  "common": {
-    "readMore": "Read More",
-    "discover": "Discover",
-    "viewAll": "View All",
-    "contactCta": "Would you like to get in touch?",
-    "contactUs": "Contact Us",
-    "projects": "Projects",
-    "share": "Share"
-  },
-  "data": {
-    "companies": [
-      {
-        "slug": "dn-insaat",
-        "name": "DN Construction",
-        "description": "Our flagship company that has undertaken mega projects across Turkey and the world with half a century of experience.",
-        "sector": "Construction & Infra",
-        "accentColor": "#2563eb",
-        "featured": true,
-        "stats": [
-          {
-            "label": "Completed Projects",
-            "value": 250,
-            "suffix": "+"
-          },
-          {
-            "label": "Employees",
-            "value": 1500,
-            "suffix": "+"
-          }
-        ]
-      },
-      {
-        "slug": "dn-enerji",
-        "name": "DN Energy",
-        "description": "Investing in renewable energy sources for a sustainable future and meeting Turkey's energy needs.",
-        "sector": "Energy",
-        "accentColor": "#059669",
-        "featured": true,
-        "stats": [
-          {
-            "label": "Installed Capacity (MW)",
-            "value": 850
-          },
-          {
-            "label": "Facilities",
-            "value": 12
-          }
-        ]
-      },
-      {
-        "slug": "dn-madencilik",
-        "name": "DN Mining",
-        "description": "Bringing our natural resources to the economy with environmentally friendly modern mining technologies.",
-        "sector": "Mining",
-        "accentColor": "#d97706",
-        "featured": true,
-        "stats": [
-          {
-            "label": "Active Mines",
-            "value": 8
-          },
-          {
-            "label": "Export Countries",
-            "value": 35,
-            "suffix": "+"
-          }
-        ]
-      },
-      {
-        "slug": "dn-gida",
-        "name": "DN Food",
-        "description": "Contributing to public health with reliable, healthy, and innovative food products from farm to table.",
-        "sector": "Food & Agriculture",
-        "accentColor": "#dc2626",
-        "featured": true,
-        "stats": [
-          {
-            "label": "Product Types",
-            "value": 120,
-            "suffix": "+"
-          },
-          {
-            "label": "Production Facilities",
-            "value": 5
-          }
-        ]
-      },
-      {
-        "slug": "dn-teknoloji",
-        "name": "DN Technology",
-        "description": "Pioneering the digital transformation of our group companies and developing software solutions for global markets.",
-        "sector": "Technology",
-        "accentColor": "#7c3aed",
-        "featured": true,
-        "stats": [
-          {
-            "label": "R&D Projects",
-            "value": 45,
-            "suffix": "+"
-          },
-          {
-            "label": "Engineers",
-            "value": 300,
-            "suffix": "+"
-          }
-        ]
-      },
-      {
-        "slug": "dn-gayrimenkul",
-        "name": "DN Real Estate",
-        "description": "Developing premium residential and commercial real estate projects that change city skylines and add value to life.",
-        "sector": "Real Estate",
-        "accentColor": "#0891b2",
-        "featured": true,
-        "stats": [
-          {
-            "label": "Developed Area (sqm)",
-            "value": 2000000,
-            "suffix": "+"
-          },
-          {
-            "label": "Awarded Projects",
-            "value": 15
-          }
-        ]
-      }
-    ],
-    "projects": [
-      {
-        "slug": "dn-tower-istanbul",
-        "title": "DN Tower Istanbul",
-        "description": "LEED Gold certified 45-story smart office tower project located in Istanbul's new financial center.",
-        "company": "DN Real Estate",
-        "category": "Commercial",
-        "year": "2024",
-        "location": "Istanbul, Turkey"
-      },
-      {
-        "slug": "ege-ruzgar-santrali",
-        "title": "Aegean Wind Power Plant",
-        "description": "120MW capacity wind power plant established in the Izmir region, meeting the electricity needs of 150,000 households annually.",
-        "company": "DN Energy",
-        "category": "Renewable Energy",
-        "year": "2023",
-        "location": "Izmir, Turkey"
-      },
-      {
-        "slug": "avrasya-lojistik-merkezi",
-        "title": "Eurasia Logistics Center",
-        "description": "A giant 250,000 square meter logistics base connecting continents, equipped with state-of-the-art automation systems.",
-        "company": "DN Construction",
-        "category": "Infrastructure",
-        "year": "2022",
-        "location": "Kocaeli, Turkey"
-      },
-      {
-        "slug": "organik-tarim-vadisi",
-        "title": "Organic Farming Valley",
-        "description": "Turkey's largest integrated organic farming facility supported by smart agricultural practices and sustainable water management.",
-        "company": "DN Food",
-        "category": "Facility",
-        "year": "2023",
-        "location": "Manisa, Turkey"
-      },
-      {
-        "slug": "smart-city-platform",
-        "title": "Smart City Platform",
-        "description": "An AI-supported platform developed for metropolitan municipalities that optimizes traffic, energy, and waste management from a single center.",
-        "company": "DN Technology",
-        "category": "Software",
-        "year": "2024",
-        "location": "Global"
-      },
-      {
-        "slug": "anadolu-mermer-kompleksi",
-        "title": "Anatolia Marble Processing Complex",
-        "description": "Europe's most modern marble processing facility, working with a zero-waste principle and equipped with state-of-the-art CNC machines.",
-        "company": "DN Mining",
-        "category": "Industrial",
-        "year": "2021",
-        "location": "Afyon, Turkey"
-      }
-    ],
-    "news": [
-      {
-        "slug": "2024-sustainability-report",
-        "title": "DN Holding Publishes 2024 Sustainability Report",
-        "excerpt": "We successfully reduced our carbon footprint by 15% last year.",
-        "date": "2024-02-15",
-        "category": "Sustainability",
-        "featured": true
-      },
-      {
-        "slug": "new-solar-farm",
-        "title": "Central Anatolia's Largest Solar Power Plant Being Built",
-        "excerpt": "DN Energy has signed the agreements for the new solar power plant to be established in Konya.",
-        "date": "2024-01-20",
-        "category": "Investment",
-        "featured": true
-      },
-      {
-        "slug": "smart-city-award",
-        "title": "International Smart Cities Award to DN Technology",
-        "excerpt": "Our Smart City Platform was deemed worthy of an award at the technology summit in London.",
-        "date": "2023-11-10",
-        "category": "Award",
-        "featured": true
-      }
-    ],
-    "stats": [
-      {
-        "label": "Revenue (Billion $)",
-        "value": 2.4,
-        "prefix": "$"
-      },
-      {
-        "label": "Employees",
-        "value": 15,
-        "suffix": "k+"
-      },
-      {
-        "label": "Countries",
-        "value": 18,
-        "suffix": "+"
-      },
-      {
-        "label": "Years Experience",
-        "value": 25,
-        "suffix": "+"
-      }
-    ]
-  },
-  "cookie": {
-    "title": "Cookie Preferences",
-    "description": "We use cookies on our site to enhance the user experience and analyze site traffic.",
-    "accept": "Accept All",
-    "decline": "Decline"
-  }
+﻿﻿{
+    "nav":  {
+                "home":  "Home",
+                "about":  "About Us",
+                "companies":  "Group Companies",
+                "areas":  "Business Areas",
+                "projects":  "Projects",
+                "media":  "Media",
+                "contact":  "Contact",
+                "products":  "Products / Services"
+            },
+    "home":  {
+                 "hero":  {
+                              "title":  "Building the Future",
+                              "subtitle":  "As DN Holding, we are shaping the world of tomorrow with our sustainable growth and innovative vision.",
+                              "cta":  "About Us",
+                              "secondaryCta":  "Group Companies"
+                          },
+                 "about":  {
+                               "tagline":  "Our Vision",
+                               "title":  "Deep Roots, Strong Future",
+                               "description":  "With over half a century of experience, we move forward with the vision of being a pioneer in every sector we operate.",
+                               "description2":  "We continue to add value to our stakeholders with our global standard service approach and innovative mindset.",
+                               "imageCaption":  "DN Holding Headquarters"
+                           },
+                 "companies":  {
+                                   "tagline":  "Our Companies",
+                                   "title":  "Strength in Diversity",
+                                   "subtitle":  "We offer integrated solutions with our specialized companies in various sectors."
+                               },
+                 "areas":  {
+                               "tagline":  "Sectors",
+                               "title":  "Business Areas",
+                               "items":  [
+                                             "Construction \u0026 Infra",
+                                             "Energy",
+                                             "Mining",
+                                             "Food \u0026 Agriculture",
+                                             "Technology",
+                                             "Real Estate"
+                                         ]
+                           },
+                 "projects":  {
+                                  "tagline":  "References",
+                                  "title":  "Featured Projects",
+                                  "subtitle":  "Our completed and ongoing visionary projects."
+                              },
+                 "news":  {
+                              "tagline":  "Agenda",
+                              "title":  "Latest News"
+                          },
+                 "cta":  {
+                             "title":  "Let\u0027s Build the Future Together",
+                             "subtitle":  "Contact us for your projects and collaborations.",
+                             "button":  "Contact Us",
+                             "secondaryButton":  "View Projects"
+                         }
+             },
+    "about":  {
+                  "hero":  {
+                               "title":  "About Us",
+                               "subtitle":  "Growing with our values."
+                           },
+                  "vision":  {
+                                 "title":  "Our Vision",
+                                 "description":  "To be the leading holding that guides the future with sustainable investments on a global scale."
+                             },
+                  "mission":  {
+                                  "title":  "Our Mission",
+                                  "description":  "To create value by producing innovative, reliable and high quality solutions for all our stakeholders."
+                              },
+                  "story":  {
+                                "tagline":  "Our Story",
+                                "title":  "From Past to Present",
+                                "subtitle":  "Milestones of our journey full of success."
+                            },
+                  "timeline":  {
+                                   "items":  [
+                                                 {
+                                                     "year":  "1998",
+                                                     "title":  "Foundation",
+                                                     "description":  "DN Holding was established."
+                                                 },
+                                                 {
+                                                     "year":  "2005",
+                                                     "title":  "Globalization",
+                                                     "description":  "First international investments began."
+                                                 }
+                                             ]
+                               },
+                  "values":  {
+                                 "title":  "Our Values",
+                                 "items":  [
+                                               {
+                                                   "icon":  "🤝",
+                                                   "title":  "Reliability",
+                                                   "description":  "We act with transparency and honesty in all our business processes."
+                                               },
+                                               {
+                                                   "icon":  "💡",
+                                                   "title":  "Innovation",
+                                                   "description":  "We support innovative approaches for continuous improvement."
+                                               },
+                                               {
+                                                   "icon":  "🌍",
+                                                   "title":  "Sustainability",
+                                                   "description":  "We adopt environmentally and socially sensitive sustainable policies."
+                                               }
+                                           ]
+                             }
+              },
+    "companies":  {
+                      "tagline":  "Subsidiaries",
+                      "title":  "Group Companies",
+                      "subtitle":  "Our innovative companies, each an expert in their field."
+                  },
+    "areas":  {
+                  "tagline":  "Sectors",
+                  "title":  "Business Areas",
+                  "subtitle":  "We create value by offering services in a wide range."
+              },
+    "products":  {
+                     "tagline":  "Services",
+                     "title":  "Products \u0026 Services",
+                     "subtitle":  "Products and services we offer with quality and assurance."
+                 },
+    "projects":  {
+                     "tagline":  "References",
+                     "title":  "Projects",
+                     "subtitle":  "Visionary projects we have signed.",
+                     "detail":  {
+                                    "category":  "Category",
+                                    "year":  "Year",
+                                    "location":  "Location",
+                                    "company":  "Company",
+                                    "related":  "Related Projects"
+                                }
+                 },
+    "media":  {
+                  "tagline":  "Agenda",
+                  "title":  "Media \u0026 News",
+                  "subtitle":  "Latest updates about our holding.",
+                  "related":  "Other News"
+              },
+    "contact":  {
+                    "tagline":  "Reach Out",
+                    "title":  "Contact",
+                    "subtitle":  "We are here for your questions and feedback.",
+                    "form":  {
+                                 "name":  "Full Name",
+                                 "email":  "Email",
+                                 "phone":  "Phone",
+                                 "company":  "Company",
+                                 "subject":  "Subject",
+                                 "message":  "Message",
+                                 "submit":  "Send"
+                             },
+                    "info":  {
+                                 "addressTitle":  "Address",
+                                 "address":  "Levent, Istanbul, Turkey",
+                                 "phoneTitle":  "Phone",
+                                 "emailTitle":  "Email",
+                                 "hoursTitle":  "Working Hours",
+                                 "hours":  "Mon - Fri: 09:00 - 18:00"
+                             }
+                },
+    "common":  {
+                   "readMore":  "Read More",
+                   "discover":  "Discover",
+                   "viewAll":  "View All",
+                   "contactCta":  "Would you like to get in touch?",
+                   "contactUs":  "Contact Us",
+                   "projects":  "Projects",
+                   "share":  "Share"
+               },
+    "data":  {
+                 "companies":  [
+                                   {
+                                       "sector":  "Mermer",
+                                       "slug":  "dn-mermer",
+                                       "description":  "YÃ¼ksek kaliteli mermer Ã¼retimi ve ihracatÄ± alanÄ±nda sektÃ¶rÃ¼n Ã¶ncÃ¼ markalarÄ±ndan biridir.",
+                                       "accentColor":  "#4b5563",
+                                       "name":  "DN MERMER A.Åž.",
+                                       "stats":  [
+                                                     {
+                                                         "label":  "Ãœretim",
+                                                         "suffix":  "K+",
+                                                         "value":  500
+                                                     }
+                                                 ],
+                                       "featured":  true
+                                   },
+                                   {
+                                       "sector":  "Maden",
+                                       "slug":  "2m-uluslararasi-madencilik",
+                                       "description":  "UluslararasÄ± standartlarda, sÃ¼rdÃ¼rÃ¼lebilir madencilik faaliyetleri yÃ¼rÃ¼tmektedir.",
+                                       "accentColor":  "#b45309",
+                                       "name":  "2M ULUSLARASI MADENCÄ°LÄ°K A.Åž.",
+                                       "stats":  [
+                                                     {
+                                                         "label":  "Ä°hracat",
+                                                         "suffix":  "+",
+                                                         "value":  20
+                                                     }
+                                                 ],
+                                       "featured":  true
+                                   },
+                                   {
+                                       "sector":  "Maden",
+                                       "slug":  "4t-madencilik",
+                                       "description":  "DoÄŸal kaynaklarÄ±n ekonomiye kazandÄ±rÄ±lmasÄ± amacÄ±yla Ã§evreye duyarlÄ± madencilik yapar.",
+                                       "accentColor":  "#9a3412",
+                                       "name":  "4T MADENCÄ°LÄ°K A.Åž.",
+                                       "stats":  [
+                                                     {
+                                                         "label":  "Kapasite",
+                                                         "suffix":  "K",
+                                                         "value":  100
+                                                     }
+                                                 ],
+                                       "featured":  true
+                                   },
+                                   {
+                                       "sector":  "Maden",
+                                       "slug":  "alm-maden",
+                                       "description":  "YenilikÃ§i teknolojilerle maden arama, Ã§Ä±karma ve zenginleÅŸtirme projeleri yÃ¼rÃ¼tmektedir.",
+                                       "accentColor":  "#854d0e",
+                                       "name":  "ALM MADEN A.Åž.",
+                                       "stats":  [
+                                                     {
+                                                         "value":  15,
+                                                         "label":  "Proje"
+                                                     }
+                                                 ],
+                                       "featured":  false
+                                   },
+                                   {
+                                       "sector":  "Mermer \u0026 Maden",
+                                       "slug":  "hd-maden-mermer",
+                                       "description":  "Maden ve mermer sektÃ¶rlerinde entegre Ã¼retim tesisleriyle global pazara hitap etmektedir.",
+                                       "accentColor":  "#57534e",
+                                       "name":  "HD MADEN MERMER A.Åž.",
+                                       "stats":  [
+                                                     {
+                                                         "value":  3,
+                                                         "label":  "Tesis"
+                                                     }
+                                                 ],
+                                       "featured":  false
+                                   },
+                                   {
+                                       "sector":  "Maden",
+                                       "slug":  "mby-maden",
+                                       "description":  "Kaliteli hammadde Ã¼retimi ile yerel ve uluslararasÄ± sanayinin ihtiyaÃ§larÄ±nÄ± karÅŸÄ±lamaktadÄ±r.",
+                                       "accentColor":  "#b45309",
+                                       "name":  "MBY MADEN A.Åž.",
+                                       "stats":  [
+                                                     {
+                                                         "value":  5,
+                                                         "label":  "Ocak"
+                                                     }
+                                                 ],
+                                       "featured":  false
+                                   },
+                                   {
+                                       "sector":  "Maden",
+                                       "slug":  "yaman-maden",
+                                       "description":  "KapsamlÄ± madencilik faaliyetleri ile Ã¼lkemizin yeraltÄ± zenginliklerini deÄŸerlendirmektedir.",
+                                       "accentColor":  "#9a3412",
+                                       "name":  "YAMAN MADEN SANAYÄ° VE TÄ°CARET A.Åž.",
+                                       "stats":  [
+                                                     {
+                                                         "label":  "YÄ±llÄ±k Ãœretim",
+                                                         "suffix":  "K",
+                                                         "value":  200
+                                                     }
+                                                 ],
+                                       "featured":  false
+                                   },
+                                   {
+                                       "sector":  "Enerji",
+                                       "slug":  "ymy-enerji",
+                                       "description":  "Yenilenebilir ve temiz enerji kaynaklarÄ±na yatÄ±rÄ±m yaparak sÃ¼rdÃ¼rÃ¼lebilir bir gelecek inÅŸa etmektedir.",
+                                       "accentColor":  "#059669",
+                                       "name":  "YMY ENERJÄ° A.Åž.",
+                                       "stats":  [
+                                                     {
+                                                         "value":  450,
+                                                         "label":  "Kurulu GÃ¼Ã§ MW"
+                                                     }
+                                                 ],
+                                       "featured":  true
+                                   },
+                                   {
+                                       "sector":  "Maden",
+                                       "slug":  "ynr-maden",
+                                       "description":  "Modern ekipmanlar ve uzman kadrosuyla verimli madencilik operasyonlarÄ± gerÃ§ekleÅŸtirmektedir.",
+                                       "accentColor":  "#b45309",
+                                       "name":  "YNR MADEN A.Åž.",
+                                       "stats":  [
+                                                     {
+                                                         "label":  "Ä°stihdam",
+                                                         "suffix":  "+",
+                                                         "value":  300
+                                                     }
+                                                 ],
+                                       "featured":  false
+                                   }
+                               ],
+                 "projects":  [
+                                  {
+                                      "slug":  "dn-tower-istanbul",
+                                      "title":  "DN Tower Istanbul",
+                                      "description":  "LEED Gold certified 45-story smart office tower project located in Istanbul\u0027s new financial center.",
+                                      "company":  "DN Real Estate",
+                                      "category":  "Commercial",
+                                      "year":  "2024",
+                                      "location":  "Istanbul, Turkey"
+                                  },
+                                  {
+                                      "slug":  "ege-ruzgar-santrali",
+                                      "title":  "Aegean Wind Power Plant",
+                                      "description":  "120MW capacity wind power plant established in the Izmir region, meeting the electricity needs of 150,000 households annually.",
+                                      "company":  "DN Energy",
+                                      "category":  "Renewable Energy",
+                                      "year":  "2023",
+                                      "location":  "Izmir, Turkey"
+                                  },
+                                  {
+                                      "slug":  "avrasya-lojistik-merkezi",
+                                      "title":  "Eurasia Logistics Center",
+                                      "description":  "A giant 250,000 square meter logistics base connecting continents, equipped with state-of-the-art automation systems.",
+                                      "company":  "DN Construction",
+                                      "category":  "Infrastructure",
+                                      "year":  "2022",
+                                      "location":  "Kocaeli, Turkey"
+                                  },
+                                  {
+                                      "slug":  "organik-tarim-vadisi",
+                                      "title":  "Organic Farming Valley",
+                                      "description":  "Turkey\u0027s largest integrated organic farming facility supported by smart agricultural practices and sustainable water management.",
+                                      "company":  "DN Food",
+                                      "category":  "Facility",
+                                      "year":  "2023",
+                                      "location":  "Manisa, Turkey"
+                                  },
+                                  {
+                                      "slug":  "smart-city-platform",
+                                      "title":  "Smart City Platform",
+                                      "description":  "An AI-supported platform developed for metropolitan municipalities that optimizes traffic, energy, and waste management from a single center.",
+                                      "company":  "DN Technology",
+                                      "category":  "Software",
+                                      "year":  "2024",
+                                      "location":  "Global"
+                                  },
+                                  {
+                                      "slug":  "anadolu-mermer-kompleksi",
+                                      "title":  "Anatolia Marble Processing Complex",
+                                      "description":  "Europe\u0027s most modern marble processing facility, working with a zero-waste principle and equipped with state-of-the-art CNC machines.",
+                                      "company":  "DN Mining",
+                                      "category":  "Industrial",
+                                      "year":  "2021",
+                                      "location":  "Afyon, Turkey"
+                                  }
+                              ],
+                 "news":  [
+                              {
+                                  "slug":  "2024-sustainability-report",
+                                  "title":  "DN Holding Publishes 2024 Sustainability Report",
+                                  "excerpt":  "We successfully reduced our carbon footprint by 15% last year.",
+                                  "date":  "2024-02-15",
+                                  "category":  "Sustainability",
+                                  "featured":  true
+                              },
+                              {
+                                  "slug":  "new-solar-farm",
+                                  "title":  "Central Anatolia\u0027s Largest Solar Power Plant Being Built",
+                                  "excerpt":  "DN Energy has signed the agreements for the new solar power plant to be established in Konya.",
+                                  "date":  "2024-01-20",
+                                  "category":  "Investment",
+                                  "featured":  true
+                              },
+                              {
+                                  "slug":  "smart-city-award",
+                                  "title":  "International Smart Cities Award to DN Technology",
+                                  "excerpt":  "Our Smart City Platform was deemed worthy of an award at the technology summit in London.",
+                                  "date":  "2023-11-10",
+                                  "category":  "Award",
+                                  "featured":  true
+                              }
+                          ],
+                 "stats":  [
+                               {
+                                   "label":  "Revenue (Billion $)",
+                                   "value":  2.4,
+                                   "prefix":  "$"
+                               },
+                               {
+                                   "label":  "Employees",
+                                   "value":  15,
+                                   "suffix":  "k+"
+                               },
+                               {
+                                   "label":  "Countries",
+                                   "value":  18,
+                                   "suffix":  "+"
+                               },
+                               {
+                                   "label":  "Years Experience",
+                                   "value":  25,
+                                   "suffix":  "+"
+                               }
+                           ],
+                 "products":  [
+                                  {
+                                      "id":  "p1",
+                                      "name":  "Blok Mermer",
+                                      "description":  "YÃ¼ksek kaliteli ve homojen renk yapÄ±sÄ±na sahip, uluslararasÄ± standartlarda blok mermer.",
+                                      "companySlug":  "dn-mermer",
+                                      "image":  "/media/marble-block.jpg",
+                                      "category":  "Mermer"
+                                  },
+                                  {
+                                      "id":  "p2",
+                                      "name":  "Krom Cevheri",
+                                      "description":  "Sanayi Ã¼retiminde kullanÄ±lan yÃ¼ksek saflÄ±kta krom cevheri.",
+                                      "companySlug":  "2m-uluslararasi-madencilik",
+                                      "image":  "/media/chrome-ore.jpg",
+                                      "category":  "Maden"
+                                  },
+                                  {
+                                      "id":  "p3",
+                                      "name":  "GÃ¼neÅŸ Enerjisi Santralleri",
+                                      "description":  "SÃ¼rdÃ¼rÃ¼lebilir ve temiz enerji iÃ§in yÃ¼ksek verimli gÃ¼neÅŸ enerjisi Ã§Ã¶zÃ¼mleri.",
+                                      "companySlug":  "ymy-enerji",
+                                      "image":  "/media/solar-plant.jpg",
+                                      "category":  "Enerji"
+                                  },
+                                  {
+                                      "id":  "p4",
+                                      "name":  "Sanayi Tipi KÃ¶mÃ¼r",
+                                      "description":  "YÃ¼ksek kalorili ve Ã§evre standartlarÄ±na uygun sanayi tipi linyit kÃ¶mÃ¼rÃ¼.",
+                                      "companySlug":  "ynr-maden",
+                                      "image":  "/media/coal.jpg",
+                                      "category":  "Maden"
+                                  }
+                              ]
+             },
+    "cookie":  {
+                   "title":  "Cookie Preferences",
+                   "description":  "We use cookies on our site to enhance the user experience and analyze site traffic.",
+                   "accept":  "Accept All",
+                   "decline":  "Decline"
+               }
 }

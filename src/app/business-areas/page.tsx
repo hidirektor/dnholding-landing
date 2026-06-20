@@ -5,14 +5,7 @@ import {Heading} from "@/components/ui/Heading";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
 import {Button} from "@/components/ui/Button";
-import {
-    IconConstruction,
-    IconEnergy,
-    IconFood,
-    IconMining,
-    IconRealEstate,
-    IconTechnology
-} from "@/components/ui/Icons";
+import {IconConstruction, IconEnergy, IconMining} from "@/components/ui/Icons";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const lang = await getCurrentLocale();
@@ -29,9 +22,15 @@ const businessAreas: Record<string, { icon: React.ReactNode; title: string; desc
   tr: [
     {
       icon: <IconConstruction />,
-      title: "İnşaat & Altyapı",
+      title: "Mermer",
       description:
-        "Mega projelerden altyapı çalışmalarına, konut projelerinden endüstriyel tesislere kadar geniş yelpazede hizmet sunuyoruz.",
+        "Dünya standartlarında yüksek kaliteli mermer üretimi ve ihracatıyla projelerinize estetik ve değer katıyoruz.",
+    },
+    {
+      icon: <IconMining />,
+      title: "Maden",
+      description:
+        "Çevreye duyarlı ve sürdürülebilir madencilik faaliyetleri ile ülkemizin yeraltı zenginliklerini ekonomiye kazandırıyoruz.",
     },
     {
       icon: <IconEnergy />,
@@ -39,67 +38,25 @@ const businessAreas: Record<string, { icon: React.ReactNode; title: string; desc
       description:
         "Yenilenebilir enerji yatırımları, enerji üretim tesisleri ve enerji dağıtım altyapıları ile sürdürülebilir geleceğe katkıda bulunuyoruz.",
     },
-    {
-      icon: <IconMining />,
-      title: "Madencilik",
-      description:
-        "Doğal taş, mermer ve maden çıkarma operasyonları ile Türkiye'nin zengin kaynaklarını dünyaya sunuyoruz.",
-    },
-    {
-      icon: <IconFood />,
-      title: "Gıda & Tarım",
-      description:
-        "Organik tarım, gıda işleme ve dağıtım alanlarında sağlıklı ve sürdürülebilir ürünler üretiyoruz.",
-    },
-    {
-      icon: <IconTechnology />,
-      title: "Teknoloji",
-      description:
-        "Dijital dönüşüm, yazılım geliştirme ve akıllı sistem çözümleri ile geleceğin teknolojilerini inşa ediyoruz.",
-    },
-    {
-      icon: <IconRealEstate />,
-      title: "Gayrimenkul",
-      description:
-        "Premium konut projeleri, ticari gayrimenkul geliştirme ve yatırım danışmanlığı hizmetleri sunuyoruz.",
-    },
   ],
   en: [
     {
       icon: <IconConstruction />,
-      title: "Construction & Infrastructure",
+      title: "Marble",
       description:
-        "From mega projects to infrastructure works, residential projects to industrial facilities, we deliver across a wide spectrum.",
+        "We add aesthetics and value to your projects with our world-class high-quality marble production and export.",
+    },
+    {
+      icon: <IconMining />,
+      title: "Mining",
+      description:
+        "We bring our country's underground riches to the economy with environmentally friendly and sustainable mining activities.",
     },
     {
       icon: <IconEnergy />,
       title: "Energy",
       description:
         "Contributing to a sustainable future with renewable energy investments, power generation facilities, and energy distribution infrastructure.",
-    },
-    {
-      icon: <IconMining />,
-      title: "Mining",
-      description:
-        "Presenting Turkey's rich natural resources to the world through natural stone, marble, and mining extraction operations.",
-    },
-    {
-      icon: <IconFood />,
-      title: "Food & Agriculture",
-      description:
-        "Producing healthy and sustainable products in organic agriculture, food processing, and distribution sectors.",
-    },
-    {
-      icon: <IconTechnology />,
-      title: "Technology",
-      description:
-        "Building the technologies of the future with digital transformation, software development, and smart system solutions.",
-    },
-    {
-      icon: <IconRealEstate />,
-      title: "Real Estate",
-      description:
-        "Offering premium residential projects, commercial real estate development, and investment advisory services.",
     },
   ],
 };

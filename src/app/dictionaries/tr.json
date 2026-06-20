@@ -1,405 +1,182 @@
 {
-  "nav": {
-    "home": "Ana Sayfa",
-    "about": "Hakkımızda",
-    "companies": "Grup Şirketleri",
-    "areas": "Faaliyet Alanları",
-    "products": "Ürünler & Hizmetler",
-    "projects": "Projeler",
-    "media": "Medya",
-    "contact": "İletişim"
-  },
-  "home": {
-    "hero": {
-      "title": "Geleceği İnşa Ediyoruz",
-      "subtitle": "DN Holding olarak sürdürülebilir büyüme ve yenilikçi vizyonumuzla yarının dünyasını şekillendiriyoruz.",
-      "cta": "Hakkımızda",
-      "secondaryCta": "Grup Şirketleri"
-    },
-    "about": {
-      "tagline": "Vizyonumuz",
-      "title": "Köklü Geçmiş, Güçlü Gelecek",
-      "description": "Yarım asrı aşan tecrübemizle, faaliyet gösterdiğimiz her sektörde öncü olma vizyonuyla ilerliyoruz.",
-      "description2": "Küresel standartlarda hizmet anlayışımız ve yenilikçi yaklaşımımızla paydaşlarımıza değer katmaya devam ediyoruz.",
-      "imageCaption": "DN Holding Genel Merkezi"
-    },
-    "companies": {
-      "tagline": "Grup Şirketlerimiz",
-      "title": "Gücümüzü Çeşitlilikten Alıyoruz",
-      "subtitle": "Farklı sektörlerdeki uzman şirketlerimizle entegre çözümler sunuyoruz."
-    },
-    "areas": {
-      "tagline": "Sektörler",
-      "title": "Faaliyet Alanlarımız",
-      "items": [
-        "İnşaat & Altyapı",
-        "Enerji",
-        "Madencilik",
-        "Gıda & Tarım",
-        "Teknoloji",
-        "Gayrimenkul"
-      ]
-    },
-    "projects": {
-      "tagline": "Referanslar",
-      "title": "Öne Çıkan Projeler",
-      "subtitle": "Tamamladığımız ve devam eden vizyoner projelerimiz."
-    },
-    "news": {
-      "tagline": "Gündem",
-      "title": "Bizden Haberler"
-    },
-    "cta": {
-      "title": "Geleceği Birlikte İnşa Edelim",
-      "subtitle": "Projeleriniz ve işbirlikleri için bizimle iletişime geçin.",
-      "button": "Bize Ulaşın",
-      "secondaryButton": "Projelerimizi İnceleyin"
-    }
-  },
-  "about": {
-    "hero": {
-      "title": "Hakkımızda",
-      "subtitle": "Değerlerimizle büyüyoruz."
-    },
-    "vision": {
-      "title": "Vizyonumuz",
-      "description": "Küresel ölçekte sürdürülebilir yatırımlarla geleceğe yön veren lider holding olmak."
-    },
-    "mission": {
-      "title": "Misyonumuz",
-      "description": "Tüm paydaşlarımız için yenilikçi, güvenilir ve yüksek kaliteli çözümler üreterek değer yaratmak."
-    },
-    "story": {
-      "tagline": "Hikayemiz",
-      "title": "Dünden Bugüne",
-      "subtitle": "Başarılarla dolu yolculuğumuzun kilometre taşları."
-    },
-    "timeline": {
-      "items": [
-        {
-          "year": "1998",
-          "title": "Kuruluş",
-          "description": "DN Holding temelleri atıldı."
-        },
-        {
-          "year": "2005",
-          "title": "Globalleşme",
-          "description": "İlk uluslararası yatırımlar başladı."
-        }
-      ]
-    },
-    "values": {
-      "title": "Değerlerimiz",
-      "items": [
-        {
-          "icon": "🤝",
-          "title": "Güvenilirlik",
-          "description": "Tüm iş süreçlerimizde şeffaflık ve dürüstlük ilkesiyle hareket ederiz."
-        },
-        {
-          "icon": "💡",
-          "title": "Yenilikçilik",
-          "description": "Sürekli gelişim için inovatif yaklaşımları destekleriz."
-        },
-        {
-          "icon": "🌍",
-          "title": "Sürdürülebilirlik",
-          "description": "Çevreye ve topluma duyarlı sürdürülebilir politikalar benimseriz."
-        }
-      ]
-    }
-  },
-  "companies": {
-    "tagline": "Bağlı Ortaklıklar",
-    "title": "Grup Şirketlerimiz",
-    "subtitle": "Her biri kendi alanında uzman, yenilikçi şirketlerimiz."
-  },
-  "areas": {
-    "tagline": "Sektörler",
-    "title": "Faaliyet Alanlarımız",
-    "subtitle": "Geniş bir yelpazede hizmet sunarak değer yaratıyoruz."
-  },
-  "products": {
-    "tagline": "Hizmetlerimiz",
-    "title": "Ürünler & Hizmetler",
-    "subtitle": "Kalite ve güvenceyle sunduğumuz ürün ve hizmetler."
-  },
-  "projects": {
-    "tagline": "Referanslar",
-    "title": "Projeler",
-    "subtitle": "İmza attığımız vizyoner projeler.",
-    "detail": {
-      "category": "Kategori",
-      "year": "Yıl",
-      "location": "Konum",
-      "company": "Şirket",
-      "related": "İlgili Projeler"
-    }
-  },
-  "media": {
-    "tagline": "Gündem",
-    "title": "Medya & Haberler",
-    "subtitle": "Holdingimizle ilgili en son gelişmeler.",
-    "related": "Diğer Haberler"
-  },
-  "contact": {
-    "tagline": "Bize Ulaşın",
-    "title": "İletişim",
-    "subtitle": "Sorularınız ve görüşleriniz için buradayız.",
-    "form": {
-      "name": "Ad Soyad",
-      "email": "E-posta",
-      "phone": "Telefon",
-      "company": "Şirket",
-      "subject": "Konu",
-      "message": "Mesajınız",
-      "submit": "Gönder"
-    },
-    "info": {
-      "addressTitle": "Adres",
-      "address": "Levent, İstanbul, Türkiye",
-      "phoneTitle": "Telefon",
-      "emailTitle": "E-posta",
-      "hoursTitle": "Çalışma Saatleri",
-      "hours": "Pzt - Cum: 09:00 - 18:00"
-    }
-  },
-  "common": {
-    "readMore": "Devamını Oku",
-    "discover": "Keşfet",
-    "viewAll": "Tümünü Gör",
-    "contactCta": "Bizimle iletişime geçmek ister misiniz?",
-    "contactUs": "Bize Ulaşın",
-    "projects": "Projeler",
-    "share": "Paylaş"
-  },
-  "data": {
-    "companies": [
-      {
-        "slug": "dn-insaat",
-        "name": "DN İnşaat",
-        "description": "Yarım asırlık tecrübesiyle Türkiye'nin ve dünyanın dört bir yanında mega projelere imza atan amiral gemisi şirketimiz.",
-        "sector": "İnşaat & Altyapı",
-        "accentColor": "#2563eb",
-        "featured": true,
-        "stats": [
-          {
-            "label": "Tamamlanan Proje",
-            "value": 250,
-            "suffix": "+"
-          },
-          {
-            "label": "Çalışan",
-            "value": 1500,
-            "suffix": "+"
-          }
-        ]
-      },
-      {
-        "slug": "dn-enerji",
-        "name": "DN Enerji",
-        "description": "Sürdürülebilir bir gelecek için yenilenebilir enerji kaynaklarına yatırım yapıyor, Türkiye'nin enerji ihtiyacını karşılıyoruz.",
-        "sector": "Enerji",
-        "accentColor": "#059669",
-        "featured": true,
-        "stats": [
-          {
-            "label": "Kurulu Güç (MW)",
-            "value": 850
-          },
-          {
-            "label": "Tesis",
-            "value": 12
-          }
-        ]
-      },
-      {
-        "slug": "dn-madencilik",
-        "name": "DN Madencilik",
-        "description": "Çevreye duyarlı modern madencilik teknolojileriyle doğal kaynaklarımızı ekonomiye kazandırıyoruz.",
-        "sector": "Madencilik",
-        "accentColor": "#d97706",
-        "featured": true,
-        "stats": [
-          {
-            "label": "Aktif Ocak",
-            "value": 8
-          },
-          {
-            "label": "İhracat Ülkesi",
-            "value": 35,
-            "suffix": "+"
-          }
-        ]
-      },
-      {
-        "slug": "dn-gida",
-        "name": "DN Gıda",
-        "description": "Tarladan sofraya güvenilir, sağlıklı ve yenilikçi gıda ürünleriyle toplum sağlığına katkıda bulunuyoruz.",
-        "sector": "Gıda & Tarım",
-        "accentColor": "#dc2626",
-        "featured": true,
-        "stats": [
-          {
-            "label": "Ürün Çeşidi",
-            "value": 120,
-            "suffix": "+"
-          },
-          {
-            "label": "Üretim Tesisi",
-            "value": 5
-          }
-        ]
-      },
-      {
-        "slug": "dn-teknoloji",
-        "name": "DN Teknoloji",
-        "description": "Grup şirketlerimizin dijital dönüşümüne öncülük ediyor ve küresel pazarlar için yazılım çözümleri geliştiriyoruz.",
-        "sector": "Teknoloji",
-        "accentColor": "#7c3aed",
-        "featured": true,
-        "stats": [
-          {
-            "label": "Ar-Ge Projesi",
-            "value": 45,
-            "suffix": "+"
-          },
-          {
-            "label": "Mühendis",
-            "value": 300,
-            "suffix": "+"
-          }
-        ]
-      },
-      {
-        "slug": "dn-gayrimenkul",
-        "name": "DN Gayrimenkul",
-        "description": "Şehirlerin siluetini değiştiren, yaşama değer katan premium konut ve ticari gayrimenkul projeleri geliştiriyoruz.",
-        "sector": "Gayrimenkul",
-        "accentColor": "#0891b2",
-        "featured": true,
-        "stats": [
-          {
-            "label": "Geliştirilen Alan (m²)",
-            "value": 2000000,
-            "suffix": "+"
-          },
-          {
-            "label": "Ödüllü Proje",
-            "value": 15
-          }
-        ]
-      }
-    ],
-    "projects": [
-      {
-        "slug": "dn-tower-istanbul",
-        "title": "DN Tower İstanbul",
-        "description": "İstanbul'un yeni finans merkezinde yer alan, LEED Gold sertifikalı 45 katlı akıllı ofis kulesi projesi.",
-        "company": "DN Gayrimenkul",
-        "category": "Ticari",
-        "year": "2024",
-        "location": "İstanbul, Türkiye"
-      },
-      {
-        "slug": "ege-ruzgar-santrali",
-        "title": "Ege Rüzgar Enerjisi Santrali",
-        "description": "İzmir bölgesinde kurulan ve yıllık 150.000 hanenin elektrik ihtiyacını karşılayan 120MW kapasiteli rüzgar santrali.",
-        "company": "DN Enerji",
-        "category": "Yenilenebilir Enerji",
-        "year": "2023",
-        "location": "İzmir, Türkiye"
-      },
-      {
-        "slug": "avrasya-lojistik-merkezi",
-        "title": "Avrasya Lojistik Merkezi",
-        "description": "Kıtaları birbirine bağlayan, son teknoloji otomasyon sistemleriyle donatılmış 250.000 metrekarelik dev lojistik üssü.",
-        "company": "DN İnşaat",
-        "category": "Altyapı",
-        "year": "2022",
-        "location": "Kocaeli, Türkiye"
-      },
-      {
-        "slug": "organik-tarim-vadisi",
-        "title": "Organik Tarım Vadisi",
-        "description": "Akıllı tarım uygulamaları ve sürdürülebilir su yönetimi ile desteklenen Türkiye'nin en büyük entegre organik tarım tesisi.",
-        "company": "DN Gıda",
-        "category": "Tesis",
-        "year": "2023",
-        "location": "Manisa, Türkiye"
-      },
-      {
-        "slug": "smart-city-platform",
-        "title": "Akıllı Şehir Platformu",
-        "description": "Büyükşehir belediyeleri için geliştirilen, trafik, enerji ve atık yönetimini tek merkezden optimize eden yapay zeka destekli platform.",
-        "company": "DN Teknoloji",
-        "category": "Yazılım",
-        "year": "2024",
-        "location": "Global"
-      },
-      {
-        "slug": "anadolu-mermer-kompleksi",
-        "title": "Anadolu Mermer İşleme Kompleksi",
-        "description": "Sıfır atık prensibiyle çalışan, son teknoloji CNC makineleriyle donatılmış Avrupa'nın en modern mermer işleme tesisi.",
-        "company": "DN Madencilik",
-        "category": "Endüstriyel",
-        "year": "2021",
-        "location": "Afyon, Türkiye"
-      }
-    ],
-    "news": [
-      {
-        "slug": "2024-surdurulebilirlik-raporu",
-        "title": "DN Holding 2024 Sürdürülebilirlik Raporu Yayınlandı",
-        "excerpt": "Geçtiğimiz yıl karbon ayak izimizi %15 azaltmayı başardık.",
-        "date": "2024-02-15",
-        "category": "Sürdürülebilirlik",
-        "featured": true
-      },
-      {
-        "slug": "yeni-gunes-enerjisi-santrali",
-        "title": "İç Anadolu'nun En Büyük Güneş Enerjisi Santrali Kuruluyor",
-        "excerpt": "DN Enerji, Konya'da kurulacak olan yeni güneş enerjisi santrali için imzaları attı.",
-        "date": "2024-01-20",
-        "category": "Yatırım",
-        "featured": true
-      },
-      {
-        "slug": "akilli-sehirler-odulu",
-        "title": "DN Teknoloji'ye Uluslararası Akıllı Şehirler Ödülü",
-        "excerpt": "Geliştirdiğimiz Akıllı Şehir Platformu, Londra'daki teknoloji zirvesinde ödüle layık görüldü.",
-        "date": "2023-11-10",
-        "category": "Ödül",
-        "featured": true
-      }
-    ],
-    "stats": [
-      {
-        "label": "Ciro (Milyar $)",
-        "value": 2.4,
-        "prefix": "$"
-      },
-      {
-        "label": "Çalışan",
-        "value": 15,
-        "suffix": "k+"
-      },
-      {
-        "label": "Ülke",
-        "value": 18,
-        "suffix": "+"
-      },
-      {
-        "label": "Yıllık Tecrübe",
-        "value": 25,
-        "suffix": "+"
-      }
-    ]
-  },
-  "cookie": {
-    "title": "Çerez Tercihleri",
-    "description": "Sitemizde, kullanıcı deneyimini geliştirmek ve site trafiğini analiz etmek için çerezler kullanıyoruz.",
-    "accept": "Tümünü Kabul Et",
-    "decline": "Reddet"
-  }
+    "nav":  {
+                "home":  "Ana Sayfa",
+                "about":  "Hakkımızda",
+                "companies":  "Grup Şirketleri",
+                "areas":  "Faaliyet Alanları",
+                "projects":  "Projeler",
+                "media":  "Medya",
+                "contact":  "İletişim",
+                "products":  "Ürünler / Hizmetler"
+            },
+    "home":  {
+                 "hero":  {
+                              "title":  "Geleceği İnşa Ediyoruz",
+                              "subtitle":  "DN Holding olarak sürdürülebilir büyüme ve yenilikçi vizyonumuzla yarının dünyasını şekillendiriyoruz.",
+                              "cta":  "Hakkımızda",
+                              "secondaryCta":  "Grup Şirketleri"
+                          },
+                 "about":  {
+                               "tagline":  "Vizyonumuz",
+                               "title":  "Köklü Geçmiş, Güçlü Gelecek",
+                               "description":  "Yarım asrı aşan tecrübemizle, faaliyet gösterdiğimiz her sektörde öncü olma vizyonuyla ilerliyoruz.",
+                               "description2":  "Küresel standartlarda hizmet anlayışımız ve yenilikçi yaklaşımımızla paydaşlarımıza değer katmaya devam ediyoruz.",
+                               "imageCaption":  "DN Holding Genel Merkezi"
+                           },
+                 "companies":  {
+                                   "tagline":  "Grup Şirketlerimiz",
+                                   "title":  "Gücümüzü Çeşitlilikten Alıyoruz",
+                                   "subtitle":  "Farklı sektörlerdeki uzman şirketlerimizle entegre çözümler sunuyoruz."
+                               },
+                 "areas":  {
+                               "tagline":  "Sektörler",
+                               "title":  "Faaliyet Alanlarımız",
+                               "items":  [
+                                             "İnşaat \u0026 Altyapı",
+                                             "Enerji",
+                                             "Madencilik",
+                                             "Gıda \u0026 Tarım",
+                                             "Teknoloji",
+                                             "Gayrimenkul"
+                                         ]
+                           },
+                 "projects":  {
+                                  "tagline":  "Referanslar",
+                                  "title":  "Öne Çıkan Projeler",
+                                  "subtitle":  "Tamamladığımız ve devam eden vizyoner projelerimiz."
+                              },
+                 "news":  {
+                              "tagline":  "Gündem",
+                              "title":  "Bizden Haberler"
+                          },
+                 "cta":  {
+                             "title":  "Geleceği Birlikte İnşa Edelim",
+                             "subtitle":  "Projeleriniz ve işbirlikleri için bizimle iletişime geçin.",
+                             "button":  "Bize Ulaşın",
+                             "secondaryButton":  "Projelerimizi İnceleyin"
+                         }
+             },
+    "about":  {
+                  "hero":  {
+                               "title":  "Hakkımızda",
+                               "subtitle":  "Değerlerimizle büyüyoruz."
+                           },
+                  "vision":  {
+                                 "title":  "Vizyonumuz",
+                                 "description":  "Küresel ölçekte sürdürülebilir yatırımlarla geleceğe yön veren lider holding olmak."
+                             },
+                  "mission":  {
+                                  "title":  "Misyonumuz",
+                                  "description":  "Tüm paydaşlarımız için yenilikçi, güvenilir ve yüksek kaliteli çözümler üreterek değer yaratmak."
+                              },
+                  "story":  {
+                                "tagline":  "Hikayemiz",
+                                "title":  "Dünden Bugüne",
+                                "subtitle":  "Başarılarla dolu yolculuğumuzun kilometre taşları."
+                            },
+                  "timeline":  {
+                                   "items":  [
+                                                 {
+                                                     "year":  "1998",
+                                                     "title":  "Kuruluş",
+                                                     "description":  "DN Holding temelleri atıldı."
+                                                 },
+                                                 {
+                                                     "year":  "2005",
+                                                     "title":  "Globalleşme",
+                                                     "description":  "İlk uluslararası yatırımlar başladı."
+                                                 }
+                                             ]
+                               },
+                  "values":  {
+                                 "title":  "Değerlerimiz",
+                                 "items":  [
+                                               {
+                                                   "icon":  "🤝",
+                                                   "title":  "Güvenilirlik",
+                                                   "description":  "Tüm iş süreçlerimizde şeffaflık ve dürüstlük ilkesiyle hareket ederiz."
+                                               },
+                                               {
+                                                   "icon":  "💡",
+                                                   "title":  "Yenilikçilik",
+                                                   "description":  "Sürekli gelişim için inovatif yaklaşımları destekleriz."
+                                               },
+                                               {
+                                                   "icon":  "🌍",
+                                                   "title":  "Sürdürülebilirlik",
+                                                   "description":  "Çevreye ve topluma duyarlı sürdürülebilir politikalar benimseriz."
+                                               }
+                                           ]
+                             }
+              },
+    "companies":  {
+                      "tagline":  "Bağlı Ortaklıklar",
+                      "title":  "Grup Şirketlerimiz",
+                      "subtitle":  "Her biri kendi alanında uzman, yenilikçi şirketlerimiz."
+                  },
+    "areas":  {
+                  "tagline":  "Sektörler",
+                  "title":  "Faaliyet Alanlarımız",
+                  "subtitle":  "Geniş bir yelpazede hizmet sunarak değer yaratıyoruz."
+              },
+    "products":  {
+                     "tagline":  "Hizmetlerimiz",
+                     "title":  "Ürünler \u0026 Hizmetler",
+                     "subtitle":  "Kalite ve güvenceyle sunduğumuz ürün ve hizmetler."
+                 },
+    "projects":  {
+                     "tagline":  "Referanslar",
+                     "title":  "Projeler",
+                     "subtitle":  "İmza attığımız vizyoner projeler.",
+                     "detail":  {
+                                    "category":  "Kategori",
+                                    "year":  "Yıl",
+                                    "location":  "Konum",
+                                    "company":  "Şirket",
+                                    "related":  "İlgili Projeler"
+                                }
+                 },
+    "media":  {
+                  "tagline":  "Gündem",
+                  "title":  "Medya \u0026 Haberler",
+                  "subtitle":  "Holdingimizle ilgili en son gelişmeler.",
+                  "related":  "Diğer Haberler"
+              },
+    "contact":  {
+                    "tagline":  "Bize Ulaşın",
+                    "title":  "İletişim",
+                    "subtitle":  "Sorularınız ve görüşleriniz için buradayız.",
+                    "form":  {
+                                 "name":  "Ad Soyad",
+                                 "email":  "E-posta",
+                                 "phone":  "Telefon",
+                                 "company":  "Şirket",
+                                 "subject":  "Konu",
+                                 "message":  "Mesajınız",
+                                 "submit":  "Gönder"
+                             },
+                    "info":  {
+                                 "addressTitle":  "Adres",
+                                 "address":  "Levent, İstanbul, Türkiye",
+                                 "phoneTitle":  "Telefon",
+                                 "emailTitle":  "E-posta",
+                                 "hoursTitle":  "Çalışma Saatleri",
+                                 "hours":  "Pzt - Cum: 09:00 - 18:00"
+                             }
+                },
+    "common":  {
+                   "readMore":  "Devamını Oku",
+                   "discover":  "Keşfet",
+                   "viewAll":  "Tümünü Gör"
+               },
+    "data":  {
+                                  }
+                              ]
+             },
+    "cookie":  {
+                   "title":  "Çerez Tercihleri",
+                   "description":  "Sitemizde, kullanıcı deneyimini geliştirmek ve site trafiğini analiz etmek için çerezler kullanıyoruz.",
+                   "accept":  "Tümünü Kabul Et",
+                   "decline":  "Reddet"
+               }
 }
