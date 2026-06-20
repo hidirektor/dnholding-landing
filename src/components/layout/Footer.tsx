@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {Container} from "./Container";
 import type {Locale} from "@/app/dictionaries";
 import styles from "./Footer.module.css";
@@ -169,8 +170,13 @@ export function Footer({ lang }: FooterProps) {
           {/* About Column */}
           <div className={styles.aboutCol}>
             <Link href={`/`} className={styles.footerLogo}>
-              <span className={styles.logoIcon}>DN</span>
-              <span className={styles.logoText}>HOLDING</span>
+              <Image 
+                src="/logo_dnholding.png" 
+                alt="DN Holding Logo" 
+                width={200} 
+                height={50} 
+                className={styles.logoImage}
+              />
             </Link>
             <p className={styles.aboutText}>{data.about.description}</p>
             <div className={styles.socialLinks}>

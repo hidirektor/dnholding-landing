@@ -45,6 +45,12 @@
   z-index: 10;
 }
 
+.logoImage {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
 .logoIcon {
   display: flex;
   align-items: center;

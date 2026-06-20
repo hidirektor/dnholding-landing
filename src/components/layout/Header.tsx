@@ -2,6 +2,7 @@
 
 import {useCallback, useEffect, useState} from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {usePathname} from "next/navigation";
 import {cn} from "@/lib/utils";
 import {useScrollDirection} from "@/hooks/useScrollDirection";
@@ -157,10 +158,14 @@ export function Header({ lang }: HeaderProps) {
               onClick={closeMobile}
               aria-label="DN Holding Home"
             >
-              <span className={styles.logoIcon}>DN</span>
-              <span className={styles.logoText}>
-                HOLDING
-              </span>
+              <Image 
+                src="/logo_dnholding.png" 
+                alt="DN Holding Logo" 
+                width={200} 
+                height={50} 
+                className={styles.logoImage}
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}
