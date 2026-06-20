@@ -28,7 +28,7 @@ export function HeroSection({
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/50 to-primary z-10" />
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-[url('/media/hero-bg.jpg')] bg-cover bg-center" />
       </div>
 
       <Container className="relative z-20 text-center">

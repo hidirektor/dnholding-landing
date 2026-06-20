@@ -32,7 +32,7 @@
             "tagline": "Secteurs",
             "title": "Nos Domaines d'Activité",
             "items": [
-                "Construction & Infrastructure",
+                "Marbre",
                 "Énergie",
                 "Exploitation Minière"
             ]
@@ -312,7 +312,8 @@
                 "company": "DN Immobilier",
                 "category": "Commercial",
                 "year": "2024",
-                "location": "Istanbul, Turquie"
+                "location": "Istanbul, Turquie",
+                "image": "/media/project1.jpg"
             },
             {
                 "slug": "ege-ruzgar-santrali",
@@ -321,7 +322,8 @@
                 "company": "DN Énergie",
                 "category": "Énergie Renouvelable",
                 "year": "2023",
-                "location": "Izmir, Turquie"
+                "location": "Izmir, Turquie",
+                "image": "/media/project2.jpg"
             },
             {
                 "slug": "avrasya-lojistik-merkezi",
@@ -330,7 +332,8 @@
                 "company": "DN Construction",
                 "category": "Infrastructure",
                 "year": "2022",
-                "location": "Kocaeli, Turquie"
+                "location": "Kocaeli, Turquie",
+                "image": "/media/project3.jpg"
             },
             {
                 "slug": "organik-tarim-vadisi",
@@ -339,7 +342,8 @@
                 "company": "DN Alimentation",
                 "category": "Installation",
                 "year": "2023",
-                "location": "Manisa, Turquie"
+                "location": "Manisa, Turquie",
+                "image": "/media/project1.jpg"
             },
             {
                 "slug": "smart-city-platform",
@@ -348,7 +352,8 @@
                 "company": "DN Technologie",
                 "category": "Logiciel",
                 "year": "2024",
-                "location": "Mondial"
+                "location": "Mondial",
+                "image": "/media/project2.jpg"
             },
             {
                 "slug": "anadolu-mermer-kompleksi",
@@ -357,7 +362,8 @@
                 "company": "DN Exploitation Minière",
                 "category": "Industriel",
                 "year": "2021",
-                "location": "Afyon, Turquie"
+                "location": "Afyon, Turquie",
+                "image": "/media/project3.jpg"
             }
         ],
         "news": [
@@ -367,7 +373,8 @@
                 "excerpt": "Nous avons réduit nos émissions de carbone de 15 % l'année dernière.",
                 "date": "2024-02-15",
                 "category": "Durabilité",
-                "featured": true
+                "featured": true,
+                "image": "/media/news1.jpg"
             },
             {
                 "slug": "new-solar-farm",
@@ -375,7 +382,8 @@
                 "excerpt": "DN Énergie prévoit de construire le plus grand parc solaire d'Anatolie centrale.",
                 "date": "2024-01-20",
                 "category": "Investissements",
-                "featured": true
+                "featured": true,
+                "image": "/media/news2.jpg"
             },
             {
                 "slug": "smart-city-award",
@@ -383,7 +391,8 @@
                 "excerpt": "Notre plateforme Smart City a été récompensée au Sommet Mondial des Technologies.",
                 "date": "2023-11-10",
                 "category": "Récompenses",
-                "featured": true
+                "featured": true,
+                "image": "/media/news3.jpg"
             }
         ],
         "stats": [
