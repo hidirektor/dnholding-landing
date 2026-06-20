@@ -22,9 +22,9 @@ const businessAreas: Record<string, { icon: React.ReactNode; title: string; desc
   tr: [
     {
       icon: <IconConstruction />,
-      title: "Mermer",
+      title: "İnşaat & Altyapı",
       description:
-        "Dünya standartlarında yüksek kaliteli mermer üretimi ve ihracatıyla projelerinize estetik ve değer katıyoruz.",
+        "Dünya standartlarında yüksek kaliteli projelerle yaşam alanlarına değer katıyoruz.",
     },
     {
       icon: <IconMining />,
@@ -42,9 +42,9 @@ const businessAreas: Record<string, { icon: React.ReactNode; title: string; desc
   en: [
     {
       icon: <IconConstruction />,
-      title: "Marble",
+      title: "Construction & Infrastructure",
       description:
-        "We add aesthetics and value to your projects with our world-class high-quality marble production and export.",
+        "We add value to living spaces with world-class high-quality projects.",
     },
     {
       icon: <IconMining />,
