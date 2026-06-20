@@ -169,10 +169,7 @@
                    "discover":  "Keşfet",
                    "viewAll":  "Tümünü Gör"
                },
-    "data":  {
-                                  }
-                              ]
-             },
+    "data":  {},
     "cookie":  {
                    "title":  "Çerez Tercihleri",
                    "description":  "Sitemizde, kullanıcı deneyimini geliştirmek ve site trafiğini analiz etmek için çerezler kullanıyoruz.",
