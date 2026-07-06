@@ -32,10 +32,6 @@ const navItems = {
         { label: "YNR MADEN A.Ş.", href: "/companies/ynr-maden" },
       ],
     },
-    { label: "Faaliyet Alanları", href: "/business-areas" },
-    { label: "Ürünler / Hizmetler", href: "/products" },
-    { label: "Projeler", href: "/projects" },
-    { label: "Medya", href: "/media" },
     { label: "İletişim", href: "/contact" },
   ],
   en: [
@@ -56,10 +52,6 @@ const navItems = {
         { label: "YNR MINING INC.", href: "/companies/ynr-maden" },
       ],
     },
-    { label: "Business Areas", href: "/business-areas" },
-    { label: "Products / Services", href: "/products" },
-    { label: "Projects", href: "/projects" },
-    { label: "Media", href: "/media" },
     { label: "Contact", href: "/contact" },
   ],
   de: [
@@ -80,10 +72,6 @@ const navItems = {
         { label: "YNR BERGBAU", href: "/companies/ynr-maden" },
       ],
     },
-    { label: "Tätigkeitsbereiche", href: "/business-areas" },
-    { label: "Produkte / Dienstleistungen", href: "/products" },
-    { label: "Projekte", href: "/projects" },
-    { label: "Medien", href: "/media" },
     { label: "Kontakt", href: "/contact" },
   ],
   fr: [
@@ -104,10 +92,6 @@ const navItems = {
         { label: "YNR EXPLOITATION", href: "/companies/ynr-maden" },
       ],
     },
-    { label: "Domaines d'Activité", href: "/business-areas" },
-    { label: "Produits / Services", href: "/products" },
-    { label: "Projets", href: "/projects" },
-    { label: "Médias", href: "/media" },
     { label: "Contact", href: "/contact" },
   ]
 };
