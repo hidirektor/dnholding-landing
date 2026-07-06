@@ -32,10 +32,11 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
   ];
 
   const timelineItems = dict.about.timeline.items.map(
-    (item: { year: string; title: string; description: string }) => ({
+    (item: { year: string; title: string; description: string; image?: string }) => ({
       year: item.year,
       title: item.title,
       description: item.description,
+      image: item.image,
     })
   );
 

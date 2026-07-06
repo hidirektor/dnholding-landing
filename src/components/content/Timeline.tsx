@@ -5,6 +5,7 @@ interface TimelineItem {
   year: string;
   title: string;
   description: string;
+  image?: string;
 }
 
 export function Timeline({ items }: { items: TimelineItem[] }) {
@@ -27,7 +28,12 @@ export function Timeline({ items }: { items: TimelineItem[] }) {
                     {item.year}
                   </span>
                   <Heading level="h4" className="mb-3">{item.title}</Heading>
-                  <p className="text-text-secondary leading-relaxed">{item.description}</p>
+                  <p className="text-text-secondary leading-relaxed mb-6">{item.description}</p>
+                  {item.image && (
+                    <div className="relative aspect-video rounded-[var(--radius-lg)] overflow-hidden">
+                      <img src={item.image} alt={item.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                    </div>
+                  )}
                 </div>
               </div>
             </ScrollReveal>

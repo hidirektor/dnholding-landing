@@ -28,7 +28,15 @@ export function HeroSection({
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/50 to-primary z-10" />
-        <div className="absolute inset-0 bg-[url('/media/hero-bg.jpg')] bg-cover bg-center" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/assets/videos/hero-bg.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <Container className="relative z-20 text-center">
