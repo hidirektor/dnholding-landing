@@ -27,15 +27,15 @@ export function HeroSection({
     <section className={`relative flex items-center justify-center overflow-hidden bg-primary ${variant === "default" ? "min-h-[90vh]" : "min-h-[50vh] pt-32"}`}>
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/50 to-primary z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/60 to-primary z-10" />
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover opacity-80"
         >
-          <source src="/assets/videos/hero-bg.mp4" type="video/mp4" />
+          <source src="/assets/videos/hero-bg.mp4?v=2" type="video/mp4" />
         </video>
       </div>
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {getCurrentLocale, getDictionary} from "@/app/dictionaries";
 import {Section} from "@/components/layout/Section";
 import {Container} from "@/components/layout/Container";
@@ -106,6 +107,29 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
               </div>
             </div>
           </ScrollReveal>
+
+          {/* Image Gallery */}
+          {(project as any).images && (project as any).images.length > 0 && (
+            <ScrollReveal delay={300}>
+              <div className="mt-12 pt-8 border-t border-border">
+                <h3 className="text-2xl font-bold mb-6 text-text">{(dict.common as any).gallery || "Galeri"}</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                  {(project as any).images.map((img: string, idx: number) => (
+                    <div key={idx} className="relative aspect-[4/3] rounded-xl overflow-hidden group">
+                      <Image 
+                        src={img} 
+                        alt={`${project.title} - ${idx + 1}`} 
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-110" 
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </ScrollReveal>
+          )}
+
         </Container>
       </Section>
 

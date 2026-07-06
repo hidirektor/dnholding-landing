@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {Heading} from "@/components/ui/Heading";
 
@@ -31,7 +32,13 @@ export function Timeline({ items }: { items: TimelineItem[] }) {
                   <p className="text-text-secondary leading-relaxed mb-6">{item.description}</p>
                   {item.image && (
                     <div className="relative aspect-video rounded-[var(--radius-lg)] overflow-hidden">
-                      <img src={item.image} alt={item.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                      <Image 
+                        src={item.image} 
+                        alt={item.title} 
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="object-cover transition-transform duration-700 hover:scale-105" 
+                      />
                     </div>
                   )}
                 </div>
