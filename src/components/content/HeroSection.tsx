@@ -35,7 +35,7 @@ export function HeroSection({
           playsInline
           className="absolute inset-0 w-full h-full object-cover opacity-80"
         >
-          <source src="/assets/videos/hero-bg.mp4?v=2" type="video/mp4" />
+          <source src="/assets/projects/marmo-showroom-cladding/ivory-veincut-1.mp4" type="video/mp4" />
         </video>
       </div>
 
