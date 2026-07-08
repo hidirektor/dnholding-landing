@@ -1,618 +1,619 @@
 {
-    "nav": {
-        "home": "Home",
-        "about": "About Us",
-        "companies": "Group Companies",
-        "areas": "Business Areas",
-        "projects": "Projects",
-        "media": "Media",
-        "contact": "Contact",
-        "products": "Products / Services"
-    },
-    "home": {
-        "hero": {
-            "title": "From Raw to Perfect",
-            "subtitle": "As DN Holding, we are shaping the world of tomorrow with our sustainable growth and innovative vision.",
-            "cta": "About Us",
-            "secondaryCta": "Group Companies"
-        },
-        "about": {
-            "tagline": "Our Vision",
-            "title": "Deep Roots, Strong Future",
-            "description": "With over half a century of experience, we move forward with the vision of being a pioneer in every sector we operate.",
-            "description2": "We continue to add value to our stakeholders with our global standard service approach and innovative mindset.",
-            "imageCaption": "DN Holding Headquarters"
-        },
-        "companies": {
-            "tagline": "Our Companies",
-            "title": "Strength in Diversity",
-            "subtitle": "We offer integrated solutions with our specialized companies in various sectors."
-        },
-        "areas": {
-            "tagline": "Sectors",
-            "title": "Business Areas",
-            "items": [
-                "Marble",
-                "Energy",
-                "Mining"
-            ]
-        },
-        "projects": {
-            "tagline": "References",
-            "title": "Featured Projects",
-            "subtitle": "Our completed and ongoing visionary projects."
-        },
-        "news": {
-            "tagline": "Agenda",
-            "title": "Latest News"
-        },
-        "cta": {
-            "title": "Let's Build the Future Together",
-            "subtitle": "Contact us for your projects and collaborations.",
-            "button": "Contact Us",
-            "secondaryButton": "View Projects"
-        }
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "companies": "Group Companies",
+    "areas": "Business Areas",
+    "projects": "Projects",
+    "media": "Media",
+    "contact": "Contact",
+    "products": "Products / Services"
+  },
+  "home": {
+    "hero": {
+      "title": "From Raw to Perfect",
+      "subtitle": "As DN Holding, we are shaping the world of tomorrow with our sustainable growth and innovative vision.",
+      "cta": "About Us",
+      "secondaryCta": "Group Companies"
     },
     "about": {
-        "hero": {
-            "title": "About Us",
-            "subtitle": "Growing with our values."
-        },
-        "vision": {
-            "title": "Our Vision",
-            "description": "To be the leading holding that guides the future with sustainable investments on a global scale."
-        },
-        "mission": {
-            "title": "Our Mission",
-            "description": "To create value by producing innovative, reliable and high quality solutions for all our stakeholders."
-        },
-        "story": {
-            "tagline": "Our Story",
-            "title": "From Past to Present",
-            "subtitle": "Milestones of our journey full of success."
-        },
-        "timeline": {
-            "items": [
-                {
-                    "year": "1998",
-                    "title": "Establishment",
-                    "description": "The foundations of our nearly half a century of experience were laid.",
-                    "image": "/assets/about/about-1.jpg"
-                },
-                {
-                    "year": "2005",
-                    "title": "Export",
-                    "description": "Our first exports started to international markets, primarily the USA.",
-                    "image": "/assets/about/about-2.jpg"
-                },
-                {
-                    "year": "2018",
-                    "title": "Growth and Championship",
-                    "description": "We started winning the export championship in the sector with Yaman Maden A.Ş.",
-                    "image": "/assets/about/about-3.jpg"
-                },
-                {
-                    "year": "2024",
-                    "title": "Formation of DN Holding",
-                    "description": "We completed our corporate restructuring and consolidated all our activities under the umbrella of DN Holding.",
-                    "image": "/assets/about/about-4.jpg"
-                }
-            ]
-        },
-        "values": {
-            "title": "Our Values",
-            "items": [
-                {
-                    "icon": "🤝",
-                    "title": "Reliability",
-                    "description": "We act with transparency and honesty in all our business processes."
-                },
-                {
-                    "icon": "💡",
-                    "title": "Innovation",
-                    "description": "We support innovative approaches for continuous improvement."
-                },
-                {
-                    "icon": "🌍",
-                    "title": "Sustainability",
-                    "description": "We adopt environmentally and socially sensitive sustainable policies."
-                }
-            ]
-        }
+      "tagline": "Our Vision",
+      "title": "Deep Roots, Strong Future",
+      "description": "With over half a century of experience, we move forward with the vision of being a pioneer in every sector we operate.",
+      "description2": "We continue to add value to our stakeholders with our global standard service approach and innovative mindset.",
+      "imageCaption": "DN Holding Headquarters"
     },
     "companies": {
-        "tagline": "Subsidiaries",
-        "title": "Group Companies",
-        "subtitle": "Our innovative companies, each an expert in their field."
+      "tagline": "Our Companies",
+      "title": "Strength in Diversity",
+      "subtitle": "We offer integrated solutions with our specialized companies in various sectors."
     },
     "areas": {
-        "tagline": "Sectors",
-        "title": "Business Areas",
-        "subtitle": "We create value by offering services in a wide range."
-    },
-    "products": {
-        "tagline": "Services",
-        "title": "Products & Services",
-        "subtitle": "Products and services we offer with quality and assurance."
+      "tagline": "Sectors",
+      "title": "Business Areas",
+      "items": [
+        "Marble",
+        "Energy",
+        "Mining"
+      ]
     },
     "projects": {
-        "tagline": "References",
-        "title": "Projects",
-        "subtitle": "Visionary projects we have signed.",
-        "detail": {
-            "category": "Category",
-            "year": "Year",
-            "location": "Location",
-            "company": "Company",
-            "related": "Related Projects"
-        }
+      "tagline": "References",
+      "title": "Featured Projects",
+      "subtitle": "Our completed and ongoing visionary projects."
     },
-    "media": {
-        "tagline": "Agenda",
-        "title": "Media & News",
-        "subtitle": "Latest updates about our holding.",
-        "related": "Other News"
+    "news": {
+      "tagline": "Agenda",
+      "title": "Latest News"
     },
-    "contact": {
-        "tagline": "Reach Out",
-        "title": "Contact",
-        "subtitle": "We are here for your questions and feedback.",
-        "form": {
-            "name": "Full Name",
-            "email": "Email",
-            "phone": "Phone",
-            "company": "Company",
-            "subject": "Subject",
-            "message": "Message",
-            "submit": "Send"
-        },
-        "info": {
-            "addressTitle": "Address",
-            "address": "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
-            "phoneTitle": "Phone",
-            "emailTitle": "Email",
-            "hoursTitle": "Working Hours",
-            "hours": "Mon - Fri: 09:00 - 18:00"
-        }
-    },
-    "common": {
-        "readMore": "Read More",
-        "discover": "Discover",
-        "viewAll": "View All",
-        "contactCta": "Would you like to get in touch?",
-        "contactUs": "Contact Us",
-        "projects": "Projects",
-        "share": "Share"
-    },
-    "data": {
-        "companies": [
-            {
-                "slug": "dn-holding",
-                "name": "DN HOLDING A.Ş",
-                "description": "2024 yılı itibarıyla kurumsal yapılanmasını tamamlayan ve uluslararası alanda güçlü bir pozisyona sahip olan holding.",
-                "sector": "Holding",
-                "accentColor": "#1f2937",
-                "featured": true
-            },
-            {
-                "slug": "dn-mermer",
-                "name": "DN Mermer A.Ş.",
-                "description": "Yarım asra yaklaşan tecrübesiyle traverten ve limra taşlarında uzmanlaşmış, doğal taş sektörünün lider firması.",
-                "sector": "Mermer",
-                "accentColor": "#4b5563",
-                "featured": true
-            },
-            {
-                "slug": "yaman-maden",
-                "name": "Yaman Maden A.Ş.",
-                "description": "2018 yılından bu yana sektörde ihracat şampiyonluğunu kesintisiz olarak sürdüren şirket.",
-                "sector": "Maden",
-                "accentColor": "#9a3412",
-                "featured": true
-            },
-            {
-                "slug": "ymy-enerji",
-                "name": "YMY Enerji A.Ş.",
-                "description": "Holdingin enerji ihtiyacını karşılayan ve yeni GES projeleriyle ülke enerjisine katkı sunan şirket.",
-                "sector": "Enerji",
-                "accentColor": "#059669",
-                "featured": true
-            },
-            {
-                "slug": "4t-madencilik",
-                "name": "4T Madencilik A.Ş.",
-                "description": "Doğal kaynakların ekonomiye kazandırılması amacıyla çevreye duyarlı madencilik yapar.",
-                "sector": "Maden",
-                "accentColor": "#9a3412",
-                "featured": false
-            },
-            {
-                "slug": "demtalya-madencilik",
-                "name": "Demtalya Madencilik A.Ş.",
-                "description": "Uluslararası standartlarda madencilik operasyonları yürütmektedir.",
-                "sector": "Maden",
-                "accentColor": "#b45309",
-                "featured": false
-            },
-            {
-                "slug": "hd-maden",
-                "name": "HD Maden A.Ş.",
-                "description": "Maden sektöründe entegre üretim tesisleriyle global pazara hitap etmektedir.",
-                "sector": "Maden",
-                "accentColor": "#57534e",
-                "featured": false
-            },
-            {
-                "slug": "2m-uluslararasi",
-                "name": "2M Uluslararası Madencilik A.Ş.",
-                "description": "Sürdürülebilir madencilik faaliyetleriyle uluslararası pazarlara hizmet veren şirket.",
-                "sector": "Maden",
-                "accentColor": "#b45309",
-                "featured": false
-            }
-        ],
-        "projects": [
-            {
-                "slug": "4-15311-pattern-forest-dr-cypress-111924",
-                "title": "15311 Pattern Forest Dr Cypress 111924",
-                "description": "15311 Pattern Forest Dr Cypress 111924 projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/4-15311-pattern-forest-dr-cypress-111924/stoneline-1.jpg",
-                "images": [
-                    "/assets/projects/4-15311-pattern-forest-dr-cypress-111924/stoneline-1.jpg",
-                    "/assets/projects/4-15311-pattern-forest-dr-cypress-111924/stoneline-10.jpg",
-                    "/assets/projects/4-15311-pattern-forest-dr-cypress-111924/stoneline-3559.jpg",
-                    "/assets/projects/4-15311-pattern-forest-dr-cypress-111924/stoneline-3561.jpg",
-                    "/assets/projects/4-15311-pattern-forest-dr-cypress-111924/stoneline-3563.jpg"
-                ]
-            },
-            {
-                "slug": "1-15601-audubon-pk-dr-magnolia",
-                "title": "15601 Audubon Pk Dr Magnolia",
-                "description": "15601 Audubon Pk Dr Magnolia projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/1-15601-audubon-pk-dr-magnolia/alba-vena.jpg",
-                "images": [
-                    "/assets/projects/1-15601-audubon-pk-dr-magnolia/alba-vena.jpg",
-                    "/assets/projects/1-15601-audubon-pk-dr-magnolia/albavena.jpg",
-                    "/assets/projects/1-15601-audubon-pk-dr-magnolia/stoneline-0666.jpg",
-                    "/assets/projects/1-15601-audubon-pk-dr-magnolia/stoneline-0667.jpg",
-                    "/assets/projects/1-15601-audubon-pk-dr-magnolia/stoneline-0668.jpg"
-                ]
-            },
-            {
-                "slug": "1-15601-audubon-pk-dr-magnolia-111924",
-                "title": "15601 Audubon Pk Dr Magnolia 111924",
-                "description": "15601 Audubon Pk Dr Magnolia 111924 projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/1-15601-audubon-pk-dr-magnolia-111924/stoneline-0668.jpg",
-                "images": [
-                    "/assets/projects/1-15601-audubon-pk-dr-magnolia-111924/stoneline-0668.jpg",
-                    "/assets/projects/1-15601-audubon-pk-dr-magnolia-111924/stoneline-0669.jpg",
-                    "/assets/projects/1-15601-audubon-pk-dr-magnolia-111924/stoneline-0672.jpg",
-                    "/assets/projects/1-15601-audubon-pk-dr-magnolia-111924/stoneline-0674.jpg",
-                    "/assets/projects/1-15601-audubon-pk-dr-magnolia-111924/stoneline-0676.jpg"
-                ]
-            },
-            {
-                "slug": "3-19022-river-otter-ln-cypress-111924",
-                "title": "19022 River Otter Ln Cypress 111924",
-                "description": "19022 River Otter Ln Cypress 111924 projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/3-19022-river-otter-ln-cypress-111924/stoneline-11.jpg",
-                "images": [
-                    "/assets/projects/3-19022-river-otter-ln-cypress-111924/stoneline-11.jpg",
-                    "/assets/projects/3-19022-river-otter-ln-cypress-111924/stoneline-12.jpg",
-                    "/assets/projects/3-19022-river-otter-ln-cypress-111924/stoneline-13.jpg",
-                    "/assets/projects/3-19022-river-otter-ln-cypress-111924/stoneline-2.jpg",
-                    "/assets/projects/3-19022-river-otter-ln-cypress-111924/stoneline-3.jpg"
-                ]
-            },
-            {
-                "slug": "2-40407-mostyn-dr-magnolia-111924",
-                "title": "40407 Mostyn Dr Magnolia 111924",
-                "description": "40407 Mostyn Dr Magnolia 111924 projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/2-40407-mostyn-dr-magnolia-111924/stoneline-0702.jpg",
-                "images": [
-                    "/assets/projects/2-40407-mostyn-dr-magnolia-111924/stoneline-0702.jpg",
-                    "/assets/projects/2-40407-mostyn-dr-magnolia-111924/stoneline-0703.jpg",
-                    "/assets/projects/2-40407-mostyn-dr-magnolia-111924/stoneline-0704.jpg",
-                    "/assets/projects/2-40407-mostyn-dr-magnolia-111924/stoneline-0705.jpg",
-                    "/assets/projects/2-40407-mostyn-dr-magnolia-111924/stoneline-0707.jpg"
-                ]
-            },
-            {
-                "slug": "davie-mansion-cladding",
-                "title": "Davie Mansion Cladding",
-                "description": "Davie Mansion Cladding projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/davie-mansion-cladding/18x36-ivory-veincut-brushed-cladding-1.jpeg",
-                "images": [
-                    "/assets/projects/davie-mansion-cladding/18x36-ivory-veincut-brushed-cladding-1.jpeg",
-                    "/assets/projects/davie-mansion-cladding/18x36-ivory-veincut-brushed-cladding-2.jpeg",
-                    "/assets/projects/davie-mansion-cladding/18x36-ivory-veincut-brushed-cladding-3.jpeg",
-                    "/assets/projects/davie-mansion-cladding/18x36-ivory-veincut-brushed-cladding-4.jpeg",
-                    "/assets/projects/davie-mansion-cladding/18x36-ivory-veincut-brushed-cladding-5.jpeg"
-                ]
-            },
-            {
-                "slug": "formula-1-qatar-lusail-circuit",
-                "title": "Formula 1 Qatar Lusail Circuit",
-                "description": "Formula 1 Qatar Lusail Circuit projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/formula-1-qatar-lusail-circuit/ivory-veincut-cladding-1.jpeg",
-                "images": [
-                    "/assets/projects/formula-1-qatar-lusail-circuit/ivory-veincut-cladding-1.jpeg",
-                    "/assets/projects/formula-1-qatar-lusail-circuit/ivory-veincut-cladding-2.jpeg",
-                    "/assets/projects/formula-1-qatar-lusail-circuit/ivory-veincut-cladding-3.jpeg",
-                    "/assets/projects/formula-1-qatar-lusail-circuit/ivory-veincut-cladding-4.jpeg",
-                    "/assets/projects/formula-1-qatar-lusail-circuit/ivory-veincut-cladding-5.jpeg"
-                ]
-            },
-            {
-                "slug": "goldwynn-nassau-hotel",
-                "title": "Goldwynn Nassau Hotel",
-                "description": "Goldwynn Nassau Hotel projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/goldwynn-nassau-hotel/ivory-veincut-24x48-1.jpeg",
-                "images": [
-                    "/assets/projects/goldwynn-nassau-hotel/ivory-veincut-24x48-1.jpeg",
-                    "/assets/projects/goldwynn-nassau-hotel/ivory-veincut-24x48-1.jpg",
-                    "/assets/projects/goldwynn-nassau-hotel/ivory-veincut-24x48-2.jpeg",
-                    "/assets/projects/goldwynn-nassau-hotel/ivory-veincut-24x48-3.jpeg",
-                    "/assets/projects/goldwynn-nassau-hotel/ivory-veincut-24x48-4.jpeg"
-                ]
-            },
-            {
-                "slug": "honaz-kaklik-anaokulu-proje-protokol",
-                "title": "Honaz Kaklik Anaokulu Proje Protokol",
-                "description": "Honaz Kaklik Anaokulu Proje Protokol projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0983.heic",
-                "images": [
-                    "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0983.heic",
-                    "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0993.heic",
-                    "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0998.heic",
-                    "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-1007.jpg",
-                    "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-1016.jpg"
-                ]
-            },
-            {
-                "slug": "istanbul-airport-project",
-                "title": "Istanbul Airport Project",
-                "description": "Istanbul Airport Project projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/istanbul-airport-project/travertine-vein-cut-1.jpeg",
-                "images": [
-                    "/assets/projects/istanbul-airport-project/travertine-vein-cut-1.jpeg",
-                    "/assets/projects/istanbul-airport-project/travertine-vein-cut-2.jpeg",
-                    "/assets/projects/istanbul-airport-project/travertine-vein-cut-3.jpeg",
-                    "/assets/projects/istanbul-airport-project/travertine-vein-cut-4.jpeg"
-                ]
-            },
-            {
-                "slug": "istanbul-island-full-island-renovation",
-                "title": "Istanbul Island Full Island Renovation",
-                "description": "Istanbul Island Full Island Renovation projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/istanbul-island-full-island-renovation/dn-mermer-travertine-quarry-1.jpg",
-                "images": [
-                    "/assets/projects/istanbul-island-full-island-renovation/dn-mermer-travertine-quarry-1.jpg",
-                    "/assets/projects/istanbul-island-full-island-renovation/dn-mermer-travertine-quarry-10.jpg",
-                    "/assets/projects/istanbul-island-full-island-renovation/dn-mermer-travertine-quarry-2.jpg",
-                    "/assets/projects/istanbul-island-full-island-renovation/dn-mermer-travertine-quarry-3.jpg",
-                    "/assets/projects/istanbul-island-full-island-renovation/dn-mermer-travertine-quarry-4.jpg"
-                ]
-            },
-            {
-                "slug": "marmo-showroom-cladding",
-                "title": "Marmo Showroom Cladding",
-                "description": "Marmo Showroom Cladding projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/marmo-showroom-cladding/ivory-veincut-1.jpeg",
-                "images": [
-                    "/assets/projects/marmo-showroom-cladding/ivory-veincut-1.jpeg",
-                    "/assets/projects/marmo-showroom-cladding/ivory-veincut-2.jpeg",
-                    "/assets/projects/marmo-showroom-cladding/ivory-veincut-3.jpeg",
-                    "/assets/projects/marmo-showroom-cladding/ivory-veincut-4.jpeg",
-                    "/assets/projects/marmo-showroom-cladding/ivory-veincut-5.jpeg"
-                ]
-            },
-            {
-                "slug": "riyad-shopping-mall",
-                "title": "Riyad Shopping Mall",
-                "description": "Riyad Shopping Mall projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/riyad-shopping-mall/ivory-veincut-travertine-1.jpeg",
-                "images": [
-                    "/assets/projects/riyad-shopping-mall/ivory-veincut-travertine-1.jpeg",
-                    "/assets/projects/riyad-shopping-mall/ivory-veincut-travertine-2.jpeg",
-                    "/assets/projects/riyad-shopping-mall/ivory-veincut-travertine-3.jpeg"
-                ]
-            },
-            {
-                "slug": "shell-beige-mall-cladding",
-                "title": "Shell Beige Mall Cladding",
-                "description": "Shell Beige Mall Cladding projesi, DN Holding standartlarında tamamlanmıştır.",
-                "company": "DN Mermer",
-                "category": "Mermer",
-                "year": "2024",
-                "location": "Global",
-                "image": "/assets/projects/shell-beige-mall-cladding/shell-beige-cladding-1.jpeg",
-                "images": [
-                    "/assets/projects/shell-beige-mall-cladding/shell-beige-cladding-1.jpeg",
-                    "/assets/projects/shell-beige-mall-cladding/shell-beige-cladding-2.jpeg",
-                    "/assets/projects/shell-beige-mall-cladding/shell-beige-cladding-3.jpeg",
-                    "/assets/projects/shell-beige-mall-cladding/shell-beige-cladding-4.jpeg"
-                ]
-            }
-        ],
-        "news": [
-            {
-                "slug": "2024-ihracat-sampiyonu-murat-yener",
-                "title": "2024 Ihracat Sampiyonu Murat Yener",
-                "excerpt": "Details for 2024 Ihracat Sampiyonu Murat Yener. Explore our event and news highlights.",
-                "date": "2024-06-01",
-                "category": "News & Announcements",
-                "featured": true,
-                "image": "/assets/news/2024-ihracat-sampiyonu-murat-yener/img-9491.jpg",
-                "images": [
-                    "/assets/news/2024-ihracat-sampiyonu-murat-yener/img-9491.jpg",
-                    "/assets/news/2024-ihracat-sampiyonu-murat-yener/img-9493.jpg",
-                    "/assets/news/2024-ihracat-sampiyonu-murat-yener/img-9499.jpg",
-                    "/assets/news/2024-ihracat-sampiyonu-murat-yener/img-9512.heic",
-                    "/assets/news/2024-ihracat-sampiyonu-murat-yener/img-9520.heic"
-                ]
-            },
-            {
-                "slug": "afyon-blok-mermer-fuari",
-                "title": "Afyon Blok Mermer Fuari",
-                "excerpt": "Details for Afyon Blok Mermer Fuari. Explore our event and news highlights.",
-                "date": "2024-06-01",
-                "category": "News & Announcements",
-                "featured": true,
-                "image": "/assets/events/afyon-blok-mermer-fuari/img-1208.heic",
-                "images": [
-                    "/assets/events/afyon-blok-mermer-fuari/img-1208.heic",
-                    "/assets/events/afyon-blok-mermer-fuari/img-1213.heic",
-                    "/assets/events/afyon-blok-mermer-fuari/img-1219.heic",
-                    "/assets/events/afyon-blok-mermer-fuari/img-1222.heic",
-                    "/assets/events/afyon-blok-mermer-fuari/img-1234.heic"
-                ]
-            },
-            {
-                "slug": "izmir-fuar-2025",
-                "title": "Izmir Fuar 2025",
-                "excerpt": "Details for Izmir Fuar 2025. Explore our event and news highlights.",
-                "date": "2024-06-01",
-                "category": "News & Announcements",
-                "featured": true,
-                "image": "/assets/events/izmir-fuar-2025/4ac03e42-e208-4c71-a36c-79974ffeb0c3.heic",
-                "images": [
-                    "/assets/events/izmir-fuar-2025/4ac03e42-e208-4c71-a36c-79974ffeb0c3.heic",
-                    "/assets/events/izmir-fuar-2025/76281752-c8eb-46dd-99da-d070a437cc7d.heic",
-                    "/assets/events/izmir-fuar-2025/7b299a2c-8a31-44e6-8b50-83b1326701a3.heic",
-                    "/assets/events/izmir-fuar-2025/7fc8350d-abc9-4c0d-bd8c-491e3a48ee3e.heic",
-                    "/assets/events/izmir-fuar-2025/c737418c-d0e0-4283-b5b8-3d53a574f698.heic"
-                ]
-            },
-            {
-                "slug": "izmir-fuar-2026",
-                "title": "Izmir Fuar 2026",
-                "excerpt": "Details for Izmir Fuar 2026. Explore our event and news highlights.",
-                "date": "2024-06-01",
-                "category": "News & Announcements",
-                "featured": true,
-                "image": "/assets/events/izmir-fuar-2026/img-0491.heic",
-                "images": [
-                    "/assets/events/izmir-fuar-2026/img-0491.heic",
-                    "/assets/events/izmir-fuar-2026/img-0505.heic",
-                    "/assets/events/izmir-fuar-2026/img-0513.heic",
-                    "/assets/events/izmir-fuar-2026/img-0515.heic",
-                    "/assets/events/izmir-fuar-2026/img-0525.heic"
-                ]
-            },
-            {
-                "slug": "xiamen-2026",
-                "title": "Xiamen 2026",
-                "excerpt": "Details for Xiamen 2026. Explore our event and news highlights.",
-                "date": "2024-06-01",
-                "category": "News & Announcements",
-                "featured": true,
-                "image": "/assets/events/xiamen-2026/img-0275.jpg",
-                "images": [
-                    "/assets/events/xiamen-2026/img-0275.jpg",
-                    "/assets/events/xiamen-2026/img-0281.jpg",
-                    "/assets/events/xiamen-2026/img-0284.jpg",
-                    "/assets/events/xiamen-2026/img-0288.jpg",
-                    "/assets/events/xiamen-2026/img-0292.jpg"
-                ]
-            }
-        ],
-        "stats": [
-            {
-                "label": "Licensed Stone Quarries",
-                "value": 24
-            },
-            {
-                "label": "Annual Block Production (Tons)",
-                "value": 500,
-                "suffix": "K+"
-            },
-            {
-                "label": "Export Countries",
-                "value": 47,
-                "suffix": "+"
-            },
-            {
-                "label": "Self Energy Production",
-                "value": 40,
-                "suffix": "%"
-            }
-        ],
-        "products": [
-            {
-                "id": "p1",
-                "companySlug": "dn-mermer",
-                "name": "Mermer4675",
-                "description": "Premium quality natural stone.",
-                "category": "Mermer",
-                "image": "/assets/products/products-1.jpg"
-            },
-            {
-                "id": "p2",
-                "companySlug": "dn-mermer",
-                "name": "Mermer4675",
-                "description": "Premium quality natural stone.",
-                "category": "Mermer",
-                "image": "/assets/products/products-2.jpg"
-            }
-        ]
-    },
-    "cookie": {
-        "title": "Cookie Preferences",
-        "description": "We use cookies on our site to enhance the user experience and analyze site traffic.",
-        "accept": "Accept All",
-        "decline": "Decline"
+    "cta": {
+      "title": "Let's Build the Future Together",
+      "subtitle": "Contact us for your projects and collaborations.",
+      "button": "Contact Us",
+      "secondaryButton": "View Projects"
     }
+  },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Growing with our values."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the leading holding that guides the future with sustainable investments on a global scale."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To create value by producing innovative, reliable and high quality solutions for all our stakeholders."
+    },
+    "story": {
+      "tagline": "Our Story",
+      "title": "From Past to Present",
+      "subtitle": "Milestones of our journey full of success."
+    },
+    "timeline": {
+      "items": [
+        {
+          "year": "1998",
+          "title": "Establishment",
+          "description": "The foundations of our nearly half a century of experience were laid.",
+          "image": "/assets/about/about-1.jpg"
+        },
+        {
+          "year": "2005",
+          "title": "Export",
+          "description": "Our first exports started to international markets, primarily the USA.",
+          "image": "/assets/about/about-2.jpg"
+        },
+        {
+          "year": "2018",
+          "title": "Growth and Championship",
+          "description": "We started winning the export championship in the sector with Yaman Maden A.Ş.",
+          "image": "/assets/about/about-3.jpg"
+        },
+        {
+          "year": "2024",
+          "title": "Formation of DN Holding",
+          "description": "We completed our corporate restructuring and consolidated all our activities under the umbrella of DN Holding.",
+          "image": "/assets/about/about-4.jpg"
+        }
+      ]
+    },
+    "values": {
+      "title": "Our Values",
+      "items": [
+        {
+          "icon": "🤝",
+          "title": "Reliability",
+          "description": "We act with transparency and honesty in all our business processes."
+        },
+        {
+          "icon": "💡",
+          "title": "Innovation",
+          "description": "We support innovative approaches for continuous improvement."
+        },
+        {
+          "icon": "🌍",
+          "title": "Sustainability",
+          "description": "We adopt environmentally and socially sensitive sustainable policies."
+        }
+      ]
+    }
+  },
+  "companies": {
+    "tagline": "Subsidiaries",
+    "title": "Group Companies",
+    "subtitle": "Our innovative companies, each an expert in their field."
+  },
+  "areas": {
+    "tagline": "Sectors",
+    "title": "Business Areas",
+    "subtitle": "We create value by offering services in a wide range."
+  },
+  "products": {
+    "tagline": "Services",
+    "title": "Products & Services",
+    "subtitle": "Products and services we offer with quality and assurance."
+  },
+  "projects": {
+    "tagline": "References",
+    "title": "Projects",
+    "subtitle": "Visionary projects we have signed.",
+    "detail": {
+      "category": "Category",
+      "year": "Year",
+      "location": "Location",
+      "company": "Company",
+      "related": "Related Projects"
+    }
+  },
+  "media": {
+    "tagline": "Agenda",
+    "title": "Media & News",
+    "subtitle": "Latest updates about our holding.",
+    "related": "Other News"
+  },
+  "contact": {
+    "tagline": "Reach Out",
+    "title": "Contact",
+    "subtitle": "We are here for your questions and feedback.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send"
+    },
+    "info": {
+      "addressTitle": "Address",
+      "address": "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
+      "phoneTitle": "Phone",
+      "emailTitle": "Email",
+      "hoursTitle": "Working Hours",
+      "hours": "Mon - Fri: 09:00 - 18:00"
+    }
+  },
+  "common": {
+    "readMore": "Read More",
+    "discover": "Discover",
+    "viewAll": "View All",
+    "contactCta": "Would you like to get in touch?",
+    "contactUs": "Contact Us",
+    "projects": "Projects",
+    "share": "Share"
+  },
+  "data": {
+    "companies": [
+      {
+        "slug": "dn-holding",
+        "name": "DN HOLDING A.Ş",
+        "description": "2024 yılı itibarıyla kurumsal yapılanmasını tamamlayan ve uluslararası alanda güçlü bir pozisyona sahip olan holding.",
+        "sector": "Holding",
+        "accentColor": "#1f2937",
+        "featured": true
+      },
+      {
+        "slug": "dn-mermer",
+        "name": "DN Mermer A.Ş.",
+        "description": "Yarım asra yaklaşan tecrübesiyle traverten ve limra taşlarında uzmanlaşmış, doğal taş sektörünün lider firması.",
+        "sector": "Mermer",
+        "accentColor": "#4b5563",
+        "featured": true
+      },
+      {
+        "slug": "yaman-maden",
+        "name": "Yaman Maden A.Ş.",
+        "description": "2018 yılından bu yana sektörde ihracat şampiyonluğunu kesintisiz olarak sürdüren şirket.",
+        "sector": "Maden",
+        "accentColor": "#9a3412",
+        "featured": true
+      },
+      {
+        "slug": "ymy-enerji",
+        "name": "YMY Enerji A.Ş.",
+        "description": "Holdingin enerji ihtiyacını karşılayan ve yeni GES projeleriyle ülke enerjisine katkı sunan şirket.",
+        "sector": "Enerji",
+        "accentColor": "#059669",
+        "featured": true
+      },
+      {
+        "slug": "4t-madencilik",
+        "name": "4T Madencilik A.Ş.",
+        "description": "Doğal kaynakların ekonomiye kazandırılması amacıyla çevreye duyarlı madencilik yapar.",
+        "sector": "Maden",
+        "accentColor": "#9a3412",
+        "featured": false
+      },
+      {
+        "slug": "demtalya-madencilik",
+        "name": "Demtalya Madencilik A.Ş.",
+        "description": "Uluslararası standartlarda madencilik operasyonları yürütmektedir.",
+        "sector": "Maden",
+        "accentColor": "#b45309",
+        "featured": false
+      },
+      {
+        "slug": "hd-maden",
+        "name": "HD Maden A.Ş.",
+        "description": "Maden sektöründe entegre üretim tesisleriyle global pazara hitap etmektedir.",
+        "sector": "Maden",
+        "accentColor": "#57534e",
+        "featured": false
+      },
+      {
+        "slug": "2m-uluslararasi",
+        "name": "2M Uluslararası Madencilik A.Ş.",
+        "description": "Sürdürülebilir madencilik faaliyetleriyle uluslararası pazarlara hizmet veren şirket.",
+        "sector": "Maden",
+        "accentColor": "#b45309",
+        "featured": false
+      }
+    ],
+    "projects": [
+      {
+        "slug": "4-15311-pattern-forest-dr-cypress-111924",
+        "title": "15311 Pattern Forest Dr Cypress 111924",
+        "description": "15311 Pattern Forest Dr Cypress 111924 projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/4-15311-pattern-forest-dr-cypress-111924/stoneline-1.jpg",
+        "images": [
+          "/assets/projects/4-15311-pattern-forest-dr-cypress-111924/stoneline-1.jpg",
+          "/assets/projects/4-15311-pattern-forest-dr-cypress-111924/stoneline-10.jpg",
+          "/assets/projects/4-15311-pattern-forest-dr-cypress-111924/stoneline-3559.jpg",
+          "/assets/projects/4-15311-pattern-forest-dr-cypress-111924/stoneline-3561.jpg",
+          "/assets/projects/4-15311-pattern-forest-dr-cypress-111924/stoneline-3563.jpg"
+        ]
+      },
+      {
+        "slug": "1-15601-audubon-pk-dr-magnolia",
+        "title": "15601 Audubon Pk Dr Magnolia",
+        "description": "15601 Audubon Pk Dr Magnolia projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/1-15601-audubon-pk-dr-magnolia/alba-vena.jpg",
+        "images": [
+          "/assets/projects/1-15601-audubon-pk-dr-magnolia/alba-vena.jpg",
+          "/assets/projects/1-15601-audubon-pk-dr-magnolia/albavena.jpg",
+          "/assets/projects/1-15601-audubon-pk-dr-magnolia/stoneline-0666.jpg",
+          "/assets/projects/1-15601-audubon-pk-dr-magnolia/stoneline-0667.jpg",
+          "/assets/projects/1-15601-audubon-pk-dr-magnolia/stoneline-0668.jpg"
+        ]
+      },
+      {
+        "slug": "1-15601-audubon-pk-dr-magnolia-111924",
+        "title": "15601 Audubon Pk Dr Magnolia 111924",
+        "description": "15601 Audubon Pk Dr Magnolia 111924 projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/1-15601-audubon-pk-dr-magnolia-111924/stoneline-0668.jpg",
+        "images": [
+          "/assets/projects/1-15601-audubon-pk-dr-magnolia-111924/stoneline-0668.jpg",
+          "/assets/projects/1-15601-audubon-pk-dr-magnolia-111924/stoneline-0669.jpg",
+          "/assets/projects/1-15601-audubon-pk-dr-magnolia-111924/stoneline-0672.jpg",
+          "/assets/projects/1-15601-audubon-pk-dr-magnolia-111924/stoneline-0674.jpg",
+          "/assets/projects/1-15601-audubon-pk-dr-magnolia-111924/stoneline-0676.jpg"
+        ]
+      },
+      {
+        "slug": "3-19022-river-otter-ln-cypress-111924",
+        "title": "19022 River Otter Ln Cypress 111924",
+        "description": "19022 River Otter Ln Cypress 111924 projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/3-19022-river-otter-ln-cypress-111924/stoneline-11.jpg",
+        "images": [
+          "/assets/projects/3-19022-river-otter-ln-cypress-111924/stoneline-11.jpg",
+          "/assets/projects/3-19022-river-otter-ln-cypress-111924/stoneline-12.jpg",
+          "/assets/projects/3-19022-river-otter-ln-cypress-111924/stoneline-13.jpg",
+          "/assets/projects/3-19022-river-otter-ln-cypress-111924/stoneline-2.jpg",
+          "/assets/projects/3-19022-river-otter-ln-cypress-111924/stoneline-3.jpg"
+        ]
+      },
+      {
+        "slug": "2-40407-mostyn-dr-magnolia-111924",
+        "title": "40407 Mostyn Dr Magnolia 111924",
+        "description": "40407 Mostyn Dr Magnolia 111924 projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/2-40407-mostyn-dr-magnolia-111924/stoneline-0702.jpg",
+        "images": [
+          "/assets/projects/2-40407-mostyn-dr-magnolia-111924/stoneline-0702.jpg",
+          "/assets/projects/2-40407-mostyn-dr-magnolia-111924/stoneline-0703.jpg",
+          "/assets/projects/2-40407-mostyn-dr-magnolia-111924/stoneline-0704.jpg",
+          "/assets/projects/2-40407-mostyn-dr-magnolia-111924/stoneline-0705.jpg",
+          "/assets/projects/2-40407-mostyn-dr-magnolia-111924/stoneline-0707.jpg"
+        ]
+      },
+      {
+        "slug": "davie-mansion-cladding",
+        "title": "Davie Mansion Cladding",
+        "description": "Davie Mansion Cladding projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/davie-mansion-cladding/18x36-ivory-veincut-brushed-cladding-1.jpeg",
+        "images": [
+          "/assets/projects/davie-mansion-cladding/18x36-ivory-veincut-brushed-cladding-1.jpeg",
+          "/assets/projects/davie-mansion-cladding/18x36-ivory-veincut-brushed-cladding-2.jpeg",
+          "/assets/projects/davie-mansion-cladding/18x36-ivory-veincut-brushed-cladding-3.jpeg",
+          "/assets/projects/davie-mansion-cladding/18x36-ivory-veincut-brushed-cladding-4.jpeg",
+          "/assets/projects/davie-mansion-cladding/18x36-ivory-veincut-brushed-cladding-5.jpeg"
+        ]
+      },
+      {
+        "slug": "formula-1-qatar-lusail-circuit",
+        "title": "Formula 1 Qatar Lusail Circuit",
+        "description": "Formula 1 Qatar Lusail Circuit projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/formula-1-qatar-lusail-circuit/ivory-veincut-cladding-1.jpeg",
+        "images": [
+          "/assets/projects/formula-1-qatar-lusail-circuit/ivory-veincut-cladding-1.jpeg",
+          "/assets/projects/formula-1-qatar-lusail-circuit/ivory-veincut-cladding-2.jpeg",
+          "/assets/projects/formula-1-qatar-lusail-circuit/ivory-veincut-cladding-3.jpeg",
+          "/assets/projects/formula-1-qatar-lusail-circuit/ivory-veincut-cladding-4.jpeg",
+          "/assets/projects/formula-1-qatar-lusail-circuit/ivory-veincut-cladding-5.jpeg"
+        ]
+      },
+      {
+        "slug": "goldwynn-nassau-hotel",
+        "title": "Goldwynn Nassau Hotel",
+        "description": "Goldwynn Nassau Hotel projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/goldwynn-nassau-hotel/ivory-veincut-24x48-1.jpeg",
+        "images": [
+          "/assets/projects/goldwynn-nassau-hotel/ivory-veincut-24x48-1.jpeg",
+          "/assets/projects/goldwynn-nassau-hotel/ivory-veincut-24x48-1.jpg",
+          "/assets/projects/goldwynn-nassau-hotel/ivory-veincut-24x48-2.jpeg",
+          "/assets/projects/goldwynn-nassau-hotel/ivory-veincut-24x48-3.jpeg",
+          "/assets/projects/goldwynn-nassau-hotel/ivory-veincut-24x48-4.jpeg"
+        ]
+      },
+      {
+        "slug": "honaz-kaklik-anaokulu-proje-protokol",
+        "title": "Honaz Kaklik Anaokulu Proje Protokol",
+        "description": "Honaz Kaklik Anaokulu Proje Protokol projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0983.heic",
+        "images": [
+          "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0983.heic",
+          "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0993.heic",
+          "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0998.heic",
+          "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-1007.jpg",
+          "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-1016.jpg"
+        ]
+      },
+      {
+        "slug": "istanbul-airport-project",
+        "title": "Istanbul Airport Project",
+        "description": "Istanbul Airport Project projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/istanbul-airport-project/travertine-vein-cut-1.jpeg",
+        "images": [
+          "/assets/projects/istanbul-airport-project/travertine-vein-cut-1.jpeg",
+          "/assets/projects/istanbul-airport-project/travertine-vein-cut-2.jpeg",
+          "/assets/projects/istanbul-airport-project/travertine-vein-cut-3.jpeg",
+          "/assets/projects/istanbul-airport-project/travertine-vein-cut-4.jpeg"
+        ]
+      },
+      {
+        "slug": "istanbul-island-full-island-renovation",
+        "title": "Istanbul Island Full Island Renovation",
+        "description": "Istanbul Island Full Island Renovation projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/istanbul-island-full-island-renovation/dn-mermer-travertine-quarry-1.jpg",
+        "images": [
+          "/assets/projects/istanbul-island-full-island-renovation/dn-mermer-travertine-quarry-1.jpg",
+          "/assets/projects/istanbul-island-full-island-renovation/dn-mermer-travertine-quarry-10.jpg",
+          "/assets/projects/istanbul-island-full-island-renovation/dn-mermer-travertine-quarry-2.jpg",
+          "/assets/projects/istanbul-island-full-island-renovation/dn-mermer-travertine-quarry-3.jpg",
+          "/assets/projects/istanbul-island-full-island-renovation/dn-mermer-travertine-quarry-4.jpg"
+        ]
+      },
+      {
+        "slug": "marmo-showroom-cladding",
+        "title": "Marmo Showroom Cladding",
+        "description": "Marmo Showroom Cladding projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/marmo-showroom-cladding/ivory-veincut-1.jpeg",
+        "images": [
+          "/assets/projects/marmo-showroom-cladding/ivory-veincut-1.jpeg",
+          "/assets/projects/marmo-showroom-cladding/ivory-veincut-2.jpeg",
+          "/assets/projects/marmo-showroom-cladding/ivory-veincut-3.jpeg",
+          "/assets/projects/marmo-showroom-cladding/ivory-veincut-4.jpeg",
+          "/assets/projects/marmo-showroom-cladding/ivory-veincut-5.jpeg"
+        ]
+      },
+      {
+        "slug": "riyad-shopping-mall",
+        "title": "Riyad Shopping Mall",
+        "description": "Riyad Shopping Mall projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/riyad-shopping-mall/ivory-veincut-travertine-1.jpeg",
+        "images": [
+          "/assets/projects/riyad-shopping-mall/ivory-veincut-travertine-1.jpeg",
+          "/assets/projects/riyad-shopping-mall/ivory-veincut-travertine-2.jpeg",
+          "/assets/projects/riyad-shopping-mall/ivory-veincut-travertine-3.jpeg"
+        ]
+      },
+      {
+        "slug": "shell-beige-mall-cladding",
+        "title": "Shell Beige Mall Cladding",
+        "description": "Shell Beige Mall Cladding projesi, DN Holding standartlarında tamamlanmıştır.",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Global",
+        "image": "/assets/projects/shell-beige-mall-cladding/shell-beige-cladding-1.jpeg",
+        "images": [
+          "/assets/projects/shell-beige-mall-cladding/shell-beige-cladding-1.jpeg",
+          "/assets/projects/shell-beige-mall-cladding/shell-beige-cladding-2.jpeg",
+          "/assets/projects/shell-beige-mall-cladding/shell-beige-cladding-3.jpeg",
+          "/assets/projects/shell-beige-mall-cladding/shell-beige-cladding-4.jpeg"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "slug": "2024-ihracat-sampiyonu-murat-yener",
+        "title": "2024 Ihracat Sampiyonu Murat Yener",
+        "excerpt": "Details for 2024 Ihracat Sampiyonu Murat Yener. Explore our event and news highlights.",
+        "date": "2024-06-01",
+        "category": "News & Announcements",
+        "featured": true,
+        "image": "/assets/news/2024-ihracat-sampiyonu-murat-yener/img-9491.jpg",
+        "images": [
+          "/assets/news/2024-ihracat-sampiyonu-murat-yener/img-9491.jpg",
+          "/assets/news/2024-ihracat-sampiyonu-murat-yener/img-9493.jpg",
+          "/assets/news/2024-ihracat-sampiyonu-murat-yener/img-9499.jpg",
+          "/assets/news/2024-ihracat-sampiyonu-murat-yener/img-9512.heic",
+          "/assets/news/2024-ihracat-sampiyonu-murat-yener/img-9520.heic"
+        ]
+      },
+      {
+        "slug": "afyon-blok-mermer-fuari",
+        "title": "Afyon Blok Mermer Fuari",
+        "excerpt": "Details for Afyon Blok Mermer Fuari. Explore our event and news highlights.",
+        "date": "2024-06-01",
+        "category": "News & Announcements",
+        "featured": true,
+        "image": "/assets/events/afyon-blok-mermer-fuari/img-1208.heic",
+        "images": [
+          "/assets/events/afyon-blok-mermer-fuari/img-1208.heic",
+          "/assets/events/afyon-blok-mermer-fuari/img-1213.heic",
+          "/assets/events/afyon-blok-mermer-fuari/img-1219.heic",
+          "/assets/events/afyon-blok-mermer-fuari/img-1222.heic",
+          "/assets/events/afyon-blok-mermer-fuari/img-1234.heic"
+        ]
+      },
+      {
+        "slug": "izmir-fuar-2025",
+        "title": "Izmir Fuar 2025",
+        "excerpt": "Details for Izmir Fuar 2025. Explore our event and news highlights.",
+        "date": "2024-06-01",
+        "category": "News & Announcements",
+        "featured": true,
+        "image": "/assets/events/izmir-fuar-2025/4ac03e42-e208-4c71-a36c-79974ffeb0c3.heic",
+        "images": [
+          "/assets/events/izmir-fuar-2025/4ac03e42-e208-4c71-a36c-79974ffeb0c3.heic",
+          "/assets/events/izmir-fuar-2025/76281752-c8eb-46dd-99da-d070a437cc7d.heic",
+          "/assets/events/izmir-fuar-2025/7b299a2c-8a31-44e6-8b50-83b1326701a3.heic",
+          "/assets/events/izmir-fuar-2025/7fc8350d-abc9-4c0d-bd8c-491e3a48ee3e.heic",
+          "/assets/events/izmir-fuar-2025/c737418c-d0e0-4283-b5b8-3d53a574f698.heic"
+        ]
+      },
+      {
+        "slug": "izmir-fuar-2026",
+        "title": "Izmir Fuar 2026",
+        "excerpt": "Details for Izmir Fuar 2026. Explore our event and news highlights.",
+        "date": "2024-06-01",
+        "category": "News & Announcements",
+        "featured": true,
+        "image": "/assets/events/izmir-fuar-2026/img-0491.heic",
+        "images": [
+          "/assets/events/izmir-fuar-2026/img-0491.heic",
+          "/assets/events/izmir-fuar-2026/img-0505.heic",
+          "/assets/events/izmir-fuar-2026/img-0513.heic",
+          "/assets/events/izmir-fuar-2026/img-0515.heic",
+          "/assets/events/izmir-fuar-2026/img-0525.heic"
+        ]
+      },
+      {
+        "slug": "xiamen-2026",
+        "title": "Xiamen 2026",
+        "excerpt": "Details for Xiamen 2026. Explore our event and news highlights.",
+        "date": "2024-06-01",
+        "category": "News & Announcements",
+        "featured": true,
+        "image": "/assets/events/xiamen-2026/img-0275.jpg",
+        "images": [
+          "/assets/events/xiamen-2026/img-0275.jpg",
+          "/assets/events/xiamen-2026/img-0281.jpg",
+          "/assets/events/xiamen-2026/img-0284.jpg",
+          "/assets/events/xiamen-2026/img-0288.jpg",
+          "/assets/events/xiamen-2026/img-0292.jpg"
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "label": "SINCE",
+        "value": "1980",
+        "suffix": " +"
+      },
+      {
+        "label": "QUARRIES",
+        "value": "8",
+        "suffix": " +"
+      },
+      {
+        "label": "PRODUCTION AREA",
+        "value": "344.970",
+        "suffix": " m²"
+      },
+      {
+        "label": "PRODUCT VARIETIES",
+        "value": "22",
+        "suffix": " +"
+      }
+    ],
+    "products": [
+      {
+        "id": "p1",
+        "companySlug": "dn-mermer",
+        "name": "Mermer4675",
+        "description": "Premium quality natural stone.",
+        "category": "Mermer",
+        "image": "/assets/products/products-1.jpg"
+      },
+      {
+        "id": "p2",
+        "companySlug": "dn-mermer",
+        "name": "Mermer4675",
+        "description": "Premium quality natural stone.",
+        "category": "Mermer",
+        "image": "/assets/products/products-2.jpg"
+      }
+    ]
+  },
+  "cookie": {
+    "title": "Cookie Preferences",
+    "description": "We use cookies on our site to enhance the user experience and analyze site traffic.",
+    "accept": "Accept All",
+    "decline": "Decline"
+  }
 }

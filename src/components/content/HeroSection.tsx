@@ -3,6 +3,7 @@
 import {Heading} from "@/components/ui/Heading";
 import {Container} from "@/components/layout/Container";
 import Link from "next/link";
+import Image from "next/image";
 
 interface HeroSectionProps {
   title: string;
@@ -35,15 +36,14 @@ export function HeroSection({
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/40 z-10" />
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/assets/projects/marmo-showroom-cladding/ivory-veincut-1.mp4" type="video/mp4" />
-        </video>
+        <Image
+          src="/hero-bg.jpg"
+          alt="DN Holding Epic Quarry"
+          fill
+          className="object-cover"
+          priority
+          quality={100}
+        />
       </div>
 
       <Container className="relative z-20 flex-1 pt-32 pb-24 md:pb-32 flex flex-col justify-center">
@@ -93,7 +93,7 @@ export function HeroSection({
               <path d="M 32 32 L 0 32 L 0 0 A 32 32 0 0 0 32 32 Z" />
             </svg>
 
-            {stats.slice(0, 3).map((stat, idx) => (
+            {stats.slice(0, 4).map((stat, idx) => (
               <div key={idx} className="flex flex-col items-center text-center">
                 <span className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
                   {stat.prefix}{stat.value}{stat.suffix}

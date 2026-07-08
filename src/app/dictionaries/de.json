@@ -1,461 +1,461 @@
 {
-    "nav": {
-        "home": "Startseite",
-        "about": "Über Uns",
-        "companies": "Konzerngesellschaften",
-        "areas": "Tätigkeitsbereiche",
-        "projects": "Projekte",
-        "media": "Medien",
-        "contact": "Kontakt",
-        "products": "Produkte / Dienstleistungen"
-    },
-    "home": {
-        "hero": {
-            "title": "Vom Rohen zum Perfekten",
-            "subtitle": "Als DN Holding gestalten wir mit unserem nachhaltigen Wachstum und unserer innovativen Vision die Welt von morgen.",
-            "cta": "Über Uns",
-            "secondaryCta": "Konzerngesellschaften"
-        },
-        "about": {
-            "tagline": "Unsere Vision",
-            "title": "Verwurzelte Vergangenheit, Starke Zukunft",
-            "description": "Mit über einem halben Jahrhundert Erfahrung schreiten wir mit der Vision voran, Pioniere in jedem Sektor zu sein, in dem wir tätig sind.",
-            "description2": "Mit unserem globalen Standard an Service und unserem innovativen Ansatz schaffen wir weiterhin Mehrwert für unsere Stakeholder.",
-            "imageCaption": "DN Holding Hauptsitz"
-        },
-        "companies": {
-            "tagline": "Unsere Konzerngesellschaften",
-            "title": "Wir Schöpfen Unsere Stärke aus der Vielfalt",
-            "subtitle": "Mit unseren Fachunternehmen in verschiedenen Sektoren bieten wir integrierte Lösungen an."
-        },
-        "areas": {
-            "tagline": "Sektoren",
-            "title": "Unsere Tätigkeitsbereiche",
-            "items": [
-                "Marmor",
-                "Energie",
-                "Bergbau"
-            ]
-        },
-        "projects": {
-            "tagline": "Referenzen",
-            "title": "Ausgewählte Projekte",
-            "subtitle": "Unsere abgeschlossenen und laufenden visionären Projekte."
-        },
-        "news": {
-            "tagline": "Aktuelles",
-            "title": "Neuigkeiten von Uns"
-        },
-        "cta": {
-            "title": "Lassen Sie Uns Gemeinsam die Zukunft Bauen",
-            "subtitle": "Kontaktieren Sie uns für Ihre Projekte und Kooperationen.",
-            "button": "Kontaktieren Sie Uns",
-            "secondaryButton": "Überprüfen Sie Unsere Projekte"
-        }
+  "nav": {
+    "home": "Startseite",
+    "about": "Über Uns",
+    "companies": "Konzerngesellschaften",
+    "areas": "Tätigkeitsbereiche",
+    "projects": "Projekte",
+    "media": "Medien",
+    "contact": "Kontakt",
+    "products": "Produkte / Dienstleistungen"
+  },
+  "home": {
+    "hero": {
+      "title": "Vom Rohen zum Perfekten",
+      "subtitle": "Als DN Holding gestalten wir mit unserem nachhaltigen Wachstum und unserer innovativen Vision die Welt von morgen.",
+      "cta": "Über Uns",
+      "secondaryCta": "Konzerngesellschaften"
     },
     "about": {
-        "hero": {
-            "title": "Über Uns",
-            "subtitle": "Wir wachsen mit unseren Werten."
-        },
-        "vision": {
-            "title": "Unsere Vision",
-            "description": "Die führende Holdinggesellschaft zu sein, die die Zukunft mit nachhaltigen Investitionen auf globaler Ebene lenkt."
-        },
-        "mission": {
-            "title": "Unsere Mission",
-            "description": "Wertschöpfung durch innovative, zuverlässige und qualitativ hochwertige Lösungen für alle unsere Stakeholder."
-        },
-        "story": {
-            "tagline": "Unsere Geschichte",
-            "title": "Von Gestern bis Heute",
-            "subtitle": "Meilensteine unserer Reise voller Erfolge."
-        },
-        "timeline": {
-            "items": [
-                {
-                    "year": "1998",
-                    "title": "Gründung",
-                    "description": "Die Grundsteine der DN Holding wurden gelegt."
-                },
-                {
-                    "year": "2005",
-                    "title": "Globalisierung",
-                    "description": "Die ersten internationalen Investitionen begannen."
-                }
-            ]
-        },
-        "values": {
-            "title": "Unsere Werte",
-            "items": [
-                {
-                    "icon": "🤝",
-                    "title": "Zuverlässigkeit",
-                    "description": "Wir handeln nach dem Prinzip der Transparenz und Ehrlichkeit in allen unseren Geschäftsprozessen."
-                },
-                {
-                    "icon": "💡",
-                    "title": "Innovation",
-                    "description": "Wir unterstützen innovative Ansätze für kontinuierliche Entwicklung."
-                },
-                {
-                    "icon": "🌍",
-                    "title": "Nachhaltigkeit",
-                    "description": "Wir verfolgen nachhaltige Richtlinien, die sensibel für Umwelt und Gesellschaft sind."
-                }
-            ]
-        }
+      "tagline": "Unsere Vision",
+      "title": "Verwurzelte Vergangenheit, Starke Zukunft",
+      "description": "Mit über einem halben Jahrhundert Erfahrung schreiten wir mit der Vision voran, Pioniere in jedem Sektor zu sein, in dem wir tätig sind.",
+      "description2": "Mit unserem globalen Standard an Service und unserem innovativen Ansatz schaffen wir weiterhin Mehrwert für unsere Stakeholder.",
+      "imageCaption": "DN Holding Hauptsitz"
     },
     "companies": {
-        "tagline": "Tochtergesellschaften",
-        "title": "Unsere Konzerngesellschaften",
-        "subtitle": "Unsere innovativen Unternehmen, von denen jedes ein Experte auf seinem Gebiet ist."
+      "tagline": "Unsere Konzerngesellschaften",
+      "title": "Wir Schöpfen Unsere Stärke aus der Vielfalt",
+      "subtitle": "Mit unseren Fachunternehmen in verschiedenen Sektoren bieten wir integrierte Lösungen an."
     },
     "areas": {
-        "tagline": "Sektoren",
-        "title": "Unsere Tätigkeitsbereiche",
-        "subtitle": "Wir schaffen Wert, indem wir ein breites Spektrum an Dienstleistungen anbieten."
-    },
-    "products": {
-        "tagline": "Unsere Dienstleistungen",
-        "title": "Produkte & Dienstleistungen",
-        "subtitle": "Produkte und Dienstleistungen, die wir mit Qualität und Sicherheit anbieten."
+      "tagline": "Sektoren",
+      "title": "Unsere Tätigkeitsbereiche",
+      "items": [
+        "Marmor",
+        "Energie",
+        "Bergbau"
+      ]
     },
     "projects": {
-        "tagline": "Referenzen",
-        "title": "Projekte",
-        "subtitle": "Visionäre Projekte, die wir unterzeichnet haben.",
-        "detail": {
-            "category": "Kategorie",
-            "year": "Jahr",
-            "location": "Ort",
-            "company": "Unternehmen",
-            "related": "Verwandte Projekte"
-        }
+      "tagline": "Referenzen",
+      "title": "Ausgewählte Projekte",
+      "subtitle": "Unsere abgeschlossenen und laufenden visionären Projekte."
     },
-    "media": {
-        "tagline": "Aktuelles",
-        "title": "Medien & Nachrichten",
-        "subtitle": "Neueste Entwicklungen über unsere Holding.",
-        "related": "Weitere Nachrichten"
+    "news": {
+      "tagline": "Aktuelles",
+      "title": "Neuigkeiten von Uns"
     },
-    "contact": {
-        "tagline": "Kontaktieren Sie Uns",
-        "title": "Kontakt",
-        "subtitle": "Wir sind hier für Ihre Fragen und Meinungen.",
-        "form": {
-            "name": "Vor- und Nachname",
-            "email": "E-Mail",
-            "phone": "Telefon",
-            "company": "Unternehmen",
-            "subject": "Betreff",
-            "message": "Ihre Nachricht",
-            "submit": "Senden"
-        },
-        "info": {
-            "addressTitle": "Adresse",
-            "address": "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
-            "phoneTitle": "Telefon",
-            "emailTitle": "E-Mail",
-            "hoursTitle": "Arbeitszeiten",
-            "hours": "Mo - Fr: 09:00 - 18:00"
-        }
-    },
-    "common": {
-        "readMore": "Weiterlesen",
-        "discover": "Entdecken",
-        "viewAll": "Alle Anzeigen",
-        "contactCta": "Möchten Sie uns kontaktieren?",
-        "contactUs": "Kontaktieren Sie Uns",
-        "projects": "Projekte",
-        "share": "Teilen"
-    },
-    "data": {
-        "companies": [
-            {
-                "sector": "Mermer",
-                "slug": "dn-mermer",
-                "description": "Yüksek kaliteli mermer üretimi ve ihracatı alanında sektörün öncü markalarından biridir.",
-                "accentColor": "#4b5563",
-                "name": "DN MERMER A.Åž.",
-                "stats": [
-                    {
-                        "label": "Ãœretim",
-                        "suffix": "K+",
-                        "value": 500
-                    }
-                ],
-                "featured": true
-            },
-            {
-                "sector": "Maden",
-                "slug": "2m-uluslararasi-madencilik",
-                "description": "Uluslararası standartlarda, sürdürülebilir madencilik faaliyetleri yürütmektedir.",
-                "accentColor": "#b45309",
-                "name": "2M ULUSLARASI MADENCÄ°LÄ°K A.Åž.",
-                "stats": [
-                    {
-                        "label": "İhracat",
-                        "suffix": "+",
-                        "value": 20
-                    }
-                ],
-                "featured": true
-            },
-            {
-                "sector": "Maden",
-                "slug": "4t-madencilik",
-                "description": "DoÄŸal kaynaklarÄ±n ekonomiye kazandÄ±rÄ±lmasÄ± amacÄ±yla Ã§evreye duyarlÄ± madencilik yapar.",
-                "accentColor": "#9a3412",
-                "name": "4T MADENCÄ°LÄ°K A.Åž.",
-                "stats": [
-                    {
-                        "label": "Kapasite",
-                        "suffix": "K",
-                        "value": 100
-                    }
-                ],
-                "featured": true
-            },
-            {
-                "sector": "Maden",
-                "slug": "alm-maden",
-                "description": "YenilikÃ§i teknolojilerle maden arama, Ã§Ä±karma ve zenginleÅŸtirme projeleri yÃ¼rÃ¼tmektedir.",
-                "accentColor": "#854d0e",
-                "name": "ALM MADEN A.Åž.",
-                "stats": [
-                    {
-                        "value": 15,
-                        "label": "Proje"
-                    }
-                ],
-                "featured": false
-            },
-            {
-                "sector": "Mermer & Maden",
-                "slug": "hd-maden-mermer",
-                "description": "Maden ve mermer sektörlerinde entegre üretim tesisleriyle global pazara hitap etmektedir.",
-                "accentColor": "#57534e",
-                "name": "HD MADEN MERMER A.Åž.",
-                "stats": [
-                    {
-                        "value": 3,
-                        "label": "Tesis"
-                    }
-                ],
-                "featured": false
-            },
-            {
-                "sector": "Maden",
-                "slug": "mby-maden",
-                "description": "Kaliteli hammadde Ã¼retimi ile yerel ve uluslararasÄ± sanayinin ihtiyaÃ§larÄ±nÄ± karÅŸÄ±lamaktadÄ±r.",
-                "accentColor": "#b45309",
-                "name": "MBY MADEN A.Åž.",
-                "stats": [
-                    {
-                        "value": 5,
-                        "label": "Ocak"
-                    }
-                ],
-                "featured": false
-            },
-            {
-                "sector": "Maden",
-                "slug": "yaman-maden",
-                "description": "KapsamlÄ± madencilik faaliyetleri ile Ã¼lkemizin yeraltÄ± zenginliklerini deÄŸerlendirmektedir.",
-                "accentColor": "#9a3412",
-                "name": "YAMAN MADEN SANAYÄ° VE TÄ°CARET A.Åž.",
-                "stats": [
-                    {
-                        "label": "YÄ±llÄ±k Ãœretim",
-                        "suffix": "K",
-                        "value": 200
-                    }
-                ],
-                "featured": false
-            },
-            {
-                "sector": "Enerji",
-                "slug": "ymy-enerji",
-                "description": "Yenilenebilir ve temiz enerji kaynaklarÄ±na yatÄ±rÄ±m yaparak sÃ¼rdÃ¼rÃ¼lebilir bir gelecek inÅŸa etmektedir.",
-                "accentColor": "#059669",
-                "name": "YMY ENERJÄ° A.Åž.",
-                "stats": [
-                    {
-                        "value": 450,
-                        "label": "Kurulu Güç MW"
-                    }
-                ],
-                "featured": true
-            },
-            {
-                "sector": "Maden",
-                "slug": "ynr-maden",
-                "description": "Modern ekipmanlar ve uzman kadrosuyla verimli madencilik operasyonlarÄ± gerÃ§ekleÅŸtirmektedir.",
-                "accentColor": "#b45309",
-                "name": "YNR MADEN A.Åž.",
-                "stats": [
-                    {
-                        "label": "İstihdam",
-                        "suffix": "+",
-                        "value": 300
-                    }
-                ],
-                "featured": false
-            }
-        ],
-        "projects": [
-            {
-                "slug": "dn-tower-istanbul",
-                "title": "DN Tower Istanbul",
-                "description": "LEED Gold zertifiziertes 45-stöckiges Smart-Office-Turmprojekt im neuen Finanzzentrum von Istanbul.",
-                "company": "DN Immobilien",
-                "category": "Gewerblich",
-                "year": "2024",
-                "location": "Istanbul, Türkei",
-                "image": "/media/project1.jpg"
-            },
-            {
-                "slug": "ege-ruzgar-santrali",
-                "title": "Ägäisches Windkraftwerk",
-                "description": "120-MW-Windkraftwerk in der Region Izmir, das den Strombedarf von jährlich 150.000 Haushalten deckt.",
-                "company": "DN Energie",
-                "category": "Erneuerbare Energie",
-                "year": "2023",
-                "location": "Izmir, Türkei",
-                "image": "/media/project2.jpg"
-            },
-            {
-                "slug": "avrasya-lojistik-merkezi",
-                "title": "Eurasia Logistikzentrum",
-                "description": "Eine gigantische Logistikbasis mit 250.000 Quadratmetern, die Kontinente verbindet und mit modernsten Automatisierungssystemen ausgestattet ist.",
-                "company": "DN Bau",
-                "category": "Infrastruktur",
-                "year": "2022",
-                "location": "Kocaeli, Türkei",
-                "image": "/media/project3.jpg"
-            },
-            {
-                "slug": "organik-tarim-vadisi",
-                "title": "Organic Farming Valley",
-                "description": "Die größte integrierte Bio-Landwirtschaftsanlage der Türkei, unterstützt durch intelligente landwirtschaftliche Praktiken und nachhaltiges Wassermanagement.",
-                "company": "DN Lebensmittel",
-                "category": "Einrichtung",
-                "year": "2023",
-                "location": "Manisa, Türkei",
-                "image": "/media/project1.jpg"
-            },
-            {
-                "slug": "smart-city-platform",
-                "title": "Smart City Platform",
-                "description": "Eine KI-gestützte Plattform, entwickelt für Großstadtgemeinden, die Verkehr, Energie und Abfallmanagement von einem einzigen Zentrum aus optimiert.",
-                "company": "DN Technologie",
-                "category": "Software",
-                "year": "2024",
-                "location": "Global",
-                "image": "/media/project2.jpg"
-            },
-            {
-                "slug": "anadolu-mermer-kompleksi",
-                "title": "Anatolia Marble Processing Complex",
-                "description": "Europas modernste Marmorverarbeitungsanlage, die nach dem Zero-Waste-Prinzip arbeitet und mit modernsten CNC-Maschinen ausgestattet ist.",
-                "company": "DN Bergbau",
-                "category": "Industriell",
-                "year": "2021",
-                "location": "Afyon, Türkei",
-                "image": "/media/project3.jpg"
-            }
-        ],
-        "news": [
-            {
-                "slug": "2024-sustainability-report",
-                "title": "DN Holding Veröffentlicht Nachhaltigkeitsbericht 2024",
-                "excerpt": "Wir haben den CO2-Ausstoß unserer Aktivitäten im vergangenen Jahr um 15 % gesenkt.",
-                "date": "2024-02-15",
-                "category": "Nachhaltigkeit",
-                "featured": true,
-                "image": "/media/news1.jpg"
-            },
-            {
-                "slug": "new-solar-farm",
-                "title": "Neuer Solarpark in Konya Geplant",
-                "excerpt": "DN Energie plant den Bau des größten Solarparks in Zentralanatolien.",
-                "date": "2024-01-20",
-                "category": "Investitionen",
-                "featured": true,
-                "image": "/media/news2.jpg"
-            },
-            {
-                "slug": "smart-city-award",
-                "title": "DN Technologie Gewinnt Smart City Award",
-                "excerpt": "Unsere Smart City Platform wurde auf der Global Tech Summit ausgezeichnet.",
-                "date": "2023-11-10",
-                "category": "Auszeichnungen",
-                "featured": true,
-                "image": "/media/news3.jpg"
-            }
-        ],
-        "stats": [
-            {
-                "label": "Umsatz (Mrd. USD)",
-                "value": 2.4,
-                "prefix": "$"
-            },
-            {
-                "label": "Mitarbeiter",
-                "value": 15,
-                "suffix": "k+"
-            },
-            {
-                "label": "Länder",
-                "value": 18,
-                "suffix": "+"
-            },
-            {
-                "label": "Erfahrung (Jahre)",
-                "value": 25,
-                "suffix": "+"
-            }
-        ],
-        "products": [
-            {
-                "id": "p1",
-                "name": "Blok Mermer",
-                "description": "Yüksek kaliteli ve homojen renk yapısına sahip, uluslararası standartlarda blok mermer.",
-                "companySlug": "dn-mermer",
-                "image": "/media/marble-block.jpg",
-                "category": "Mermer"
-            },
-            {
-                "id": "p2",
-                "name": "Krom Cevheri",
-                "description": "Sanayi üretiminde kullanılan yüksek saflıkta krom cevheri.",
-                "companySlug": "2m-uluslararasi-madencilik",
-                "image": "/media/chrome-ore.jpg",
-                "category": "Maden"
-            },
-            {
-                "id": "p3",
-                "name": "GÃ¼neÅŸ Enerjisi Santralleri",
-                "description": "SÃ¼rdÃ¼rÃ¼lebilir ve temiz enerji iÃ§in yÃ¼ksek verimli gÃ¼neÅŸ enerjisi Ã§Ã¶zÃ¼mleri.",
-                "companySlug": "ymy-enerji",
-                "image": "/media/solar-plant.jpg",
-                "category": "Enerji"
-            },
-            {
-                "id": "p4",
-                "name": "Sanayi Tipi Kömür",
-                "description": "Yüksek kalorili ve çevre standartlarına uygun sanayi tipi linyit kömürü.",
-                "companySlug": "ynr-maden",
-                "image": "/media/coal.jpg",
-                "category": "Maden"
-            }
-        ]
-    },
-    "cookie": {
-        "title": "Cookie-Einstellungen",
-        "description": "Wir verwenden Cookies auf unserer Website, um die Benutzererfahrung zu verbessern und den Datenverkehr zu analysieren.",
-        "accept": "Alle akzeptieren",
-        "decline": "Ablehnen"
+    "cta": {
+      "title": "Lassen Sie Uns Gemeinsam die Zukunft Bauen",
+      "subtitle": "Kontaktieren Sie uns für Ihre Projekte und Kooperationen.",
+      "button": "Kontaktieren Sie Uns",
+      "secondaryButton": "Überprüfen Sie Unsere Projekte"
     }
+  },
+  "about": {
+    "hero": {
+      "title": "Über Uns",
+      "subtitle": "Wir wachsen mit unseren Werten."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Die führende Holdinggesellschaft zu sein, die die Zukunft mit nachhaltigen Investitionen auf globaler Ebene lenkt."
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Wertschöpfung durch innovative, zuverlässige und qualitativ hochwertige Lösungen für alle unsere Stakeholder."
+    },
+    "story": {
+      "tagline": "Unsere Geschichte",
+      "title": "Von Gestern bis Heute",
+      "subtitle": "Meilensteine unserer Reise voller Erfolge."
+    },
+    "timeline": {
+      "items": [
+        {
+          "year": "1998",
+          "title": "Gründung",
+          "description": "Die Grundsteine der DN Holding wurden gelegt."
+        },
+        {
+          "year": "2005",
+          "title": "Globalisierung",
+          "description": "Die ersten internationalen Investitionen begannen."
+        }
+      ]
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "items": [
+        {
+          "icon": "🤝",
+          "title": "Zuverlässigkeit",
+          "description": "Wir handeln nach dem Prinzip der Transparenz und Ehrlichkeit in allen unseren Geschäftsprozessen."
+        },
+        {
+          "icon": "💡",
+          "title": "Innovation",
+          "description": "Wir unterstützen innovative Ansätze für kontinuierliche Entwicklung."
+        },
+        {
+          "icon": "🌍",
+          "title": "Nachhaltigkeit",
+          "description": "Wir verfolgen nachhaltige Richtlinien, die sensibel für Umwelt und Gesellschaft sind."
+        }
+      ]
+    }
+  },
+  "companies": {
+    "tagline": "Tochtergesellschaften",
+    "title": "Unsere Konzerngesellschaften",
+    "subtitle": "Unsere innovativen Unternehmen, von denen jedes ein Experte auf seinem Gebiet ist."
+  },
+  "areas": {
+    "tagline": "Sektoren",
+    "title": "Unsere Tätigkeitsbereiche",
+    "subtitle": "Wir schaffen Wert, indem wir ein breites Spektrum an Dienstleistungen anbieten."
+  },
+  "products": {
+    "tagline": "Unsere Dienstleistungen",
+    "title": "Produkte & Dienstleistungen",
+    "subtitle": "Produkte und Dienstleistungen, die wir mit Qualität und Sicherheit anbieten."
+  },
+  "projects": {
+    "tagline": "Referenzen",
+    "title": "Projekte",
+    "subtitle": "Visionäre Projekte, die wir unterzeichnet haben.",
+    "detail": {
+      "category": "Kategorie",
+      "year": "Jahr",
+      "location": "Ort",
+      "company": "Unternehmen",
+      "related": "Verwandte Projekte"
+    }
+  },
+  "media": {
+    "tagline": "Aktuelles",
+    "title": "Medien & Nachrichten",
+    "subtitle": "Neueste Entwicklungen über unsere Holding.",
+    "related": "Weitere Nachrichten"
+  },
+  "contact": {
+    "tagline": "Kontaktieren Sie Uns",
+    "title": "Kontakt",
+    "subtitle": "Wir sind hier für Ihre Fragen und Meinungen.",
+    "form": {
+      "name": "Vor- und Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "company": "Unternehmen",
+      "subject": "Betreff",
+      "message": "Ihre Nachricht",
+      "submit": "Senden"
+    },
+    "info": {
+      "addressTitle": "Adresse",
+      "address": "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
+      "phoneTitle": "Telefon",
+      "emailTitle": "E-Mail",
+      "hoursTitle": "Arbeitszeiten",
+      "hours": "Mo - Fr: 09:00 - 18:00"
+    }
+  },
+  "common": {
+    "readMore": "Weiterlesen",
+    "discover": "Entdecken",
+    "viewAll": "Alle Anzeigen",
+    "contactCta": "Möchten Sie uns kontaktieren?",
+    "contactUs": "Kontaktieren Sie Uns",
+    "projects": "Projekte",
+    "share": "Teilen"
+  },
+  "data": {
+    "companies": [
+      {
+        "sector": "Mermer",
+        "slug": "dn-mermer",
+        "description": "Yüksek kaliteli mermer üretimi ve ihracatı alanında sektörün öncü markalarından biridir.",
+        "accentColor": "#4b5563",
+        "name": "DN MERMER A.Åž.",
+        "stats": [
+          {
+            "label": "Ãœretim",
+            "suffix": "K+",
+            "value": 500
+          }
+        ],
+        "featured": true
+      },
+      {
+        "sector": "Maden",
+        "slug": "2m-uluslararasi-madencilik",
+        "description": "Uluslararası standartlarda, sürdürülebilir madencilik faaliyetleri yürütmektedir.",
+        "accentColor": "#b45309",
+        "name": "2M ULUSLARASI MADENCÄ°LÄ°K A.Åž.",
+        "stats": [
+          {
+            "label": "İhracat",
+            "suffix": "+",
+            "value": 20
+          }
+        ],
+        "featured": true
+      },
+      {
+        "sector": "Maden",
+        "slug": "4t-madencilik",
+        "description": "DoÄŸal kaynaklarÄ±n ekonomiye kazandÄ±rÄ±lmasÄ± amacÄ±yla Ã§evreye duyarlÄ± madencilik yapar.",
+        "accentColor": "#9a3412",
+        "name": "4T MADENCÄ°LÄ°K A.Åž.",
+        "stats": [
+          {
+            "label": "Kapasite",
+            "suffix": "K",
+            "value": 100
+          }
+        ],
+        "featured": true
+      },
+      {
+        "sector": "Maden",
+        "slug": "alm-maden",
+        "description": "YenilikÃ§i teknolojilerle maden arama, Ã§Ä±karma ve zenginleÅŸtirme projeleri yÃ¼rÃ¼tmektedir.",
+        "accentColor": "#854d0e",
+        "name": "ALM MADEN A.Åž.",
+        "stats": [
+          {
+            "value": 15,
+            "label": "Proje"
+          }
+        ],
+        "featured": false
+      },
+      {
+        "sector": "Mermer & Maden",
+        "slug": "hd-maden-mermer",
+        "description": "Maden ve mermer sektörlerinde entegre üretim tesisleriyle global pazara hitap etmektedir.",
+        "accentColor": "#57534e",
+        "name": "HD MADEN MERMER A.Åž.",
+        "stats": [
+          {
+            "value": 3,
+            "label": "Tesis"
+          }
+        ],
+        "featured": false
+      },
+      {
+        "sector": "Maden",
+        "slug": "mby-maden",
+        "description": "Kaliteli hammadde Ã¼retimi ile yerel ve uluslararasÄ± sanayinin ihtiyaÃ§larÄ±nÄ± karÅŸÄ±lamaktadÄ±r.",
+        "accentColor": "#b45309",
+        "name": "MBY MADEN A.Åž.",
+        "stats": [
+          {
+            "value": 5,
+            "label": "Ocak"
+          }
+        ],
+        "featured": false
+      },
+      {
+        "sector": "Maden",
+        "slug": "yaman-maden",
+        "description": "KapsamlÄ± madencilik faaliyetleri ile Ã¼lkemizin yeraltÄ± zenginliklerini deÄŸerlendirmektedir.",
+        "accentColor": "#9a3412",
+        "name": "YAMAN MADEN SANAYÄ° VE TÄ°CARET A.Åž.",
+        "stats": [
+          {
+            "label": "YÄ±llÄ±k Ãœretim",
+            "suffix": "K",
+            "value": 200
+          }
+        ],
+        "featured": false
+      },
+      {
+        "sector": "Enerji",
+        "slug": "ymy-enerji",
+        "description": "Yenilenebilir ve temiz enerji kaynaklarÄ±na yatÄ±rÄ±m yaparak sÃ¼rdÃ¼rÃ¼lebilir bir gelecek inÅŸa etmektedir.",
+        "accentColor": "#059669",
+        "name": "YMY ENERJÄ° A.Åž.",
+        "stats": [
+          {
+            "value": 450,
+            "label": "Kurulu Güç MW"
+          }
+        ],
+        "featured": true
+      },
+      {
+        "sector": "Maden",
+        "slug": "ynr-maden",
+        "description": "Modern ekipmanlar ve uzman kadrosuyla verimli madencilik operasyonlarÄ± gerÃ§ekleÅŸtirmektedir.",
+        "accentColor": "#b45309",
+        "name": "YNR MADEN A.Åž.",
+        "stats": [
+          {
+            "label": "İstihdam",
+            "suffix": "+",
+            "value": 300
+          }
+        ],
+        "featured": false
+      }
+    ],
+    "projects": [
+      {
+        "slug": "dn-tower-istanbul",
+        "title": "DN Tower Istanbul",
+        "description": "LEED Gold zertifiziertes 45-stöckiges Smart-Office-Turmprojekt im neuen Finanzzentrum von Istanbul.",
+        "company": "DN Immobilien",
+        "category": "Gewerblich",
+        "year": "2024",
+        "location": "Istanbul, Türkei",
+        "image": "/media/project1.jpg"
+      },
+      {
+        "slug": "ege-ruzgar-santrali",
+        "title": "Ägäisches Windkraftwerk",
+        "description": "120-MW-Windkraftwerk in der Region Izmir, das den Strombedarf von jährlich 150.000 Haushalten deckt.",
+        "company": "DN Energie",
+        "category": "Erneuerbare Energie",
+        "year": "2023",
+        "location": "Izmir, Türkei",
+        "image": "/media/project2.jpg"
+      },
+      {
+        "slug": "avrasya-lojistik-merkezi",
+        "title": "Eurasia Logistikzentrum",
+        "description": "Eine gigantische Logistikbasis mit 250.000 Quadratmetern, die Kontinente verbindet und mit modernsten Automatisierungssystemen ausgestattet ist.",
+        "company": "DN Bau",
+        "category": "Infrastruktur",
+        "year": "2022",
+        "location": "Kocaeli, Türkei",
+        "image": "/media/project3.jpg"
+      },
+      {
+        "slug": "organik-tarim-vadisi",
+        "title": "Organic Farming Valley",
+        "description": "Die größte integrierte Bio-Landwirtschaftsanlage der Türkei, unterstützt durch intelligente landwirtschaftliche Praktiken und nachhaltiges Wassermanagement.",
+        "company": "DN Lebensmittel",
+        "category": "Einrichtung",
+        "year": "2023",
+        "location": "Manisa, Türkei",
+        "image": "/media/project1.jpg"
+      },
+      {
+        "slug": "smart-city-platform",
+        "title": "Smart City Platform",
+        "description": "Eine KI-gestützte Plattform, entwickelt für Großstadtgemeinden, die Verkehr, Energie und Abfallmanagement von einem einzigen Zentrum aus optimiert.",
+        "company": "DN Technologie",
+        "category": "Software",
+        "year": "2024",
+        "location": "Global",
+        "image": "/media/project2.jpg"
+      },
+      {
+        "slug": "anadolu-mermer-kompleksi",
+        "title": "Anatolia Marble Processing Complex",
+        "description": "Europas modernste Marmorverarbeitungsanlage, die nach dem Zero-Waste-Prinzip arbeitet und mit modernsten CNC-Maschinen ausgestattet ist.",
+        "company": "DN Bergbau",
+        "category": "Industriell",
+        "year": "2021",
+        "location": "Afyon, Türkei",
+        "image": "/media/project3.jpg"
+      }
+    ],
+    "news": [
+      {
+        "slug": "2024-sustainability-report",
+        "title": "DN Holding Veröffentlicht Nachhaltigkeitsbericht 2024",
+        "excerpt": "Wir haben den CO2-Ausstoß unserer Aktivitäten im vergangenen Jahr um 15 % gesenkt.",
+        "date": "2024-02-15",
+        "category": "Nachhaltigkeit",
+        "featured": true,
+        "image": "/media/news1.jpg"
+      },
+      {
+        "slug": "new-solar-farm",
+        "title": "Neuer Solarpark in Konya Geplant",
+        "excerpt": "DN Energie plant den Bau des größten Solarparks in Zentralanatolien.",
+        "date": "2024-01-20",
+        "category": "Investitionen",
+        "featured": true,
+        "image": "/media/news2.jpg"
+      },
+      {
+        "slug": "smart-city-award",
+        "title": "DN Technologie Gewinnt Smart City Award",
+        "excerpt": "Unsere Smart City Platform wurde auf der Global Tech Summit ausgezeichnet.",
+        "date": "2023-11-10",
+        "category": "Auszeichnungen",
+        "featured": true,
+        "image": "/media/news3.jpg"
+      }
+    ],
+    "stats": [
+      {
+        "label": "SEIT",
+        "value": "1980",
+        "suffix": " +"
+      },
+      {
+        "label": "STEINBRÜCHE",
+        "value": "8",
+        "suffix": " +"
+      },
+      {
+        "label": "PRODUKTIONSFLÄCHE",
+        "value": "344.970",
+        "suffix": " m²"
+      },
+      {
+        "label": "PRODUKTSORTEN",
+        "value": "22",
+        "suffix": " +"
+      }
+    ],
+    "products": [
+      {
+        "id": "p1",
+        "name": "Blok Mermer",
+        "description": "Yüksek kaliteli ve homojen renk yapısına sahip, uluslararası standartlarda blok mermer.",
+        "companySlug": "dn-mermer",
+        "image": "/media/marble-block.jpg",
+        "category": "Mermer"
+      },
+      {
+        "id": "p2",
+        "name": "Krom Cevheri",
+        "description": "Sanayi üretiminde kullanılan yüksek saflıkta krom cevheri.",
+        "companySlug": "2m-uluslararasi-madencilik",
+        "image": "/media/chrome-ore.jpg",
+        "category": "Maden"
+      },
+      {
+        "id": "p3",
+        "name": "GÃ¼neÅŸ Enerjisi Santralleri",
+        "description": "SÃ¼rdÃ¼rÃ¼lebilir ve temiz enerji iÃ§in yÃ¼ksek verimli gÃ¼neÅŸ enerjisi Ã§Ã¶zÃ¼mleri.",
+        "companySlug": "ymy-enerji",
+        "image": "/media/solar-plant.jpg",
+        "category": "Enerji"
+      },
+      {
+        "id": "p4",
+        "name": "Sanayi Tipi Kömür",
+        "description": "Yüksek kalorili ve çevre standartlarına uygun sanayi tipi linyit kömürü.",
+        "companySlug": "ynr-maden",
+        "image": "/media/coal.jpg",
+        "category": "Maden"
+      }
+    ]
+  },
+  "cookie": {
+    "title": "Cookie-Einstellungen",
+    "description": "Wir verwenden Cookies auf unserer Website, um die Benutzererfahrung zu verbessern und den Datenverkehr zu analysieren.",
+    "accept": "Alle akzeptieren",
+    "decline": "Ablehnen"
+  }
 }
