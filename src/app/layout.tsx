@@ -3,8 +3,6 @@ import "./globals.css";
 import {Header} from "@/components/layout/Header";
 import {Footer} from "@/components/layout/Footer";
 import {CookieWidget} from "@/components/layout/CookieWidget";
-import {PreferencesWidget} from "@/components/layout/PreferencesWidget";
-import {WhatsAppButton} from "@/components/layout/WhatsAppButton";
 import {getCurrentLocale, getDictionary} from "./dictionaries";
 
 import {ThemeProvider} from "@/components/layout/ThemeProvider";
@@ -106,9 +104,7 @@ export default async function RootLayout({
           <Header lang={lang} />
           <main className="flex-1">{children}</main>
           <Footer lang={lang} />
-          <WhatsAppButton />
           <CookieWidget dict={dict.cookie} />
-          <PreferencesWidget currentLang={lang.toUpperCase()} />
         </ThemeProvider>
       </body>
     </html>

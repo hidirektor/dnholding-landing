@@ -3,7 +3,8 @@
 import {useCallback, useEffect, useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
-import {usePathname} from "next/navigation";
+import {usePathname, useRouter} from "next/navigation";
+import {useTheme} from "next-themes";
 import {cn} from "@/lib/utils";
 import {useScrollDirection} from "@/hooks/useScrollDirection";
 import type {Locale} from "@/app/dictionaries";
@@ -114,6 +115,9 @@ export function Header({ lang }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const router = useRouter();
+  const { theme, setTheme } = useTheme();
 
   const items = navItems[lang] || navItems.tr;
 
@@ -148,6 +152,11 @@ export function Header({ lang }: HeaderProps) {
     return pathname.startsWith(fullPath);
   };
 
+  const switchLanguage = (newLang: string) => {
+    document.cookie = `NEXT_LOCALE=${newLang.toLowerCase()}; path=/; max-age=31536000`;
+    router.refresh();
+  };
+
   return (
     <>
       <header
@@ -177,6 +186,47 @@ export function Header({ lang }: HeaderProps) {
             <a href="https://www.linkedin.com/company/dn-marble/" target="_blank" rel="noopener noreferrer" className="hover:text-[#ffe800] transition-colors" aria-label="Linkedin">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
             </a>
+            <a href="https://wa.me/905000000000" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] transition-colors" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+            </a>
+            
+            {/* Separator */}
+            <div className="w-px h-4 bg-white/30 mx-1"></div>
+
+            <div className="relative">
+              <button 
+                onClick={() => setIsSettingsOpen(!isSettingsOpen)} 
+                className={cn("hover:text-[#ffe800] transition-colors outline-none", isSettingsOpen && "text-[#ffe800]")} 
+                aria-label="Settings"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+              {isSettingsOpen && (
+                <div className="absolute top-full right-0 mt-2 bg-white dark:bg-[#1a1a2e] rounded-xl shadow-xl border border-gray-200 dark:border-white/10 p-4 min-w-[200px] flex flex-col gap-4">
+                  <div>
+                    <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2 block">Language</span>
+                    <div className="flex gap-2">
+                      {["TR", "EN", "DE", "FR"].map((l) => (
+                        <button
+                          key={l}
+                          onClick={() => { switchLanguage(l); setIsSettingsOpen(false); }}
+                          className={cn("text-xs font-bold px-2 py-1 rounded transition-colors", lang.toUpperCase() === l ? "bg-accent text-white" : "text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/5")}
+                        >
+                          {l}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2 block">Theme</span>
+                    <div className="flex gap-2">
+                      <button onClick={() => { setTheme("light"); setIsSettingsOpen(false); }} className="text-xs font-semibold px-3 py-1.5 rounded bg-gray-100 text-gray-800 hover:bg-gray-200 transition-colors">Light</button>
+                      <button onClick={() => { setTheme("dark"); setIsSettingsOpen(false); }} className="text-xs font-semibold px-3 py-1.5 rounded bg-gray-800 text-white hover:bg-gray-700 transition-colors">Dark</button>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
 
           <nav
