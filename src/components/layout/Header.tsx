@@ -154,11 +154,9 @@ export function Header({ lang }: HeaderProps) {
       <header
         className={cn(
           styles.header,
-          (isScrolled || pathname !== "/") && styles.scrolled,
-          scrollDirection === "down" && isScrolled && styles.hidden,
-          !isScrolled && pathname === "/" && styles.transparent
+          scrollDirection === "down" && isScrolled && styles.hidden
         )}
-        style={{ top: isAnnouncementVisible ? "2.5rem" : "0", transitionProperty: "transform, background-color, box-shadow, backdrop-filter, top" }}
+        style={{ top: isAnnouncementVisible ? "2.5rem" : "0.5rem", transitionProperty: "transform, top" }}
       >
         <div className="container-base relative">
           {/* Announcement Tab */}
@@ -180,11 +178,7 @@ export function Header({ lang }: HeaderProps) {
             </div>
           )}
           <nav
-            className={cn(
-              styles.nav,
-              "border-b",
-              !isScrolled && pathname === "/" ? "border-white/20" : "border-border/50"
-            )}
+            className={styles.nav}
             aria-label="Main navigation"
           >
             {/* Logo */}
@@ -275,7 +269,7 @@ export function Header({ lang }: HeaderProps) {
             {/* Right Side */}
             <div className={styles.rightSection}>
               {/* Desktop CTA */}
-              <Link href="/contact" className="hidden md:inline-flex items-center justify-center bg-[#ffe800] text-[#0f172a] font-bold text-sm px-6 py-2.5 rounded uppercase tracking-wide hover:bg-[#ffe800]/90 transition-colors mr-4 md:mr-0">
+              <Link href="/contact" className="hidden md:inline-flex items-center justify-center bg-black text-white font-medium text-sm px-7 py-2.5 rounded-full hover:bg-black/80 transition-colors mr-4 md:mr-0">
                 GET IN TOUCH
               </Link>
               {/* Mobile Toggle */}
