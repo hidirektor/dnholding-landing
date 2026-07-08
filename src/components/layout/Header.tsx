@@ -237,6 +237,10 @@ export function Header({ lang }: HeaderProps) {
 
             {/* Right Side */}
             <div className={styles.rightSection}>
+              {/* Desktop CTA */}
+              <Link href="/contact" className="hidden md:inline-flex items-center justify-center bg-[#ffe800] text-[#0f172a] font-bold text-sm px-6 py-2.5 rounded uppercase tracking-wide hover:bg-[#ffe800]/90 transition-colors mr-4 md:mr-0">
+                GET IN TOUCH
+              </Link>
               {/* Mobile Toggle */}
               <button
                 className={styles.mobileToggle}

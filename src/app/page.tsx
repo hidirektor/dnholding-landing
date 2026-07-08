@@ -1,7 +1,6 @@
 import {getCurrentLocale, getDictionary} from "./dictionaries";
 import {HeroSection} from "@/components/content/HeroSection";
 import {CompanyCard} from "@/components/content/CompanyCard";
-import {StatsBar} from "@/components/content/StatsBar";
 import {ProjectCard} from "@/components/content/ProjectCard";
 import {NewsCard} from "@/components/content/NewsCard";
 import {Section} from "@/components/layout/Section";
@@ -40,18 +39,15 @@ export default async function HomePage() {
         ctaHref={`/about`}
         secondaryCtaText={dict.home.hero.secondaryCta}
         secondaryCtaHref={`/companies`}
-      />
-
-      {/* ─── Stats Bar ─── */}
-      <StatsBar
         stats={dict.data.stats.map((stat: any) => ({
           value: stat.value,
           label: stat.label,
           suffix: stat.suffix,
           prefix: stat.prefix,
         }))}
-        variant="dark"
       />
+
+
 
       {/* ─── About Teaser ─── */}
       <Section variant="default" id="about-teaser">
