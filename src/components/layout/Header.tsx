@@ -4,6 +4,7 @@ import {useCallback, useEffect, useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {usePathname} from "next/navigation";
+import {Instagram, Linkedin, Youtube} from "lucide-react";
 import {cn} from "@/lib/utils";
 import {useScrollDirection} from "@/hooks/useScrollDirection";
 import type {Locale} from "@/app/dictionaries";
@@ -161,7 +162,7 @@ export function Header({ lang }: HeaderProps) {
         <div className="container-base relative">
           {/* Announcement Tab */}
           {isAnnouncementVisible && (
-            <div className="absolute bottom-full left-4 md:left-8 bg-[#1a1a2e]/95 text-white/90 text-[11px] md:text-xs px-5 py-2 rounded-t-lg flex items-center gap-6 shadow-lg backdrop-blur-md z-50 border border-b-0 border-white/10">
+            <div className="absolute bottom-6 left-4 md:left-8 bg-black/40 text-white/90 text-[11px] md:text-xs px-6 pt-2.5 pb-10 rounded-t-2xl flex items-center gap-6 shadow-lg backdrop-blur-xl z-0 border border-b-0 border-white/20">
               <div className="flex flex-col md:flex-row md:gap-2">
                 <span className="font-semibold text-white">Çalışma Saatlerimiz;</span>
                 <span>Haftaiçi 08:00-17:00 | Cumartesi : 08:00-16:00</span>
@@ -177,6 +178,20 @@ export function Header({ lang }: HeaderProps) {
               </button>
             </div>
           )}
+          
+          {/* Social Tab */}
+          <div className="absolute top-6 right-4 md:right-8 bg-black/40 text-white/90 px-6 pt-10 pb-3 rounded-b-2xl flex items-center gap-5 shadow-lg backdrop-blur-xl z-0 border border-t-0 border-white/20">
+            <a href="https://www.instagram.com/dnmarble" target="_blank" rel="noopener noreferrer" className="hover:text-[#ffe800] transition-colors" aria-label="Instagram">
+              <Instagram size={16} />
+            </a>
+            <a href="https://www.youtube.com/@dnmermer" target="_blank" rel="noopener noreferrer" className="hover:text-[#ffe800] transition-colors" aria-label="Youtube">
+              <Youtube size={16} />
+            </a>
+            <a href="https://www.linkedin.com/company/dn-marble/" target="_blank" rel="noopener noreferrer" className="hover:text-[#ffe800] transition-colors" aria-label="Linkedin">
+              <Linkedin size={16} />
+            </a>
+          </div>
+
           <nav
             className={styles.nav}
             aria-label="Main navigation"
@@ -189,7 +204,7 @@ export function Header({ lang }: HeaderProps) {
               aria-label="DN Holding Home"
             >
               <Image 
-                src="/logo_dnholding-text.png" 
+                src="/logo_dnholding-dark.png" 
                 alt="DN Holding Logo" 
                 width={200} 
                 height={50} 

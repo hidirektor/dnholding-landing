@@ -11,6 +11,8 @@
 
 /* Nav Layout */
 .nav {
+  position: relative;
+  z-index: 30;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,7 +38,6 @@
   height: 40px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0); /* Converts white logo to black */
 }
 
 .logoIcon {
