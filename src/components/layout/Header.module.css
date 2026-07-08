@@ -101,6 +101,19 @@
 
 .navItem {
   position: relative;
+  opacity: 0;
+  animation: waveEntry 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes waveEntry {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .navLink {
@@ -113,8 +126,20 @@
   color: var(--color-text-secondary);
   text-decoration: none;
   border-radius: var(--radius-md);
-  transition: color var(--duration-fast) var(--ease-smooth);
+  transition: 
+    color var(--duration-fast) var(--ease-smooth),
+    transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   white-space: nowrap;
+  will-change: transform;
+}
+
+/* Hover Wave Effect (Mexican Wave) */
+.navItem:hover .navLink {
+  transform: translateY(-4px);
+}
+.navItem:hover + .navItem .navLink,
+.navItem:has(+ .navItem:hover) .navLink {
+  transform: translateY(-2px);
 }
 
 .transparent .navLink {

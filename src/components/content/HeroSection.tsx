@@ -31,7 +31,7 @@ export function HeroSection({
   stats,
 }: HeroSectionProps) {
   return (
-    <section className={`relative flex items-center overflow-hidden bg-primary ${variant === "default" ? "min-h-[90vh] pb-0" : "min-h-[50vh] pt-32"}`}>
+    <section className={`relative flex items-center overflow-hidden bg-primary ${variant === "default" ? "min-h-screen pb-0" : "min-h-[50vh] pt-32"}`}>
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/40 z-10" />
@@ -78,10 +78,21 @@ export function HeroSection({
         </div>
       </Container>
 
-      {/* Stats Card Floating on Bottom Right */}
+      {/* Stats Card at Bottom Right with Inverse Curves */}
       {stats && stats.length > 0 && variant === "default" && (
-        <div className="absolute bottom-8 right-8 lg:bottom-12 lg:right-12 z-30 hidden md:block">
-          <div className="bg-white rounded-[32px] px-10 py-8 lg:px-12 flex gap-8 lg:gap-12 shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+        <div className="absolute bottom-0 right-[5%] z-30 hidden md:block">
+          <div className="relative bg-white rounded-t-[32px] px-12 py-8 flex gap-12">
+            
+            {/* Left Outer Flare (Inverse Curve) */}
+            <svg className="absolute bottom-0 left-[-32px] w-[32px] h-[32px] text-white" fill="currentColor" viewBox="0 0 32 32">
+              <path d="M 0 32 L 32 32 L 32 0 A 32 32 0 0 1 0 32 Z" />
+            </svg>
+
+            {/* Right Outer Flare (Inverse Curve) */}
+            <svg className="absolute bottom-0 right-[-32px] w-[32px] h-[32px] text-white" fill="currentColor" viewBox="0 0 32 32">
+              <path d="M 32 32 L 0 32 L 0 0 A 32 32 0 0 0 32 32 Z" />
+            </svg>
+
             {stats.slice(0, 3).map((stat, idx) => (
               <div key={idx} className="flex flex-col items-center text-center">
                 <span className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">

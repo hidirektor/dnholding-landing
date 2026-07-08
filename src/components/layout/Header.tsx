@@ -18,7 +18,7 @@ const navItems = {
     { label: "Ana Sayfa", href: "" },
     { label: "Hakkımızda", href: "/about" },
     {
-      label: "Grup Şirketleri",
+      label: "Grup Şirketler",
       href: "/companies",
       children: [
         { label: "DN MERMER A.Ş.", href: "/companies/dn-mermer" },
@@ -32,7 +32,10 @@ const navItems = {
         { label: "YNR MADEN A.Ş.", href: "/companies/ynr-maden" },
       ],
     },
-    { label: "İletişim", href: "/contact" },
+    { label: "Faaliyet Alanları", href: "/business-areas" },
+    { label: "Ürünler/Hizmetler", href: "/products" },
+    { label: "Projeler", href: "/projects" },
+    { label: "Medya", href: "/media" },
   ],
   en: [
     { label: "Home", href: "" },
@@ -52,7 +55,10 @@ const navItems = {
         { label: "YNR MINING INC.", href: "/companies/ynr-maden" },
       ],
     },
-    { label: "Contact", href: "/contact" },
+    { label: "Business Areas", href: "/business-areas" },
+    { label: "Products/Services", href: "/products" },
+    { label: "Projects", href: "/projects" },
+    { label: "Media", href: "/media" },
   ],
   de: [
     { label: "Startseite", href: "" },
@@ -72,7 +78,10 @@ const navItems = {
         { label: "YNR BERGBAU", href: "/companies/ynr-maden" },
       ],
     },
-    { label: "Kontakt", href: "/contact" },
+    { label: "Geschäftsfelder", href: "/business-areas" },
+    { label: "Produkte/Dienstleistungen", href: "/products" },
+    { label: "Projekte", href: "/projects" },
+    { label: "Medien", href: "/media" },
   ],
   fr: [
     { label: "Accueil", href: "" },
@@ -92,7 +101,10 @@ const navItems = {
         { label: "YNR EXPLOITATION", href: "/companies/ynr-maden" },
       ],
     },
-    { label: "Contact", href: "/contact" },
+    { label: "Domaines d'Activité", href: "/business-areas" },
+    { label: "Produits/Services", href: "/products" },
+    { label: "Projets", href: "/projects" },
+    { label: "Médias", href: "/media" },
   ]
 };
 
@@ -102,6 +114,7 @@ export function Header({ lang }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isAnnouncementVisible, setIsAnnouncementVisible] = useState(true);
 
   const items = navItems[lang] || navItems.tr;
 
@@ -145,10 +158,33 @@ export function Header({ lang }: HeaderProps) {
           scrollDirection === "down" && isScrolled && styles.hidden,
           !isScrolled && pathname === "/" && styles.transparent
         )}
+        style={{ top: isAnnouncementVisible ? "2.5rem" : "0", transitionProperty: "transform, background-color, box-shadow, backdrop-filter, top" }}
       >
-        <div className="container-base">
+        <div className="container-base relative">
+          {/* Announcement Tab */}
+          {isAnnouncementVisible && (
+            <div className="absolute bottom-full left-4 md:left-8 bg-[#1a1a2e]/95 text-white/90 text-[11px] md:text-xs px-5 py-2 rounded-t-lg flex items-center gap-6 shadow-lg backdrop-blur-md z-50 border border-b-0 border-white/10">
+              <div className="flex flex-col md:flex-row md:gap-2">
+                <span className="font-semibold text-white">Çalışma Saatlerimiz;</span>
+                <span>Haftaiçi 08:00-17:00 | Cumartesi : 08:00-16:00</span>
+              </div>
+              <button 
+                onClick={() => setIsAnnouncementVisible(false)}
+                className="hover:text-white transition-colors p-1"
+                aria-label="Kapat"
+              >
+                <svg width="10" height="10" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 13L13 1M1 1L13 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          )}
           <nav
-            className={styles.nav}
+            className={cn(
+              styles.nav,
+              "border-b",
+              !isScrolled && pathname === "/" ? "border-white/20" : "border-border/50"
+            )}
             aria-label="Main navigation"
           >
             {/* Logo */}
@@ -170,10 +206,11 @@ export function Header({ lang }: HeaderProps) {
 
             {/* Desktop Navigation */}
             <ul className={styles.desktopNav}>
-              {items.map((item) => (
+              {items.map((item, index) => (
                 <li
                   key={item.href}
                   className={styles.navItem}
+                  style={{ animationDelay: `${index * 0.08}s` }}
                   onMouseEnter={() =>
                     item.children && setActiveDropdown(item.href)
                   }

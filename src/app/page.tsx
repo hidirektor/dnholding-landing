@@ -12,14 +12,6 @@ import {SectionDivider} from "@/components/content/SectionDivider";
 import {HorizontalAccordion} from "@/components/ui/HorizontalAccordion";
 import {IconConstruction, IconEnergy, IconMining} from "@/components/ui/Icons";
 
-export async function generateMetadata() {
-  const lang = await getCurrentLocale();
-  const dict = await getDictionary();
-  return {
-    title: dict.home.hero.title,
-    description: dict.home.hero.subtitle,
-  };
-}
 
 export default async function HomePage() {
   const lang = await getCurrentLocale();

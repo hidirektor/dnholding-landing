@@ -23,19 +23,31 @@ export const viewport: Viewport = {
 
 export async function generateMetadata(): Promise<Metadata> {
   const lang = await getCurrentLocale();
-  const isTR = lang === "tr";
+
+  const titleByLang: Record<string, string> = {
+    tr: "DN Holding | Hamdan Mükemmele",
+    en: "DN Holding | From Raw to Perfect",
+    de: "DN Holding | Von Roh zu Perfekt",
+    fr: "DN Holding | Du Brut à la Perfection",
+  };
+
+  const descByLang: Record<string, string> = {
+    tr: "DN Holding, inşaat, enerji, madencilik, gıda, teknoloji ve gayrimenkul alanlarında faaliyet gösteren uluslararası bir holding şirketidir.",
+    en: "DN Holding is an international holding company operating across construction, energy, mining, food, technology, and real estate sectors.",
+    de: "DN Holding ist eine internationale Holdinggesellschaft, die in den Bereichen Bau, Energie, Bergbau, Lebensmittel, Technologie und Immobilien tätig ist.",
+    fr: "DN Holding est une société holding internationale opérant dans les secteurs de la construction, de l'énergie, de l'exploitation minière, de l'alimentation, de la technologie et de l'immobilier.",
+  };
+
+  const currentTitle = titleByLang[lang] || titleByLang.tr;
+  const currentDesc = descByLang[lang] || descByLang.tr;
 
   return {
     title: {
-      default: isTR
-        ? "DN Holding — Hamdan Mükemmele"
-        : "DN Holding — From Raw to Perfect",
-      template: isTR ? "%s | DN Holding" : "%s | DN Holding",
+      default: currentTitle,
+      template: `%s | DN Holding`,
     },
-    description: isTR
-      ? "DN Holding, inşaat, enerji, madencilik, gıda, teknoloji ve gayrimenkul alanlarında faaliyet gösteren uluslararası bir holding şirketidir."
-      : "DN Holding is an international holding company operating across construction, energy, mining, food, technology, and real estate sectors.",
-    keywords: isTR
+    description: currentDesc,
+    keywords: lang === "tr"
       ? [
           "DN Holding",
           "holding şirketi",
@@ -58,14 +70,10 @@ export async function generateMetadata(): Promise<Metadata> {
     creator: "DN Holding",
     openGraph: {
       type: "website",
-      locale: isTR ? "tr_TR" : "en_US",
+      locale: lang === "tr" ? "tr_TR" : lang === "de" ? "de_DE" : "en_US",
       siteName: "DN Holding",
-      title: isTR
-        ? "DN Holding — Hamdan Mükemmele"
-        : "DN Holding — From Raw to Perfect",
-      description: isTR
-        ? "DN Holding, inşaat, enerji, madencilik, gıda, teknoloji ve gayrimenkul alanlarında faaliyet gösteren uluslararası bir holding şirketidir."
-        : "DN Holding is an international holding company operating across construction, energy, mining, food, technology, and real estate sectors.",
+      title: currentTitle,
+      description: currentDesc,
     },
     twitter: {
       card: "summary_large_image",
