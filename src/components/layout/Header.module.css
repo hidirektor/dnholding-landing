@@ -18,7 +18,7 @@
   justify-content: space-between;
   height: 64px;
   gap: 2rem;
-  background-color: rgba(15, 23, 42, 0.85); /* Dark glassy background matching hero */
+  background-color: rgba(255, 255, 255, 0.15); /* White 15% glassy background */
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-radius: 9999px;

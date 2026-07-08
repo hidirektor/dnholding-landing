@@ -159,7 +159,7 @@ export function Header({ lang }: HeaderProps) {
       >
         <div className="container-base relative">
           {/* Announcement Tab */}
-          <div className="absolute bottom-6 left-4 md:left-8 bg-black/40 text-white/90 text-[11px] md:text-xs px-6 pt-2.5 pb-10 rounded-t-2xl flex items-center gap-6 shadow-lg backdrop-blur-xl z-0 border border-b-0 border-white/20">
+          <div className="absolute bottom-6 left-4 md:left-8 bg-white/15 text-white/90 text-[11px] md:text-xs px-6 pt-2.5 pb-10 rounded-t-2xl flex items-center gap-6 shadow-lg backdrop-blur-xl z-0 border border-b-0 border-white/20">
             <div className="flex flex-col md:flex-row md:gap-2">
               <span className="font-semibold text-white">Çalışma Saatlerimiz;</span>
               <span>Haftaiçi 08:00-17:00 | Cumartesi : 08:00-16:00</span>
@@ -167,7 +167,7 @@ export function Header({ lang }: HeaderProps) {
           </div>
           
           {/* Social Tab */}
-          <div className="absolute top-8 right-4 md:right-8 bg-black/40 text-white/90 px-6 pt-12 pb-4 rounded-b-2xl flex items-center gap-5 shadow-lg backdrop-blur-xl z-0 border border-t-0 border-white/20">
+          <div className="absolute top-8 right-4 md:right-8 bg-white/15 text-white/90 px-6 pt-12 pb-4 rounded-b-2xl flex items-center gap-5 shadow-lg backdrop-blur-xl z-0 border border-t-0 border-white/20">
             <a href="https://www.instagram.com/dnmarble" target="_blank" rel="noopener noreferrer" className="hover:text-[#ffe800] transition-colors" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </a>
