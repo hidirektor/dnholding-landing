@@ -48,8 +48,8 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
   }, [companies, activeSector]);
 
   return (
-    <div className="w-full flex flex-col gap-10 mt-12">
-      {/* Category Tabs — always in dark section context */}
+    <div className="relative z-50 w-full flex flex-col gap-10 mt-12">
+      {/* Category Tabs */}
       <div className="flex flex-wrap gap-4 items-center justify-center lg:justify-start">
         {sectors.map(sector => {
           const isActive = activeSector === sector;
@@ -57,35 +57,32 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
             <button
               key={sector}
               type="button"
-              onClickCapture={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                setActiveSector(sector);
-              }}
+              style={{ pointerEvents: 'auto', cursor: 'pointer', position: 'relative', zIndex: 99999 }}
+              onClick={() => setActiveSector(sector)}
               className={cn(
-                "relative z-10 cursor-pointer flex items-center gap-3 px-6 py-4 rounded-xl border transition-all duration-300 font-semibold text-sm",
+                "flex items-center gap-3 px-6 py-4 rounded-xl border font-semibold text-sm",
                 isActive 
-                  ? "border-accent bg-accent/10 text-accent dark:text-white shadow-[0_0_20px_rgba(37,99,235,0.2)]" 
-                  : "border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 text-black/50 dark:text-white/50 hover:bg-black/10 dark:hover:bg-white/10 hover:text-black dark:hover:text-white"
+                  ? "border-accent bg-accent/10 text-accent dark:text-white" 
+                  : "border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 text-black/50 dark:text-white/50"
               )}
             >
-              <span className={cn(
-                "p-2 rounded-lg flex items-center justify-center transition-colors duration-300 pointer-events-none",
+              <div className={cn(
+                "p-2 rounded-lg flex items-center justify-center",
                 isActive ? "bg-accent text-white" : "bg-black/10 dark:bg-white/10 text-black/50 dark:text-white/50"
               )}>
                 <div className="w-5 h-5 flex items-center justify-center [&>svg]:w-full [&>svg]:h-full">
                   {getSectorIcon(sector)}
                 </div>
-              </span>
-              <span className="pointer-events-none">{sector}</span>
+              </div>
+              <span>{sector}</span>
             </button>
           );
         })}
       </div>
 
       {/* Grid of Companies */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-in fade-in zoom-in duration-500 ease-out" key={activeSector}>
-        {activeCompanies.map((company, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {activeCompanies.map(company => (
           <CompanyCard
             key={company.slug}
             name={company.name}

@@ -1,8 +1,6 @@
 "use client";
 
 import {useRef} from "react";
-import {cn} from "@/lib/utils";
-import {useIntersectionObserver} from "@/hooks/useIntersectionObserver";
 
 interface ScrollRevealProps {
   children: React.ReactNode;
@@ -20,32 +18,14 @@ export function ScrollReveal({
   className,
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isVisible = useIntersectionObserver(ref, {
-    threshold: 0,
-    rootMargin: "0px 0px -50px 0px",
-  });
-
-  const getTransform = () => {
-    if (isVisible) return "translate(0, 0) scale(1)";
-    switch (direction) {
-      case "up": return "translateY(30px)";
-      case "down": return "translateY(-30px)";
-      case "left": return "translateX(30px)";
-      case "right": return "translateX(-30px)";
-      case "fade": return "scale(0.95)";
-      default: return "translateY(30px)";
-    }
-  };
-
+  
+  // We disable the intersection observer effects completely for now 
+  // because it was causing visibility and overlapping bugs.
+  
   return (
     <div
       ref={ref}
-      className={cn("will-change-[opacity,transform]", className)}
-      style={{
-        opacity: 1, // Fallback to ensure it's visible. We can do isVisible ? 1 : 0 if observer works.
-        transform: getTransform(),
-        transition: `opacity ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
-      }}
+      className={className}
     >
       {children}
     </div>
