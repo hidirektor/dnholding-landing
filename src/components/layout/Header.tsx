@@ -109,6 +109,13 @@ const navItems = {
   ]
 };
 
+const themeLabels: Record<string, { theme: string; language: string }> = {
+  tr: { theme: "Tema", language: "Dil" },
+  en: { theme: "Theme", language: "Language" },
+  de: { theme: "Thema", language: "Sprache" },
+  fr: { theme: "Thème", language: "Langue" },
+};
+
 export function Header({ lang }: HeaderProps) {
   const pathname = usePathname();
   const scrollDirection = useScrollDirection();
@@ -116,11 +123,17 @@ export function Header({ lang }: HeaderProps) {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const settingsRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
 
   const items = navItems[lang] || navItems.tr;
+  const labels = themeLabels[lang] || themeLabels.en;
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -188,15 +201,15 @@ export function Header({ lang }: HeaderProps) {
       >
         <div className="container-base relative">
           {/* Announcement Tab */}
-          <div className="absolute bottom-6 left-4 md:left-8 bg-white/15 text-white/90 text-[11px] md:text-xs px-6 pt-2.5 pb-10 rounded-t-2xl flex items-center gap-6 shadow-lg backdrop-blur-xl z-0 border border-b-0 border-white/20">
+          <div className="absolute bottom-6 left-4 md:left-8 bg-[#0a192f]/85 dark:bg-white/15 text-white/90 text-[11px] md:text-xs px-6 pt-2.5 pb-10 rounded-t-2xl flex items-center gap-6 shadow-lg backdrop-blur-xl z-0 border border-b-0 border-[#0a192f]/30 dark:border-white/20">
             <div className="flex flex-col md:flex-row md:gap-2">
               <span className="font-semibold text-white">Çalışma Saatlerimiz;</span>
               <span>Haftaiçi 08:00-17:00 | Cumartesi : 08:00-16:00</span>
             </div>
           </div>
           
-          {/* Social Tab */}
-          <div ref={settingsRef} className="absolute top-8 right-4 md:right-8 bg-white/15 text-white/90 px-6 pt-12 pb-4 rounded-b-2xl flex items-center gap-5 shadow-lg backdrop-blur-xl z-0 border border-t-0 border-white/20">
+          {/* Social Tab + Settings */}
+          <div ref={settingsRef} className="absolute top-8 right-4 md:right-8 bg-[#0a192f]/85 dark:bg-white/15 text-white/90 px-6 pt-12 pb-4 rounded-b-2xl flex items-center gap-5 shadow-lg backdrop-blur-xl z-0 border border-t-0 border-[#0a192f]/30 dark:border-white/20">
             <a href="https://www.instagram.com/dnmarble" target="_blank" rel="noopener noreferrer" className="hover:text-[#ffe800] transition-colors" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </a>
@@ -221,16 +234,66 @@ export function Header({ lang }: HeaderProps) {
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
             </button>
 
+            {/* Settings Panel — Theme + Language */}
             {isSettingsOpen && (
-              <div className="absolute top-full left-0 w-full mt-2 bg-white dark:bg-[#1a1a2e] rounded-xl shadow-xl border border-gray-200 dark:border-white/10 p-4 flex flex-col gap-4">
+              <div className="absolute top-full left-0 w-full mt-2 rounded-xl shadow-xl p-4 flex flex-col gap-5 animate-fade-in-up" style={{ background: 'var(--settings-bg)', border: '1px solid var(--settings-border)' }}>
+                {/* Theme Toggle */}
                 <div>
-                  <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2 block">Language</span>
+                  <span className="text-xs font-semibold uppercase tracking-wider mb-2.5 block" style={{ color: 'var(--settings-muted)' }}>{labels.theme}</span>
+                  <div className="flex gap-1.5 p-1 rounded-lg" style={{ background: 'var(--settings-hover)' }}>
+                    {/* Light */}
+                    <button
+                      onClick={() => setTheme("light")}
+                      className={cn(
+                        "flex-1 flex items-center justify-center gap-1.5 text-xs font-bold px-3 py-2 rounded-md transition-all duration-200",
+                        mounted && resolvedTheme === "light"
+                          ? "bg-accent text-white shadow-sm"
+                          : "hover:opacity-80"
+                      )}
+                      style={mounted && resolvedTheme !== "light" ? { color: 'var(--settings-text)' } : {}}
+                    >
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                      </svg>
+                      Light
+                    </button>
+                    {/* Dark */}
+                    <button
+                      onClick={() => setTheme("dark")}
+                      className={cn(
+                        "flex-1 flex items-center justify-center gap-1.5 text-xs font-bold px-3 py-2 rounded-md transition-all duration-200",
+                        mounted && resolvedTheme === "dark"
+                          ? "bg-accent text-white shadow-sm"
+                          : "hover:opacity-80"
+                      )}
+                      style={mounted && resolvedTheme !== "dark" ? { color: 'var(--settings-text)' } : {}}
+                    >
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                      </svg>
+                      Dark
+                    </button>
+                  </div>
+                </div>
+
+                {/* Language Selector */}
+                <div>
+                  <span className="text-xs font-semibold uppercase tracking-wider mb-2.5 block" style={{ color: 'var(--settings-muted)' }}>{labels.language}</span>
                   <div className="flex gap-2">
                     {["TR", "EN", "DE", "FR"].map((l) => (
                       <button
                         key={l}
                         onClick={() => { switchLanguage(l); setIsSettingsOpen(false); }}
-                        className={cn("text-xs font-bold px-2 py-1 rounded transition-colors", lang.toUpperCase() === l ? "bg-accent text-white" : "text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/5")}
+                        className={cn("text-xs font-bold px-3 py-1.5 rounded-md transition-all duration-200", lang.toUpperCase() === l ? "bg-accent text-white shadow-sm" : "hover:opacity-80")}
+                        style={lang.toUpperCase() !== l ? { color: 'var(--settings-text)', background: 'var(--settings-hover)' } : {}}
                       >
                         {l}
                       </button>

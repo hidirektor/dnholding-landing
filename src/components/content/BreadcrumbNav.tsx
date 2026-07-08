@@ -27,7 +27,7 @@ export function BreadcrumbNav({ items, lang }: BreadcrumbNavProps) {
                 ) : (
                   <Link
                     href={item.href}
-                    className="text-text-secondary hover:text-accent transition-colors"
+                    className="text-[var(--text-muted)] hover:text-accent transition-colors"
                   >
                     {item.label}
                   </Link>

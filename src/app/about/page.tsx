@@ -81,7 +81,7 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
                 <Heading level="h3" display>
                   {dict.about.vision.title}
                 </Heading>
-                <p className="text-text-secondary text-lg leading-relaxed">
+                <p className="text-[var(--text-muted)] text-lg leading-relaxed">
                   {dict.about.vision.description}
                 </p>
               </div>
@@ -106,7 +106,7 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
                 <Heading level="h3" display>
                   {dict.about.mission.title}
                 </Heading>
-                <p className="text-text-secondary text-lg leading-relaxed">
+                <p className="text-[var(--text-muted)] text-lg leading-relaxed">
                   {dict.about.mission.description}
                 </p>
               </div>
@@ -126,7 +126,7 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
               <Heading level="h2" display>
                 {dict.about.story.title}
               </Heading>
-              <p className="text-text-secondary text-lg mt-4 max-w-2xl mx-auto">
+              <p className="text-[var(--text-muted)] text-lg mt-4 max-w-2xl mx-auto">
                 {dict.about.story.subtitle}
               </p>
             </div>
@@ -155,14 +155,14 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
                 const IconComponent = index === 0 ? IconTrust : index === 1 ? IconInnovation : IconGlobal;
                 return (
                   <ScrollReveal key={value.title} delay={index * 100}>
-                    <div className="group p-8 rounded-[var(--radius-xl)] border border-border bg-surface hover:border-accent transition-all duration-[var(--duration-medium)] hover:shadow-[var(--shadow-large)] flex flex-col items-center text-center">
-                      <div className="w-16 h-16 rounded-full bg-surface-dark flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform duration-500">
+                    <div className="group p-8 rounded-[var(--radius-xl)] border border-[var(--card-border)] bg-[var(--card-bg)] hover:border-accent transition-all duration-[var(--duration-medium)] hover:shadow-[var(--card-hover-shadow)] flex flex-col items-center text-center">
+                      <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center text-accent mb-6 group-hover:scale-110 transition-transform duration-500">
                         <IconComponent />
                       </div>
                       <h3 className="text-xl font-semibold mb-3 group-hover:text-accent transition-colors">
                         {value.title}
                       </h3>
-                      <p className="text-text-secondary leading-relaxed">
+                      <p className="text-[var(--text-muted)] leading-relaxed">
                         {value.description}
                       </p>
                     </div>

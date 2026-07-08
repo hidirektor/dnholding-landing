@@ -49,7 +49,7 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
 
   return (
     <div className="w-full flex flex-col gap-10 mt-12">
-      {/* Category Tabs */}
+      {/* Category Tabs — always in dark section context */}
       <div className="flex flex-wrap gap-4 items-center justify-center lg:justify-start">
         {sectors.map(sector => {
           const isActive = activeSector === sector;

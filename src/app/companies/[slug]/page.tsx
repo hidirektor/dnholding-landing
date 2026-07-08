@@ -68,7 +68,7 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
                   <Heading level="h1" display>
                     {company.name}
                   </Heading>
-                  <p className="text-text-secondary text-lg mt-4 max-w-2xl">
+                  <p className="text-[var(--text-muted)] text-lg mt-4 max-w-2xl">
                     {company.description}
                   </p>
                 </div>

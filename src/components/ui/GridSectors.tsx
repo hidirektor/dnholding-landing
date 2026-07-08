@@ -41,12 +41,12 @@ export function GridSectors({ items, className, lang = "tr" }: GridSectorsProps)
                 <div 
                   className={cn(
                     "absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-out z-0",
-                    isActive ? "opacity-40 scale-110" : "opacity-20 scale-100"
+                    isActive ? "opacity-100 scale-110" : "opacity-60 scale-100"
                   )}
                   style={{ backgroundImage: `url(${item.image})` }}
                 />
-                {/* Always show gradient overlay to keep text readable */}
-                <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-primary-dark/80 to-primary-dark/40 z-0 transition-opacity duration-700" />
+                {/* Lighter gradient overlay to keep text readable but show images */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/40 z-0 transition-opacity duration-700" />
               </>
             )}
 

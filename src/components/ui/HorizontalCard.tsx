@@ -25,21 +25,24 @@ export function HorizontalCard({
 }: HorizontalCardProps) {
   return (
     <div className={cn(
-      "group flex flex-col sm:flex-row items-stretch gap-6 p-6 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-500",
+      "group flex flex-col sm:flex-row items-stretch gap-6 p-6 rounded-[2rem] transition-all duration-500",
+      /* Light theme */
+      "bg-[var(--card-bg)] border border-[var(--card-border)] shadow-[var(--card-shadow)]",
+      "hover:shadow-[var(--card-hover-shadow)] hover:border-accent/30",
       className
     )}>
       {/* Left side: Image */}
-      <div className="w-full sm:w-2/5 md:w-1/2 shrink-0 rounded-2xl overflow-hidden bg-white/5 relative min-h-[200px] flex items-center justify-center p-4">
+      <div className="w-full sm:w-2/5 md:w-1/2 shrink-0 rounded-2xl overflow-hidden bg-[var(--card-hover-bg)] relative min-h-[200px] flex items-center justify-center p-4">
         {image ? (
           <div 
             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
             style={{ backgroundImage: `url(${image})` }}
           />
         ) : (
-          <div className="w-full h-full bg-white/5 rounded-xl border border-white/10" />
+          <div className="w-full h-full bg-[var(--card-hover-bg)] rounded-xl border border-[var(--card-border)]" />
         )}
-        {/* Subtle overlay for dark theme */}
-        <div className="absolute inset-0 bg-primary-dark/20 mix-blend-multiply transition-opacity group-hover:opacity-0" />
+        {/* Subtle overlay */}
+        <div className="absolute inset-0 bg-black/10 dark:bg-primary-dark/20 dark:mix-blend-multiply transition-opacity group-hover:opacity-0" />
       </div>
 
       {/* Right side: Content */}
@@ -50,11 +53,11 @@ export function HorizontalCard({
           </span>
         </div>
         
-        <h3 className="text-2xl font-display font-bold text-white mb-3 group-hover:text-accent transition-colors duration-300">
+        <h3 className="text-2xl font-display font-bold text-[var(--text-heading)] mb-3 group-hover:text-accent transition-colors duration-300">
           {title}
         </h3>
         
-        <p className="text-white/60 text-sm leading-relaxed mb-6 line-clamp-3 font-light">
+        <p className="text-[var(--text-muted)] text-sm leading-relaxed mb-6 line-clamp-3 font-light">
           {description}
         </p>
         

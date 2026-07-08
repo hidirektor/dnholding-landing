@@ -30,7 +30,7 @@ export function StatsBar({ stats, variant = "default" }: StatsBarProps) {
                     prefix={stat.prefix}
                   />
                 </div>
-                <p className={cn("text-sm md:text-base font-medium uppercase tracking-wider", isDark ? "text-white/60" : "text-text-secondary")}>
+                <p className={cn("text-sm md:text-base font-medium uppercase tracking-wider", isDark ? "text-white/60" : "text-[var(--text-muted)]")}>
                   {stat.label}
                 </p>
               </div>

@@ -2,13 +2,21 @@ import {RefObject, useEffect, useState} from 'react';
 
 export function useIntersectionObserver(
   ref: RefObject<Element | null>,
-  options?: IntersectionObserverInit
+  options?: IntersectionObserverInit,
+  triggerOnce: boolean = true
 ): boolean {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
-      setIsIntersecting(entry.isIntersecting);
+      if (entry.isIntersecting) {
+        setIsIntersecting(true);
+        if (triggerOnce && ref.current) {
+          observer.unobserve(ref.current);
+        }
+      } else if (!triggerOnce) {
+        setIsIntersecting(false);
+      }
     }, options);
 
     if (ref.current) {
@@ -18,7 +26,7 @@ export function useIntersectionObserver(
     return () => {
       observer.disconnect();
     };
-  }, [ref, options]);
+  }, [ref, options, triggerOnce]);
 
   return isIntersecting;
 }

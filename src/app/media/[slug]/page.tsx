@@ -79,11 +79,11 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
         <Container narrow>
           <ScrollReveal>
             <article className="space-y-6">
-              <p className="text-lg text-text-secondary leading-relaxed font-medium">
+              <p className="text-lg text-[var(--text-muted)] leading-relaxed font-medium">
                 {article.excerpt}
               </p>
               <div className="border-t border-border pt-6">
-                <p className="text-text-secondary leading-relaxed whitespace-pre-line">
+                <p className="text-[var(--text-muted)] leading-relaxed whitespace-pre-line">
                   {(article as any).content || article.excerpt}
                 </p>
               </div>
@@ -158,7 +158,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
                     <h4 className="text-lg font-semibold group-hover:text-accent transition-colors">
                       {ra.title}
                     </h4>
-                    <p className="text-text-secondary text-sm mt-2 line-clamp-2">
+                    <p className="text-[var(--text-muted)] text-sm mt-2 line-clamp-2">
                       {ra.excerpt}
                     </p>
                   </a>

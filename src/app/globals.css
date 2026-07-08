@@ -62,11 +62,35 @@
   --radius-xl: 0.5rem;
 }
 
-/* ─── Base Styles ─── */
+/* ─── Light Theme (Default) ─── */
 :root {
   --background: #ffffff;
   --foreground: #0f172a;
-  
+
+  /* Section Backgrounds */
+  --section-default-bg: #ffffff;
+  --section-surface-bg: #f8fafc;
+  --section-dark-bg: #0f2b4c;
+  --section-accent-bg: #163f6e;
+
+  /* Section Text */
+  --section-default-text: #0f172a;
+  --section-surface-text: #0f172a;
+  --section-dark-text: #ffffff;
+
+  /* Card Styles */
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --card-hover-bg: #f8fafc;
+  --card-shadow: 0 1px 3px rgba(15, 43, 76, 0.06), 0 4px 16px rgba(15, 43, 76, 0.04);
+  --card-hover-shadow: 0 4px 20px rgba(15, 43, 76, 0.1), 0 8px 32px rgba(15, 43, 76, 0.06);
+
+  /* Text Hierarchy */
+  --text-heading: #0f172a;
+  --text-body: #334155;
+  --text-muted: #64748b;
+  --text-subtle: #94a3b8;
+
   /* Horizontal Accordion Variables */
   --accordion-bg: #ffffff;
   --accordion-bg-hover: #f8fafc;
@@ -77,12 +101,51 @@
   --accordion-icon-color: #475569;
   --accordion-text: #0f172a;
   --accordion-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.1);
+
+  /* Settings Panel */
+  --settings-bg: #ffffff;
+  --settings-border: #e2e8f0;
+  --settings-text: #0f172a;
+  --settings-muted: #64748b;
+  --settings-hover: #f1f5f9;
+
+  /* Header (dark in light mode) */
+  --header-nav-bg: rgba(15, 43, 76, 0.88);
+  --header-nav-border: rgba(255, 255, 255, 0.12);
+  --header-nav-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  --header-tab-bg: rgba(15, 43, 76, 0.82);
+  --header-tab-border: rgba(255, 255, 255, 0.15);
 }
 
+/* ─── Dark Theme ─── */
 .dark {
   --background: #0a192f;
   --foreground: #f8fafc;
-  
+
+  /* Section Backgrounds */
+  --section-default-bg: #0a192f;
+  --section-surface-bg: #0d2240;
+  --section-dark-bg: #0f2b4c;
+  --section-accent-bg: #163f6e;
+
+  /* Section Text */
+  --section-default-text: #f8fafc;
+  --section-surface-text: #f8fafc;
+  --section-dark-text: #ffffff;
+
+  /* Card Styles */
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --card-hover-bg: rgba(255, 255, 255, 0.1);
+  --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  --card-hover-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  /* Text Hierarchy */
+  --text-heading: #ffffff;
+  --text-body: rgba(255, 255, 255, 0.8);
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-subtle: rgba(255, 255, 255, 0.4);
+
   /* Horizontal Accordion Variables */
   --accordion-bg: #0f2b4c;
   --accordion-bg-hover: #163f6e;
@@ -93,6 +156,20 @@
   --accordion-icon-color: #f8fafc;
   --accordion-text: #ffffff;
   --accordion-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+
+  /* Settings Panel */
+  --settings-bg: #112240;
+  --settings-border: rgba(255, 255, 255, 0.1);
+  --settings-text: #ffffff;
+  --settings-muted: rgba(255, 255, 255, 0.5);
+  --settings-hover: rgba(255, 255, 255, 0.05);
+
+  /* Header (light/glassy in dark mode — current look) */
+  --header-nav-bg: rgba(255, 255, 255, 0.15);
+  --header-nav-border: rgba(255, 255, 255, 0.1);
+  --header-nav-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  --header-tab-bg: rgba(255, 255, 255, 0.15);
+  --header-tab-border: rgba(255, 255, 255, 0.2);
 }
 
 *,
@@ -125,12 +202,18 @@ body {
   font-family: var(--font-sans);
   line-height: 1.6;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ─── Selection ─── */
 ::selection {
   background-color: rgba(37, 99, 235, 0.2);
   color: var(--color-primary);
+}
+
+.dark ::selection {
+  background-color: rgba(59, 130, 246, 0.3);
+  color: #ffffff;
 }
 
 /* ─── Focus Styles ─── */
@@ -168,6 +251,23 @@ body {
 
 .text-balance {
   text-wrap: balance;
+}
+
+/* ─── Theme-Aware Text Utilities ─── */
+.theme-heading {
+  color: var(--text-heading);
+}
+
+.theme-body {
+  color: var(--text-body);
+}
+
+.theme-muted {
+  color: var(--text-muted);
+}
+
+.theme-subtle {
+  color: var(--text-subtle);
 }
 
 /* ─── Animation Utilities ─── */
@@ -290,6 +390,13 @@ body {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.dark .glass {
+  background: rgba(10, 25, 47, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .glass-dark {

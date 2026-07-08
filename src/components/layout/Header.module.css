@@ -18,12 +18,17 @@
   justify-content: space-between;
   height: 64px;
   gap: 2rem;
-  background-color: rgba(255, 255, 255, 0.15); /* White 15% glassy background */
+  background-color: rgba(10, 25, 47, 0.85); /* Dark background for light mode */
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-radius: 9999px;
   padding: 0 1rem 0 1.5rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(10, 25, 47, 0.3);
+}
+
+:global(.dark) .nav {
+  background-color: rgba(255, 255, 255, 0.15); /* White 15% glassy background */
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -170,12 +175,12 @@
 }
 
 .dropdownInner {
-  background: white;
+  background: var(--settings-bg);
   border-radius: var(--radius-lg);
   box-shadow:
     0 10px 40px rgba(0, 0, 0, 0.08),
     0 2px 8px rgba(0, 0, 0, 0.04);
-  border: 1px solid var(--color-border-light);
+  border: 1px solid var(--settings-border);
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -188,7 +193,7 @@
   padding: 0.75rem 1rem;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--color-text);
+  color: var(--settings-text);
   text-decoration: none;
   border-radius: var(--radius-md);
   transition:
@@ -197,7 +202,7 @@
 }
 
 .dropdownLink:hover {
-  background-color: var(--color-surface);
+  background-color: var(--settings-hover);
   color: var(--color-accent);
 }
 
@@ -272,7 +277,7 @@
   background-color: var(--color-primary) !important;
 }
 
-/* Mobile Overlay */
+/* Mobile Overlay — Theme Aware */
 .mobileOverlay {
   position: fixed;
   inset: 0;
@@ -289,6 +294,10 @@
   transition:
     opacity var(--duration-medium) var(--ease-smooth),
     visibility var(--duration-medium);
+}
+
+:global(.dark) .mobileOverlay {
+  background: rgba(10, 25, 47, 0.98);
 }
 
 .mobileOverlayOpen {
@@ -335,6 +344,10 @@
   transition: color var(--duration-fast);
 }
 
+:global(.dark) .mobileNavLink {
+  color: white;
+}
+
 .mobileNavLink:hover {
   color: var(--color-accent);
 }
@@ -360,54 +373,29 @@
   transition: color var(--duration-fast);
 }
 
+:global(.dark) .mobileSubnavLink {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .mobileSubnavLink:hover {
   color: var(--color-accent);
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  .scrolled {
-    background-color: rgba(15, 15, 26, 0.92);
-  }
+/* Settings Panel — Theme Aware */
+.settingsPanel {
+  background: var(--settings-bg);
+  border: 1px solid var(--settings-border);
+  color: var(--settings-text);
+}
 
-  .logoText {
-    color: var(--color-text-inverse);
-  }
+.settingsLabel {
+  color: var(--settings-muted);
+}
 
-  .navLink {
-    color: rgba(255, 255, 255, 0.7);
-  }
+.settingsOption {
+  color: var(--settings-text);
+}
 
-  .navLink:hover {
-    color: white;
-  }
-
-  .dropdownInner {
-    background: var(--color-primary);
-    border-color: rgba(255, 255, 255, 0.08);
-  }
-
-  .dropdownLink {
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  .dropdownLink:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-
-  .hamburgerLine {
-    background-color: white;
-  }
-
-  .mobileOverlay {
-    background: rgba(15, 15, 26, 0.98);
-  }
-
-  .mobileNavLink {
-    color: white;
-  }
-
-  .mobileSubnavLink {
-    color: rgba(255, 255, 255, 0.6);
-  }
+.settingsOption:hover {
+  background: var(--settings-hover);
 }

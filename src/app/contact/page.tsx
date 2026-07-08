@@ -87,7 +87,7 @@ export default async function ContactPage({ params }: { params: Promise<{ slug: 
                       </svg>
                     </div>
                     <h3 className="font-semibold text-lg">{dict.contact.info.addressTitle}</h3>
-                    <p className="text-text-secondary leading-relaxed">
+                    <p className="text-[var(--text-muted)] leading-relaxed">
                       {dict.contact.info.address}
                     </p>
                   </div>
@@ -110,7 +110,7 @@ export default async function ContactPage({ params }: { params: Promise<{ slug: 
                     <h3 className="font-semibold text-lg">{dict.contact.info.phoneTitle}</h3>
                     <a
                       href="tel:+902120000000"
-                      className="text-text-secondary hover:text-accent transition-colors"
+                      className="text-[var(--text-muted)] hover:text-accent transition-colors"
                     >
                       +90 (212) 000 00 00
                     </a>
@@ -135,7 +135,7 @@ export default async function ContactPage({ params }: { params: Promise<{ slug: 
                     <h3 className="font-semibold text-lg">{dict.contact.info.emailTitle}</h3>
                     <a
                       href="mailto:info@dnholding.com"
-                      className="text-text-secondary hover:text-accent transition-colors"
+                      className="text-[var(--text-muted)] hover:text-accent transition-colors"
                     >
                       info@dnholding.com
                     </a>
@@ -158,7 +158,7 @@ export default async function ContactPage({ params }: { params: Promise<{ slug: 
                       </svg>
                     </div>
                     <h3 className="font-semibold text-lg">{dict.contact.info.hoursTitle}</h3>
-                    <p className="text-text-secondary leading-relaxed">
+                    <p className="text-[var(--text-muted)] leading-relaxed">
                       {dict.contact.info.hours}
                     </p>
                   </div>

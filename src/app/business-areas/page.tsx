@@ -113,7 +113,7 @@ export default async function BusinessAreasPage({ params }: { params: Promise<{ 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {areas.map((area, index) => (
               <ScrollReveal key={area.title} delay={index * 80}>
-                <div className="group h-full rounded-[var(--radius-xl)] border border-border hover:border-accent/30 bg-surface hover:shadow-[var(--shadow-large)] transition-all duration-[var(--duration-medium)] flex flex-col items-center overflow-hidden">
+                <div className="group h-full rounded-[var(--radius-xl)] border border-[var(--card-border)] hover:border-accent/30 bg-[var(--card-bg)] hover:shadow-[var(--shadow-large)] transition-all duration-[var(--duration-medium)] flex flex-col items-center overflow-hidden">
                   <div className="relative w-full h-48 sm:h-56 mb-6 overflow-hidden">
                     <Image src={area.image} alt={area.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
@@ -125,7 +125,7 @@ export default async function BusinessAreasPage({ params }: { params: Promise<{ 
                     <h3 className="text-xl font-semibold mb-4 group-hover:text-accent transition-colors">
                       {area.title}
                     </h3>
-                    <p className="text-text-secondary leading-relaxed">
+                    <p className="text-[var(--text-muted)] leading-relaxed">
                       {area.description}
                     </p>
                   </div>

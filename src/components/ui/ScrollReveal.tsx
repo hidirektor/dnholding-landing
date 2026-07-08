@@ -21,7 +21,7 @@ export function ScrollReveal({
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useIntersectionObserver(ref, {
-    threshold: 0.1,
+    threshold: 0,
     rootMargin: "0px 0px -50px 0px",
   });
 
@@ -42,7 +42,7 @@ export function ScrollReveal({
       ref={ref}
       className={cn("will-change-[opacity,transform]", className)}
       style={{
-        opacity: isVisible ? 1 : 0,
+        opacity: 1, // Fallback to ensure it's visible. We can do isVisible ? 1 : 0 if observer works.
         transform: getTransform(),
         transition: `opacity ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.16, 1, 0.3, 1) ${delay}ms`,
       }}

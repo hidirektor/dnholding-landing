@@ -38,10 +38,10 @@ export default async function HomePage() {
       />
 
       {/* ─── Business Areas ─── */}
-      <Section variant="dark" padding="none">
+      <Section variant="default" padding="none">
         <GridSectors 
           lang={locale}
-          className="w-full border-t border-white/10 rounded-none"
+          className="w-full border-t border-[var(--color-border)] rounded-none"
           items={[
             { icon: <IconConstruction />, label: dict.home.areas.items[0], href: "/business-areas/construction", image: "/media/marble-block.jpg" },
             { icon: <IconEnergy />, label: dict.home.areas.items[1], href: "/business-areas/energy", image: "/media/solar-plant.jpg" },
@@ -59,13 +59,13 @@ export default async function HomePage() {
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
                   {dict.home.about.tagline}
                 </p>
-                <Heading level="h2" display className="text-white">
+                <Heading level="h2" display className="text-[var(--text-heading)]">
                   {dict.home.about.title}
                 </Heading>
-                <p className="text-white/70 text-lg leading-relaxed font-light">
+                <p className="text-[var(--text-muted)] text-lg leading-relaxed font-light">
                   {dict.home.about.description}
                 </p>
-                <p className="text-white/70 leading-relaxed font-light">
+                <p className="text-[var(--text-muted)] leading-relaxed font-light">
                   {dict.home.about.description2}
                 </p>
                 <div className="pt-4">
@@ -108,22 +108,22 @@ export default async function HomePage() {
 
 
       {/* ─── Group Companies ─── */}
-      <Section variant="dark" id="companies">
+      <Section variant="surface" id="companies">
         <Container>
           <ScrollReveal>
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 justify-between items-start lg:items-end">
               <div className="flex-1 space-y-4">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-accent" />
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--text-subtle)]">
                     {dict.home.companies.tagline}
                   </p>
                 </div>
-                <Heading level="h2" display className="text-white text-4xl lg:text-5xl max-w-lg">
+                <Heading level="h2" display className="text-[var(--text-heading)] text-4xl lg:text-5xl max-w-lg">
                   {dict.home.companies.title}
                 </Heading>
               </div>
-              <p className="text-white/50 text-lg lg:max-w-md font-light lg:text-right">
+              <p className="text-[var(--text-muted)] text-lg lg:max-w-md font-light lg:text-right">
                 {dict.home.companies.subtitle}
               </p>
             </div>
@@ -150,22 +150,22 @@ export default async function HomePage() {
 
 
       {/* ─── Featured Projects ─── */}
-      <Section variant="surface" id="projects">
+      <Section variant="default" id="projects">
         <Container>
           <ScrollReveal>
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 justify-between items-start lg:items-end mb-16">
               <div className="flex-1 space-y-4">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-accent" />
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--text-subtle)]">
                     {dict.home.projects.tagline}
                   </p>
                 </div>
-                <Heading level="h2" display className="text-white text-4xl lg:text-5xl max-w-lg">
+                <Heading level="h2" display className="text-[var(--text-heading)] text-4xl lg:text-5xl max-w-lg">
                   {dict.home.projects.title}
                 </Heading>
               </div>
-              <p className="text-white/50 text-lg lg:max-w-md font-light lg:text-right">
+              <p className="text-[var(--text-muted)] text-lg lg:max-w-md font-light lg:text-right">
                 {dict.home.projects.subtitle}
               </p>
             </div>
@@ -197,18 +197,18 @@ export default async function HomePage() {
       </Section>
 
       {/* ─── Latest News ─── */}
-      <Section variant="dark" id="news">
+      <Section variant="surface" id="news">
         <Container>
           <ScrollReveal>
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 justify-between items-start lg:items-end mb-16">
               <div className="flex-1 space-y-4">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-accent" />
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--text-subtle)]">
                     {dict.home.news.tagline}
                   </p>
                 </div>
-                <Heading level="h2" display className="text-white text-4xl lg:text-5xl max-w-lg">
+                <Heading level="h2" display className="text-[var(--text-heading)] text-4xl lg:text-5xl max-w-lg">
                   {dict.home.news.title}
                 </Heading>
               </div>
@@ -241,16 +241,16 @@ export default async function HomePage() {
       </Section>
 
       {/* ─── CTA Section ─── */}
-      <Section variant="dark" padding="none">
+      <Section variant="surface" padding="none">
         <div className="relative py-24 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-accent/10 via-accent/20 to-accent/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-accent/5 via-accent/10 to-accent/5 dark:from-accent/10 dark:via-accent/20 dark:to-accent/10" />
           <Container>
             <ScrollReveal>
               <div className="relative text-center max-w-3xl mx-auto space-y-6">
-                <Heading level="h2" display className="text-white">
+                <Heading level="h2" display className="text-[var(--text-heading)]">
                   {dict.home.cta.title}
                 </Heading>
-                <p className="text-white/70 text-lg font-light">
+                <p className="text-[var(--text-muted)] text-lg font-light">
                   {dict.home.cta.subtitle}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

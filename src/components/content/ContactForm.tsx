@@ -29,7 +29,7 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-2">
-            <label htmlFor="name" className="text-sm font-semibold text-text-secondary">{dict.name}</label>
+            <label htmlFor="name" className="text-sm font-semibold text-[var(--text-muted)]">{dict.name}</label>
             <input
               id="name"
               required
@@ -37,7 +37,7 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
             />
           </div>
           <div className="space-y-2">
-            <label htmlFor="email" className="text-sm font-semibold text-text-secondary">{dict.email}</label>
+            <label htmlFor="email" className="text-sm font-semibold text-[var(--text-muted)]">{dict.email}</label>
             <input
               id="email"
               type="email"
@@ -46,7 +46,7 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
             />
           </div>
           <div className="space-y-2">
-            <label htmlFor="phone" className="text-sm font-semibold text-text-secondary">{dict.phone}</label>
+            <label htmlFor="phone" className="text-sm font-semibold text-[var(--text-muted)]">{dict.phone}</label>
             <input
               id="phone"
               type="tel"
@@ -54,7 +54,7 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
             />
           </div>
           <div className="space-y-2">
-            <label htmlFor="company" className="text-sm font-semibold text-text-secondary">{dict.company}</label>
+            <label htmlFor="company" className="text-sm font-semibold text-[var(--text-muted)]">{dict.company}</label>
             <input
               id="company"
               className="w-full px-4 py-3 rounded-[var(--radius-md)] bg-surface border border-border focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all"
@@ -63,7 +63,7 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
         </div>
 
         <div className="space-y-2">
-          <label htmlFor="subject" className="text-sm font-semibold text-text-secondary">{dict.subject}</label>
+          <label htmlFor="subject" className="text-sm font-semibold text-[var(--text-muted)]">{dict.subject}</label>
           <select
             id="subject"
             className="w-full px-4 py-3 rounded-[var(--radius-md)] bg-surface border border-border focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all appearance-none"
@@ -76,7 +76,7 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
         </div>
 
         <div className="space-y-2">
-          <label htmlFor="message" className="text-sm font-semibold text-text-secondary">{dict.message}</label>
+          <label htmlFor="message" className="text-sm font-semibold text-[var(--text-muted)]">{dict.message}</label>
           <textarea
             id="message"
             required

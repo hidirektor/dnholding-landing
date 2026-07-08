@@ -79,14 +79,14 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <Container narrow>
           <ScrollReveal>
             <div className="prose prose-lg max-w-none">
-              <p className="text-text-secondary text-lg leading-relaxed">
+              <p className="text-[var(--text-muted)] text-lg leading-relaxed">
                 {project.description}
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={200}>
-            <div className="mt-12 p-8 rounded-[var(--radius-xl)] bg-surface border border-border">
+            <div className="mt-12 p-8 rounded-[var(--radius-xl)] bg-[var(--card-bg)] border border-[var(--card-border)]">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div>
                   <p className="text-sm text-text-light mb-1">{dict.projects.detail.category}</p>
@@ -155,7 +155,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                     <h4 className="text-lg font-semibold group-hover:text-accent transition-colors">
                       {rp.title}
                     </h4>
-                    <p className="text-text-secondary text-sm mt-2 line-clamp-2">
+                    <p className="text-[var(--text-muted)] text-sm mt-2 line-clamp-2">
                       {rp.description}
                     </p>
                   </a>
