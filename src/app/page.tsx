@@ -1,15 +1,13 @@
 import {getCurrentLocale, getDictionary} from "./dictionaries";
 import {HeroSection} from "@/components/content/HeroSection";
-import {CompanyCard} from "@/components/content/CompanyCard";
-import {ProjectCard} from "@/components/content/ProjectCard";
-import {NewsCard} from "@/components/content/NewsCard";
 import {Section} from "@/components/layout/Section";
 import {Container} from "@/components/layout/Container";
 import {Heading} from "@/components/ui/Heading";
 import {Button} from "@/components/ui/Button";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
-import {SectionDivider} from "@/components/content/SectionDivider";
-import {HorizontalAccordion} from "@/components/ui/HorizontalAccordion";
+import {GridSectors} from "@/components/ui/GridSectors";
+import {CompanyTabs} from "@/components/ui/CompanyTabs";
+import {HorizontalCard} from "@/components/ui/HorizontalCard";
 import {IconConstruction, IconEnergy, IconMining} from "@/components/ui/Icons";
 
 
@@ -39,7 +37,18 @@ export default async function HomePage() {
         }))}
       />
 
-
+      {/* ─── Business Areas ─── */}
+      <Section variant="dark" padding="none">
+        <GridSectors 
+          lang={locale}
+          className="w-full border-t border-white/10 rounded-none"
+          items={[
+            { icon: <IconConstruction />, label: dict.home.areas.items[0], href: "/business-areas/construction", image: "/media/marble-block.jpg" },
+            { icon: <IconEnergy />, label: dict.home.areas.items[1], href: "/business-areas/energy", image: "/media/solar-plant.jpg" },
+            { icon: <IconMining />, label: dict.home.areas.items[2], href: "/business-areas/mining", image: "/media/chrome-ore.jpg" },
+          ]}
+        />
+      </Section>
 
       {/* ─── About Teaser ─── */}
       <Section variant="surface" id="about-teaser">
@@ -50,36 +59,42 @@ export default async function HomePage() {
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
                   {dict.home.about.tagline}
                 </p>
-                <Heading level="h2" display>
+                <Heading level="h2" display className="text-white">
                   {dict.home.about.title}
                 </Heading>
-                <p className="text-text-secondary text-lg leading-relaxed">
+                <p className="text-white/70 text-lg leading-relaxed font-light">
                   {dict.home.about.description}
                 </p>
-                <p className="text-text-secondary leading-relaxed">
+                <p className="text-white/70 leading-relaxed font-light">
                   {dict.home.about.description2}
                 </p>
-                <Button
-                  href={`/about`}
-                  variant="secondary"
-                  icon="arrow"
-                >
-                  {dict.common.readMore}
-                </Button>
+                <div className="pt-4">
+                  <Button
+                    href={`/about`}
+                    variant="primary"
+                    icon="arrow"
+                  >
+                    {dict.common.readMore}
+                  </Button>
+                </div>
               </div>
             </ScrollReveal>
 
             <ScrollReveal direction="right" delay={200}>
-              <div className="relative aspect-[4/3] rounded-[var(--radius-2xl)] overflow-hidden bg-white dark:bg-primary-dark shadow-2xl border border-border/20 group hover:-translate-y-2 transition-all duration-700">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/10 opacity-70 group-hover:opacity-100 transition-opacity duration-700" />
-                <div className="absolute -top-32 -right-32 w-64 h-64 bg-accent/10 rounded-full blur-3xl group-hover:bg-accent/20 transition-colors duration-700"></div>
-                <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-colors duration-700"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center space-y-6 p-8 relative z-10 backdrop-blur-sm bg-white/30 dark:bg-black/20 rounded-3xl border border-white/40 dark:border-white/10 shadow-xl max-w-[80%]">
-                    <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-tr from-accent/20 to-primary/20 flex items-center justify-center backdrop-blur-md shadow-inner border border-white/50 dark:border-white/10">
-                      <span className="text-3xl font-display font-bold text-primary dark:text-white">DN</span>
+              <div 
+                className="relative aspect-[4/3] rounded-[var(--radius-2xl)] overflow-hidden shadow-2xl group hover:-translate-y-2 transition-all duration-700 bg-cover bg-center"
+                style={{ backgroundImage: 'url(/about-bg.jpg)' }}
+              >
+                {/* Subtle dark overlay for contrast */}
+                <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-700" />
+                
+                {/* Floating Glass Card */}
+                <div className="absolute inset-0 flex items-center justify-center p-8">
+                  <div className="text-center space-y-6 p-10 relative z-10 backdrop-blur-xl bg-white/60 dark:bg-black/40 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.1)] max-w-[85%] w-full transform group-hover:scale-105 transition-transform duration-700">
+                    <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-tr from-white to-white/50 dark:from-white/10 dark:to-transparent flex items-center justify-center shadow-lg border border-white/80 dark:border-white/20">
+                      <span className="text-4xl font-display font-bold text-primary dark:text-white">DN</span>
                     </div>
-                    <p className="text-sm font-medium text-text max-w-xs mx-auto leading-relaxed">
+                    <p className="text-base font-semibold text-primary dark:text-white/90 max-w-xs mx-auto leading-relaxed tracking-wide">
                       {dict.home.about.imageCaption}
                     </p>
                   </div>
@@ -90,39 +105,33 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      <SectionDivider variant="gradient" />
+
 
       {/* ─── Group Companies ─── */}
       <Section variant="dark" id="companies">
         <Container>
           <ScrollReveal>
-            <div className="text-center mb-16">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-4">
-                {dict.home.companies.tagline}
-              </p>
-              <Heading level="h2" display>
-                {dict.home.companies.title}
-              </Heading>
-              <p className="text-text-secondary text-lg mt-4 max-w-2xl mx-auto">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 justify-between items-start lg:items-end">
+              <div className="flex-1 space-y-4">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-accent" />
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">
+                    {dict.home.companies.tagline}
+                  </p>
+                </div>
+                <Heading level="h2" display className="text-white text-4xl lg:text-5xl max-w-lg">
+                  {dict.home.companies.title}
+                </Heading>
+              </div>
+              <p className="text-white/50 text-lg lg:max-w-md font-light lg:text-right">
                 {dict.home.companies.subtitle}
               </p>
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featuredCompanies.map((company, index) => (
-              <ScrollReveal key={company.slug} delay={index * 100}>
-                <CompanyCard
-                  name={company.name}
-                  slug={company.slug}
-                  description={company.description}
-                  sector={company.sector}
-                  accentColor={company.accentColor}
-                  lang={locale}
-                />
-              </ScrollReveal>
-            ))}
-          </div>
+          <ScrollReveal delay={200}>
+            <CompanyTabs companies={featuredCompanies} lang={locale} />
+          </ScrollReveal>
 
           <ScrollReveal>
             <div className="text-center mt-12">
@@ -138,72 +147,40 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      {/* ─── Business Areas Teaser ─── */}
-      <Section variant="default" id="business-areas">
-        <Container>
-          <ScrollReveal>
-            <div className="text-center mb-16">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-4">
-                {dict.home.areas.tagline}
-              </p>
-              <Heading level="h2" display>
-                {dict.home.areas.title}
-              </Heading>
-            </div>
-          </ScrollReveal>
 
-          <ScrollReveal delay={200}>
-            <HorizontalAccordion 
-              items={[
-                { icon: <IconConstruction />, label: dict.home.areas.items[0], image: "/media/marble-block.jpg" },
-                { icon: <IconEnergy />, label: dict.home.areas.items[1], image: "/media/solar-plant.jpg" },
-                { icon: <IconMining />, label: dict.home.areas.items[2], image: "/media/chrome-ore.jpg" },
-              ]}
-            />
-          </ScrollReveal>
-
-          <ScrollReveal>
-            <div className="text-center mt-12">
-              <Button
-                href={`/business-areas`}
-                variant="primary"
-                icon="arrow"
-              >
-                {dict.common.discover}
-              </Button>
-            </div>
-          </ScrollReveal>
-        </Container>
-      </Section>
 
       {/* ─── Featured Projects ─── */}
       <Section variant="surface" id="projects">
         <Container>
           <ScrollReveal>
-            <div className="text-center mb-16">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-4">
-                {dict.home.projects.tagline}
-              </p>
-              <Heading level="h2" display>
-                {dict.home.projects.title}
-              </Heading>
-              <p className="text-text-secondary text-lg mt-4 max-w-2xl mx-auto">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 justify-between items-start lg:items-end mb-16">
+              <div className="flex-1 space-y-4">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-accent" />
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">
+                    {dict.home.projects.tagline}
+                  </p>
+                </div>
+                <Heading level="h2" display className="text-white text-4xl lg:text-5xl max-w-lg">
+                  {dict.home.projects.title}
+                </Heading>
+              </div>
+              <p className="text-white/50 text-lg lg:max-w-md font-light lg:text-right">
                 {dict.home.projects.subtitle}
               </p>
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
             {featuredProjects.map((project, index) => (
               <ScrollReveal key={project.slug} delay={index * 100}>
-                <ProjectCard
+                <HorizontalCard
+                  number={String(index + 1).padStart(2, '0')}
                   title={project.title}
                   description={project.description}
-                  company={project.company}
-                  category={project.category}
                   image={(project as any).image}
-                  slug={project.slug}
-                  lang={locale}
+                  href={`/projects/${project.slug}`}
+                  linkText={locale === "tr" ? "Projeyi İncele" : "View Project"}
                 />
               </ScrollReveal>
             ))}
@@ -211,11 +188,7 @@ export default async function HomePage() {
 
           <ScrollReveal>
             <div className="text-center mt-12">
-              <Button
-                href={`/projects`}
-                variant="secondary"
-                icon="arrow"
-              >
+              <Button href={`/projects`} variant="secondary" icon="arrow">
                 {dict.common.viewAll}
               </Button>
             </div>
@@ -223,33 +196,35 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      <SectionDivider variant="wave" />
-
       {/* ─── Latest News ─── */}
       <Section variant="dark" id="news">
         <Container>
           <ScrollReveal>
-            <div className="text-center mb-16">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-4">
-                {dict.home.news.tagline}
-              </p>
-              <Heading level="h2" display className="text-white">
-                {dict.home.news.title}
-              </Heading>
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 justify-between items-start lg:items-end mb-16">
+              <div className="flex-1 space-y-4">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-accent" />
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">
+                    {dict.home.news.tagline}
+                  </p>
+                </div>
+                <Heading level="h2" display className="text-white text-4xl lg:text-5xl max-w-lg">
+                  {dict.home.news.title}
+                </Heading>
+              </div>
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
             {latestNews.map((article, index) => (
               <ScrollReveal key={article.slug} delay={index * 100}>
-                <NewsCard
+                <HorizontalCard
+                  number={String(index + 1).padStart(2, '0')}
                   title={article.title}
-                  excerpt={article.excerpt}
-                  date={article.date}
-                  category={article.category}
+                  description={article.excerpt}
                   image={(article as any).image}
-                  slug={article.slug}
-                  lang={locale}
+                  href={`/media/${article.slug}`}
+                  linkText={locale === "tr" ? "Haber Detayı" : "Read More"}
                 />
               </ScrollReveal>
             ))}
@@ -257,11 +232,7 @@ export default async function HomePage() {
 
           <ScrollReveal>
             <div className="text-center mt-12">
-              <Button
-                href={`/media`}
-                variant="secondary"
-                icon="arrow"
-              >
+              <Button href={`/media`} variant="secondary" icon="arrow">
                 {dict.common.viewAll}
               </Button>
             </div>
@@ -270,16 +241,16 @@ export default async function HomePage() {
       </Section>
 
       {/* ─── CTA Section ─── */}
-      <Section variant="default" padding="none">
+      <Section variant="dark" padding="none">
         <div className="relative py-24 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-accent/5 via-accent/10 to-accent/5" />
+          <div className="absolute inset-0 bg-gradient-to-r from-accent/10 via-accent/20 to-accent/10" />
           <Container>
             <ScrollReveal>
               <div className="relative text-center max-w-3xl mx-auto space-y-6">
-                <Heading level="h2" display>
+                <Heading level="h2" display className="text-white">
                   {dict.home.cta.title}
                 </Heading>
-                <p className="text-text-secondary text-lg">
+                <p className="text-white/70 text-lg font-light">
                   {dict.home.cta.subtitle}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
