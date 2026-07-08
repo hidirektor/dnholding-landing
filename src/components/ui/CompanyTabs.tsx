@@ -58,15 +58,15 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
               key={sector}
               onClick={() => setActiveSector(sector)}
               className={cn(
-                "flex items-center gap-3 px-6 py-4 rounded-xl border transition-all duration-300 font-semibold text-sm",
+                "relative z-10 cursor-pointer flex items-center gap-3 px-6 py-4 rounded-xl border transition-all duration-300 font-semibold text-sm",
                 isActive 
-                  ? "border-accent bg-accent/10 text-white shadow-[0_0_20px_rgba(37,99,235,0.2)]" 
-                  : "border-white/10 bg-white/5 text-white/50 hover:bg-white/10 hover:text-white"
+                  ? "border-accent bg-accent/10 text-accent dark:text-white shadow-[0_0_20px_rgba(37,99,235,0.2)]" 
+                  : "border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 text-black/50 dark:text-white/50 hover:bg-black/10 dark:hover:bg-white/10 hover:text-black dark:hover:text-white"
               )}
             >
               <span className={cn(
                 "p-2 rounded-lg flex items-center justify-center transition-colors duration-300",
-                isActive ? "bg-accent text-white" : "bg-white/10 text-white/50"
+                isActive ? "bg-accent text-white" : "bg-black/10 dark:bg-white/10 text-black/50 dark:text-white/50"
               )}>
                 <div className="w-5 h-5 flex items-center justify-center [&>svg]:w-full [&>svg]:h-full">
                   {getSectorIcon(sector)}

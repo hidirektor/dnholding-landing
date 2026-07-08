@@ -26,7 +26,8 @@ export function useIntersectionObserver(
     return () => {
       observer.disconnect();
     };
-  }, [ref, options, triggerOnce]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ref, options?.threshold, options?.rootMargin, triggerOnce]);
 
   return isIntersecting;
 }
