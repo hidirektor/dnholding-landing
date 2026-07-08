@@ -56,7 +56,12 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
           return (
             <button
               key={sector}
-              onClick={() => setActiveSector(sector)}
+              type="button"
+              onClickCapture={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                setActiveSector(sector);
+              }}
               className={cn(
                 "relative z-10 cursor-pointer flex items-center gap-3 px-6 py-4 rounded-xl border transition-all duration-300 font-semibold text-sm",
                 isActive 
@@ -65,14 +70,14 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
               )}
             >
               <span className={cn(
-                "p-2 rounded-lg flex items-center justify-center transition-colors duration-300",
+                "p-2 rounded-lg flex items-center justify-center transition-colors duration-300 pointer-events-none",
                 isActive ? "bg-accent text-white" : "bg-black/10 dark:bg-white/10 text-black/50 dark:text-white/50"
               )}>
                 <div className="w-5 h-5 flex items-center justify-center [&>svg]:w-full [&>svg]:h-full">
                   {getSectorIcon(sector)}
                 </div>
               </span>
-              {sector}
+              <span className="pointer-events-none">{sector}</span>
             </button>
           );
         })}

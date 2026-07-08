@@ -1,7 +1,14 @@
 .footer {
+  background-color: var(--color-surface-dark);
+  color: var(--color-text-secondary);
+  border-top: 1px solid var(--color-border);
+  padding-top: 5rem;
+}
+
+:global(.dark) .footer {
   background-color: var(--color-primary);
   color: rgba(255, 255, 255, 0.8);
-  padding-top: 5rem;
+  border-top: none;
 }
 
 .grid {
@@ -43,6 +50,10 @@
   object-fit: contain;
 }
 
+:global(.dark) .logoImage {
+  filter: brightness(0) invert(1);
+}
+
 .logoIcon {
   display: flex;
   align-items: center;
@@ -64,14 +75,22 @@
   font-size: 0.8125rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  color: var(--color-text);
+}
+
+:global(.dark) .logoText {
   color: white;
 }
 
 .aboutText {
   font-size: 0.875rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text-secondary);
   max-width: 320px;
+}
+
+:global(.dark) .aboutText {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Social Links */
@@ -88,12 +107,17 @@
   width: 36px;
   height: 36px;
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.6);
+  background: var(--color-surface-darker);
+  color: var(--color-text-secondary);
   transition:
     background-color var(--duration-fast) var(--ease-smooth),
     color var(--duration-fast) var(--ease-smooth),
     transform var(--duration-fast) var(--ease-premium);
+}
+
+:global(.dark) .socialLink {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .socialLink:hover {
@@ -114,8 +138,12 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--color-text-light);
   margin: 0;
+}
+
+:global(.dark) .colTitle {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .linksList {
@@ -129,11 +157,15 @@
 
 .footerLink {
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--color-text-secondary);
   text-decoration: none;
   transition: color var(--duration-fast);
   padding: 0.125rem 0;
   display: inline-block;
+}
+
+:global(.dark) .footerLink {
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .footerLink:hover {
@@ -147,13 +179,17 @@
   flex-direction: column;
   gap: 0.5rem;
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--color-text-secondary);
 }
 
 .contactInfo a {
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--color-text-secondary);
   text-decoration: none;
   transition: color var(--duration-fast);
+}
+
+:global(.dark) .contactInfo, :global(.dark) .contactInfo a {
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .contactInfo a:hover {
@@ -163,8 +199,12 @@
 /* Bottom Bar */
 .bottomBar {
   margin-top: 4rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--color-border);
   padding: 1.5rem 0;
+}
+
+:global(.dark) .bottomBar {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .bottomContent {
@@ -185,8 +225,12 @@
 
 .copyright {
   font-size: 0.8125rem;
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--color-text-light);
   margin: 0;
+}
+
+:global(.dark) .copyright {
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .legalLinks {
@@ -197,30 +241,46 @@
 
 .legalLink {
   font-size: 0.8125rem;
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--color-text-light);
   text-decoration: none;
   transition: color var(--duration-fast);
 }
 
+:global(.dark) .legalLink {
+  color: rgba(255, 255, 255, 0.35);
+}
+
 .legalLink:hover {
+  color: var(--color-text);
+}
+
+:global(.dark) .legalLink:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
 .legalDivider {
-  color: rgba(255, 255, 255, 0.15);
+  color: var(--color-border);
   font-size: 0.75rem;
+}
+
+:global(.dark) .legalDivider {
+  color: rgba(255, 255, 255, 0.15);
 }
 
 /* Powered By Woma */
 .poweredBy {
   font-size: 0.8125rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--color-text-secondary);
   text-decoration: none;
   transition: opacity var(--duration-fast);
   display: flex;
   align-items: center;
   gap: 0.375rem;
   font-weight: 500;
+}
+
+:global(.dark) .poweredBy {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .poweredBy:hover {
