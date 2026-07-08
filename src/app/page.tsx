@@ -42,7 +42,7 @@ export default async function HomePage() {
 
 
       {/* ─── About Teaser ─── */}
-      <Section variant="default" id="about-teaser">
+      <Section variant="surface" id="about-teaser">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <ScrollReveal direction="left">
@@ -70,14 +70,16 @@ export default async function HomePage() {
             </ScrollReveal>
 
             <ScrollReveal direction="right" delay={200}>
-              <div className="relative aspect-[4/3] rounded-[var(--radius-xl)] overflow-hidden bg-surface-dark">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/10" />
+              <div className="relative aspect-[4/3] rounded-[var(--radius-2xl)] overflow-hidden bg-white dark:bg-primary-dark shadow-2xl border border-border/20 group hover:-translate-y-2 transition-all duration-700">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/10 opacity-70 group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="absolute -top-32 -right-32 w-64 h-64 bg-accent/10 rounded-full blur-3xl group-hover:bg-accent/20 transition-colors duration-700"></div>
+                <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-colors duration-700"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center space-y-4 p-8">
-                    <div className="w-20 h-20 mx-auto rounded-full bg-accent/10 flex items-center justify-center">
-                      <span className="text-3xl font-display font-bold text-accent">DN</span>
+                  <div className="text-center space-y-6 p-8 relative z-10 backdrop-blur-sm bg-white/30 dark:bg-black/20 rounded-3xl border border-white/40 dark:border-white/10 shadow-xl max-w-[80%]">
+                    <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-tr from-accent/20 to-primary/20 flex items-center justify-center backdrop-blur-md shadow-inner border border-white/50 dark:border-white/10">
+                      <span className="text-3xl font-display font-bold text-primary dark:text-white">DN</span>
                     </div>
-                    <p className="text-sm text-text-secondary max-w-xs">
+                    <p className="text-sm font-medium text-text max-w-xs mx-auto leading-relaxed">
                       {dict.home.about.imageCaption}
                     </p>
                   </div>
@@ -91,7 +93,7 @@ export default async function HomePage() {
       <SectionDivider variant="gradient" />
 
       {/* ─── Group Companies ─── */}
-      <Section variant="surface" id="companies">
+      <Section variant="dark" id="companies">
         <Container>
           <ScrollReveal>
             <div className="text-center mb-16">
@@ -137,14 +139,14 @@ export default async function HomePage() {
       </Section>
 
       {/* ─── Business Areas Teaser ─── */}
-      <Section variant="dark" id="business-areas">
+      <Section variant="default" id="business-areas">
         <Container>
           <ScrollReveal>
             <div className="text-center mb-16">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-4">
                 {dict.home.areas.tagline}
               </p>
-              <Heading level="h2" display className="text-white">
+              <Heading level="h2" display>
                 {dict.home.areas.title}
               </Heading>
             </div>
@@ -175,7 +177,7 @@ export default async function HomePage() {
       </Section>
 
       {/* ─── Featured Projects ─── */}
-      <Section variant="default" id="projects">
+      <Section variant="surface" id="projects">
         <Container>
           <ScrollReveal>
             <div className="text-center mb-16">
@@ -224,14 +226,14 @@ export default async function HomePage() {
       <SectionDivider variant="wave" />
 
       {/* ─── Latest News ─── */}
-      <Section variant="surface" id="news">
+      <Section variant="dark" id="news">
         <Container>
           <ScrollReveal>
             <div className="text-center mb-16">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-4">
                 {dict.home.news.tagline}
               </p>
-              <Heading level="h2" display>
+              <Heading level="h2" display className="text-white">
                 {dict.home.news.title}
               </Heading>
             </div>

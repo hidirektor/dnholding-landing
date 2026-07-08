@@ -1,6 +1,6 @@
 "use client";
 
-import {useCallback, useEffect, useState} from "react";
+import {useCallback, useEffect, useRef, useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {usePathname, useRouter} from "next/navigation";
@@ -116,6 +116,7 @@ export function Header({ lang }: HeaderProps) {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const settingsRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const { theme, setTheme } = useTheme();
 
@@ -140,6 +141,25 @@ export function Header({ lang }: HeaderProps) {
       document.body.style.overflow = "";
     };
   }, [isMobileOpen]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsSettingsOpen(false);
+    };
+    const handleClickOutside = (e: MouseEvent) => {
+      if (settingsRef.current && !settingsRef.current.contains(e.target as Node)) {
+        setIsSettingsOpen(false);
+      }
+    };
+    if (isSettingsOpen) {
+      document.addEventListener("keydown", handleKeyDown);
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isSettingsOpen]);
 
   const closeMobile = useCallback(() => {
     setIsMobileOpen(false);
@@ -176,7 +196,7 @@ export function Header({ lang }: HeaderProps) {
           </div>
           
           {/* Social Tab */}
-          <div className="absolute top-8 right-4 md:right-8 bg-white/15 text-white/90 px-6 pt-12 pb-4 rounded-b-2xl flex items-center gap-5 shadow-lg backdrop-blur-xl z-0 border border-t-0 border-white/20">
+          <div ref={settingsRef} className="absolute top-8 right-4 md:right-8 bg-white/15 text-white/90 px-6 pt-12 pb-4 rounded-b-2xl flex items-center gap-5 shadow-lg backdrop-blur-xl z-0 border border-t-0 border-white/20">
             <a href="https://www.instagram.com/dnmarble" target="_blank" rel="noopener noreferrer" className="hover:text-[#ffe800] transition-colors" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </a>
@@ -193,40 +213,32 @@ export function Header({ lang }: HeaderProps) {
             {/* Separator */}
             <div className="w-px h-4 bg-white/30 mx-1"></div>
 
-            <div className="relative">
-              <button 
-                onClick={() => setIsSettingsOpen(!isSettingsOpen)} 
-                className={cn("hover:text-[#ffe800] transition-colors outline-none", isSettingsOpen && "text-[#ffe800]")} 
-                aria-label="Settings"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
-              </button>
-              {isSettingsOpen && (
-                <div className="absolute top-full right-0 mt-2 bg-white dark:bg-[#1a1a2e] rounded-xl shadow-xl border border-gray-200 dark:border-white/10 p-4 min-w-[200px] flex flex-col gap-4">
-                  <div>
-                    <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2 block">Language</span>
-                    <div className="flex gap-2">
-                      {["TR", "EN", "DE", "FR"].map((l) => (
-                        <button
-                          key={l}
-                          onClick={() => { switchLanguage(l); setIsSettingsOpen(false); }}
-                          className={cn("text-xs font-bold px-2 py-1 rounded transition-colors", lang.toUpperCase() === l ? "bg-accent text-white" : "text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/5")}
-                        >
-                          {l}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                  <div>
-                    <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2 block">Theme</span>
-                    <div className="flex gap-2">
-                      <button onClick={() => { setTheme("light"); setIsSettingsOpen(false); }} className="text-xs font-semibold px-3 py-1.5 rounded bg-gray-100 text-gray-800 hover:bg-gray-200 transition-colors">Light</button>
-                      <button onClick={() => { setTheme("dark"); setIsSettingsOpen(false); }} className="text-xs font-semibold px-3 py-1.5 rounded bg-gray-800 text-white hover:bg-gray-700 transition-colors">Dark</button>
-                    </div>
+            <button 
+              onClick={() => setIsSettingsOpen(!isSettingsOpen)} 
+              className={cn("hover:text-[#ffe800] transition-colors outline-none", isSettingsOpen && "text-[#ffe800]")} 
+              aria-label="Settings"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+
+            {isSettingsOpen && (
+              <div className="absolute top-full left-0 w-full mt-2 bg-white dark:bg-[#1a1a2e] rounded-xl shadow-xl border border-gray-200 dark:border-white/10 p-4 flex flex-col gap-4">
+                <div>
+                  <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2 block">Language</span>
+                  <div className="flex gap-2">
+                    {["TR", "EN", "DE", "FR"].map((l) => (
+                      <button
+                        key={l}
+                        onClick={() => { switchLanguage(l); setIsSettingsOpen(false); }}
+                        className={cn("text-xs font-bold px-2 py-1 rounded transition-colors", lang.toUpperCase() === l ? "bg-accent text-white" : "text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/5")}
+                      >
+                        {l}
+                      </button>
+                    ))}
                   </div>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
 
           <nav
