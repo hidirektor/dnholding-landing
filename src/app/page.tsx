@@ -43,9 +43,9 @@ export default async function HomePage() {
           lang={locale}
           className="w-full border-t border-[var(--color-border)] rounded-none"
           items={[
-            { icon: <IconConstruction />, label: dict.home.areas.items[0], href: "/business-areas/construction", image: "/media/marble-block.jpg" },
-            { icon: <IconEnergy />, label: dict.home.areas.items[1], href: "/business-areas/energy", image: "/media/solar-plant.jpg" },
-            { icon: <IconMining />, label: dict.home.areas.items[2], href: "/business-areas/mining", image: "/media/chrome-ore.jpg" },
+            { icon: <IconConstruction />, label: dict.home.areas.items[0], href: "/business-areas/construction", image: "/images/marble-block.jpg" },
+            { icon: <IconEnergy />, label: dict.home.areas.items[1], href: "/business-areas/energy", image: "/images/solar-plant.jpg" },
+            { icon: <IconMining />, label: dict.home.areas.items[2], href: "/business-areas/mining", image: "/images/chrome-ore.jpg" },
           ]}
         />
       </Section>

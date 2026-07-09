@@ -313,7 +313,7 @@
         "category": "Commercial",
         "year": "2024",
         "location": "Istanbul, Turquie",
-        "image": "/media/project1.jpg"
+        "image": "/images/project1.jpg"
       },
       {
         "slug": "ege-ruzgar-santrali",
@@ -323,7 +323,7 @@
         "category": "Énergie Renouvelable",
         "year": "2023",
         "location": "Izmir, Turquie",
-        "image": "/media/project2.jpg"
+        "image": "/images/project2.jpg"
       },
       {
         "slug": "avrasya-lojistik-merkezi",
@@ -333,7 +333,7 @@
         "category": "Infrastructure",
         "year": "2022",
         "location": "Kocaeli, Turquie",
-        "image": "/media/project3.jpg"
+        "image": "/images/project3.jpg"
       },
       {
         "slug": "organik-tarim-vadisi",
@@ -343,7 +343,7 @@
         "category": "Installation",
         "year": "2023",
         "location": "Manisa, Turquie",
-        "image": "/media/project1.jpg"
+        "image": "/images/project1.jpg"
       },
       {
         "slug": "smart-city-platform",
@@ -353,7 +353,7 @@
         "category": "Logiciel",
         "year": "2024",
         "location": "Mondial",
-        "image": "/media/project2.jpg"
+        "image": "/images/project2.jpg"
       },
       {
         "slug": "anadolu-mermer-kompleksi",
@@ -363,7 +363,7 @@
         "category": "Industriel",
         "year": "2021",
         "location": "Afyon, Turquie",
-        "image": "/media/project3.jpg"
+        "image": "/images/project3.jpg"
       }
     ],
     "news": [
@@ -374,7 +374,7 @@
         "date": "2024-02-15",
         "category": "Durabilité",
         "featured": true,
-        "image": "/media/news1.jpg"
+        "image": "/images/news1.jpg"
       },
       {
         "slug": "new-solar-farm",
@@ -383,7 +383,7 @@
         "date": "2024-01-20",
         "category": "Investissements",
         "featured": true,
-        "image": "/media/news2.jpg"
+        "image": "/images/news2.jpg"
       },
       {
         "slug": "smart-city-award",
@@ -392,7 +392,7 @@
         "date": "2023-11-10",
         "category": "Récompenses",
         "featured": true,
-        "image": "/media/news3.jpg"
+        "image": "/images/news3.jpg"
       }
     ],
     "stats": [
@@ -423,7 +423,7 @@
         "name": "Blok Mermer",
         "description": "Yüksek kaliteli ve homojen renk yapısına sahip, uluslararası standartlarda blok mermer.",
         "companySlug": "dn-mermer",
-        "image": "/media/marble-block.jpg",
+        "image": "/images/marble-block.jpg",
         "category": "Mermer"
       },
       {
@@ -431,7 +431,7 @@
         "name": "Krom Cevheri",
         "description": "Sanayi üretiminde kullanılan yüksek saflıkta krom cevheri.",
         "companySlug": "2m-uluslararasi-madencilik",
-        "image": "/media/chrome-ore.jpg",
+        "image": "/images/chrome-ore.jpg",
         "category": "Maden"
       },
       {
@@ -439,7 +439,7 @@
         "name": "GÃ¼neÅŸ Enerjisi Santralleri",
         "description": "SÃ¼rdÃ¼rÃ¼lebilir ve temiz enerji iÃ§in yÃ¼ksek verimli gÃ¼neÅŸ enerjisi Ã§Ã¶zÃ¼mleri.",
         "companySlug": "ymy-enerji",
-        "image": "/media/solar-plant.jpg",
+        "image": "/images/solar-plant.jpg",
         "category": "Enerji"
       },
       {
@@ -447,7 +447,7 @@
         "name": "Sanayi Tipi Kömür",
         "description": "Yüksek kalorili ve çevre standartlarına uygun sanayi tipi linyit kömürü.",
         "companySlug": "ynr-maden",
-        "image": "/media/coal.jpg",
+        "image": "/images/coal.jpg",
         "category": "Maden"
       }
     ]

@@ -37,7 +37,7 @@ export function HeroSection({
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/40 z-10" />
         <Image
-          src="/hero-bg.jpg"
+          src="/assets/image/background/hero-bg.jpg"
           alt="DN Holding Epic Quarry"
           fill
           className="object-cover"
