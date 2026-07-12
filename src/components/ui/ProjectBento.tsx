@@ -112,17 +112,13 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
       </div>
 
       {/* ─── TILE 3 (Top Right Icon): cols 10-12, row 1 ─── */}
-      <div className="relative lg:col-span-3 min-h-[150px] lg:min-h-0 rounded-[2rem] overflow-hidden bg-[#ca8a2a] flex flex-col items-center justify-center shadow-lg p-6 hover:bg-[#b07824] transition-colors cursor-pointer group">
-        <Link href="/about" className="absolute inset-0 z-20" aria-label="About Us"></Link>
-        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none mix-blend-overlay"></div>
-        <div className="w-12 h-12 sm:w-16 sm:h-16 text-white transform group-hover:-translate-y-2 transition-transform duration-500 z-10">
+      <div className="relative lg:col-span-3 min-h-[150px] lg:min-h-0 rounded-[2rem] overflow-hidden bg-[#ca8a2a] flex items-center justify-center shadow-lg p-8 hover:bg-[#b07824] transition-colors cursor-pointer group">
+        <Link href="/about" className="absolute inset-0 z-10" aria-label="About Us"></Link>
+        <div className="w-16 h-16 sm:w-20 sm:h-20 text-white transform group-hover:scale-110 transition-transform duration-500">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2L2 12l10 10 10-10L12 2zm0 17.5L4.5 12 12 4.5 19.5 12 12 19.5z" />
           </svg>
         </div>
-        <span className="mt-3 text-white font-bold text-sm sm:text-base tracking-widest uppercase opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 transition-all duration-500 z-10">
-          {lang === 'tr' ? 'Hakkımızda' : 'About Us'}
-        </span>
       </div>
 
       {/* ─── TILE 4 (Mid Tall Silo): cols 5-7, row 2 ─── */}
@@ -179,67 +175,6 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
             </div>
           </>
         )}
-      </div>
-
-      {/* ─── TILE 6 (Bottom Factory): cols 1-7, row 3 ─── */}
-      <div className="relative lg:col-span-7 min-h-[250px] lg:min-h-[280px] rounded-[2rem] overflow-hidden group shadow-lg">
-        {p5 && (
-          <>
-            <Image
-              src="/images/project2.jpg"
-              alt={p5.title}
-              fill
-              className="object-cover transition-transform duration-1000 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent pointer-events-none" />
-            
-            <div className="absolute bottom-8 left-8 z-20 text-white max-w-sm">
-              <h3 className="text-2xl sm:text-3xl font-bold leading-tight mb-4">
-                {lang === 'tr' ? 'Verimlilik ve Sürdürülebilirlik Dengesi' : 'Balancing efficiency and sustainability'}
-              </h3>
-              <Link
-                href={`/projects/${p5.slug}`}
-                className="inline-flex items-center gap-2 bg-white text-black px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-accent hover:text-white transition-colors"
-              >
-                <span>dnholding.com</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
-          </>
-        )}
-      </div>
-
-      {/* ─── TILE 7 (Bottom Text): cols 8-12, row 3 ─── */}
-      <div className="relative lg:col-span-5 min-h-[250px] lg:min-h-[280px] rounded-[2rem] overflow-hidden bg-[#f4f4f4] dark:bg-zinc-900 border border-black/5 dark:border-white/10 shadow-lg p-8 sm:p-10 flex flex-col justify-center">
-        <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white leading-tight mb-4">
-          {lang === 'tr' ? (
-            <>
-              Mütevazı köklerden <span className="text-[#ca8a2a]">endüstri öncüsü</span> olmaya uzanan yolculuk
-            </>
-          ) : (
-            <>
-              From modest origins to becoming <span className="text-[#ca8a2a]">industry frontrunners</span>
-            </>
-          )}
-        </h3>
-        <p className="text-black/60 dark:text-white/60 text-[11px] sm:text-xs leading-relaxed mb-6 line-clamp-4">
-          {dict.home.about.description}
-        </p>
-        <div>
-          <Link
-            href="/about"
-            className="inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-[#ca8a2a] hover:text-white dark:hover:bg-[#ca8a2a] transition-colors"
-          >
-            <span>{lang === 'tr' ? 'Tarihçemizi İncele' : 'Look at timeline'}</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
-          </Link>
-        </div>
       </div>
 
     </div>
