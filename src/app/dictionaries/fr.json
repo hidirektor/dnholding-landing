@@ -61,11 +61,15 @@
     },
     "vision": {
       "title": "Notre Vision",
-      "description": "Être la holding leader qui oriente l'avenir avec des investissements durables à l'échelle mondiale."
+      "paragraphs": [
+        "Être la holding leader qui oriente l'avenir avec des investissements durables à l'échelle mondiale."
+      ]
     },
     "mission": {
       "title": "Notre Mission",
-      "description": "Créer de la valeur en produisant des solutions innovantes, fiables et de haute qualité pour toutes nos parties prenantes."
+      "paragraphs": [
+        "Créer de la valeur en produisant des solutions innovantes, fiables et de haute qualité pour toutes nos parties prenantes."
+      ]
     },
     "story": {
       "tagline": "Notre Histoire",
@@ -650,11 +654,11 @@
         "category": "Mermer",
         "year": "2024",
         "location": "Global",
-        "image": "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0983.heic",
+        "image": "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0983.jpg",
         "images": [
-          "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0983.heic",
-          "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0993.heic",
-          "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0998.heic",
+          "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0983.jpg",
+          "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0993.jpg",
+          "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-0998.jpg",
           "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-1007.jpg",
           "/assets/projects/honaz-kaklik-anaokulu-proje-protokol/img-1016.jpg"
         ]
@@ -938,26 +942,26 @@
         "date": "2024-06-01",
         "category": "News & Announcements",
         "featured": true,
-        "image": "/logo_dnholding.png",
+        "image": "/assets/fairs/afyon-blok-mermer-fuari/2.jpg",
         "images": [
           "/assets/fairs/afyon-blok-mermer-fuari/1.docx",
-          "/assets/fairs/afyon-blok-mermer-fuari/2.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/3.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/4.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/5.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/6.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/7.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/8.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/9.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/10.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/11.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/12.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/13.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/14.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/15.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/16.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/17.heic",
-          "/assets/fairs/afyon-blok-mermer-fuari/18.heic"
+          "/assets/fairs/afyon-blok-mermer-fuari/2.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/3.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/4.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/5.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/6.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/7.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/8.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/9.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/10.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/11.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/12.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/13.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/14.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/15.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/16.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/17.jpg",
+          "/assets/fairs/afyon-blok-mermer-fuari/18.jpg"
         ]
       },
       {
@@ -967,13 +971,13 @@
         "date": "2024-06-01",
         "category": "News & Announcements",
         "featured": true,
-        "image": "/assets/fairs/izmir-fuar-2025/1.heic",
+        "image": "/assets/fairs/izmir-fuar-2025/1.jpg",
         "images": [
-          "/assets/fairs/izmir-fuar-2025/1.heic",
-          "/assets/fairs/izmir-fuar-2025/2.heic",
-          "/assets/fairs/izmir-fuar-2025/3.heic",
-          "/assets/fairs/izmir-fuar-2025/4.heic",
-          "/assets/fairs/izmir-fuar-2025/5.heic"
+          "/assets/fairs/izmir-fuar-2025/1.jpg",
+          "/assets/fairs/izmir-fuar-2025/2.jpg",
+          "/assets/fairs/izmir-fuar-2025/3.jpg",
+          "/assets/fairs/izmir-fuar-2025/4.jpg",
+          "/assets/fairs/izmir-fuar-2025/5.jpg"
         ]
       },
       {
@@ -983,41 +987,41 @@
         "date": "2024-06-01",
         "category": "News & Announcements",
         "featured": true,
-        "image": "/assets/fairs/izmir-fuar-2026/1.heic",
+        "image": "/assets/fairs/izmir-fuar-2026/1.jpg",
         "images": [
-          "/assets/fairs/izmir-fuar-2026/1.heic",
-          "/assets/fairs/izmir-fuar-2026/2.heic",
-          "/assets/fairs/izmir-fuar-2026/3.heic",
-          "/assets/fairs/izmir-fuar-2026/4.heic",
-          "/assets/fairs/izmir-fuar-2026/5.heic",
-          "/assets/fairs/izmir-fuar-2026/6.heic",
-          "/assets/fairs/izmir-fuar-2026/7.heic",
-          "/assets/fairs/izmir-fuar-2026/8.heic",
-          "/assets/fairs/izmir-fuar-2026/9.heic",
-          "/assets/fairs/izmir-fuar-2026/10.heic",
-          "/assets/fairs/izmir-fuar-2026/11.heic",
-          "/assets/fairs/izmir-fuar-2026/12.heic",
-          "/assets/fairs/izmir-fuar-2026/13.heic",
-          "/assets/fairs/izmir-fuar-2026/14.heic",
-          "/assets/fairs/izmir-fuar-2026/15.heic",
-          "/assets/fairs/izmir-fuar-2026/16.heic",
-          "/assets/fairs/izmir-fuar-2026/17.heic",
-          "/assets/fairs/izmir-fuar-2026/18.heic",
+          "/assets/fairs/izmir-fuar-2026/1.jpg",
+          "/assets/fairs/izmir-fuar-2026/2.jpg",
+          "/assets/fairs/izmir-fuar-2026/3.jpg",
+          "/assets/fairs/izmir-fuar-2026/4.jpg",
+          "/assets/fairs/izmir-fuar-2026/5.jpg",
+          "/assets/fairs/izmir-fuar-2026/6.jpg",
+          "/assets/fairs/izmir-fuar-2026/7.jpg",
+          "/assets/fairs/izmir-fuar-2026/8.jpg",
+          "/assets/fairs/izmir-fuar-2026/9.jpg",
+          "/assets/fairs/izmir-fuar-2026/10.jpg",
+          "/assets/fairs/izmir-fuar-2026/11.jpg",
+          "/assets/fairs/izmir-fuar-2026/12.jpg",
+          "/assets/fairs/izmir-fuar-2026/13.jpg",
+          "/assets/fairs/izmir-fuar-2026/14.jpg",
+          "/assets/fairs/izmir-fuar-2026/15.jpg",
+          "/assets/fairs/izmir-fuar-2026/16.jpg",
+          "/assets/fairs/izmir-fuar-2026/17.jpg",
+          "/assets/fairs/izmir-fuar-2026/18.jpg",
           "/assets/fairs/izmir-fuar-2026/19.jpg",
           "/assets/fairs/izmir-fuar-2026/20.jpg",
-          "/assets/fairs/izmir-fuar-2026/21.heic",
-          "/assets/fairs/izmir-fuar-2026/22.heic",
-          "/assets/fairs/izmir-fuar-2026/23.heic",
-          "/assets/fairs/izmir-fuar-2026/24.heic",
-          "/assets/fairs/izmir-fuar-2026/25.heic",
-          "/assets/fairs/izmir-fuar-2026/26.heic",
-          "/assets/fairs/izmir-fuar-2026/27.heic",
-          "/assets/fairs/izmir-fuar-2026/28.heic",
-          "/assets/fairs/izmir-fuar-2026/29.heic",
-          "/assets/fairs/izmir-fuar-2026/30.heic",
-          "/assets/fairs/izmir-fuar-2026/31.heic",
-          "/assets/fairs/izmir-fuar-2026/32.heic",
-          "/assets/fairs/izmir-fuar-2026/33.heic"
+          "/assets/fairs/izmir-fuar-2026/21.jpg",
+          "/assets/fairs/izmir-fuar-2026/22.jpg",
+          "/assets/fairs/izmir-fuar-2026/23.jpg",
+          "/assets/fairs/izmir-fuar-2026/24.jpg",
+          "/assets/fairs/izmir-fuar-2026/25.jpg",
+          "/assets/fairs/izmir-fuar-2026/26.jpg",
+          "/assets/fairs/izmir-fuar-2026/27.jpg",
+          "/assets/fairs/izmir-fuar-2026/28.jpg",
+          "/assets/fairs/izmir-fuar-2026/29.jpg",
+          "/assets/fairs/izmir-fuar-2026/30.jpg",
+          "/assets/fairs/izmir-fuar-2026/31.jpg",
+          "/assets/fairs/izmir-fuar-2026/32.jpg",
+          "/assets/fairs/izmir-fuar-2026/33.jpg"
         ]
       },
       {
