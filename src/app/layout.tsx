@@ -104,7 +104,7 @@ export default async function RootLayout({
           <Header lang={lang} />
           <main className="flex-1">{children}</main>
           <Footer lang={lang} dict={dict} />
-          <CookieWidget dict={dict.cookie} />
+          <CookieWidget dict={dict} />
         </ThemeProvider>
       </body>
     </html>
