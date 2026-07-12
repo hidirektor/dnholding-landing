@@ -18,7 +18,7 @@ export function NewsCard({ title, description, image, href, category = "Haber", 
         {/* Image Container with specific corner radii */}
         <div className="relative w-full aspect-[4/3] overflow-hidden rounded-[1.5rem] rounded-bl-[4rem] bg-zinc-100 dark:bg-zinc-800">
           <Image
-            src={image || "/images/project2.jpg"}
+            src={image || "/assets/image/background/hero-bg.jpg"}
             alt={title}
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"

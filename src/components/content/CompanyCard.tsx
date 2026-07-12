@@ -24,7 +24,7 @@ export function CompanyCard({ name, slug, description, sector, accentColor, lang
         <div className="flex flex-col h-full gap-6 relative z-10">
           <div className="flex justify-between items-start">
             <div className="w-16 h-16 rounded-xl flex items-center justify-center bg-black/5 dark:bg-black/40 border border-black/10 dark:border-white/10 shadow-inner overflow-hidden p-3 backdrop-blur-md">
-              <Image src="/logo_dnholding.png" alt={`${name} logo`} width={64} height={64} className="object-contain opacity-90 group-hover:opacity-100 transition-opacity" />
+              <Image src="/assets/image/logo/logo_dnholding.png" alt={`${name} logo`} width={64} height={64} className="object-contain opacity-90 group-hover:opacity-100 transition-opacity" />
             </div>
             <Badge variant="outline" className="border-black/10 dark:border-white/20 text-black/70 dark:text-white/80 bg-black/5 dark:bg-white/5 backdrop-blur-sm px-3 py-1">{sector}</Badge>
           </div>

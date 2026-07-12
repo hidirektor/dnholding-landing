@@ -13,15 +13,15 @@ interface CompanyTabsProps {
 // Helper to get an image based on the sector
 function getSectorImage(sector: string) {
   const s = sector.toLowerCase();
-  if (s.includes("mermer") || s.includes("marble")) return "/images/marble-block.jpg";
-  if (s.includes("enerji") || s.includes("energy")) return "/images/solar-plant.jpg";
-  if (s.includes("maden") || s.includes("mining")) return "/images/chrome-ore.jpg";
-  return "/images/hq.jpg";
+  if (s.includes("mermer") || s.includes("marble")) return "/assets/image/sector/marble-block.jpg";
+  if (s.includes("enerji") || s.includes("energy")) return "/assets/image/sector/solar-plant.jpg";
+  if (s.includes("maden") || s.includes("mining")) return "/assets/image/sector/chrome-ore.jpg";
+  return "/assets/image/background/hero-bg.jpg";
 }
 
 function CompanyLogo({ slug, name, isActive }: { slug: string, name: string, isActive: boolean }) {
   const [error, setError] = useState(false);
-  const src = error ? "/assets/image/logo/logo_dnholding.png" : `/images/companies/${slug}.png`;
+  const src = error ? "/assets/image/logo/logo_dnholding.png" : `/assets/image/companies/${slug}.png`;
   
   return (
     <div className={cn(

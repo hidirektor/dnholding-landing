@@ -46,9 +46,9 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
   const companyQuarries = dict.data.quarries ? dict.data.quarries.filter((q: any) => q.companySlug === slug) : [];
   const companyProducts = dict.data.products ? dict.data.products.filter((p: any) => p.companySlug === slug) : [];
 
-  const logoPath = `/images/companies/${company.slug}.png`;
+  const logoPath = `/assets/image/companies/${company.slug}.png`;
   const fullLogoPath = path.join(process.cwd(), 'public', logoPath);
-  const logoSrc = fs.existsSync(fullLogoPath) ? logoPath : '/logo_dnholding.png';
+  const logoSrc = fs.existsSync(fullLogoPath) ? logoPath : '/assets/image/logo/logo_dnholding.png';
 
   return (
     <>

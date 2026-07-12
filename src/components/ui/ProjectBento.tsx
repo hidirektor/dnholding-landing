@@ -26,7 +26,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
         {p1 && (
           <>
             <Image
-              src={p1.image || p1.images?.[0] || "/images/placeholder.jpg"}
+              src={p1.image || p1.images?.[0] || "/assets/image/background/hero-bg.jpg"}
               alt={p1.title}
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-90"
@@ -85,7 +85,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
         {p2 && (
           <>
             <Image
-              src={p2.image || p2.images?.[0] || "/images/placeholder.jpg"}
+              src={p2.image || p2.images?.[0] || "/assets/image/background/hero-bg.jpg"}
               alt={p2.title}
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-60"
@@ -119,7 +119,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
         {p3 && (
           <>
             <Image
-              src={p3.image || p3.images?.[0] || "/images/placeholder.jpg"}
+              src={p3.image || p3.images?.[0] || "/assets/image/background/hero-bg.jpg"}
               alt={p3.title}
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -139,7 +139,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
         {p4 && (
           <>
             <Image
-              src={p4.image || p4.images?.[0] || "/images/placeholder.jpg"}
+              src={p4.image || p4.images?.[0] || "/assets/image/background/hero-bg.jpg"}
               alt={p4.title}
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-80"
@@ -173,7 +173,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
         {p5 && (
           <>
             <Image
-              src={p5.image || p5.images?.[0] || "/images/placeholder.jpg"}
+              src={p5.image || p5.images?.[0] || "/assets/image/background/hero-bg.jpg"}
               alt={p5.title}
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105"

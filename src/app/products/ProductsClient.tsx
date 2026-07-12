@@ -94,7 +94,7 @@ export function ProductsClient({
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
-                          target.src = "/logo_dnholding.png";
+                          target.src = "/assets/image/logo/logo_dnholding.png";
                           target.style.objectFit = "contain";
                           target.style.padding = "2rem";
                         }}
