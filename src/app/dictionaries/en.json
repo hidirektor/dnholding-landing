@@ -59,6 +59,26 @@
       "title": "About Us",
       "subtitle": "Growing with our values."
     },
+    "overview": {
+      "paragraphs": [
+        "DN Mermer, which has been operating in the natural stone sector with nearly half a century of experience, completed its corporate restructuring as of 2024 and continues its activities under the umbrella of DN Holding A.Ş. Maintaining its leadership in the sector with the experience it has gained over the years, DN Holding stands out with its deep-rooted history and strong position in the international arena.",
+        "Recognized for its expertise in travertine and limestone, DN Holding offers products that combine quality, aesthetics, and durability at its high-tech production facilities headquartered in Denizli. Adopting customer satisfaction as its basic principle, the company aims to increase the value of natural stone in living spaces.",
+        "DN Holding has one of the most comprehensive production networks in the sector with 5 integrated production facilities and a total of 24 licensed natural stone quarries, 8 of which are active. With an annual block production capacity of approximately 500 thousand tons and 1,850,000 square meters of sized product exports, it is a strong player in the global market. Representing Turkish natural stone successfully in world markets with its exports to 47 countries, mainly America, DN Holding continues to increase its efficiency in the region with its 9 active warehouses in America and aims to expand this number in the coming period.",
+        "DN Holding, which has continued its export championship in the sector uninterruptedly since 2018 with its group company Yaman Maden A.Ş., continues to be one of the leaders of the sector with its reliability, scalable production capacity, and customer-oriented approach.",
+        "Adopting sustainable production as a responsibility, DN Holding also reflects its environmentally sensitive approach in its energy policies. Currently meeting 40% of its annual energy needs with its own Rooftop Solar Power Plant project, the holding aims to produce energy twice as much as its own consumption with new solar power plant projects continuing in three different locations. With these projects, which will be commissioned at the end of 2026, it aims not only to meet its own needs but also to make a meaningful contribution to the country's energy.",
+        "In addition, the companies under the holding are:"
+      ],
+      "companies": [
+        "DN HOLDING A.Ş",
+        "DN Mermer A.Ş.",
+        "Yaman Maden A.Ş.",
+        "YMY Enerji A.Ş.",
+        "4T Madencilik A.Ş.",
+        "Demtalya Madencilik A.Ş.",
+        "HD Maden A.Ş.",
+        "2M Uluslararası Madencilik A.Ş."
+      ]
+    },
     "vision": {
       "title": "Our Vision",
       "description": "To be the leading holding that guides the future with sustainable investments on a global scale."
@@ -296,19 +316,29 @@
     "projects": [
       {
         "slug": "albavena-usa",
-        "title": "ALBAVENA - USA - SPECIAL VILLA PROJECT",
-        "description": "ALBAVENA - USA - SPECIAL VILLA PROJECT",
+        "title": "Albavena - USA - Special Villa Project",
+        "description": "Albavena - USA - Special Villa Project",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",
         "location": "USA",
-        "image": "/assets/projects/albavena/1.jpg",
-        "images": []
+        "image": "/assets/projects/albavena-usa/1.jpeg",
+        "images": [
+          "/assets/projects/albavena-usa/1.jpeg",
+          "/assets/projects/albavena-usa/2.jpeg",
+          "/assets/projects/albavena-usa/3.jpeg",
+          "/assets/projects/albavena-usa/4.jpeg",
+          "/assets/projects/albavena-usa/5.jpeg",
+          "/assets/projects/albavena-usa/6.jpeg",
+          "/assets/projects/albavena-usa/7.jpeg",
+          "/assets/projects/albavena-usa/8.jpeg",
+          "/assets/projects/albavena-usa/9.jpeg"
+        ]
       },
       {
         "slug": "monaco-sand-usa",
-        "title": "MONACO SAND - USA - SPECIAL VILLA PROJECT",
-        "description": "MONACO SAND - USA - SPECIAL VILLA PROJECT",
+        "title": "Monaco Sand - USA - Special Villa Project",
+        "description": "Monaco Sand - USA - Special Villa Project",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",
@@ -318,8 +348,8 @@
       },
       {
         "slug": "musiad-project-istanbul",
-        "title": "MÜSİAD PROJECT - İSTANBUL",
-        "description": "MÜSİAD PROJECT - İSTANBUL",
+        "title": "Müsiad Project - İstanbul",
+        "description": "Müsiad Project - İstanbul",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",
@@ -329,8 +359,8 @@
       },
       {
         "slug": "russia-hotel-project",
-        "title": "RUSSIA - HOTEL PROJECT",
-        "description": "RUSSIA - HOTEL PROJECT",
+        "title": "Russia - Hotel Project",
+        "description": "Russia - Hotel Project",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",
@@ -340,8 +370,8 @@
       },
       {
         "slug": "trade-center-riyad",
-        "title": "TRADE CENTER AND SHOPPING MALL PROJECT - SAUDI ARABIA - RİYAD",
-        "description": "TRADE CENTER AND SHOPPING MALL PROJECT - SAUDI ARABIA - RİYAD",
+        "title": "Trade Center and Shopping Mall Project - Saudi Arabia - Riyad",
+        "description": "Trade Center and Shopping Mall Project - Saudi Arabia - Riyad",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",
@@ -351,8 +381,8 @@
       },
       {
         "slug": "travertine-france",
-        "title": "TRAVERTINE - FRANSA - HOTEL LA FABRIQUE",
-        "description": "TRAVERTINE - FRANSA - HOTEL LA FABRIQUE",
+        "title": "Travertine - Fransa - Hotel La Fabrique",
+        "description": "Travertine - Fransa - Hotel La Fabrique",
         "company": "DN Mermer",
         "category": "Traverten",
         "year": "2024",
@@ -362,8 +392,8 @@
       },
       {
         "slug": "turkey-antalya-turkish-bath",
-        "title": "TURKEY ANTALYA - TURKISH BATH PROJECT",
-        "description": "TURKEY ANTALYA - TURKISH BATH PROJECT",
+        "title": "Turkey Antalya - Turkish Bath Project",
+        "description": "Turkey Antalya - Turkish Bath Project",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",

@@ -59,8 +59,30 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
         </Container>
       </Section>
 
-      {/* Vision & Mission */}
+      {/* Company Overview */}
       <Section variant="default">
+        <Container>
+          <div className="max-w-4xl mx-auto space-y-6">
+            {dict.about.overview.paragraphs.map((paragraph: string, index: number) => (
+              <ScrollReveal key={index} delay={index * 100}>
+                <p className="text-[var(--text-muted)] text-lg leading-relaxed text-justify">
+                  {paragraph}
+                </p>
+              </ScrollReveal>
+            ))}
+            <ScrollReveal delay={dict.about.overview.paragraphs.length * 100}>
+              <ul className="list-disc list-inside text-[var(--text-muted)] text-lg leading-relaxed mt-8 space-y-2 pl-4">
+                {dict.about.overview.companies.map((company: string, index: number) => (
+                  <li key={index}>{company}</li>
+                ))}
+              </ul>
+            </ScrollReveal>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Vision & Mission */}
+      <Section variant="surface">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <ScrollReveal direction="left">
@@ -117,7 +139,7 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
       </Section>
 
       {/* Company Story */}
-      <Section variant="surface" id="story">
+      <Section variant="default" id="story">
         <Container>
           <ScrollReveal>
             <div className="text-center mb-16">
@@ -137,7 +159,7 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
       </Section>
 
       {/* Values */}
-      <Section variant="default">
+      <Section variant="surface">
         <Container>
           <ScrollReveal>
             <div className="text-center mb-16">
