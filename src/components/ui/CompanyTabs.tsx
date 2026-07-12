@@ -131,12 +131,22 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
                 key={company.slug}
                 onClick={() => setActiveCompanyIndex(index)}
                 className={cn(
-                  "flex items-center justify-between w-full text-left px-6 py-6 border-b border-white/5 transition-all duration-300 group",
+                  "flex items-center gap-4 w-full text-left px-6 py-6 border-b border-white/5 transition-all duration-300 group",
                   isActive
                     ? "bg-accent text-white"
                     : "hover:bg-white/5 text-white/70"
                 )}
               >
+                {/* Index Circle */}
+                <div className={cn(
+                  "w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-colors shrink-0",
+                  isActive
+                    ? "bg-white text-accent"
+                    : "bg-white/10 text-white/50 group-hover:bg-white/20 group-hover:text-white"
+                )}>
+                  {index + 1}
+                </div>
+
                 <div>
                   <h4 className={cn(
                     "text-lg sm:text-xl font-bold transition-colors mb-1",
@@ -150,16 +160,6 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
                   )}>
                     {company.sector}
                   </p>
-                </div>
-                
-                {/* Index Circle */}
-                <div className={cn(
-                  "w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-colors shrink-0",
-                  isActive
-                    ? "bg-white text-accent"
-                    : "bg-white/10 text-white/50 group-hover:bg-white/20 group-hover:text-white"
-                )}>
-                  {index + 1}
                 </div>
               </button>
             );
