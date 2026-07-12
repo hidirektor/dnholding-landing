@@ -136,7 +136,7 @@ export default async function BusinessAreasPage({ params }: { params: Promise<{ 
         </Container>
       </Section>
 
-      <Section variant="accent">
+      <Section variant="default">
         <Container narrow>
           <ScrollReveal>
             <div className="text-center space-y-6">

@@ -37,10 +37,10 @@ export function NotFoundClient({ dict }: NotFoundClientProps) {
     <div className="min-h-screen flex flex-col items-center justify-center bg-[var(--background)] text-center p-6 relative z-[100]">
       <div className="mb-8 animate-fade-in-down">
         <Image 
-          src="/logo_dnholding.png" 
+          src="/logo_dnholding-text.png" 
           alt="DN Holding Logo" 
-          width={150} 
-          height={150} 
+          width={240} 
+          height={60} 
           className="object-contain"
         />
       </div>

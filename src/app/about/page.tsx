@@ -183,7 +183,7 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
           suffix: stat.suffix,
           prefix: stat.prefix,
         }))}
-        variant="dark"
+        variant="default"
       />
     </>
   );
