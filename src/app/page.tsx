@@ -54,7 +54,7 @@ export default async function HomePage() {
       <Section variant="surface" id="about-teaser" className="border-b border-border/40 pb-0">
         <Container>
           <div className="flex flex-col gap-16 lg:gap-24 pt-8 pb-16 lg:pt-12 lg:pb-24">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
               {/* Left Side: Large Title */}
               <div className="lg:col-span-7">
                 <ScrollReveal direction="up">
@@ -66,7 +66,7 @@ export default async function HomePage() {
               </div>
 
               {/* Right Side: Description and Button */}
-              <div className="lg:col-span-5 flex flex-col items-start gap-8 mt-2 lg:mt-4">
+              <div className="lg:col-span-5 flex flex-col items-start gap-8">
                 <ScrollReveal direction="up" delay={100}>
                   <p className="text-lg sm:text-xl text-[var(--text-muted)] font-light leading-relaxed">
                     {dict.home.about.description} {dict.home.about.description2}
@@ -117,39 +117,8 @@ export default async function HomePage() {
       {/* ─── Group Companies ─── */}
       <Section variant="surface" id="companies">
         <Container>
-          <ScrollReveal>
-            <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 justify-between items-start lg:items-end">
-              <div className="flex-1 space-y-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-accent" />
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--text-subtle)]">
-                    {dict.home.companies.tagline}
-                  </p>
-                </div>
-                <Heading level="h2" display className="text-[var(--text-heading)] text-4xl lg:text-5xl max-w-lg">
-                  {dict.home.companies.title}
-                </Heading>
-              </div>
-              <p className="text-[var(--text-muted)] text-lg lg:max-w-md font-light lg:text-right">
-                {dict.home.companies.subtitle}
-              </p>
-            </div>
-          </ScrollReveal>
-
           <ScrollReveal delay={200}>
             <CompanyTabs companies={featuredCompanies} lang={locale} />
-          </ScrollReveal>
-
-          <ScrollReveal>
-            <div className="text-center mt-12">
-              <Button
-                href={`/companies`}
-                variant="secondary"
-                icon="arrow"
-              >
-                {dict.common.viewAll}
-              </Button>
-            </div>
           </ScrollReveal>
         </Container>
       </Section>

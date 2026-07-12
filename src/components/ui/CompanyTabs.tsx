@@ -2,98 +2,173 @@
 
 import React, {useMemo, useState} from "react";
 import {cn} from "@/lib/utils";
-import {CompanyCard} from "@/components/content/CompanyCard";
-import {IconConstruction, IconEnergy, IconMining} from "@/components/ui/Icons";
+import Image from "next/image";
+import Link from "next/link";
 
 interface CompanyTabsProps {
   companies: any[];
   lang: string;
 }
 
-// Helper to assign a specific icon based on the sector name
-function getSectorIcon(sector: string) {
+// Helper to get an image based on the sector
+function getSectorImage(sector: string) {
   const s = sector.toLowerCase();
-  if (s.includes("mermer") || s.includes("inşaat")) return <IconConstruction />;
-  if (s.includes("enerji")) return <IconEnergy />;
-  if (s.includes("maden")) return <IconMining />;
-  // Default icon (building/holding)
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
-      <path d="M9 22v-4h6v4"></path>
-      <path d="M8 6h.01"></path>
-      <path d="M16 6h.01"></path>
-      <path d="M12 6h.01"></path>
-      <path d="M12 10h.01"></path>
-      <path d="M12 14h.01"></path>
-      <path d="M16 10h.01"></path>
-      <path d="M16 14h.01"></path>
-      <path d="M8 10h.01"></path>
-      <path d="M8 14h.01"></path>
-    </svg>
-  );
+  if (s.includes("mermer") || s.includes("marble")) return "/images/marble-block.jpg";
+  if (s.includes("enerji") || s.includes("energy")) return "/images/solar-plant.jpg";
+  if (s.includes("maden") || s.includes("mining")) return "/images/chrome-ore.jpg";
+  return "/images/hq.jpg";
 }
 
 export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
   // Get unique sectors
   const sectors = useMemo(() => {
     const unique = new Set(companies.map(c => c.sector));
-    return Array.from(unique);
+    return ["All", ...Array.from(unique)];
   }, [companies]);
 
-  const [activeSector, setActiveSector] = useState(sectors[0] || "");
+  const [activeSector, setActiveSector] = useState("All");
+  const [activeCompanyIndex, setActiveCompanyIndex] = useState(0);
 
   const activeCompanies = useMemo(() => {
+    if (activeSector === "All") return companies;
     return companies.filter(c => c.sector === activeSector);
   }, [companies, activeSector]);
 
+  // When changing sector, reset active company
+  const handleSectorChange = (sector: string) => {
+    setActiveSector(sector);
+    setActiveCompanyIndex(0);
+  };
+
+  const activeCompany = activeCompanies[activeCompanyIndex] || activeCompanies[0];
+
   return (
-    <div className="relative z-50 w-full flex flex-col gap-10 mt-12">
-      {/* Category Tabs */}
-      <div className="flex flex-wrap gap-4 items-center justify-center lg:justify-start">
-        {sectors.map(sector => {
-          const isActive = activeSector === sector;
-          return (
-            <button
-              key={sector}
-              type="button"
-              style={{ pointerEvents: 'auto', cursor: 'pointer', position: 'relative', zIndex: 99999 }}
-              onClick={() => setActiveSector(sector)}
-              className={cn(
-                "flex items-center gap-3 px-6 py-4 rounded-xl border font-semibold text-sm",
-                isActive 
-                  ? "border-accent bg-accent/10 text-accent dark:text-white" 
-                  : "border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 text-black/50 dark:text-white/50"
-              )}
-            >
-              <div className={cn(
-                "p-2 rounded-lg flex items-center justify-center",
-                isActive ? "bg-accent text-white" : "bg-black/10 dark:bg-white/10 text-black/50 dark:text-white/50"
-              )}>
-                <div className="w-5 h-5 flex items-center justify-center [&>svg]:w-full [&>svg]:h-full">
-                  {getSectorIcon(sector)}
-                </div>
+    <div className="relative z-50 w-full mt-12 flex flex-col lg:flex-row min-h-[600px] bg-black text-white rounded-3xl overflow-hidden shadow-2xl">
+      
+      {/* ─── LEFT PANE: Image & Details ─── */}
+      <div className="relative w-full lg:w-[60%] min-h-[400px] lg:min-h-full flex flex-col justify-end p-8 lg:p-12 overflow-hidden bg-zinc-900 group">
+        {/* Background Image */}
+        {activeCompany && (
+          <Image
+            src={getSectorImage(activeCompany.sector)}
+            alt={activeCompany.name}
+            fill
+            className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-80 mix-blend-luminosity"
+          />
+        )}
+        {/* Gradient Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent pointer-events-none" />
+        
+        {/* Company Details */}
+        {activeCompany && (
+          <div className="relative z-10 w-full">
+            <p className="text-accent text-sm sm:text-base font-semibold uppercase tracking-widest mb-2">
+              {activeCompany.sector}
+            </p>
+            <h3 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+              {activeCompany.name}
+            </h3>
+            
+            {/* Divider */}
+            <div className="h-px w-full bg-white/20 mb-6"></div>
+            
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+              <div className="flex-1 max-w-xl">
+                <p className="text-white/70 text-sm sm:text-base leading-relaxed line-clamp-3">
+                  {activeCompany.description}
+                </p>
               </div>
-              <span>{sector}</span>
-            </button>
-          );
-        })}
+              <div className="shrink-0">
+                <Link
+                  href={`/companies/${activeCompany.slug}`}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-accent transition-colors group/link"
+                >
+                  <span className="border-b border-white/30 group-hover/link:border-accent pb-0.5">
+                    {lang === 'tr' ? 'Detayları İncele' : 'View Details'}
+                  </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transform group-hover/link:translate-x-1 transition-transform">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
-      {/* Grid of Companies */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {activeCompanies.map(company => (
-          <CompanyCard
-            key={company.slug}
-            name={company.name}
-            slug={company.slug}
-            description={company.description}
-            sector={company.sector}
-            accentColor={company.accentColor}
-            lang={lang}
-          />
-        ))}
+      {/* ─── RIGHT PANE: List & Filters ─── */}
+      <div className="w-full lg:w-[40%] bg-[#111] flex flex-col">
+        {/* Filter Row */}
+        <div className="px-6 py-6 border-b border-white/10 overflow-x-auto hide-scrollbar">
+          <div className="flex gap-2">
+            {sectors.map(sector => {
+              const isActive = activeSector === sector;
+              return (
+                <button
+                  key={sector}
+                  onClick={() => handleSectorChange(sector)}
+                  className={cn(
+                    "whitespace-nowrap px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition-colors",
+                    isActive
+                      ? "bg-white text-black"
+                      : "bg-white/5 text-white/50 hover:bg-white/10 hover:text-white"
+                  )}
+                >
+                  {sector === "All" ? (lang === 'tr' ? "Tümü" : "All") : sector}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Company List */}
+        <div className="flex-1 overflow-y-auto hide-scrollbar flex flex-col max-h-[600px]">
+          {activeCompanies.map((company, index) => {
+            const isActive = activeCompanyIndex === index;
+            return (
+              <button
+                key={company.slug}
+                onClick={() => setActiveCompanyIndex(index)}
+                className={cn(
+                  "flex items-center justify-between w-full text-left px-6 py-6 border-b border-white/5 transition-all duration-300 group",
+                  isActive
+                    ? "bg-accent text-white"
+                    : "hover:bg-white/5 text-white/70"
+                )}
+              >
+                <div>
+                  <h4 className={cn(
+                    "text-lg sm:text-xl font-bold transition-colors mb-1",
+                    isActive ? "text-white" : "text-white/90 group-hover:text-white"
+                  )}>
+                    {company.name}
+                  </h4>
+                  <p className={cn(
+                    "text-xs transition-colors",
+                    isActive ? "text-white/80" : "text-white/40"
+                  )}>
+                    {company.sector}
+                  </p>
+                </div>
+                
+                {/* Index Circle */}
+                <div className={cn(
+                  "w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-colors shrink-0",
+                  isActive
+                    ? "bg-white text-accent"
+                    : "bg-white/10 text-white/50 group-hover:bg-white/20 group-hover:text-white"
+                )}>
+                  {index + 1}
+                </div>
+              </button>
+            );
+          })}
+        </div>
       </div>
+
     </div>
   );
 }
+
+export default CompanyTabs;
