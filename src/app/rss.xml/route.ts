@@ -2,8 +2,7 @@ import {NextResponse} from 'next/server';
 import trDict from '@/app/dictionaries/tr.json';
 
 export async function GET() {
-  // @ts-expect-error
-  const news = trDict.data?.news || [];
+  const news = (trDict as any).data?.news || [];
   
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
