@@ -44,9 +44,9 @@ export default async function HomePage() {
           lang={locale}
           className="w-full border-t border-[var(--color-border)] rounded-none"
           items={[
-            { icon: <IconConstruction />, label: dict.home.areas.items[0], href: "/business-areas/construction", image: "/images/marble-block.jpg" },
-            { icon: <IconEnergy />, label: dict.home.areas.items[1], href: "/business-areas/energy", image: "/images/solar-plant.jpg" },
-            { icon: <IconMining />, label: dict.home.areas.items[2], href: "/business-areas/mining", image: "/images/chrome-ore.jpg" },
+            { icon: <IconConstruction />, label: dict.home.areas.items[0], href: "/business-areas/construction", image: "/assets/image/sector/marble-block.jpg" },
+            { icon: <IconEnergy />, label: dict.home.areas.items[1], href: "/business-areas/energy", image: "/assets/image/sector/solar-plant.jpg" },
+            { icon: <IconMining />, label: dict.home.areas.items[2], href: "/business-areas/mining", image: "/assets/image/sector/chrome-ore.jpg" },
           ]}
         />
       </Section>
@@ -185,7 +185,7 @@ export default async function HomePage() {
                 <NewsCard
                   title={article.title}
                   description={article.excerpt}
-                  image={article.image || article.images?.[0] || "/logo_dnholding.png"}
+                  image={article.image || article.images?.[0] || "/assets/image/logo/logo_dnholding.png"}
                   href={`/media/${article.slug}`}
                   category={locale === "tr" ? "Haber" : "News"}
                   readTime={locale === "tr" ? "5 dk okuma" : "5 mins read"}

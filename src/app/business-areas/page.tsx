@@ -23,21 +23,21 @@ const businessAreas: Record<string, { icon: React.ReactNode; image: string; titl
   tr: [
     {
       icon: <IconConstruction />,
-      image: "/images/marble-block.jpg",
+      image: "/assets/image/sector/marble-block.jpg",
       title: "Mermer",
       description:
         "Dünya standartlarında yüksek kaliteli mermer üretimi ve ihracatıyla projelerinize estetik ve değer katıyoruz.",
     },
     {
       icon: <IconMining />,
-      image: "/images/chrome-ore.jpg",
+      image: "/assets/image/sector/chrome-ore.jpg",
       title: "Maden",
       description:
         "Çevreye duyarlı ve sürdürülebilir madencilik faaliyetleri ile ülkemizin yeraltı zenginliklerini ekonomiye kazandırıyoruz.",
     },
     {
       icon: <IconEnergy />,
-      image: "/images/solar-plant.jpg",
+      image: "/assets/image/sector/solar-plant.jpg",
       title: "Enerji",
       description:
         "Yenilenebilir enerji yatırımları, enerji üretim tesisleri ve enerji dağıtım altyapıları ile sürdürülebilir geleceğe katkıda bulunuyoruz.",
@@ -46,21 +46,21 @@ const businessAreas: Record<string, { icon: React.ReactNode; image: string; titl
   en: [
     {
       icon: <IconConstruction />,
-      image: "/images/marble-block.jpg",
+      image: "/assets/image/sector/marble-block.jpg",
       title: "Marble",
       description:
         "We add aesthetics and value to your projects with our world-class high-quality marble production and export.",
     },
     {
       icon: <IconMining />,
-      image: "/images/chrome-ore.jpg",
+      image: "/assets/image/sector/chrome-ore.jpg",
       title: "Mining",
       description:
         "We bring our country's underground riches to the economy with environmentally friendly and sustainable mining activities.",
     },
     {
       icon: <IconEnergy />,
-      image: "/images/solar-plant.jpg",
+      image: "/assets/image/sector/solar-plant.jpg",
       title: "Energy",
       description:
         "Contributing to a sustainable future with renewable energy investments, power generation facilities, and energy distribution infrastructure.",
