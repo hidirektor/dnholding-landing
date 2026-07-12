@@ -65,7 +65,6 @@
         "Recognized for its expertise in travertine and limestone, DN Holding offers products that combine quality, aesthetics, and durability at its high-tech production facilities headquartered in Denizli. Adopting customer satisfaction as its basic principle, the company aims to increase the value of natural stone in living spaces.",
         "DN Holding has one of the most comprehensive production networks in the sector with 5 integrated production facilities and a total of 24 licensed natural stone quarries, 8 of which are active. With an annual block production capacity of approximately 500 thousand tons and 1,850,000 square meters of sized product exports, it is a strong player in the global market. Representing Turkish natural stone successfully in world markets with its exports to 47 countries, mainly America, DN Holding continues to increase its efficiency in the region with its 9 active warehouses in America and aims to expand this number in the coming period.",
         "DN Holding, which has continued its export championship in the sector uninterruptedly since 2018 with its group company Yaman Maden A.Ş., continues to be one of the leaders of the sector with its reliability, scalable production capacity, and customer-oriented approach.",
-        "Adopting sustainable production as a responsibility, DN Holding also reflects its environmentally sensitive approach in its energy policies. Currently meeting 40% of its annual energy needs with its own Rooftop Solar Power Plant project, the holding aims to produce energy twice as much as its own consumption with new solar power plant projects continuing in three different locations. With these projects, which will be commissioned at the end of 2026, it aims not only to meet its own needs but also to make a meaningful contribution to the country's energy.",
         "In addition, the companies under the holding are:"
       ],
       "companies": [
@@ -81,11 +80,17 @@
     },
     "vision": {
       "title": "Our Vision",
-      "description": "To be the leading holding that guides the future with sustainable investments on a global scale."
+      "paragraphs": [
+        "Our core vision is to carry our leading position in the natural stone sector to the future with a sustainable growth approach, drawing strength from our deep-rooted history and effectiveness in the international market; and to continuously increase our effectiveness in world markets with our production approach that combines quality, aesthetics, and durability.",
+        "Adopting sustainable production as a responsibility, DN Holding also reflects its environmentally sensitive approach in its energy policies. Currently meeting 40% of its annual energy needs with its own Rooftop Solar Power Plant project, the holding aims to produce energy twice as much as its own consumption with new solar power plant projects continuing in three different locations. With these projects, which will be commissioned at the end of 2026, it aims not only to meet its own needs but also to make a meaningful contribution to the country's energy."
+      ]
     },
     "mission": {
       "title": "Our Mission",
-      "description": "To create value by producing innovative, reliable and high quality solutions for all our stakeholders."
+      "paragraphs": [
+        "Our core mission is to offer products that combine quality, aesthetics, and durability in our high-tech production facilities with our expertise in travertine and limestone; and to increase the value of natural stone in living spaces by adopting customer satisfaction as a basic principle.",
+        "With our reliability, scalable production capacity, strong export infrastructure, and customer-oriented approach, we aim to continue representing Turkish natural stone successfully in world markets and being one of the leaders of the sector."
+      ]
     },
     "story": {
       "tagline": "Our Story",

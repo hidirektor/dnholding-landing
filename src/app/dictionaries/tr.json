@@ -63,9 +63,8 @@
       "paragraphs": [
         "Yarım asra yaklaşan tecrübesiyle doğal taş sektöründe faaliyet gösteren DN Mermer, 2024 yılı itibarıyla kurumsal yapılanmasını tamamlayarak DN Holding A.Ş. çatısı altında faaliyetlerine devam etmektedir. Yıllar içerisinde kazandığı tecrübelerle sektördeki öncülüğünü koruyan DN Holding, köklü geçmişi ve uluslararası alandaki güçlü pozisyonuyla dikkat çekmektedir.",
         "Traverten ve limra taşlarındaki uzmanlığıyla tanınan DN Holding, merkezi Denizli’de bulunan yüksek teknolojili üretim tesislerinde kaliteyi, estetiği ve dayanıklılığı bir araya getiren ürünler sunmaktadır. Müşteri memnuniyetini temel ilke edinen firma, doğal taşın yaşam alanlarındaki değerini artırmayı hedeflemektedir.",
-        "DN Holding, 5 entegre üretim tesisi ve 8’i aktif olmak üzere toplam 24 ruhsatlı doğal taş ocağı ile sektördeki en kapsamlı üretim ağlarından birine sahiptir. Yıllık yaklaşık 500 bin ton blok üretim kapasitesi ve 1.850.000 metrekarelik ebatlı ürün ihracatıyla, global pazarda güçlü bir oyuncudur. Başta Amerika olmak üzere, 47 ülkeye gerçekleştirdiği ihracat ile Türk doğal taşını dünya pazarlarında başarıyla temsil eden DN Holding; Amerika’daki 9 aktif deposuyla bölgedeki etkinliğini her geçen gün arttırmakta ve bu sayıyı önümüzdeki dönemde genişletmeyi hedeflemektedir.",
-        "2018 yılından bu yana, grup şirketlerinden Yaman Maden A.Ş. ile sektördeki ihracat şampiyonluğunu kesintisiz olarak sürdüren DN Holding, güvenilirliği, ölçeklenebilir üretim kapasitesi ve müşteri odaklı yaklaşımıyla sektörün liderlerinden biri olmaya devam etmektedir.",
-        "Sürdürülebilir üretimi bir sorumluluk olarak benimseyen DN Holding, çevreye duyarlı yaklaşımını enerji politikalarına da yansıtmaktadır. Halihazırda yıllık enerji ihtiyacının %40’ını kendi kurduğu Çatı GES projesiyle karşılayan holding, üç farklı noktada devam eden yeni GES projeleriyle kendi tüketiminin iki katı kadar enerji üretmeyi hedeflemektedir. 2026 yılı sonunda devreye alınacak bu projelerle, yalnızca kendi ihtiyacını karşılamayı değil, aynı zamanda ülke enerjisine anlamlı bir katkı sunmayı da amaçlamaktadır.",
+        "DN Holding, 5 entegre üretim tesisi ve 8’i aktif olmak üzere toplam 24 ruhsatlı doğal taş ocağı ile sektördeki en kapsamlı üretim ağlarından birine sahiptir. Yıllık yaklaşık 500 bin ton blok üretim kapasitesi ve 1.850.000 metrekarelik ebatlı ürün ihracatıyla global pazarda güçlü bir oyuncudur. Başta Amerika olmak üzere 47 ülkeye gerçekleştirdiği ihracat ile Türk doğal taşını dünya pazarlarında başarıyla temsil eden DN Holding; Amerika’daki 9 aktif deposuyla bölgedeki etkinliğini her geçen gün artırmakta ve bu sayıyı önümüzdeki dönemde genişletmeyi hedeflemektedir.",
+        "2018 yılından bu yana grup şirketlerinden Yaman Maden A.Ş. ile sektördeki ihracat şampiyonluğunu kesintisiz olarak sürdüren DN Holding, güvenilirliği, ölçeklenebilir üretim kapasitesi ve müşteri odaklı yaklaşımıyla sektörün liderlerinden biri olmaya devam etmektedir.",
         "Ayrıca holding bünyesindeki şirketler:"
       ],
       "companies": [
@@ -81,11 +80,17 @@
     },
     "vision": {
       "title": "Vizyonumuz",
-      "description": "Traverten ve limra taşlarındaki uzmanlığıyla yüksek teknolojili üretim tesislerinde kaliteyi, estetiği ve dayanıklılığı bir araya getirmek."
+      "paragraphs": [
+        "Köklü geçmişimizden aldığımız güç ve uluslararası pazardaki etkinliğimizle, doğal taş sektöründeki öncü konumumuzu sürdürülebilir büyüme anlayışıyla geleceğe taşımak; kalite, estetik ve dayanıklılığı bir araya getiren üretim anlayışımızla dünya pazarlarındaki etkinliğimizi sürekli artırmak temel vizyonumuzdur.",
+        "Sürdürülebilir üretimi bir sorumluluk olarak benimseyen DN Holding, çevreye duyarlı yaklaşımını enerji politikalarına da yansıtmaktadır. Halihazırda yıllık enerji ihtiyacının %40’ını kendi kurduğu Çatı GES projesiyle karşılayan holding, üç farklı noktada devam eden yeni GES projeleriyle kendi tüketiminin iki katı kadar enerji üretmeyi hedeflemektedir. 2026 yılı sonunda devreye alınacak bu projelerle, yalnızca kendi ihtiyacını karşılamayı değil, aynı zamanda ülke enerjisine anlamlı bir katkı sunmayı da amaçlamaktadır."
+      ]
     },
     "mission": {
       "title": "Misyonumuz",
-      "description": "Müşteri memnuniyetini temel ilke edinerek, güvenilirliği, ölçeklenebilir üretim kapasitesi ve sürdürülebilir enerji politikalarıyla sektörün lideri olmak."
+      "paragraphs": [
+        "Traverten ve limra taşlarındaki uzmanlığımızla, yüksek teknolojili üretim tesislerimizde kaliteyi, estetiği ve dayanıklılığı bir araya getiren ürünler sunmak; müşteri memnuniyetini temel ilke edinerek doğal taşın yaşam alanlarındaki değerini artırmak temel misyonumuzdur.",
+        "Güvenilirliğimiz, ölçeklenebilir üretim kapasitemiz, güçlü ihracat altyapımız ve müşteri odaklı yaklaşımımızla, Türk doğal taşını dünya pazarlarında başarıyla temsil etmeye ve sektörün liderlerinden biri olmaya devam etmeyi hedefliyoruz."
+      ]
     },
     "story": {
       "tagline": "Hikayemiz",

@@ -104,9 +104,13 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
                 <Heading level="h3" display>
                   {dict.about.vision.title}
                 </Heading>
-                <p className="text-[var(--text-muted)] text-lg leading-relaxed">
-                  {dict.about.vision.description}
-                </p>
+                <div className="space-y-4">
+                  {dict.about.vision.paragraphs.map((paragraph: string, index: number) => (
+                    <p key={index} className="text-[var(--text-muted)] text-lg leading-relaxed">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
               </div>
             </ScrollReveal>
 
@@ -129,9 +133,13 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
                 <Heading level="h3" display>
                   {dict.about.mission.title}
                 </Heading>
-                <p className="text-[var(--text-muted)] text-lg leading-relaxed">
-                  {dict.about.mission.description}
-                </p>
+                <div className="space-y-4">
+                  {dict.about.mission.paragraphs.map((paragraph: string, index: number) => (
+                    <p key={index} className="text-[var(--text-muted)] text-lg leading-relaxed">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
               </div>
             </ScrollReveal>
           </div>
