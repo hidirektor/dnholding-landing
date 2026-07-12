@@ -292,8 +292,16 @@
         "category": "Mermer",
         "year": "2024",
         "location": "USA",
-        "image": "/assets/projects/monaco-sand/1.jpg",
-        "images": []
+        "image": "/assets/projects/monaco-sand-usa/1.jpeg",
+        "images": [
+          "/assets/projects/monaco-sand-usa/1.jpeg",
+          "/assets/projects/monaco-sand-usa/2.jpeg",
+          "/assets/projects/monaco-sand-usa/3.jpeg",
+          "/assets/projects/monaco-sand-usa/4.jpeg",
+          "/assets/projects/monaco-sand-usa/5.jpeg",
+          "/assets/projects/monaco-sand-usa/6.jpeg",
+          "/assets/projects/monaco-sand-usa/7.jpeg"
+        ]
       },
       {
         "slug": "musiad-project-istanbul",
@@ -303,8 +311,11 @@
         "category": "Mermer",
         "year": "2024",
         "location": "Türkiye",
-        "image": "/assets/projects/musiad/1.jpg",
-        "images": []
+        "image": "/assets/projects/musiad-istanbul/1.jpeg",
+        "images": [
+          "/assets/projects/musiad-istanbul/1.jpeg",
+          "/assets/projects/musiad-istanbul/2.jpeg"
+        ]
       },
       {
         "slug": "russia-hotel-project",
