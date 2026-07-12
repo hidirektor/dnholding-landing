@@ -306,7 +306,7 @@ export function Header({ lang, dict }: HeaderProps) {
                       )}
                     >
                       <div className={styles.dropdownInner}>
-                        {item.children.map((child) => (
+                        {item.children.map((child: { label: string, href: string }) => (
                           <Link
                             key={child.href}
                             href={`${child.href}`}
@@ -387,7 +387,7 @@ export function Header({ lang, dict }: HeaderProps) {
 
               {item.children && (
                 <div className={styles.mobileSubnav}>
-                  {item.children.map((child) => (
+                  {item.children.map((child: { label: string, href: string }) => (
                     <Link
                       key={child.href}
                       href={`${child.href}`}
