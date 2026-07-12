@@ -109,10 +109,10 @@ export default async function ContactPage({ params }: { params: Promise<{ slug: 
                     </div>
                     <h3 className="font-semibold text-lg">{dict.contact.info.phoneTitle}</h3>
                     <a
-                      href="tel:+902120000000"
+                      href="call:+902588162414"
                       className="text-[var(--text-muted)] hover:text-accent transition-colors"
                     >
-                      +90 (212) 000 00 00
+                      +90 258 816 24 14
                     </a>
                   </div>
 

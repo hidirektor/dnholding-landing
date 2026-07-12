@@ -47,7 +47,7 @@ const footerData = {
     contact: {
       title: "İletişim",
       address: "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
-      phone: "+90 (212) 000 00 00",
+      phone: "+90 258 816 24 14",
       email: "info@dnholding.com",
     },
     copyright: `© ${new Date().getFullYear()} DN Holding. Tüm hakları saklıdır.`,
@@ -88,7 +88,7 @@ const footerData = {
     contact: {
       title: "Contact",
       address: "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
-      phone: "+90 (212) 000 00 00",
+      phone: "+90 258 816 24 14",
       email: "info@dnholding.com",
     },
     copyright: `© ${new Date().getFullYear()} DN Holding. All rights reserved.`,
@@ -129,7 +129,7 @@ const footerData = {
     contact: {
       title: "Kontakt",
       address: "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
-      phone: "+90 (212) 000 00 00",
+      phone: "+90 258 816 24 14",
       email: "info@dnholding.com",
     },
     copyright: `© ${new Date().getFullYear()} DN Holding. Alle Rechte vorbehalten.`,
@@ -170,7 +170,7 @@ const footerData = {
     contact: {
       title: "Contact",
       address: "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
-      phone: "+90 (212) 000 00 00",
+      phone: "+90 258 816 24 14",
       email: "info@dnholding.com",
     },
     copyright: `© ${new Date().getFullYear()} DN Holding. Tous droits réservés.`,
@@ -284,7 +284,7 @@ export function Footer({ lang, dict }: FooterProps) {
             <h3 className={styles.colTitle}>{data.contact.title}</h3>
             <address className={styles.contactInfo}>
               <p>{data.contact.address}</p>
-              <a href={`tel:${data.contact.phone.replace(/\s/g, "")}`}>
+              <a href={`call:${data.contact.phone.replace(/\s/g, "")}`}>
                 {data.contact.phone}
               </a>
               <a href={`mailto:${data.contact.email}`}>{data.contact.email}</a>
