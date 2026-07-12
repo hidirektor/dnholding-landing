@@ -85,7 +85,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
         {p2 && (
           <>
             <div className="relative z-10 flex justify-between items-start gap-4">
-              <h3 className="text-white font-bold text-lg lg:text-2xl leading-snug max-w-[70%] uppercase tracking-wider">
+              <h3 className="text-white font-bold text-lg lg:text-2xl leading-snug max-w-[70%] tracking-wider">
                 {p2.title}
               </h3>
               <div className="text-right shrink-0 flex flex-col items-end">
@@ -94,7 +94,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
               </div>
             </div>
             
-            <p className="relative z-10 text-white/40 text-xs lg:text-sm uppercase tracking-widest mt-8 line-clamp-2 w-full">
+            <p className="relative z-10 text-white/40 text-xs lg:text-sm tracking-widest mt-8 line-clamp-2 w-full">
               {p2.title}
             </p>
             
