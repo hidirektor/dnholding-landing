@@ -180,7 +180,7 @@ export default async function HomePage() {
           </ScrollReveal>
 
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-            {latestNews.map((article, index) => (
+            {latestNews.map((article: any, index: number) => (
               <ScrollReveal key={article.slug} delay={index * 100}>
                 <NewsCard
                   title={article.title}

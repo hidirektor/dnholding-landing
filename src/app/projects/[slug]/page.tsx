@@ -143,7 +143,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
               </Heading>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {relatedProjects.map((rp) => (
+              {relatedProjects.map((rp: any) => (
                 <ScrollReveal key={rp.slug}>
                   <a
                     href={`/projects/${rp.slug}`}
