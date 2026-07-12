@@ -143,7 +143,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
               </Heading>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {relatedArticles.map((ra) => (
+              {relatedArticles.map((ra: any) => (
                 <ScrollReveal key={ra.slug}>
                   <a
                     href={`/media/${ra.slug}`}
