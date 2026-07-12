@@ -69,7 +69,6 @@ export function Section({
       {/* Premium Background Decorations */}
       {variant === "default" && (
         <>
-          <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.015] dark:opacity-[0.03] pointer-events-none" />
           <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border/50 to-transparent dark:via-white/10" />
           <div className="absolute -top-[500px] -left-[500px] w-[1000px] h-[1000px] rounded-full bg-accent/[0.03] dark:bg-accent/5 blur-[120px] pointer-events-none" />
           <div className="absolute -bottom-[500px] -right-[500px] w-[1000px] h-[1000px] rounded-full bg-primary/[0.02] dark:bg-primary/5 blur-[120px] pointer-events-none" />
@@ -78,14 +77,12 @@ export function Section({
 
       {variant === "surface" && (
         <>
-          <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.02] pointer-events-none mix-blend-overlay" />
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-gradient-to-r from-transparent via-accent/10 dark:via-accent/20 to-transparent" />
         </>
       )}
       
       {variant === "dark" && (
         <>
-          <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] pointer-events-none" />
           <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-accent/10 blur-[120px] pointer-events-none" />
         </>
       )}
