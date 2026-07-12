@@ -125,17 +125,8 @@
   will-change: transform;
 }
 
-/* Hover Wave Effect (Mexican Wave) */
-.navItem:hover .navLink {
-  transform: translateY(-4px);
-}
-.navItem:hover + .navItem .navLink,
-.navItem:has(+ .navItem:hover) .navLink {
-  transform: translateY(-2px);
-}
-
 .navLink:hover {
-  color: var(--color-accent);
+  color: var(--color-accent) !important;
 }
 
 .navLinkActive {

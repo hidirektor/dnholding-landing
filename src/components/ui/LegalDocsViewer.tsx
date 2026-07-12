@@ -123,10 +123,10 @@ const docs: Doc[] = [
   }
 ];
 
-export function LegalDocsViewer() {
-  const [activeDoc, setActiveDoc] = useState(docs[0].id);
+export function LegalDocsViewer({ defaultDoc = "privacy" }: { defaultDoc?: string }) {
+  const [activeDoc, setActiveDoc] = useState(defaultDoc);
 
-  const content = docs.find((d) => d.id === activeDoc)?.content;
+  const content = docs.find((d) => d.id === activeDoc)?.content || docs[0].content;
 
   return (
     <div className="flex flex-col md:flex-row gap-12 lg:gap-24 relative min-h-[60vh]">

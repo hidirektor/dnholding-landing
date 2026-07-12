@@ -193,7 +193,7 @@ export function Footer({ lang }: FooterProps) {
           <div className={styles.aboutCol}>
             <Link href={`/`} className={styles.footerLogo}>
               <Image 
-                src="/logo_dnholding-text.png" 
+                src="/logo_dnholding.png" 
                 alt="DN Holding Logo" 
                 width={200} 
                 height={50} 
@@ -310,12 +310,16 @@ export function Footer({ lang }: FooterProps) {
               Powered by <span className={styles.womaText}>WOMA</span>
             </a>
             <div className={styles.legalLinks}>
-              <Link href={`/`} className={styles.legalLink}>
+              <Link href="/privacy" className={styles.legalLink}>
                 {data.privacy}
               </Link>
               <span className={styles.legalDivider}>|</span>
-              <Link href={`/`} className={styles.legalLink}>
+              <Link href="/terms" className={styles.legalLink}>
                 {data.terms}
+              </Link>
+              <span className={styles.legalDivider}>|</span>
+              <Link href="/rss.xml" target="_blank" prefetch={false} className={styles.legalLink}>
+                RSS Feed
               </Link>
             </div>
           </div>
