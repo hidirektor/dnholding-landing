@@ -51,58 +51,65 @@ export default async function HomePage() {
       </Section>
 
       {/* ─── About Teaser ─── */}
-      <Section variant="surface" id="about-teaser">
+      <Section variant="surface" id="about-teaser" className="border-b border-border/40 pb-0">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <ScrollReveal direction="left">
-              <div className="space-y-6">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
-                  {dict.home.about.tagline}
-                </p>
-                <Heading level="h2" display className="text-[var(--text-heading)]">
-                  {dict.home.about.title}
-                </Heading>
-                <p className="text-[var(--text-muted)] text-lg leading-relaxed font-light">
-                  {dict.home.about.description}
-                </p>
-                <p className="text-[var(--text-muted)] leading-relaxed font-light">
-                  {dict.home.about.description2}
-                </p>
-                <div className="pt-4">
+          <div className="flex flex-col gap-16 lg:gap-24 pt-8 pb-16 lg:pt-12 lg:pb-24">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+              {/* Left Side: Large Title */}
+              <div className="lg:col-span-7">
+                <ScrollReveal direction="up">
+                  <Heading level="h2" display className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-[var(--text-heading)]">
+                    <span className="text-primary dark:text-white">{dict.home.about.title.split(',')[0]}{dict.home.about.title.includes(',') ? ',' : ''} </span>
+                    <span className="text-accent">{dict.home.about.title.split(',')[1]?.trim() || ''}</span>
+                  </Heading>
+                </ScrollReveal>
+              </div>
+
+              {/* Right Side: Description and Button */}
+              <div className="lg:col-span-5 flex flex-col items-start gap-8 mt-2 lg:mt-4">
+                <ScrollReveal direction="up" delay={100}>
+                  <p className="text-lg sm:text-xl text-[var(--text-muted)] font-light leading-relaxed">
+                    {dict.home.about.description} {dict.home.about.description2}
+                  </p>
+                </ScrollReveal>
+                <ScrollReveal direction="up" delay={200}>
                   <Button
                     href={`/about`}
                     variant="primary"
                     icon="arrow"
+                    className="rounded-full px-8 py-3 bg-primary text-white hover:bg-primary-light border-none shadow-lg"
                   >
                     {dict.common.readMore}
                   </Button>
-                </div>
+                </ScrollReveal>
               </div>
-            </ScrollReveal>
-
-            <ScrollReveal direction="right" delay={200}>
-              <div 
-                className="relative aspect-[4/3] rounded-[var(--radius-2xl)] overflow-hidden shadow-2xl group hover:-translate-y-2 transition-all duration-700 bg-cover bg-center"
-                style={{ backgroundImage: 'url(/about-bg.jpg)' }}
-              >
-                {/* Subtle dark overlay for contrast */}
-                <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-700" />
-                
-                {/* Floating Glass Card */}
-                <div className="absolute inset-0 flex items-center justify-center p-8">
-                  <div className="text-center space-y-6 p-10 relative z-10 backdrop-blur-xl bg-white/60 dark:bg-black/40 rounded-3xl border border-white/60 dark:border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.1)] max-w-[85%] w-full transform group-hover:scale-105 transition-transform duration-700">
-                    <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-tr from-white to-white/50 dark:from-white/10 dark:to-transparent flex items-center justify-center shadow-lg border border-white/80 dark:border-white/20">
-                      <span className="text-4xl font-display font-bold text-primary dark:text-white">DN</span>
-                    </div>
-                    <p className="text-base font-semibold text-primary dark:text-white/90 max-w-xs mx-auto leading-relaxed tracking-wide">
-                      {dict.home.about.imageCaption}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
+            </div>
           </div>
         </Container>
+
+        {/* Bottom Section: Stats (Full Width Container inner border) */}
+        <div className="border-t border-border/50 bg-white/50 dark:bg-black/10">
+          <Container>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+              {dict.data.stats.map((stat: any, index: number) => (
+                <ScrollReveal
+                  key={index}
+                  direction="up"
+                  delay={100 + index * 100}
+                  className="px-6 py-12 border-b sm:border-b-0 lg:border-r border-border/50 last:border-0 flex flex-col justify-center sm:[&:nth-child(2)]:border-r-0 lg:[&:nth-child(2)]:border-r lg:[&:nth-child(3)]:border-r sm:[&:nth-child(odd)]:border-r"
+                >
+                  <p className="text-sm font-semibold text-[var(--text-heading)] mb-4">{stat.label}</p>
+                  <div className="text-5xl lg:text-6xl font-bold text-[var(--text-heading)] mb-2 tracking-tight">
+                    {stat.prefix}{stat.value}<span className="text-accent text-4xl">{stat.suffix}</span>
+                  </div>
+                  <p className="text-xs text-[var(--text-subtle)] leading-relaxed mt-2 uppercase tracking-widest">
+                    DN HOLDING
+                  </p>
+                </ScrollReveal>
+              ))}
+            </div>
+          </Container>
+        </div>
       </Section>
 
 

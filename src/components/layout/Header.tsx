@@ -499,6 +499,7 @@ export function Header({ lang }: HeaderProps) {
                   ))}
                 </div>
               )}
+            </div>
           ))}
 
           {/* Mobile Settings Block */}
