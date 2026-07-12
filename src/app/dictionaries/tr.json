@@ -871,5 +871,9 @@
     "description": "Sitemizde, kullanıcı deneyimini geliştirmek ve site trafiğini analiz etmek için çerezler kullanıyoruz.",
     "accept": "Tümünü Kabul Et",
     "decline": "Reddet"
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Aradığınız sayfa bulunamadı. {seconds} saniye içinde ana sayfaya yönlendiriliyorsunuz..."
   }
 }

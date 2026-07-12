@@ -730,5 +730,9 @@
     "description": "Nous utilisons des cookies sur notre site pour améliorer l'expérience utilisateur et analyser le trafic.",
     "accept": "Tout accepter",
     "decline": "Refuser"
+  },
+  "notFound": {
+    "title": "404",
+    "description": "La page que vous recherchez est introuvable. Vous serez redirigé vers la page d'accueil dans {seconds} secondes..."
   }
 }

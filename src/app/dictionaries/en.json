@@ -870,5 +870,9 @@
     "description": "We use cookies on our site to enhance the user experience and analyze site traffic.",
     "accept": "Accept All",
     "decline": "Decline"
+  },
+  "notFound": {
+    "title": "404",
+    "description": "The page you are looking for could not be found. You will be redirected to the home page in {seconds} seconds..."
   }
 }

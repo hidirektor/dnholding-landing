@@ -432,3 +432,11 @@ body {
 .container-narrow {
   max-width: var(--container-narrow);
 }
+
+/* Hide layout elements on 404 page */
+body.hide-layout-elements header,
+body.hide-layout-elements footer,
+body.hide-layout-elements .fixed.bottom-0 {
+  display: none !important;
+}
+

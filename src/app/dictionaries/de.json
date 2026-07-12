@@ -730,5 +730,9 @@
     "description": "Wir verwenden Cookies auf unserer Website, um die Benutzererfahrung zu verbessern und den Datenverkehr zu analysieren.",
     "accept": "Alle akzeptieren",
     "decline": "Ablehnen"
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Die gesuchte Seite konnte nicht gefunden werden. Sie werden in {seconds} Sekunden zur Startseite weitergeleitet..."
   }
 }
