@@ -116,8 +116,7 @@
         "Recognized for its expertise in travertine and limestone, DN Holding offers products that combine quality, aesthetics, and durability at its high-tech production facilities headquartered in Denizli. Adopting customer satisfaction as its basic principle, the company aims to increase the value of natural stone in living spaces.",
         "DN Holding has one of the most comprehensive production networks in the sector with 5 integrated production facilities and a total of 24 licensed natural stone quarries, 8 of which are active. With an annual block production capacity of approximately 500 thousand tons and 1,850,000 square meters of sized product exports, it is a strong player in the global market. Representing Turkish natural stone successfully in world markets with its exports to 47 countries, mainly America, DN Holding continues to increase its efficiency in the region with its 9 active warehouses in America and aims to expand this number in the coming period.",
         "DN Holding, which has continued its export championship in the sector uninterruptedly since 2018 with its group company Yaman Maden A.Ş., continues to be one of the leaders of the sector with its reliability, scalable production capacity, and customer-oriented approach.",
-        "Adopting sustainable production as a responsibility, DN Holding also reflects its environmentally sensitive approach in its energy policies. Currently meeting 40% of its annual energy needs with its own Rooftop Solar Power Plant project, the holding aims to produce energy twice as much as its own consumption with new solar power plant projects continuing in three different locations. With these projects, which will be commissioned at the end of 2026, it aims not only to meet its own needs but also to make a meaningful contribution to the country's energy.",
-        "In addition, the companies under the holding are:"
+        "Adopting sustainable production as a responsibility, DN Holding also reflects its environmentally sensitive approach in its energy policies. Currently meeting 40% of its annual energy needs with its own Rooftop Solar Power Plant project, the holding aims to produce energy twice as much as its own consumption with new solar power plant projects continuing in three different locations. With these projects, which will be commissioned at the end of 2026, it aims not only to meet its own needs but also to make a meaningful contribution to the country's energy."
       ],
       "companies": [
         "DN HOLDING A.Ş",
@@ -306,8 +305,8 @@
     "projects": [
       {
         "slug": "albavena-usa",
-        "title": "ALBAVENA - USA - SPECIAL VILLA PROJECT",
-        "description": "ALBAVENA - USA - SPECIAL VILLA PROJECT",
+        "title": "Albavena - USA - Special Villa Project",
+        "description": "Albavena - USA - Special Villa Project",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",
@@ -317,8 +316,8 @@
       },
       {
         "slug": "monaco-sand-usa",
-        "title": "MONACO SAND - USA - SPECIAL VILLA PROJECT",
-        "description": "MONACO SAND - USA - SPECIAL VILLA PROJECT",
+        "title": "Monaco Sand - USA - Special Villa Project",
+        "description": "Monaco Sand - USA - Special Villa Project",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",
@@ -328,8 +327,8 @@
       },
       {
         "slug": "musiad-project-istanbul",
-        "title": "MÜSİAD PROJECT - İSTANBUL",
-        "description": "MÜSİAD PROJECT - İSTANBUL",
+        "title": "Müsi̇ad Project - İstanbul",
+        "description": "Müsi̇ad Project - İstanbul",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",
@@ -339,8 +338,8 @@
       },
       {
         "slug": "russia-hotel-project",
-        "title": "RUSSIA - HOTEL PROJECT",
-        "description": "RUSSIA - HOTEL PROJECT",
+        "title": "Russia - Hotel Project",
+        "description": "Russia - Hotel Project",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",
@@ -350,8 +349,8 @@
       },
       {
         "slug": "trade-center-riyad",
-        "title": "TRADE CENTER AND SHOPPING MALL PROJECT - SAUDI ARABIA - RİYAD",
-        "description": "TRADE CENTER AND SHOPPING MALL PROJECT - SAUDI ARABIA - RİYAD",
+        "title": "Trade Center And Shopping Mall Project - Saudi Arabia - Ri̇yad",
+        "description": "Trade Center And Shopping Mall Project - Saudi Arabia - Ri̇yad",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",
@@ -361,8 +360,8 @@
       },
       {
         "slug": "travertine-france",
-        "title": "TRAVERTINE - FRANSA - HOTEL LA FABRIQUE",
-        "description": "TRAVERTINE - FRANSA - HOTEL LA FABRIQUE",
+        "title": "Travertine - Fransa - Hotel La Fabrique",
+        "description": "Travertine - Fransa - Hotel La Fabrique",
         "company": "DN Mermer",
         "category": "Traverten",
         "year": "2024",
@@ -372,8 +371,8 @@
       },
       {
         "slug": "turkey-antalya-turkish-bath",
-        "title": "TURKEY ANTALYA - TURKISH BATH PROJECT",
-        "description": "TURKEY ANTALYA - TURKISH BATH PROJECT",
+        "title": "Turkey Antalya - Turkish Bath Project",
+        "description": "Turkey Antalya - Turkish Bath Project",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",
@@ -1096,38 +1095,6 @@
         "description": "Yüksek kaliteli doğal mermer.",
         "category": "Mermer",
         "image": "/assets/image/products/mermer.jpg"
-      },
-      {
-        "id": "p1",
-        "name": "Blok Mermer",
-        "description": "Yüksek kaliteli ve homojen renk yapısına sahip, uluslararası standartlarda blok mermer.",
-        "companySlug": "dn-mermer",
-        "image": "/assets/image/sector/marble-block.jpg",
-        "category": "Mermer"
-      },
-      {
-        "id": "p2",
-        "name": "Krom Cevheri",
-        "description": "Sanayi üretiminde kullanılan yüksek saflıkta krom cevheri.",
-        "companySlug": "2m-uluslararasi-madencilik",
-        "image": "/assets/image/sector/chrome-ore.jpg",
-        "category": "Maden"
-      },
-      {
-        "id": "p3",
-        "name": "GÃ¼neÅŸ Enerjisi Santralleri",
-        "description": "SÃ¼rdÃ¼rÃ¼lebilir ve temiz enerji iÃ§in yÃ¼ksek verimli gÃ¼neÅŸ enerjisi Ã§Ã¶zÃ¼mleri.",
-        "companySlug": "ymy-enerji",
-        "image": "/assets/image/sector/solar-plant.jpg",
-        "category": "Enerji"
-      },
-      {
-        "id": "p4",
-        "name": "Sanayi Tipi Kömür",
-        "description": "Yüksek kalorili ve çevre standartlarına uygun sanayi tipi linyit kömürü.",
-        "companySlug": "ynr-maden",
-        "image": "/assets/image/sector/chrome-ore.jpg",
-        "category": "Maden"
       }
     ],
     "quarries": [
