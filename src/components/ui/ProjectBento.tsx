@@ -26,7 +26,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
         {p1 && (
           <>
             <Image
-              src="/images/project2.jpg"
+              src={p1.image || p1.images?.[0] || "/images/placeholder.jpg"}
               alt={p1.title}
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-90"
@@ -112,7 +112,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
         {p3 && (
           <>
             <Image
-              src="/images/project2.jpg"
+              src={p3.image || p3.images?.[0] || "/images/placeholder.jpg"}
               alt={p3.title}
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -132,7 +132,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
         {p4 && (
           <>
             <Image
-              src="/images/project2.jpg"
+              src={p4.image || p4.images?.[0] || "/images/placeholder.jpg"}
               alt={p4.title}
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-80"
@@ -166,7 +166,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
         {p5 && (
           <>
             <Image
-              src="/images/project2.jpg"
+              src={p5.image || p5.images?.[0] || "/images/placeholder.jpg"}
               alt={p5.title}
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105"
