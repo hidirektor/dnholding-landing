@@ -17,28 +17,38 @@ export function CookieWidget({ dict }: CookieWidgetProps) {
 
   useEffect(() => {
     setMounted(true);
-    const consent = localStorage.getItem("cookie-consent");
-    if (!consent) {
-      // Show automatically on first visit
-      const timer = setTimeout(() => setShowBanner(true), 500);
-      return () => clearTimeout(timer);
+    try {
+      const consent = localStorage.getItem("cookie-consent");
+      if (!consent) {
+        // Show automatically on first visit
+        const timer = setTimeout(() => setShowBanner(true), 500);
+        return () => clearTimeout(timer);
+      }
+    } catch (e) {
+      console.warn("localStorage is not available");
     }
   }, []);
 
   const handleAcceptAll = () => {
-    localStorage.setItem("cookie-consent", "all");
+    try {
+      localStorage.setItem("cookie-consent", "all");
+    } catch (e) {}
     setShowBanner(false);
     setShowModal(false);
   };
 
   const handleAcceptNecessary = () => {
-    localStorage.setItem("cookie-consent", "necessary");
+    try {
+      localStorage.setItem("cookie-consent", "necessary");
+    } catch (e) {}
     setShowBanner(false);
     setShowModal(false);
   };
 
   const handleSavePreferences = () => {
-    localStorage.setItem("cookie-consent", perfEnabled ? "all" : "necessary");
+    try {
+      localStorage.setItem("cookie-consent", perfEnabled ? "all" : "necessary");
+    } catch (e) {}
     setShowBanner(false);
     setShowModal(false);
   };
