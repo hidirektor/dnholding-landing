@@ -7,7 +7,8 @@ import {Button} from "@/components/ui/Button";
 import {ScrollReveal} from "@/components/ui/ScrollReveal";
 import {GridSectors} from "@/components/ui/GridSectors";
 import {CompanyTabs} from "@/components/ui/CompanyTabs";
-import {HorizontalCard} from "@/components/ui/HorizontalCard";
+import {ProjectBento} from "@/components/ui/ProjectBento";
+import {NewsCard} from "@/components/ui/NewsCard";
 import {IconConstruction, IconEnergy, IconMining} from "@/components/ui/Icons";
 
 
@@ -117,6 +118,19 @@ export default async function HomePage() {
       {/* ─── Group Companies ─── */}
       <Section variant="surface" id="companies">
         <Container>
+          <ScrollReveal>
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 justify-between items-start lg:items-end">
+              <div className="flex-1 space-y-4">
+                <Heading level="h2" display className="text-[var(--text-heading)] text-4xl lg:text-5xl max-w-lg">
+                  {dict.home.companies.title}
+                </Heading>
+              </div>
+              <p className="text-[var(--text-muted)] text-lg lg:max-w-md font-light lg:text-right">
+                {dict.home.companies.subtitle}
+              </p>
+            </div>
+          </ScrollReveal>
+
           <ScrollReveal delay={200}>
             <CompanyTabs companies={featuredCompanies} lang={locale} />
           </ScrollReveal>
@@ -131,12 +145,6 @@ export default async function HomePage() {
           <ScrollReveal>
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 justify-between items-start lg:items-end mb-16">
               <div className="flex-1 space-y-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-accent" />
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--text-subtle)]">
-                    {dict.home.projects.tagline}
-                  </p>
-                </div>
                 <Heading level="h2" display className="text-[var(--text-heading)] text-4xl lg:text-5xl max-w-lg">
                   {dict.home.projects.title}
                 </Heading>
@@ -147,28 +155,11 @@ export default async function HomePage() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-            {featuredProjects.map((project, index) => (
-              <ScrollReveal key={project.slug} delay={index * 100}>
-                <HorizontalCard
-                  number={String(index + 1).padStart(2, '0')}
-                  title={project.title}
-                  description={project.description}
-                  image={(project as any).image}
-                  href={`/projects/${project.slug}`}
-                  linkText={locale === "tr" ? "Projeyi İncele" : "View Project"}
-                />
-              </ScrollReveal>
-            ))}
+          <div className="mt-8">
+            <ScrollReveal>
+              <ProjectBento projects={featuredProjects} lang={locale} dict={dict} />
+            </ScrollReveal>
           </div>
-
-          <ScrollReveal>
-            <div className="text-center mt-12">
-              <Button href={`/projects`} variant="secondary" icon="arrow">
-                {dict.common.viewAll}
-              </Button>
-            </div>
-          </ScrollReveal>
         </Container>
       </Section>
 
@@ -178,12 +169,6 @@ export default async function HomePage() {
           <ScrollReveal>
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 justify-between items-start lg:items-end mb-16">
               <div className="flex-1 space-y-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-accent" />
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--text-subtle)]">
-                    {dict.home.news.tagline}
-                  </p>
-                </div>
                 <Heading level="h2" display className="text-[var(--text-heading)] text-4xl lg:text-5xl max-w-lg">
                   {dict.home.news.title}
                 </Heading>
@@ -194,13 +179,13 @@ export default async function HomePage() {
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
             {latestNews.map((article, index) => (
               <ScrollReveal key={article.slug} delay={index * 100}>
-                <HorizontalCard
-                  number={String(index + 1).padStart(2, '0')}
+                <NewsCard
                   title={article.title}
                   description={article.excerpt}
                   image={(article as any).image}
                   href={`/media/${article.slug}`}
-                  linkText={locale === "tr" ? "Haber Detayı" : "Read More"}
+                  category={locale === "tr" ? "Haber" : "News"}
+                  readTime={locale === "tr" ? "5 dk okuma" : "5 mins read"}
                 />
               </ScrollReveal>
             ))}

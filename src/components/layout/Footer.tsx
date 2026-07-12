@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import {useState} from "react";
 import {Container} from "./Container";
 import type {Locale} from "@/app/dictionaries";
 import styles from "./Footer.module.css";
@@ -177,6 +180,8 @@ const footerData = {
 
 export function Footer({ lang }: FooterProps) {
   const data = footerData[lang] || footerData.tr;
+  const [quickLinksOpen, setQuickLinksOpen] = useState(false);
+  const [companiesOpen, setCompaniesOpen] = useState(false);
 
   return (
     <div className="dark">
@@ -229,8 +234,14 @@ export function Footer({ lang }: FooterProps) {
 
           {/* Quick Links */}
           <div className={styles.linksCol}>
-            <h3 className={styles.colTitle}>{data.quickLinks.title}</h3>
-            <ul className={styles.linksList}>
+            <div 
+              className={styles.mobileAccordionHeader} 
+              onClick={() => setQuickLinksOpen(!quickLinksOpen)}
+            >
+              <h3 className={styles.colTitle}>{data.quickLinks.title}</h3>
+              <span className={styles.accordionIcon}>{quickLinksOpen ? "-" : "+"}</span>
+            </div>
+            <ul className={`${styles.linksList} ${quickLinksOpen ? styles.open : ""}`}>
               {data.quickLinks.links.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -246,8 +257,14 @@ export function Footer({ lang }: FooterProps) {
 
           {/* Group Companies */}
           <div className={styles.linksCol}>
-            <h3 className={styles.colTitle}>{data.companies.title}</h3>
-            <ul className={styles.linksList}>
+            <div 
+              className={styles.mobileAccordionHeader} 
+              onClick={() => setCompaniesOpen(!companiesOpen)}
+            >
+              <h3 className={styles.colTitle}>{data.companies.title}</h3>
+              <span className={styles.accordionIcon}>{companiesOpen ? "-" : "+"}</span>
+            </div>
+            <ul className={`${styles.linksList} ${companiesOpen ? styles.open : ""}`}>
               {data.companies.links.map((link) => (
                 <li key={link.href}>
                   <Link

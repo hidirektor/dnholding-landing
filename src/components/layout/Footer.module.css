@@ -146,13 +146,50 @@
   color: rgba(255, 255, 255, 0.4);
 }
 
+.mobileAccordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordionIcon {
+  color: var(--color-text-light);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+:global(.dark) .accordionIcon {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media (min-width: 640px) {
+  .accordionIcon {
+    display: none;
+  }
+  .mobileAccordionHeader {
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
 .linksList {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: none; /* Hidden by default on mobile */
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.linksList.open {
+  display: flex;
+}
+
+@media (min-width: 640px) {
+  .linksList {
+    display: flex !important; /* Always show on desktop */
+  }
 }
 
 .footerLink {
