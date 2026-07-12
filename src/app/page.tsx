@@ -185,7 +185,7 @@ export default async function HomePage() {
                 <NewsCard
                   title={article.title}
                   description={article.excerpt}
-                  image="/images/hq.jpg"
+                  image={article.image || article.images?.[0] || "/logo_dnholding.png"}
                   href={`/media/${article.slug}`}
                   category={locale === "tr" ? "Haber" : "News"}
                   readTime={locale === "tr" ? "5 dk okuma" : "5 mins read"}
