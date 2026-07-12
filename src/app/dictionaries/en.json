@@ -124,7 +124,12 @@
   "companies": {
     "tagline": "Subsidiaries",
     "title": "Group Companies",
-    "subtitle": "Our innovative companies, each an expert in their field."
+    "subtitle": "Our innovative companies, each an expert in their field.",
+    "sections": {
+      "products": "Our Products",
+      "quarries": "Our Quarries",
+      "noProducts": "No products found for this company."
+    }
   },
   "areas": {
     "tagline": "Sectors",
@@ -146,13 +151,30 @@
       "location": "Location",
       "company": "Company",
       "related": "Related Projects"
+    },
+    "bento": {
+      "year": "Year",
+      "location": "Location",
+      "tagline1": "From modest origins to becoming",
+      "taglineHighlight": "industry frontrunners",
+      "tagline2": "",
+      "details": "Details",
+      "explore": "Explore",
+      "diveInto": "Dive into",
+      "balancing": "Balancing efficiency and sustainability",
+      "timeline": "Look at timeline"
     }
   },
   "media": {
     "tagline": "Agenda",
     "title": "Media & News",
     "subtitle": "Latest updates about our holding.",
-    "related": "Other News"
+    "related": "Other News",
+    "tabs": {
+      "news": "News",
+      "events": "Events",
+      "fairs": "Fairs"
+    }
   },
   "contact": {
     "tagline": "Reach Out",
@@ -165,7 +187,16 @@
       "company": "Company",
       "subject": "Subject",
       "message": "Message",
-      "submit": "Send"
+      "submit": "Send",
+      "subjects": {
+        "general": "General Information",
+        "sales": "Sales & Marketing",
+        "hr": "Human Resources",
+        "investor": "Investor Relations",
+        "project": "Project Cooperation"
+      },
+      "success": "Successfully Sent ✓",
+      "submitting": "Sending..."
     },
     "info": {
       "addressTitle": "Address",
@@ -183,7 +214,9 @@
     "contactCta": "Would you like to get in touch?",
     "contactUs": "Contact Us",
     "projects": "Projects",
-    "share": "Share"
+    "share": "Share",
+    "scrollDown": "Scroll down",
+    "poweredBy": "Powered by"
   },
   "data": {
     "companies": [
@@ -870,10 +903,168 @@
     "title": "Cookie Preferences",
     "description": "We use cookies on our site to enhance the user experience and analyze site traffic.",
     "accept": "Accept All",
-    "decline": "Decline"
+    "decline": "Decline",
+    "bannerTitle": "We use cookies to improve your experience on our website. To accept all cookies, click 'Accept All,' alternatively you can set the preferred cookies by clicking on 'Cookie Preference.'",
+    "learnMore": "Learn more",
+    "acceptAll": "Accept All",
+    "acceptNecessary": "Accept Only Necessary",
+    "preferences": "Cookie Preference",
+    "modalTitle": "Cookie Preference Centre",
+    "modalDesc": "We use different types of cookies to optimize your experience on our website. Click on the categories below to learn more about their purpose. You may choose which types of cookies to allow and can change your preferences at any time.",
+    "selectAll": "Select All",
+    "unselectAll": "Unselect All",
+    "strictlyNecessaryTitle": "Strictly Necessary Cookies",
+    "strictlyNecessaryDesc": "Strictly necessary cookies are crucial for the basic functions of the website and the website will not work in its intended way without them. These cookies cannot be disabled.",
+    "performanceTitle": "Performance & Functionality",
+    "performanceDesc": "These cookies facilitate measurement and analytics for improved browsing experience. We will not be able to conduct analytics to optimize site functionality and performance if disabled.",
+    "saveChanges": "Save Changes"
   },
   "notFound": {
     "title": "404",
     "description": "The page you are looking for could not be found. You will be redirected to the home page in {seconds} seconds..."
+  },
+  "footer": {
+    "workingHoursTitle": "Working Hours",
+    "workingHoursDesc": "Weekdays 08:00-17:00 | Saturday : 08:00-16:00",
+    "rssFeed": "RSS Feed",
+    "woma": "WOMA"
+  },
+  "rss": {
+    "title": "DN Holding - Media and News",
+    "description": "Latest news, projects and announcements about DN Holding."
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. Introduction"
+        },
+        {
+          "type": "p",
+          "text": "As DN Holding (\"we\", \"us\" or \"company\"), we respect your privacy and are committed to protecting your personal data."
+        },
+        {
+          "type": "h2",
+          "text": "2. The Data We Collect"
+        },
+        {
+          "type": "p",
+          "text": "Personal data, or personal information, means any information about an individual from which that person can be identified."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "<strong>Identity Data:</strong> First name, last name, username or similar identifier.",
+            "<strong>Contact Data:</strong> Billing address, delivery address, email address and telephone numbers.",
+            "<strong>Technical Data:</strong> Internet protocol (IP) address, your login data, browser type and version."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "3. How We Use Your Data"
+        },
+        {
+          "type": "p",
+          "text": "We will only use your personal data when the law allows us to."
+        },
+        {
+          "type": "p",
+          "text": "Most commonly, we will use your personal data to provide services, improve user experience, and fulfill our legal obligations."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. Acceptance of Terms"
+        },
+        {
+          "type": "p",
+          "text": "By accessing and using this website, you agree to be bound by these terms and conditions of use."
+        },
+        {
+          "type": "h2",
+          "text": "2. Use License"
+        },
+        {
+          "type": "p",
+          "text": "Permission is granted to temporarily download one copy of the materials (information or software) on DN Holding's website for personal, non-commercial transitory viewing only."
+        },
+        {
+          "type": "h2",
+          "text": "3. Disclaimer"
+        },
+        {
+          "type": "p",
+          "text": "The materials on DN Holding's website are provided on an 'as is' basis. DN Holding makes no warranties, expressed or implied."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. What is a Cookie?"
+        },
+        {
+          "type": "p",
+          "text": "Cookies are small text files that are stored on your computer or mobile device through your browser when you visit our website."
+        },
+        {
+          "type": "h2",
+          "text": "2. Types of Cookies We Use"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "<strong>Strictly Necessary Cookies:</strong> Required for the proper functioning of our website.",
+            "<strong>Performance Cookies:</strong> Collect information about how visitors use our website.",
+            "<strong>Functionality Cookies:</strong> Allow us to remember your preferences during your visit."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "3. How to Control Cookies?"
+        },
+        {
+          "type": "p",
+          "text": "You can control and/or delete cookies as you wish. You can modify your browser settings to reject all cookies."
+        }
+      ]
+    },
+    "kvkk": {
+      "title": "KVKK Disclosure",
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. Identity of Data Controller"
+        },
+        {
+          "type": "p",
+          "text": "In accordance with the Personal Data Protection Law No. 6698 (\"KVKK\"), your personal data will be collected and processed by DN Holding as the data controller."
+        },
+        {
+          "type": "h2",
+          "text": "2. Purpose of Processing Personal Data"
+        },
+        {
+          "type": "p",
+          "text": "Your collected personal data is processed to ensure our business units carry out the necessary work for you to benefit from the products and services offered by our Company."
+        },
+        {
+          "type": "h2",
+          "text": "3. To Whom Processed Personal Data May Be Transferred"
+        },
+        {
+          "type": "p",
+          "text": "Your processed personal data may be shared with authorized public institutions and organizations within legal obligations."
+        }
+      ]
+    }
   }
 }

@@ -47,6 +47,7 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
         title={dict.about.hero.title}
         subtitle={dict.about.hero.subtitle}
         variant="bottom"
+        scrollText={dict.common.scrollDown}
       />
 
       {/* Breadcrumb */}

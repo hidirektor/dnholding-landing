@@ -12,6 +12,7 @@ interface HeroSectionProps {
   ctaHref?: string;
   secondaryCtaText?: string;
   secondaryCtaHref?: string;
+  scrollText?: string;
   variant?: "default" | "short" | "bottom";
   bgImage?: string;
   stats?: {
@@ -29,6 +30,7 @@ export function HeroSection({
   ctaHref,
   secondaryCtaText,
   secondaryCtaHref,
+  scrollText,
   variant = "default",
   bgImage = "/assets/image/background/hero-bg.jpg",
   stats,
@@ -91,7 +93,7 @@ export function HeroSection({
         {variant === "bottom" && (
           <div className="absolute bottom-8 right-8 z-30 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <span className="text-white/90 font-medium text-sm md:text-base flex items-center gap-2 tracking-wide">
-              Scroll down <span className="animate-bounce">↓</span>
+              {scrollText || "Scroll down"} <span className="animate-bounce">↓</span>
             </span>
           </div>
         )}

@@ -103,7 +103,7 @@ export default async function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem storageKey="dn-theme">
           <Header lang={lang} />
           <main className="flex-1">{children}</main>
-          <Footer lang={lang} />
+          <Footer lang={lang} dict={dict} />
           <CookieWidget dict={dict.cookie} />
         </ThemeProvider>
       </body>

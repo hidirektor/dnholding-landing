@@ -96,7 +96,7 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
           <Container>
             <ScrollReveal>
               <div className="mb-12">
-                <Heading level="h2" display>Ocaklarımız</Heading>
+                <Heading level="h2" display>{dict.companies?.sections?.quarries || "Ocaklarımız"}</Heading>
               </div>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -125,7 +125,7 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
           <Container>
             <ScrollReveal>
               <div className="mb-12">
-                <Heading level="h2" display>Ürünlerimiz</Heading>
+                <Heading level="h2" display>{dict.companies?.sections?.products || "Ürünlerimiz"}</Heading>
               </div>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

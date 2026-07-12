@@ -68,10 +68,10 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
             id="subject"
             className="w-full px-4 py-3 rounded-[var(--radius-md)] bg-surface border border-border focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all appearance-none"
           >
-            <option>Genel Bilgi</option>
-            <option>Proje İşbirliği</option>
-            <option>İnsan Kaynakları</option>
-            <option>Yatırımcı İlişkileri</option>
+            <option>{dict.form?.subjects?.general || "Genel Bilgi"}</option>
+            <option>{dict.form?.subjects?.project || "Proje İşbirliği"}</option>
+            <option>{dict.form?.subjects?.hr || "İnsan Kaynakları"}</option>
+            <option>{dict.form?.subjects?.investor || "Yatırımcı İlişkileri"}</option>
           </select>
         </div>
 
@@ -91,7 +91,7 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
           className="w-full"
           size="lg"
         >
-          {isSuccess ? "Başarıyla Gönderildi ✓" : isSubmitting ? "Gönderiliyor..." : dict.submit}
+          {isSuccess ? (dict.form?.success || "Başarıyla Gönderildi ✓") : isSubmitting ? (dict.form?.submitting || "Gönderiliyor...") : dict.submit}
         </Button>
       </form>
     </div>

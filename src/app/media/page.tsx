@@ -66,7 +66,7 @@ export default async function MediaPage({ params }: { params: Promise<{ slug: st
           <Container>
             <ScrollReveal>
               <div className="mb-12">
-                <Heading level="h2" display>Haberler</Heading>
+                <Heading level="h2" display>{dict.media?.tabs?.news || "Haberler"}</Heading>
               </div>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -94,7 +94,7 @@ export default async function MediaPage({ params }: { params: Promise<{ slug: st
           <Container>
             <ScrollReveal>
               <div className="mb-12">
-                <Heading level="h2" display>Fuarlar</Heading>
+                <Heading level="h2" display>{dict.media?.tabs?.fairs || "Fuarlar"}</Heading>
               </div>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -122,7 +122,7 @@ export default async function MediaPage({ params }: { params: Promise<{ slug: st
           <Container>
             <ScrollReveal>
               <div className="mb-12">
-                <Heading level="h2" display>Etkinlikler</Heading>
+                <Heading level="h2" display>{dict.media?.tabs?.events || "Etkinlikler"}</Heading>
               </div>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

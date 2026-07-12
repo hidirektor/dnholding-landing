@@ -1,4 +1,4 @@
-import {getCurrentLocale} from "@/app/dictionaries";
+import {getCurrentLocale, getDictionary} from "@/app/dictionaries";
 import {Container} from "@/components/layout/Container";
 import {Section} from "@/components/layout/Section";
 import {Heading} from "@/components/ui/Heading";
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 
 export default async function PrivacyPage() {
   const lang = await getCurrentLocale();
+  const dict = await getDictionary();
 
   return (
     <>
@@ -37,7 +38,7 @@ export default async function PrivacyPage() {
       {/* ─── Legal Docs Viewer ─── */}
       <Section variant="default" className="py-16 lg:py-24">
         <Container>
-          <LegalDocsViewer defaultDoc="terms" />
+          <LegalDocsViewer defaultDoc="terms" dict={dict} />
         </Container>
       </Section>
     </>

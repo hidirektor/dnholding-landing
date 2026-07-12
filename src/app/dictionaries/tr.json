@@ -125,7 +125,12 @@
   "companies": {
     "tagline": "Bağlı Ortaklıklar",
     "title": "Grup Şirketlerimiz",
-    "subtitle": "Her biri kendi alanında uzman, yenilikçi şirketlerimiz."
+    "subtitle": "Her biri kendi alanında uzman, yenilikçi şirketlerimiz.",
+    "sections": {
+      "products": "Ürünlerimiz",
+      "quarries": "Ocaklarımız",
+      "noProducts": "Bu şirkete ait ürün bulunamadı."
+    }
   },
   "areas": {
     "tagline": "Sektörler",
@@ -147,13 +152,30 @@
       "location": "Konum",
       "company": "Şirket",
       "related": "İlgili Projeler"
+    },
+    "bento": {
+      "year": "Yıl",
+      "location": "Konum",
+      "tagline1": "Mütevazı köklerden",
+      "taglineHighlight": "endüstri öncüsü",
+      "tagline2": "olmaya uzanan yolculuk",
+      "details": "Detaylar",
+      "explore": "Projeyi Gör",
+      "diveInto": "Projeye Bak",
+      "balancing": "Verimlilik ve Sürdürülebilirlik Dengesi",
+      "timeline": "Tarihçemizi İncele"
     }
   },
   "media": {
     "tagline": "Gündem",
     "title": "Medya & Haberler",
     "subtitle": "Holdingimizle ilgili en son gelişmeler.",
-    "related": "Diğer Haberler"
+    "related": "Diğer Haberler",
+    "tabs": {
+      "news": "Haberler",
+      "events": "Etkinlikler",
+      "fairs": "Fuarlar"
+    }
   },
   "contact": {
     "tagline": "Bize Ulaşın",
@@ -166,7 +188,16 @@
       "company": "Şirket",
       "subject": "Konu",
       "message": "Mesajınız",
-      "submit": "Gönder"
+      "submit": "Gönder",
+      "subjects": {
+        "general": "Genel Bilgi",
+        "sales": "Satış & Pazarlama",
+        "hr": "İnsan Kaynakları",
+        "investor": "Yatırımcı İlişkileri",
+        "project": "Proje İşbirliği"
+      },
+      "success": "Başarıyla Gönderildi ✓",
+      "submitting": "Gönderiliyor..."
     },
     "info": {
       "addressTitle": "Adres",
@@ -184,7 +215,9 @@
     "contactCta": "Would you like to get in touch?",
     "contactUs": "Contact Us",
     "projects": "Projects",
-    "share": "Share"
+    "share": "Share",
+    "scrollDown": "Aşağı kaydır",
+    "poweredBy": "Altyapı"
   },
   "data": {
     "stats": [
@@ -871,10 +904,168 @@
     "title": "Çerez Tercihleri",
     "description": "Sitemizde, kullanıcı deneyimini geliştirmek ve site trafiğini analiz etmek için çerezler kullanıyoruz.",
     "accept": "Tümünü Kabul Et",
-    "decline": "Reddet"
+    "decline": "Reddet",
+    "bannerTitle": "Web sitemizdeki deneyiminizi geliştirmek için çerezleri kullanıyoruz. Tüm çerezleri kabul etmek için 'Tümünü Kabul Et' seçeneğine tıklayın, alternatif olarak 'Çerez Tercihleri'ne tıklayarak tercih ettiğiniz çerezleri ayarlayabilirsiniz.",
+    "learnMore": "Daha fazla bilgi",
+    "acceptAll": "Tümünü Kabul Et",
+    "acceptNecessary": "Sadece Zorunluları Kabul Et",
+    "preferences": "Çerez Tercihleri",
+    "modalTitle": "Çerez Tercih Merkezi",
+    "modalDesc": "Web sitemizdeki deneyiminizi optimize etmek için farklı türde çerezler kullanıyoruz. Amaçları hakkında daha fazla bilgi edinmek için aşağıdaki kategorilere tıklayın. Hangi çerez türlerine izin vereceğinizi seçebilir ve tercihlerinizi istediğiniz zaman değiştirebilirsiniz.",
+    "selectAll": "Tümünü Seç",
+    "unselectAll": "Tüm Seçimleri Kaldır",
+    "strictlyNecessaryTitle": "Kesinlikle Gerekli Çerezler",
+    "strictlyNecessaryDesc": "Kesinlikle gerekli çerezler web sitesinin temel işlevleri için kritik öneme sahiptir ve web sitesi bunlar olmadan amaçlandığı gibi çalışmayacaktır. Bu çerezler devre dışı bırakılamaz.",
+    "performanceTitle": "Performans ve İşlevsellik",
+    "performanceDesc": "Bu çerezler iyileştirilmiş gezinme deneyimi için ölçüm ve analitiği kolaylaştırır. Devre dışı bırakıldığında, site işlevselliğini optimize etmek için analitik yapamayız.",
+    "saveChanges": "Değişiklikleri Kaydet"
   },
   "notFound": {
     "title": "404",
     "description": "Aradığınız sayfa bulunamadı. {seconds} saniye içinde ana sayfaya yönlendiriliyorsunuz..."
+  },
+  "footer": {
+    "workingHoursTitle": "Çalışma Saatleri",
+    "workingHoursDesc": "Haftaiçi 08:00-17:00 | Cumartesi : 08:00-16:00",
+    "rssFeed": "RSS Feed",
+    "woma": "WOMA"
+  },
+  "rss": {
+    "title": "DN Holding - Medya ve Haberler",
+    "description": "DN Holding ile ilgili en son haberler, projeler ve duyurular."
+  },
+  "legal": {
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. Giriş"
+        },
+        {
+          "type": "p",
+          "text": "DN Holding (\"biz\", \"bizim\" veya \"şirket\") olarak gizliliğinize saygı duyuyoruz ve kişisel verilerinizi korumaya kararlıyız. Bu gizlilik politikası, web sitemizi ziyaret ettiğinizde (nereden ziyaret ettiğinizden bağımsız olarak) kişisel verilerinize nasıl bakacağımızı size bildirecek ve gizlilik haklarınız ile yasanın sizi nasıl koruduğu hakkında bilgi verecektir."
+        },
+        {
+          "type": "h2",
+          "text": "2. Topladığımız Veriler"
+        },
+        {
+          "type": "p",
+          "text": "Kişisel veri veya kişisel bilgi, kimliği belirlenebilen bir birey hakkındaki herhangi bir bilgi anlamına gelir. Kimliğin kaldırıldığı verileri (anonim veriler) kapsamaz. Sizin hakkınızda farklı türde kişisel verileri toplayabilir, kullanabilir, saklayabilir ve aktarabiliriz:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "<strong>Kimlik Verileri:</strong> Ad, soyadı, kullanıcı adı veya benzeri tanımlayıcılar.",
+            "<strong>İletişim Verileri:</strong> Fatura adresi, teslimat adresi, e-posta adresi ve telefon numaraları.",
+            "<strong>Teknik Veriler:</strong> İnternet protokolü (IP) adresi, oturum açma verileriniz, tarayıcı türü ve sürümü."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "3. Verilerinizin Kullanımı"
+        },
+        {
+          "type": "p",
+          "text": "Kişisel verilerinizi yalnızca yasanın izin verdiği durumlarda kullanacağız. En yaygın olarak, kişisel verilerinizi aşağıdaki durumlarda kullanacağız:"
+        },
+        {
+          "type": "p",
+          "text": "Hizmet sağlamak, kullanıcı deneyimini iyileştirmek ve yasal yükümlülüklerimizi yerine getirmek amacıyla."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Kullanım Koşulları",
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. Şartların Kabulü"
+        },
+        {
+          "type": "p",
+          "text": "Bu web sitesine erişerek ve web sitesini kullanarak, bu kullanım şartları ve koşullarına, tüm geçerli yasalara ve düzenlemelere bağlı kalmayı kabul etmiş olursunuz."
+        },
+        {
+          "type": "h2",
+          "text": "2. Kullanım Lisansı"
+        },
+        {
+          "type": "p",
+          "text": "DN Holding'in web sitesindeki materyallerin (bilgi veya yazılım) bir kopyasını yalnızca kişisel, ticari olmayan geçici görüntüleme için geçici olarak indirme izni verilir. Bu, bir mülkiyet devri değil, bir lisans verilmesidir."
+        },
+        {
+          "type": "h2",
+          "text": "3. Sorumluluk Reddi"
+        },
+        {
+          "type": "p",
+          "text": "DN Holding'in web sitesindeki materyaller \"olduğu gibi\" sağlanmaktadır. DN Holding, zımni garantiler veya satılabilirlik, belirli bir amaca uygunluk veya fikri mülkiyet haklarının ihlal edilmemesi dahil olmak üzere hiçbir garanti vermez."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Çerez Politikası",
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. Çerez Nedir?"
+        },
+        {
+          "type": "p",
+          "text": "Çerezler, web sitemizi ziyaret ettiğinizde tarayıcınız aracılığıyla bilgisayarınıza veya mobil cihazınıza kaydedilen küçük metin dosyalarıdır. Çerezler, web sitesinin daha verimli çalışmasını sağlamak ve ziyaretinizle ilgili bilgileri hatırlamak için kullanılır."
+        },
+        {
+          "type": "h2",
+          "text": "2. Kullandığımız Çerez Türleri"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "<strong>Zorunlu Çerezler:</strong> Web sitemizin düzgün çalışması için gereklidir.",
+            "<strong>Performans Çerezleri:</strong> Ziyaretçilerin web sitemizi nasıl kullandığı hakkında bilgi toplar.",
+            "<strong>İşlevsellik Çerezleri:</strong> Ziyaretiniz sırasındaki tercihlerinizi hatırlamamızı sağlar."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "3. Çerezleri Nasıl Kontrol Edebilirsiniz?"
+        },
+        {
+          "type": "p",
+          "text": "Çerezleri dilediğiniz gibi kontrol edebilir veya silebilirsiniz. Tarayıcı ayarlarınızı, tüm çerezleri veya belirli çerezleri reddedecek şekilde değiştirebilirsiniz."
+        }
+      ]
+    },
+    "kvkk": {
+      "title": "KVKK Aydınlatma Metni",
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. Veri Sorumlusunun Kimliği"
+        },
+        {
+          "type": "p",
+          "text": "6698 sayılı Kişisel Verilerin Korunması Kanunu (\"KVKK\") uyarınca, kişisel verileriniz; veri sorumlusu olarak DN Holding tarafından aşağıda açıklanan kapsamda toplanacak ve işlenebilecektir."
+        },
+        {
+          "type": "h2",
+          "text": "2. Kişisel Verilerin İşlenme Amacı"
+        },
+        {
+          "type": "p",
+          "text": "Toplanan kişisel verileriniz, Şirketimiz tarafından sunulan ürün ve hizmetlerden sizleri faydalandırmak için gerekli çalışmaların iş birimlerimiz tarafından yapılması, Şirketimizin hukuki ve ticari güvenliğinin temini amaçlarıyla işlenmektedir."
+        },
+        {
+          "type": "h2",
+          "text": "3. İşlenen Kişisel Verilerin Kimlere Aktarılabileceği"
+        },
+        {
+          "type": "p",
+          "text": "İşlenen kişisel verileriniz, yasal zorunluluklar dahilinde yetkili kamu kurum ve kuruluşları ile Şirketimizin faaliyetlerini yürütmek üzere hizmet aldığı üçüncü taraflarla paylaşılabilecektir."
+        }
+      ]
+    }
   }
 }

@@ -110,7 +110,12 @@
   "companies": {
     "tagline": "Tochtergesellschaften",
     "title": "Unsere Konzerngesellschaften",
-    "subtitle": "Unsere innovativen Unternehmen, von denen jedes ein Experte auf seinem Gebiet ist."
+    "subtitle": "Unsere innovativen Unternehmen, von denen jedes ein Experte auf seinem Gebiet ist.",
+    "sections": {
+      "products": "Unsere Produkte",
+      "quarries": "Unsere Steinbrüche",
+      "noProducts": "Keine Produkte für dieses Unternehmen gefunden."
+    }
   },
   "areas": {
     "tagline": "Sektoren",
@@ -132,13 +137,30 @@
       "location": "Ort",
       "company": "Unternehmen",
       "related": "Verwandte Projekte"
+    },
+    "bento": {
+      "year": "Jahr",
+      "location": "Ort",
+      "tagline1": "Von bescheidenen Anfängen zu",
+      "taglineHighlight": "Branchenführern",
+      "tagline2": "",
+      "details": "Details",
+      "explore": "Erkunden",
+      "diveInto": "Eintauchen",
+      "balancing": "Effizienz und Nachhaltigkeit in Einklang bringen",
+      "timeline": "Zeitleiste ansehen"
     }
   },
   "media": {
     "tagline": "Aktuelles",
     "title": "Medien & Nachrichten",
     "subtitle": "Neueste Entwicklungen über unsere Holding.",
-    "related": "Weitere Nachrichten"
+    "related": "Weitere Nachrichten",
+    "tabs": {
+      "news": "Nachrichten",
+      "events": "Veranstaltungen",
+      "fairs": "Messen"
+    }
   },
   "contact": {
     "tagline": "Kontaktieren Sie Uns",
@@ -151,7 +173,16 @@
       "company": "Unternehmen",
       "subject": "Betreff",
       "message": "Ihre Nachricht",
-      "submit": "Senden"
+      "submit": "Senden",
+      "subjects": {
+        "general": "Allgemeine Information",
+        "sales": "Verkauf & Marketing",
+        "hr": "Personalwesen",
+        "investor": "Investor Relations",
+        "project": "Projektkooperation"
+      },
+      "success": "Erfolgreich gesendet ✓",
+      "submitting": "Senden..."
     },
     "info": {
       "addressTitle": "Adresse",
@@ -169,7 +200,9 @@
     "contactCta": "Möchten Sie uns kontaktieren?",
     "contactUs": "Kontaktieren Sie Uns",
     "projects": "Projekte",
-    "share": "Teilen"
+    "share": "Teilen",
+    "scrollDown": "Nach unten scrollen",
+    "poweredBy": "Angetrieben von"
   },
   "data": {
     "companies": [
@@ -730,10 +763,72 @@
     "title": "Cookie-Einstellungen",
     "description": "Wir verwenden Cookies auf unserer Website, um die Benutzererfahrung zu verbessern und den Datenverkehr zu analysieren.",
     "accept": "Alle akzeptieren",
-    "decline": "Ablehnen"
+    "decline": "Ablehnen",
+    "bannerTitle": "Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Um alle Cookies zu akzeptieren, klicken Sie auf 'Alle akzeptieren'.",
+    "learnMore": "Mehr erfahren",
+    "acceptAll": "Alle akzeptieren",
+    "acceptNecessary": "Nur notwendige akzeptieren",
+    "preferences": "Cookie-Einstellungen",
+    "modalTitle": "Cookie-Präferenzzentrum",
+    "modalDesc": "Wir verwenden verschiedene Arten von Cookies, um Ihre Erfahrung zu optimieren. Sie können wählen, welche Arten von Cookies Sie zulassen möchten.",
+    "selectAll": "Alle auswählen",
+    "unselectAll": "Alle abwählen",
+    "strictlyNecessaryTitle": "Unbedingt notwendige Cookies",
+    "strictlyNecessaryDesc": "Notwendige Cookies sind für die grundlegenden Funktionen der Website entscheidend. Diese können nicht deaktiviert werden.",
+    "performanceTitle": "Leistung & Funktionalität",
+    "performanceDesc": "Diese Cookies erleichtern die Messung und Analyse für ein verbessertes Surferlebnis.",
+    "saveChanges": "Änderungen speichern"
   },
   "notFound": {
     "title": "404",
     "description": "Die gesuchte Seite konnte nicht gefunden werden. Sie werden in {seconds} Sekunden zur Startseite weitergeleitet..."
+  },
+  "footer": {
+    "workingHoursTitle": "Arbeitszeiten",
+    "workingHoursDesc": "Werktags 08:00-17:00 | Samstag : 08:00-16:00",
+    "rssFeed": "RSS-Feed",
+    "woma": "WOMA"
+  },
+  "rss": {
+    "title": "DN Holding - Medien und Nachrichten",
+    "description": "Aktuelle Nachrichten, Projekte und Ankündigungen über DN Holding."
+  },
+  "legal": {
+    "privacy": {
+      "title": "Datenschutzrichtlinie",
+      "content": [
+        {
+          "type": "p",
+          "text": "Wir respektieren Ihre Privatsphäre und verpflichten uns, Ihre persönlichen Daten zu schützen."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "content": [
+        {
+          "type": "p",
+          "text": "Durch den Zugriff auf diese Website stimmen Sie diesen Nutzungsbedingungen zu."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie",
+      "content": [
+        {
+          "type": "p",
+          "text": "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden."
+        }
+      ]
+    },
+    "kvkk": {
+      "title": "KVKK Offenlegung",
+      "content": [
+        {
+          "type": "p",
+          "text": "Gemäß dem Gesetz zum Schutz personenbezogener Daten werden Ihre Daten von DN Holding verarbeitet."
+        }
+      ]
+    }
   }
 }

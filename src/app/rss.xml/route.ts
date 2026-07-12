@@ -22,9 +22,9 @@ export async function GET() {
   const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DN Holding - Medya ve Haberler</title>
+    <title><![CDATA[${(trDict as any).rss?.title || "DN Holding - Medya ve Haberler"}]]></title>
     <link>${siteUrl}</link>
-    <description>DN Holding ile ilgili en son haberler, projeler ve duyurular.</description>
+    <description><![CDATA[${(trDict as any).rss?.description || "DN Holding ile ilgili en son haberler, projeler ve duyurular."}]]></description>
     <language>tr</language>
     <atom:link href="${siteUrl}/rss.xml" rel="self" type="application/rss+xml" />
     ${itemsXml}

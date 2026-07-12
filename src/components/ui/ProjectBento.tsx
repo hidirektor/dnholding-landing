@@ -47,7 +47,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
                   {p1.title}
                 </h3>
                 <div className="text-right shrink-0">
-                  <p className="text-white/50 text-[10px] uppercase tracking-wider">Year</p>
+                  <p className="text-white/50 text-[10px] uppercase tracking-wider">{dict.projects?.bento?.year}</p>
                   <p className="font-bold text-lg">{p1.year}</p>
                 </div>
               </div>
@@ -57,7 +57,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
               <div className="flex justify-between items-center">
                 <div className="flex gap-6">
                   <div>
-                    <p className="text-[10px] text-white/50 uppercase tracking-wider">Location</p>
+                    <p className="text-[10px] text-white/50 uppercase tracking-wider">{dict.projects?.bento?.location}</p>
                     <p className="text-sm font-semibold">{p1.location}</p>
                   </div>
                 </div>
@@ -66,7 +66,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
                   className="group/link flex items-center gap-2 text-xs font-semibold hover:text-accent transition-colors"
                 >
                   <span className="border-b border-white/30 group-hover/link:border-accent pb-0.5">
-                    {lang === 'tr' ? 'Detaylar' : 'Details'}
+                    {dict.projects?.bento?.details}
                   </span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transform group-hover/link:translate-x-1 transition-transform">
                     <path d="M5 12h14" />
@@ -100,7 +100,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
             
             <div className="relative z-10 flex justify-end w-full mt-auto pt-8">
               <span className="text-blue-600 text-xs lg:text-sm uppercase tracking-widest font-bold">
-                {lang === 'tr' ? 'Projeyi Gör' : 'Explore'}
+                {dict.projects?.bento?.explore}
               </span>
             </div>
           </>
@@ -144,7 +144,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
             
             <div className="absolute top-6 right-6 z-20 flex items-center gap-3">
               <span className="text-white text-xs font-bold w-16 text-right leading-tight">
-                {lang === 'tr' ? 'Projeye Bak' : 'Dive into'}
+                {dict.projects?.bento?.diveInto}
               </span>
               <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-black group-hover:bg-accent group-hover:text-white transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -175,7 +175,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
             
             <div className="absolute bottom-8 left-8 z-20 text-white max-w-sm">
               <h3 className="text-2xl sm:text-3xl font-bold leading-tight mb-4">
-                {lang === 'tr' ? 'Verimlilik ve Sürdürülebilirlik Dengesi' : 'Balancing efficiency and sustainability'}
+                {dict.projects?.bento?.balancing}
               </h3>
               <Link
                 href={`/projects/${p5.slug}`}
@@ -195,15 +195,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
       {/* ─── TILE 7 (Bottom Text): cols 8-12, row 3 ─── */}
       <div className="relative lg:col-span-5 min-h-[250px] lg:min-h-[280px] rounded-[2rem] overflow-hidden bg-[#f4f4f4] dark:bg-zinc-900 border border-black/5 dark:border-white/10 shadow-lg p-8 sm:p-10 flex flex-col justify-center">
         <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white leading-tight mb-4">
-          {lang === 'tr' ? (
-            <>
-              Mütevazı köklerden <span className="text-[#ca8a2a]">endüstri öncüsü</span> olmaya uzanan yolculuk
-            </>
-          ) : (
-            <>
-              From modest origins to becoming <span className="text-[#ca8a2a]">industry frontrunners</span>
-            </>
-          )}
+          {dict.projects?.bento?.tagline1} <span className="text-[#ca8a2a]">{dict.projects?.bento?.taglineHighlight}</span> {dict.projects?.bento?.tagline2}
         </h3>
         <p className="text-black/60 dark:text-white/60 text-[11px] sm:text-xs leading-relaxed mb-6 line-clamp-4">
           {dict.home?.about?.description || ""}
@@ -213,7 +205,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
             href="/about"
             className="inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-[#ca8a2a] hover:text-white dark:hover:bg-[#ca8a2a] transition-colors"
           >
-            <span>{lang === 'tr' ? 'Tarihçemizi İncele' : 'Look at timeline'}</span>
+            <span>{dict.projects?.bento?.timeline}</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14" />
               <path d="m12 5 7 7-7 7" />

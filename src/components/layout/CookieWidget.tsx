@@ -53,10 +53,10 @@ export function CookieWidget({ dict }: CookieWidgetProps) {
           <div className="max-w-[1400px] mx-auto px-6 md:px-8 py-5 flex flex-col lg:flex-row items-center justify-between gap-6">
             
             <div className="flex-1 text-[13px] md:text-sm text-[var(--color-text-secondary)] dark:text-white/80 leading-relaxed">
-              We use cookies to improve your experience on our website. To accept all cookies, click &apos;Accept All,&apos; alternatively you can set the preferred cookies by clicking on &apos;Cookie Preference.&apos;
+              {dict.cookie.bannerTitle}
               <br />
               <a href="/privacy" className="text-accent dark:text-[#ca8a2a] underline underline-offset-2 hover:text-accent-light dark:hover:text-[#b07824] mt-2 inline-block">
-                Learn more
+                {dict.cookie.learnMore}
               </a>
             </div>
 
@@ -65,13 +65,13 @@ export function CookieWidget({ dict }: CookieWidgetProps) {
                 onClick={handleAcceptAll}
                 className="bg-accent dark:bg-[#ca8a2a] hover:bg-accent-light dark:hover:bg-[#b07824] text-white text-[13px] font-medium px-6 py-2.5 transition-colors rounded-[var(--radius-sm)]"
               >
-                Accept All
+                {dict.cookie.acceptAll}
               </button>
               <button 
                 onClick={handleAcceptNecessary}
                 className="bg-accent dark:bg-[#ca8a2a] hover:bg-accent-light dark:hover:bg-[#b07824] text-white text-[13px] font-medium px-6 py-2.5 transition-colors rounded-[var(--radius-sm)]"
               >
-                Accept Only Necessary
+                {dict.cookie.acceptNecessary}
               </button>
               <button 
                 onClick={() => setShowModal(true)}
@@ -80,7 +80,7 @@ export function CookieWidget({ dict }: CookieWidgetProps) {
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="opacity-80 group-hover:opacity-100">
                   <path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M1 14h6"/><path d="M9 8h6"/><path d="M17 16h6"/>
                 </svg>
-                Cookie Preference
+                {dict.cookie.preferences}
               </button>
             </div>
           </div>
@@ -104,13 +104,13 @@ export function CookieWidget({ dict }: CookieWidgetProps) {
 
             {/* Modal Content */}
             <div className="p-6 sm:p-8 pb-6 border-b border-gray-100 dark:border-white/10">
-              <h2 className="text-2xl text-[var(--color-text-heading)] dark:text-white mb-4 font-semibold tracking-tight pr-8">Cookie Preference Centre</h2>
+              <h2 className="text-2xl text-[var(--color-text-heading)] dark:text-white mb-4 font-semibold tracking-tight pr-8">{dict.cookie.modalTitle}</h2>
               <p className="text-[var(--color-text-secondary)] dark:text-white/70 text-sm leading-relaxed mb-4">
-                We use different types of cookies to optimize your experience on our website. Click on the categories below to learn more about their purpose. You may choose which types of cookies to allow and can change your preferences at any time. Remember that disabling cookies may affect your experience on the website. You can learn more about how we use cookies by visiting our Privacy Notice.
+                {dict.cookie.modalDesc}
               </p>
               <div className="flex gap-4">
-                <button onClick={() => setPerfEnabled(true)} className="text-accent dark:text-[#ca8a2a] hover:text-accent-light dark:hover:text-[#b07824] text-sm font-medium underline underline-offset-4 decoration-1">Select All</button>
-                <button onClick={() => setPerfEnabled(false)} className="text-accent dark:text-[#ca8a2a] hover:text-accent-light dark:hover:text-[#b07824] text-sm font-medium underline underline-offset-4 decoration-1">Unselect All</button>
+                <button onClick={() => setPerfEnabled(true)} className="text-accent dark:text-[#ca8a2a] hover:text-accent-light dark:hover:text-[#b07824] text-sm font-medium underline underline-offset-4 decoration-1">{dict.cookie.selectAll}</button>
+                <button onClick={() => setPerfEnabled(false)} className="text-accent dark:text-[#ca8a2a] hover:text-accent-light dark:hover:text-[#b07824] text-sm font-medium underline underline-offset-4 decoration-1">{dict.cookie.unselectAll}</button>
               </div>
             </div>
 
@@ -126,10 +126,10 @@ export function CookieWidget({ dict }: CookieWidgetProps) {
                 </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-center mb-2">
-                    <h3 className="text-base font-medium text-[var(--color-text-heading)] dark:text-white">Strictly Necessary Cookies</h3>
+                    <h3 className="text-base font-medium text-[var(--color-text-heading)] dark:text-white">{dict.cookie.strictlyNecessaryTitle}</h3>
                   </div>
                   <p className="text-[13px] text-[var(--color-text-secondary)] dark:text-white/70 leading-relaxed">
-                    Strictly necessary cookies are crucial for the basic functions of the website and the website will not work in its intended way without them. These cookies cannot be disabled.
+                    {dict.cookie.strictlyNecessaryDesc}
                   </p>
                 </div>
               </div>
@@ -143,13 +143,10 @@ export function CookieWidget({ dict }: CookieWidgetProps) {
                 </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-center mb-2">
-                    <h3 className="text-base font-medium text-[var(--color-text-heading)] dark:text-white">Performance & Functionality</h3>
+                    <h3 className="text-base font-medium text-[var(--color-text-heading)] dark:text-white">{dict.cookie.performanceTitle}</h3>
                   </div>
                   <p className="text-[13px] text-[var(--color-text-secondary)] dark:text-white/60 leading-relaxed mb-2">
-                    These cookies facilitate measurement and analytics for improved browsing experience.
-                  </p>
-                  <p className="text-[13px] text-[var(--color-text-secondary)] dark:text-white/60 leading-relaxed">
-                    We will not be able to conduct analytics to optimize site functionality and performance.
+                    {dict.cookie.performanceDesc}
                   </p>
                 </div>
               </div>
@@ -162,7 +159,7 @@ export function CookieWidget({ dict }: CookieWidgetProps) {
                 onClick={handleSavePreferences}
                 className="bg-accent dark:bg-[#ca8a2a] hover:bg-accent-light dark:hover:bg-[#b07824] text-white text-sm font-medium px-6 py-2.5 transition-colors rounded-[var(--radius-sm)]"
               >
-                Save Changes
+                {dict.cookie.saveChanges}
               </button>
             </div>
 

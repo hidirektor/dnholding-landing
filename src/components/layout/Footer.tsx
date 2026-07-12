@@ -9,6 +9,7 @@ import styles from "./Footer.module.css";
 
 interface FooterProps {
   lang: Locale;
+  dict?: any;
 }
 
 const footerData = {
@@ -178,7 +179,7 @@ const footerData = {
   },
 };
 
-export function Footer({ lang }: FooterProps) {
+export function Footer({ lang, dict }: FooterProps) {
   const data = footerData[lang] || footerData.tr;
   const [quickLinksOpen, setQuickLinksOpen] = useState(false);
   const [companiesOpen, setCompaniesOpen] = useState(false);
@@ -288,8 +289,8 @@ export function Footer({ lang }: FooterProps) {
               </a>
               <a href={`mailto:${data.contact.email}`}>{data.contact.email}</a>
               <div className="mt-4 pt-4 border-t border-border/10 dark:border-white/10">
-                <p className="font-semibold text-xs mb-1">Çalışma Saatleri</p>
-                <p className="text-xs opacity-80">Haftaiçi 08:00-17:00 | Cumartesi : 08:00-16:00</p>
+                <p className="font-semibold text-xs mb-1">{dict?.footer?.workingHoursTitle || "Çalışma Saatleri"}</p>
+                <p className="text-xs opacity-80">{dict?.footer?.workingHoursDesc || "Haftaiçi 08:00-17:00 | Cumartesi : 08:00-16:00"}</p>
               </div>
             </address>
           </div>
@@ -307,7 +308,7 @@ export function Footer({ lang }: FooterProps) {
               rel="noopener noreferrer"
               className={styles.poweredBy}
             >
-              Powered by <span className={styles.womaText}>WOMA</span>
+              {dict?.common?.poweredBy || "Powered by"} <span className={styles.womaText}>{dict?.footer?.woma || "WOMA"}</span>
             </a>
             <div className={styles.legalLinks}>
               <Link href="/privacy" className={styles.legalLink}>
@@ -317,9 +318,9 @@ export function Footer({ lang }: FooterProps) {
               <Link href="/terms" className={styles.legalLink}>
                 {data.terms}
               </Link>
-              <span className={styles.legalDivider}>|</span>
+              <span className="border-b border-white/30 group-hover/link:border-accent pb-0.5">|</span>
               <Link href="/rss.xml" target="_blank" prefetch={false} className={styles.legalLink}>
-                RSS Feed
+                {dict?.footer?.rssFeed || "RSS Feed"}
               </Link>
             </div>
           </div>
