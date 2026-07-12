@@ -148,6 +148,13 @@ const themeLabels: Record<string, { theme: string; language: string }> = {
   fr: { theme: "Thème", language: "Langue" },
 };
 
+const contactLabels: Record<string, string> = {
+  tr: "İLETİŞİME GEÇ",
+  en: "GET IN TOUCH",
+  de: "KONTAKT",
+  fr: "CONTACTEZ-NOUS",
+};
+
 export function Header({ lang }: HeaderProps) {
   const pathname = usePathname();
   const scrollDirection = useScrollDirection();
@@ -162,6 +169,7 @@ export function Header({ lang }: HeaderProps) {
 
   const items = navItems[lang] || navItems.tr;
   const labels = themeLabels[lang] || themeLabels.en;
+  const contactLabel = contactLabels[lang] || contactLabels.en;
 
   useEffect(() => {
     setMounted(true);
@@ -232,7 +240,7 @@ export function Header({ lang }: HeaderProps) {
       >
         <div className="container-base relative">
           {/* Social Tab + Settings */}
-          <div ref={settingsRef} className="absolute top-8 right-4 md:right-8 bg-[#0a192f]/85 dark:bg-white/15 text-white/90 px-6 pt-12 pb-4 rounded-b-2xl flex items-center gap-5 shadow-lg backdrop-blur-xl z-0 border border-t-0 border-[#0a192f]/30 dark:border-white/20">
+          <div ref={settingsRef} className="hidden lg:flex absolute top-8 right-4 md:right-8 bg-[#0a192f]/85 dark:bg-white/15 text-white/90 px-6 pt-12 pb-4 rounded-b-2xl items-center gap-5 shadow-lg backdrop-blur-xl z-0 border border-t-0 border-[#0a192f]/30 dark:border-white/20">
             <a href="https://www.instagram.com/dnmarble" target="_blank" rel="noopener noreferrer" className="hover:text-[#ffe800] transition-colors" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </a>
@@ -419,7 +427,7 @@ export function Header({ lang }: HeaderProps) {
             <div className={styles.rightSection}>
               {/* Desktop CTA */}
               <Link href="/contact" className="hidden md:inline-flex items-center justify-center bg-white text-black font-medium text-sm px-7 py-2.5 rounded-full hover:bg-white/90 transition-colors mr-4 md:mr-0">
-                GET IN TOUCH
+                {contactLabel}
               </Link>
               {/* Mobile Toggle */}
               <button
@@ -491,8 +499,83 @@ export function Header({ lang }: HeaderProps) {
                   ))}
                 </div>
               )}
-            </div>
           ))}
+
+          {/* Mobile Settings Block */}
+          <div className="flex flex-col items-center gap-6 mt-8 pt-8 border-t border-gray-200 dark:border-gray-800 w-full px-6">
+            <div className="flex items-center gap-6 text-gray-600 dark:text-gray-400">
+              <a href="https://www.instagram.com/dnmarble" target="_blank" rel="noopener noreferrer" className="hover:text-black dark:hover:text-white transition-colors" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="https://www.youtube.com/@dnmermer" target="_blank" rel="noopener noreferrer" className="hover:text-black dark:hover:text-white transition-colors" aria-label="Youtube">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/company/dn-marble/" target="_blank" rel="noopener noreferrer" className="hover:text-black dark:hover:text-white transition-colors" aria-label="Linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="https://wa.me/905321136846" target="_blank" rel="noopener noreferrer" className="hover:text-black dark:hover:text-white transition-colors" aria-label="WhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+              </a>
+            </div>
+
+            <div className="flex flex-col gap-4 w-full max-w-xs mt-4">
+              <div className="flex p-1 bg-gray-100 dark:bg-gray-800 rounded-lg">
+                <button
+                  onClick={() => setTheme("light")}
+                  className={cn(
+                    "flex-1 flex items-center justify-center gap-2 text-sm font-medium px-4 py-2 rounded-md transition-all",
+                    mounted && resolvedTheme === "light"
+                      ? "bg-white text-black shadow-sm"
+                      : "text-gray-500 hover:text-black"
+                  )}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="5" />
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                    <line x1="1" y1="12" x2="3" y2="12" />
+                    <line x1="21" y1="12" x2="23" y2="12" />
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                  </svg>
+                  Light
+                </button>
+                <button
+                  onClick={() => setTheme("dark")}
+                  className={cn(
+                    "flex-1 flex items-center justify-center gap-2 text-sm font-medium px-4 py-2 rounded-md transition-all",
+                    mounted && resolvedTheme === "dark"
+                      ? "bg-gray-700 text-white shadow-sm"
+                      : "text-gray-500 hover:text-white"
+                  )}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                  </svg>
+                  Dark
+                </button>
+              </div>
+
+              <div className="flex justify-center gap-2">
+                {["TR", "EN", "DE", "FR"].map((l) => (
+                  <button
+                    key={l}
+                    onClick={() => { switchLanguage(l); closeMobile(); }}
+                    className={cn(
+                      "text-xs font-bold px-4 py-2 rounded-lg transition-all",
+                      lang.toUpperCase() === l 
+                        ? "bg-blue-900 text-white dark:bg-white dark:text-black" 
+                        : "bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+                    )}
+                  >
+                    {l}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
     </>
