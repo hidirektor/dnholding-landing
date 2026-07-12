@@ -46,7 +46,7 @@ export default async function AboutPage({ params }: { params: Promise<{ slug: st
       <HeroSection
         title={dict.about.hero.title}
         subtitle={dict.about.hero.subtitle}
-        variant="short"
+        variant="bottom"
       />
 
       {/* Breadcrumb */}

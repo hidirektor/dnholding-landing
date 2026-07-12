@@ -7,12 +7,13 @@ import Image from "next/image";
 
 interface HeroSectionProps {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   ctaText?: string;
   ctaHref?: string;
   secondaryCtaText?: string;
   secondaryCtaHref?: string;
-  variant?: "default" | "short";
+  variant?: "default" | "short" | "bottom";
+  bgImage?: string;
   stats?: {
     value: string;
     label: string;
@@ -29,16 +30,21 @@ export function HeroSection({
   secondaryCtaText,
   secondaryCtaHref,
   variant = "default",
+  bgImage = "/assets/image/background/hero-bg.jpg",
   stats,
 }: HeroSectionProps) {
   return (
-    <section className={`relative flex items-center overflow-hidden bg-primary ${variant === "default" ? "min-h-screen pb-0" : "min-h-[50vh] pt-32"}`}>
+    <section className={`relative flex items-center overflow-hidden bg-primary ${
+      variant === "default" ? "min-h-screen pb-0" : 
+      variant === "bottom" ? "min-h-screen pb-12 items-end" : 
+      "min-h-[50vh] pt-32"
+    }`}>
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/40 z-10" />
+        <div className={`absolute inset-0 z-10 ${variant === "bottom" ? "bg-black/60" : "bg-black/40"}`} />
         <Image
-          src="/assets/image/background/hero-bg.jpg"
-          alt="DN Holding Epic Quarry"
+          src={bgImage}
+          alt={title || "DN Holding Epic Quarry"}
           fill
           className="object-cover"
           priority
@@ -46,14 +52,19 @@ export function HeroSection({
         />
       </div>
 
-      <Container className="relative z-20 flex-1 pt-32 pb-24 md:pb-32 flex flex-col justify-center">
-        <div className="max-w-3xl space-y-8 animate-fade-in-up text-left">
-          <Heading level="h1" display className="text-white text-5xl md:text-7xl leading-tight font-bold">
+      <Container className={`relative z-20 flex-1 flex flex-col w-full ${
+        variant === "bottom" ? "justify-end pb-8" : "justify-center pt-32 pb-24 md:pb-32"
+      }`}>
+        <div className={`max-w-3xl animate-fade-in-up text-left ${variant === "bottom" ? "space-y-4" : "space-y-8"}`}>
+          <Heading level="h1" display className={`text-white leading-tight font-bold ${variant === "bottom" ? "text-5xl md:text-[80px]" : "text-5xl md:text-7xl"}`}>
             {title}
           </Heading>
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl font-light leading-relaxed">
-            {subtitle}
-          </p>
+          
+          {subtitle && (
+            <p className={`text-white/90 max-w-2xl font-light leading-relaxed ${variant === "bottom" ? "text-lg md:text-2xl" : "text-lg md:text-xl"}`}>
+              {subtitle}
+            </p>
+          )}
           
           {(ctaText || secondaryCtaText) && (
             <div className="flex flex-col sm:flex-row items-center gap-4 pt-4">
@@ -76,6 +87,14 @@ export function HeroSection({
             </div>
           )}
         </div>
+
+        {variant === "bottom" && (
+          <div className="absolute bottom-8 right-8 z-30 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            <span className="text-white/90 font-medium text-sm md:text-base flex items-center gap-2 tracking-wide">
+              Scroll down <span className="animate-bounce">↓</span>
+            </span>
+          </div>
+        )}
       </Container>
 
       {/* Stats Card at Bottom Right with Inverse Curves */}
