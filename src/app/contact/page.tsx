@@ -88,7 +88,14 @@ export default async function ContactPage({ params }: { params: Promise<{ slug: 
                     </div>
                     <h3 className="font-semibold text-lg">{dict.contact.info.addressTitle}</h3>
                     <p className="text-[var(--text-muted)] leading-relaxed">
-                      {dict.contact.info.address}
+                      <a 
+                        href="https://www.google.com/maps/place/DN+HOLDING+A.Ş./@37.8564526,29.3942722,18z/data=!4m10!1m2!2m1!1sDN+HOLDING+A.Ş.,+Kaklık,+Mermer+Fabrikaları+Kümesi,+20240+Honaz%2FDenizli!3m6!1s0x14c71d8bd0404bc9:0x17b56dc714f59fef!8m2!3d37.8564526!4d29.396654!15sCktETiBIT0xESU5HIEEuxZ4uLCBLYWtsxLFrLCBNZXJtZXIgRmFicmlrYWxhcsSxIEvDvG1lc2ksIDIwMjQwIEhvbmF6L0Rlbml6bGmSAQ9ob2xkaW5nX2NvbXBhbnngAQA!16s%2Fg%2F11z9bky8kw?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-accent transition-colors"
+                      >
+                        {dict.contact.info.address}
+                      </a>
                     </p>
                   </div>
 

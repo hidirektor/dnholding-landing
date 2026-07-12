@@ -197,8 +197,8 @@
     "readMore": "Lire la Suite",
     "discover": "Découvrir",
     "viewAll": "Voir Tout",
-    "contactCta": "Voulez-vous nous contacter?",
-    "contactUs": "Contactez-Nous",
+    "contactCta": "Souhaitez-vous nous contacter?",
+    "contactUs": "Contactez-nous",
     "projects": "Projets",
     "share": "Partager",
     "scrollDown": "Faire défiler",
@@ -207,134 +207,75 @@
   "data": {
     "companies": [
       {
-        "sector": "Mermer",
         "slug": "dn-mermer",
+        "name": "DN Mermer A.Ş.",
         "description": "Yüksek kaliteli mermer üretimi ve ihracatı alanında sektörün öncü markalarından biridir.",
+        "sector": "Mermer",
         "accentColor": "#4b5563",
-        "name": "DN MERMER A.Åž.",
-        "stats": [
-          {
-            "label": "Ãœretim",
-            "suffix": "K+",
-            "value": 500
-          }
-        ],
         "featured": true
       },
       {
-        "sector": "Maden",
         "slug": "2m-uluslararasi-madencilik",
+        "name": "2M Uluslararası Madencilik A.Ş.",
         "description": "Uluslararası standartlarda, sürdürülebilir madencilik faaliyetleri yürütmektedir.",
+        "sector": "Maden",
         "accentColor": "#b45309",
-        "name": "2M ULUSLARASI MADENCÄ°LÄ°K A.Åž.",
-        "stats": [
-          {
-            "label": "İhracat",
-            "suffix": "+",
-            "value": 20
-          }
-        ],
         "featured": true
       },
       {
-        "sector": "Maden",
         "slug": "4t-madencilik",
+        "name": "4T Madencilik A.Ş.",
         "description": "DoÄŸal kaynaklarÄ±n ekonomiye kazandÄ±rÄ±lmasÄ± amacÄ±yla Ã§evreye duyarlÄ± madencilik yapar.",
+        "sector": "Maden",
         "accentColor": "#9a3412",
-        "name": "4T MADENCÄ°LÄ°K A.Åž.",
-        "stats": [
-          {
-            "label": "Kapasite",
-            "suffix": "K",
-            "value": 100
-          }
-        ],
         "featured": true
       },
       {
-        "sector": "Maden",
         "slug": "alm-maden",
+        "name": "ALM Maden A.Ş.",
         "description": "YenilikÃ§i teknolojilerle maden arama, Ã§Ä±karma ve zenginleÅŸtirme projeleri yÃ¼rÃ¼tmektedir.",
+        "sector": "Maden",
         "accentColor": "#854d0e",
-        "name": "ALM MADEN A.Åž.",
-        "stats": [
-          {
-            "value": 15,
-            "label": "Proje"
-          }
-        ],
         "featured": false
       },
       {
-        "sector": "Mermer & Maden",
         "slug": "hd-maden-mermer",
+        "name": "HD Maden Mermer A.Ş.",
         "description": "Maden ve mermer sektörlerinde entegre üretim tesisleriyle global pazara hitap etmektedir.",
+        "sector": "Mermer & Maden",
         "accentColor": "#57534e",
-        "name": "HD MADEN MERMER A.Åž.",
-        "stats": [
-          {
-            "value": 3,
-            "label": "Tesis"
-          }
-        ],
         "featured": false
       },
       {
-        "sector": "Maden",
         "slug": "mby-maden",
+        "name": "MBY Maden A.Ş.",
         "description": "Kaliteli hammadde Ã¼retimi ile yerel ve uluslararasÄ± sanayinin ihtiyaÃ§larÄ±nÄ± karÅŸÄ±lamaktadÄ±r.",
-        "accentColor": "#b45309",
-        "name": "MBY MADEN A.Åž.",
-        "stats": [
-          {
-            "value": 5,
-            "label": "Ocak"
-          }
-        ],
-        "featured": false
-      },
-      {
         "sector": "Maden",
-        "slug": "yaman-maden",
-        "description": "KapsamlÄ± madencilik faaliyetleri ile Ã¼lkemizin yeraltÄ± zenginliklerini deÄŸerlendirmektedir.",
-        "accentColor": "#9a3412",
-        "name": "YAMAN MADEN SANAYÄ° VE TÄ°CARET A.Åž.",
-        "stats": [
-          {
-            "label": "YÄ±llÄ±k Ãœretim",
-            "suffix": "K",
-            "value": 200
-          }
-        ],
+        "accentColor": "#b45309",
         "featured": false
       },
       {
-        "sector": "Enerji",
+        "slug": "yaman-maden",
+        "name": "Yaman Maden A.Ş.",
+        "description": "KapsamlÄ± madencilik faaliyetleri ile Ã¼lkemizin yeraltÄ± zenginliklerini deÄŸerlendirmektedir.",
+        "sector": "Maden",
+        "accentColor": "#9a3412",
+        "featured": false
+      },
+      {
         "slug": "ymy-enerji",
+        "name": "YMY Enerji A.Ş.",
         "description": "Yenilenebilir ve temiz enerji kaynaklarÄ±na yatÄ±rÄ±m yaparak sÃ¼rdÃ¼rÃ¼lebilir bir gelecek inÅŸa etmektedir.",
+        "sector": "Enerji",
         "accentColor": "#059669",
-        "name": "YMY ENERJÄ° A.Åž.",
-        "stats": [
-          {
-            "value": 450,
-            "label": "Kurulu Güç MW"
-          }
-        ],
         "featured": true
       },
       {
-        "sector": "Maden",
         "slug": "ynr-maden",
+        "name": "YNR Maden A.Ş.",
         "description": "Modern ekipmanlar ve uzman kadrosuyla verimli madencilik operasyonlarÄ± gerÃ§ekleÅŸtirmektedir.",
+        "sector": "Maden",
         "accentColor": "#b45309",
-        "name": "YNR MADEN A.Åž.",
-        "stats": [
-          {
-            "label": "İstihdam",
-            "suffix": "+",
-            "value": 300
-          }
-        ],
         "featured": false
       }
     ],
@@ -787,7 +728,25 @@
     "workingHoursTitle": "Heures d'ouverture",
     "workingHoursDesc": "En semaine 08:00-17:00 | Samedi : 08:00-16:00",
     "rssFeed": "Flux RSS",
-    "woma": "WOMA"
+    "woma": "WOMA",
+    "about": {
+      "title": "DN Holding",
+      "description": "Une holding internationale opérant dans les secteurs de l'exploitation minière, de l'énergie et du marbre."
+    },
+    "quickLinksTitle": "Liens Rapides",
+    "companiesTitle": "Entreprises du Groupe",
+    "contactTitle": "Contact",
+    "address": "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
+    "phone": "+90 258 816 24 14",
+    "email": "info@dnholding.com",
+    "copyright": "© 2026 DN Holding. Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/company/dnholding",
+      "twitter": "https://twitter.com/dnholding",
+      "instagram": "https://www.instagram.com/dnholding"
+    }
   },
   "rss": {
     "title": "DN Holding - Médias et Actualités",

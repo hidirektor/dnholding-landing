@@ -212,8 +212,8 @@
     "readMore": "Devamını Oku",
     "discover": "Keşfet",
     "viewAll": "Tümünü Gör",
-    "contactCta": "Would you like to get in touch?",
-    "contactUs": "Contact Us",
+    "contactCta": "İletişime geçmek ister misiniz?",
+    "contactUs": "Bize Ulaşın",
     "projects": "Projects",
     "share": "Share",
     "scrollDown": "Aşağı kaydır",
@@ -767,6 +767,46 @@
         "featured": true
       },
       {
+        "slug": "2m-uluslararasi-madencilik",
+        "name": "2M Uluslararası Madencilik A.Ş.",
+        "description": "Sürdürülebilir madencilik faaliyetleriyle uluslararası pazarlara hizmet veren şirket.",
+        "sector": "Maden",
+        "accentColor": "#b45309",
+        "featured": false
+      },
+      {
+        "slug": "4t-madencilik",
+        "name": "4T Madencilik A.Ş.",
+        "description": "Doğal kaynakların ekonomiye kazandırılması amacıyla çevreye duyarlı madencilik yapar.",
+        "sector": "Maden",
+        "accentColor": "#9a3412",
+        "featured": false
+      },
+      {
+        "slug": "alm-maden",
+        "name": "ALM Maden A.Ş.",
+        "description": "Doğal taş ve maden sektöründe sürdürülebilir kalite ve güvenin adresi.",
+        "sector": "Maden",
+        "accentColor": "#57534e",
+        "featured": false
+      },
+      {
+        "slug": "hd-maden-mermer",
+        "name": "HD Maden Mermer A.Ş.",
+        "description": "Maden sektöründe entegre üretim tesisleriyle global pazara hitap etmektedir.",
+        "sector": "Maden",
+        "accentColor": "#57534e",
+        "featured": false
+      },
+      {
+        "slug": "mby-maden",
+        "name": "MBY Maden A.Ş.",
+        "description": "Doğal taş ve maden sektöründe sürdürülebilir kalite ve güvenin adresi.",
+        "sector": "Maden",
+        "accentColor": "#9a3412",
+        "featured": false
+      },
+      {
         "slug": "yaman-maden",
         "name": "Yaman Maden A.Ş.",
         "description": "2018 yılından bu yana sektörde ihracat şampiyonluğunu kesintisiz olarak sürdüren şirket.",
@@ -783,33 +823,9 @@
         "featured": true
       },
       {
-        "slug": "4t-madencilik",
-        "name": "4T Madencilik A.Ş.",
-        "description": "Doğal kaynakların ekonomiye kazandırılması amacıyla çevreye duyarlı madencilik yapar.",
-        "sector": "Maden",
-        "accentColor": "#9a3412",
-        "featured": false
-      },
-      {
-        "slug": "demtalya-madencilik",
-        "name": "Demtalya Madencilik A.Ş.",
-        "description": "Uluslararası standartlarda madencilik operasyonları yürütmektedir.",
-        "sector": "Maden",
-        "accentColor": "#b45309",
-        "featured": false
-      },
-      {
-        "slug": "hd-maden",
-        "name": "HD Maden A.Ş.",
-        "description": "Maden sektöründe entegre üretim tesisleriyle global pazara hitap etmektedir.",
-        "sector": "Maden",
-        "accentColor": "#57534e",
-        "featured": false
-      },
-      {
-        "slug": "2m-uluslararasi",
-        "name": "2M Uluslararası Madencilik A.Ş.",
-        "description": "Sürdürülebilir madencilik faaliyetleriyle uluslararası pazarlara hizmet veren şirket.",
+        "slug": "ynr-maden",
+        "name": "YNR Maden A.Ş.",
+        "description": "Doğal taş ve maden sektöründe sürdürülebilir kalite ve güvenin adresi.",
         "sector": "Maden",
         "accentColor": "#b45309",
         "featured": false
@@ -839,22 +855,6 @@
         "description": "Yüksek kaliteli doğal mermer.",
         "category": "Mermer",
         "image": "/assets/products/mermer.jpg"
-      },
-      {
-        "id": "p1",
-        "companySlug": "dn-mermer",
-        "name": "Mermer4675",
-        "description": "Premium quality natural stone.",
-        "category": "Mermer",
-        "image": "/assets/products/products-1.jpg"
-      },
-      {
-        "id": "p2",
-        "companySlug": "dn-mermer",
-        "name": "Mermer4675",
-        "description": "Premium quality natural stone.",
-        "category": "Mermer",
-        "image": "/assets/products/products-2.jpg"
       }
     ],
     "quarries": [
@@ -928,7 +928,25 @@
     "workingHoursTitle": "Çalışma Saatleri",
     "workingHoursDesc": "Haftaiçi 08:00-17:00 | Cumartesi : 08:00-16:00",
     "rssFeed": "RSS Feed",
-    "woma": "WOMA"
+    "woma": "WOMA",
+    "about": {
+      "title": "DN Holding",
+      "description": "Maden, enerji ve mermer sektörlerinde faaliyet gösteren uluslararası bir holding şirketi."
+    },
+    "quickLinksTitle": "Hızlı Bağlantılar",
+    "companiesTitle": "Grup Şirketleri",
+    "contactTitle": "İletişim",
+    "address": "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
+    "phone": "+90 258 816 24 14",
+    "email": "info@dnholding.com",
+    "copyright": "© 2026 DN Holding. Tüm hakları saklıdır.",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/company/dnholding",
+      "twitter": "https://twitter.com/dnholding",
+      "instagram": "https://www.instagram.com/dnholding"
+    }
   },
   "rss": {
     "title": "DN Holding - Medya ve Haberler",
