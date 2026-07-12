@@ -9,6 +9,8 @@ import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
 import trDict from "@/app/dictionaries/tr.json";
 import {notFound} from "next/navigation";
 import Image from "next/image";
+import fs from "fs";
+import path from "path";
 
 export async function generateStaticParams() {
   return trDict.data.companies.map((company) => ({ slug: company.slug }));
@@ -44,6 +46,10 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
   const companyQuarries = dict.data.quarries ? dict.data.quarries.filter((q: any) => q.companySlug === slug) : [];
   const companyProducts = dict.data.products ? dict.data.products.filter((p: any) => p.companySlug === slug) : [];
 
+  const logoPath = `/images/companies/${company.slug}.png`;
+  const fullLogoPath = path.join(process.cwd(), 'public', logoPath);
+  const logoSrc = fs.existsSync(fullLogoPath) ? logoPath : '/logo_dnholding.png';
+
   return (
     <>
       {/* Company Hero */}
@@ -58,7 +64,7 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
             <ScrollReveal>
               <div className="flex flex-col gap-6">
                 <div className="w-32 h-32 rounded-lg bg-white border border-border/50 shadow-sm flex items-center justify-center overflow-hidden p-4">
-                  <Image src="/logo_dnholding.png" alt={`${company.name} logo`} width={128} height={128} className="object-contain" />
+                  <Image src={logoSrc} alt={`${company.name} logo`} width={128} height={128} className="object-contain" />
                 </div>
                 <div>
                   <Badge
