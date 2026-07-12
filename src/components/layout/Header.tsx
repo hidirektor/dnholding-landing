@@ -16,7 +16,7 @@ interface HeaderProps {
 
 const navItems = {
   tr: [
-    { label: "Ana Sayfa", href: "" },
+    { label: "Ana Sayfa", href: "/" },
     { label: "Hakkımızda", href: "/about" },
     {
       label: "Grup Şirketler",
@@ -47,7 +47,7 @@ const navItems = {
     },
   ],
   en: [
-    { label: "Home", href: "" },
+    { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
     {
       label: "Group Companies",
@@ -78,7 +78,7 @@ const navItems = {
     },
   ],
   de: [
-    { label: "Startseite", href: "" },
+    { label: "Startseite", href: "/" },
     { label: "Über Uns", href: "/about" },
     {
       label: "Konzerngesellschaften",
@@ -109,7 +109,7 @@ const navItems = {
     },
   ],
   fr: [
-    { label: "Accueil", href: "" },
+    { label: "Accueil", href: "/" },
     { label: "À Propos", href: "/about" },
     {
       label: "Entreprises du Groupe",
@@ -212,9 +212,8 @@ export function Header({ lang }: HeaderProps) {
   }, []);
 
   const isActive = (href: string) => {
-    const fullPath = `${href}`;
-    if (href === "") return pathname === `/` || pathname === `/`;
-    return pathname.startsWith(fullPath);
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
   };
 
   const switchLanguage = (newLang: string) => {

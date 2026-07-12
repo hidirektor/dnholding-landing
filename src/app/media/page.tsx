@@ -28,6 +28,10 @@ export default async function MediaPage({ params }: { params: Promise<{ slug: st
     { label: dict.nav.media, href: `/media` },
   ];
 
+  const haberler = dict.data.news.filter((a: any) => a.category === "Haberler" || a.category === "Haberler & Duyurular");
+  const fuarlar = dict.data.news.filter((a: any) => a.category === "Fuarlar");
+  const etkinlikler = dict.data.news.filter((a: any) => a.category === "Etkinlikler");
+
   return (
     <>
       <Section variant="dark" padding="none">
@@ -56,25 +60,89 @@ export default async function MediaPage({ params }: { params: Promise<{ slug: st
         </Container>
       </Section>
 
-      <Section variant="default">
-        <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {dict.data.news.map((article: any, index: number) => (
-              <ScrollReveal key={article.slug} delay={index * 80}>
-                <NewsCard
-                  title={article.title}
-                  excerpt={article.excerpt}
-                  date={article.date}
-                  category={article.category}
-                  image={(article as any).image}
-                  slug={article.slug}
-                  lang={locale}
-                />
-              </ScrollReveal>
-            ))}
-          </div>
-        </Container>
-      </Section>
+      {/* Haberler Section */}
+      {haberler.length > 0 && (
+        <Section variant="default" id="haberler">
+          <Container>
+            <ScrollReveal>
+              <div className="mb-12">
+                <Heading level="h2" display>Haberler</Heading>
+              </div>
+            </ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {haberler.map((article: any, index: number) => (
+                <ScrollReveal key={article.slug} delay={index * 80}>
+                  <NewsCard
+                    title={article.title}
+                    excerpt={article.excerpt}
+                    date={article.date}
+                    category={article.category}
+                    image={(article as any).image}
+                    slug={article.slug}
+                    lang={locale}
+                  />
+                </ScrollReveal>
+              ))}
+            </div>
+          </Container>
+        </Section>
+      )}
+
+      {/* Fuarlar Section */}
+      {fuarlar.length > 0 && (
+        <Section variant="surface" id="fuarlar">
+          <Container>
+            <ScrollReveal>
+              <div className="mb-12">
+                <Heading level="h2" display>Fuarlar</Heading>
+              </div>
+            </ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {fuarlar.map((article: any, index: number) => (
+                <ScrollReveal key={article.slug} delay={index * 80}>
+                  <NewsCard
+                    title={article.title}
+                    excerpt={article.excerpt}
+                    date={article.date}
+                    category={article.category}
+                    image={(article as any).image}
+                    slug={article.slug}
+                    lang={locale}
+                  />
+                </ScrollReveal>
+              ))}
+            </div>
+          </Container>
+        </Section>
+      )}
+
+      {/* Etkinlikler Section */}
+      {etkinlikler.length > 0 && (
+        <Section variant="default" id="etkinlikler">
+          <Container>
+            <ScrollReveal>
+              <div className="mb-12">
+                <Heading level="h2" display>Etkinlikler</Heading>
+              </div>
+            </ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {etkinlikler.map((article: any, index: number) => (
+                <ScrollReveal key={article.slug} delay={index * 80}>
+                  <NewsCard
+                    title={article.title}
+                    excerpt={article.excerpt}
+                    date={article.date}
+                    category={article.category}
+                    image={(article as any).image}
+                    slug={article.slug}
+                    lang={locale}
+                  />
+                </ScrollReveal>
+              ))}
+            </div>
+          </Container>
+        </Section>
+      )}
     </>
   );
 }
