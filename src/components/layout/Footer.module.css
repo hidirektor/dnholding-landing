@@ -51,7 +51,7 @@
 }
 
 :global(.dark) .logoImage {
-  filter: brightness(0) invert(1);
+  /* filter: brightness(0) invert(1); removed per user request */
 }
 
 .logoIcon {
