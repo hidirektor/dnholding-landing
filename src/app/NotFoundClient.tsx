@@ -2,6 +2,7 @@
 
 import {useEffect, useState} from "react";
 import {useRouter} from "next/navigation";
+import Image from "next/image";
 
 interface NotFoundClientProps {
   dict: any;
@@ -34,8 +35,14 @@ export function NotFoundClient({ dict }: NotFoundClientProps) {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[var(--background)] text-center p-6 relative z-[100]">
-      <div className="w-24 h-24 mb-8 bg-gradient-to-br from-[#ca8a2a] to-[#a88a3a] rounded-2xl flex items-center justify-center text-white text-2xl font-bold tracking-widest shadow-lg animate-fade-in-down">
-        DN
+      <div className="mb-8 animate-fade-in-down">
+        <Image 
+          src="/logo_dnholding.png" 
+          alt="DN Holding Logo" 
+          width={150} 
+          height={150} 
+          className="object-contain"
+        />
       </div>
       
       <h1 className="text-7xl md:text-9xl font-bold text-[var(--color-text-heading)] mb-6 animate-scale-in">

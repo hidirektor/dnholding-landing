@@ -173,6 +173,9 @@ export default async function HomePage() {
                   {dict.home.news.title}
                 </Heading>
               </div>
+              <p className="text-[var(--text-muted)] text-lg lg:max-w-md font-light lg:text-right">
+                {dict.home.news.subtitle}
+              </p>
             </div>
           </ScrollReveal>
 
@@ -182,7 +185,7 @@ export default async function HomePage() {
                 <NewsCard
                   title={article.title}
                   description={article.excerpt}
-                  image={(article as any).image}
+                  image="/images/hq.jpg"
                   href={`/media/${article.slug}`}
                   category={locale === "tr" ? "Haber" : "News"}
                   readTime={locale === "tr" ? "5 dk okuma" : "5 mins read"}

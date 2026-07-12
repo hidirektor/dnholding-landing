@@ -79,46 +79,40 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
         )}
       </div>
 
-      {/* ─── TILE 2 (Top Mid Wide): cols 5-9, row 1 ─── */}
-      <div className="relative lg:col-span-5 min-h-[250px] lg:min-h-0 rounded-[2rem] overflow-hidden group bg-zinc-900 shadow-lg">
+      {/* ─── TILE 2 (Top Mid Wide): cols 5-12, row 1 ─── */}
+      <div className="relative lg:col-span-8 min-h-[250px] lg:min-h-0 rounded-[2rem] overflow-hidden group bg-[#0a0a0a] shadow-lg p-6 lg:p-10 flex flex-col justify-between">
+        <Link href={`/projects/${p2?.slug}`} className="absolute inset-0 z-20" aria-label={p2?.title} />
         {p2 && (
           <>
             <Image
               src="/images/project2.jpg"
               alt={p2.title}
               fill
-              className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-60 mix-blend-luminosity"
+              className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-50 mix-blend-luminosity"
             />
-            <div className="absolute inset-0 bg-black/30 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/80 to-black/60 pointer-events-none" />
             
-            {/* Mock Map Popup Style */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black/80 backdrop-blur-md border border-white/10 rounded-2xl p-4 w-[85%] max-w-sm z-10 shadow-2xl">
-              <div className="flex justify-between items-start mb-2">
-                <h4 className="text-white font-bold text-sm max-w-[70%] leading-tight line-clamp-1">{p2.title}</h4>
-                <div className="text-right shrink-0">
-                  <p className="text-accent text-xs font-bold">{p2.year}</p>
-                  <p className="text-white/50 text-[10px]">{p2.location}</p>
-                </div>
+            <div className="relative z-10 flex justify-between items-start gap-4">
+              <h3 className="text-white font-bold text-lg lg:text-2xl leading-snug max-w-[70%] uppercase tracking-wider">
+                {p2.title}
+              </h3>
+              <div className="text-right shrink-0 flex flex-col items-end">
+                <span className="text-blue-600 font-bold text-lg lg:text-xl">{p2.year}</span>
+                <span className="text-white/60 text-xs lg:text-sm uppercase tracking-widest mt-1">{p2.location}</span>
               </div>
-              <p className="text-white/60 text-[10px] mb-3 line-clamp-1">{p2.description}</p>
-              <div className="flex justify-end">
-                <Link href={`/projects/${p2.slug}`} className="text-accent text-[10px] uppercase tracking-widest font-semibold hover:text-white transition-colors">
-                  {lang === 'tr' ? 'Projeyi Gör' : 'Explore'}
-                </Link>
-              </div>
+            </div>
+            
+            <p className="relative z-10 text-white/40 text-xs lg:text-sm uppercase tracking-widest mt-8 line-clamp-2 w-full">
+              {p2.title}
+            </p>
+            
+            <div className="relative z-10 flex justify-end w-full mt-auto pt-8">
+              <span className="text-blue-600 text-xs lg:text-sm uppercase tracking-widest font-bold">
+                {lang === 'tr' ? 'Projeyi Gör' : 'Explore'}
+              </span>
             </div>
           </>
         )}
-      </div>
-
-      {/* ─── TILE 3 (Top Right Icon): cols 10-12, row 1 ─── */}
-      <div className="relative lg:col-span-3 min-h-[150px] lg:min-h-0 rounded-[2rem] overflow-hidden bg-[#ca8a2a] flex items-center justify-center shadow-lg p-8 hover:bg-[#b07824] transition-colors cursor-pointer group">
-        <Link href="/about" className="absolute inset-0 z-10" aria-label="About Us"></Link>
-        <div className="w-16 h-16 sm:w-20 sm:h-20 text-white transform group-hover:scale-110 transition-transform duration-500">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L2 12l10 10 10-10L12 2zm0 17.5L4.5 12 12 4.5 19.5 12 12 19.5z" />
-          </svg>
-        </div>
       </div>
 
       {/* ─── TILE 4 (Mid Tall Silo): cols 5-7, row 2 ─── */}
@@ -154,9 +148,7 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/60 pointer-events-none" />
             <Link href={`/projects/${p4.slug}`} className="absolute inset-0 z-10" />
             
-            <div className="absolute top-6 left-6 z-20 text-white font-bold text-lg tracking-tighter">
-              DN<span className="font-light text-white/50">PRO</span>
-            </div>
+
             
             <div className="absolute top-6 right-6 z-20 flex items-center gap-3">
               <span className="text-white text-xs font-bold w-16 text-right leading-tight">
@@ -176,6 +168,68 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
           </>
         )}
       </div>
+
+      {/* ─── TILE 6 (Bottom Factory): cols 1-7, row 3 ─── */}
+      <div className="relative lg:col-span-7 min-h-[250px] lg:min-h-[280px] rounded-[2rem] overflow-hidden group shadow-lg">
+        {p5 && (
+          <>
+            <Image
+              src="/images/project2.jpg"
+              alt={p5.title}
+              fill
+              className="object-cover transition-transform duration-1000 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent pointer-events-none" />
+            
+            <div className="absolute bottom-8 left-8 z-20 text-white max-w-sm">
+              <h3 className="text-2xl sm:text-3xl font-bold leading-tight mb-4">
+                {lang === 'tr' ? 'Verimlilik ve Sürdürülebilirlik Dengesi' : 'Balancing efficiency and sustainability'}
+              </h3>
+              <Link
+                href={`/projects/${p5.slug}`}
+                className="inline-flex items-center gap-2 bg-white text-black px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-accent hover:text-white transition-colors"
+              >
+                <span>dnholding.com</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          </>
+        )}
+      </div>
+
+      {/* ─── TILE 7 (Bottom Text): cols 8-12, row 3 ─── */}
+      <div className="relative lg:col-span-5 min-h-[250px] lg:min-h-[280px] rounded-[2rem] overflow-hidden bg-[#f4f4f4] dark:bg-zinc-900 border border-black/5 dark:border-white/10 shadow-lg p-8 sm:p-10 flex flex-col justify-center">
+        <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white leading-tight mb-4">
+          {lang === 'tr' ? (
+            <>
+              Mütevazı köklerden <span className="text-[#ca8a2a]">endüstri öncüsü</span> olmaya uzanan yolculuk
+            </>
+          ) : (
+            <>
+              From modest origins to becoming <span className="text-[#ca8a2a]">industry frontrunners</span>
+            </>
+          )}
+        </h3>
+        <p className="text-black/60 dark:text-white/60 text-[11px] sm:text-xs leading-relaxed mb-6 line-clamp-4">
+          {dict.home?.about?.description || ""}
+        </p>
+        <div>
+          <Link
+            href="/about"
+            className="inline-flex items-center gap-2 bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-[#ca8a2a] hover:text-white dark:hover:bg-[#ca8a2a] transition-colors"
+          >
+            <span>{lang === 'tr' ? 'Tarihçemizi İncele' : 'Look at timeline'}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </div>
+
 
     </div>
   );
