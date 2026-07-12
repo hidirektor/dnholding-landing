@@ -43,7 +43,7 @@ export function Footer({ lang, dict }: FooterProps) {
           <div className={styles.aboutCol}>
             <Link href={`/`} className={styles.footerLogo}>
               <Image 
-                src="/logo_dnholding-text.png" 
+                src="/assets/image/logo/logo_dnholding-text.png" 
                 alt="DN Holding Logo" 
                 width={200} 
                 height={50} 

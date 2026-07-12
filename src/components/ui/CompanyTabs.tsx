@@ -19,6 +19,27 @@ function getSectorImage(sector: string) {
   return "/images/hq.jpg";
 }
 
+function CompanyLogo({ slug, name, isActive }: { slug: string, name: string, isActive: boolean }) {
+  const [error, setError] = useState(false);
+  const src = error ? "/assets/image/logo/logo_dnholding.png" : `/images/companies/${slug}.png`;
+  
+  return (
+    <div className={cn(
+      "w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden shrink-0 transition-colors p-1.5 border",
+      isActive ? "bg-white border-white" : "bg-white/5 border-white/10 group-hover:bg-white/10 group-hover:border-white/20"
+    )}>
+      <Image 
+        src={src} 
+        alt={`${name} logo`} 
+        width={40} 
+        height={40} 
+        className={cn("object-contain transition-opacity", isActive ? "opacity-100" : "opacity-80 group-hover:opacity-100")}
+        onError={() => setError(true)}
+      />
+    </div>
+  );
+}
+
 export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
   // Get unique sectors
   const sectors = useMemo(() => {
@@ -137,15 +158,7 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
                     : "hover:bg-white/5 text-white/70"
                 )}
               >
-                {/* Index Circle */}
-                <div className={cn(
-                  "w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-colors shrink-0",
-                  isActive
-                    ? "bg-white text-accent"
-                    : "bg-white/10 text-white/50 group-hover:bg-white/20 group-hover:text-white"
-                )}>
-                  {index + 1}
-                </div>
+                <CompanyLogo slug={company.slug} name={company.name} isActive={isActive} />
 
                 <div>
                   <h4 className={cn(
