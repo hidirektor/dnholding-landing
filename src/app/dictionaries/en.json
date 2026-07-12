@@ -817,6 +817,21 @@
     ],
     "news": [
       {
+        "slug": "misir-fuari-2025",
+        "title": "2025 Egypt Fair",
+        "excerpt": "2025 Egypt Fair photos.",
+        "date": "2025-01-01",
+        "category": "Fairs",
+        "featured": false,
+        "image": "/assets/fairs/misir-fuari-2025/1.jpeg",
+        "images": [
+          "/assets/fairs/misir-fuari-2025/1.jpeg",
+          "/assets/fairs/misir-fuari-2025/2.jpeg",
+          "/assets/fairs/misir-fuari-2025/3.jpeg",
+          "/assets/fairs/misir-fuari-2025/4.jpeg"
+        ]
+      },
+      {
         "slug": "mugla-nimbus-ocak-acilisi",
         "title": "Muğla Nimbus Quarry Opening",
         "excerpt": "Muğla Nimbus Quarry Opening event photos.",
@@ -923,8 +938,16 @@
         "date": "2025-02-01",
         "category": "Fuarlar",
         "featured": false,
-        "image": "/assets/events/izfas2025.jpg",
-        "images": []
+        "image": "/assets/fairs/izmir-izfas-2025/1.jpeg",
+        "images": [
+          "/assets/fairs/izmir-izfas-2025/1.jpeg",
+          "/assets/fairs/izmir-izfas-2025/2.jpeg",
+          "/assets/fairs/izmir-izfas-2025/3.jpeg",
+          "/assets/fairs/izmir-izfas-2025/4.jpeg",
+          "/assets/fairs/izmir-izfas-2025/5.jpeg",
+          "/assets/fairs/izmir-izfas-2025/6.jpeg",
+          "/assets/fairs/izmir-izfas-2025/7.jpeg"
+        ]
       },
       {
         "slug": "verona-2025",
@@ -953,8 +976,25 @@
         "date": "2026-01-01",
         "category": "Fuarlar",
         "featured": false,
-        "image": "/assets/events/afyon2026.jpg",
-        "images": []
+        "image": "/assets/fairs/afyon-blok-mermer-fuari-2026/1.jpeg",
+        "images": [
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/1.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/2.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/3.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/4.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/5.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/6.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/7.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/8.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/9.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/10.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/11.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/12.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/13.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/14.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/15.jpeg",
+          "/assets/fairs/afyon-blok-mermer-fuari-2026/16.jpeg"
+        ]
       },
       {
         "slug": "izmir-fuari-2026",
@@ -963,8 +1003,39 @@
         "date": "2026-02-01",
         "category": "Fuarlar",
         "featured": false,
-        "image": "/assets/events/izmir2026.jpg",
-        "images": []
+        "image": "/assets/fairs/izmir-fuari-2026/1.jpeg",
+        "images": [
+          "/assets/fairs/izmir-fuari-2026/1.jpeg",
+          "/assets/fairs/izmir-fuari-2026/2.jpeg",
+          "/assets/fairs/izmir-fuari-2026/3.jpeg",
+          "/assets/fairs/izmir-fuari-2026/4.jpeg",
+          "/assets/fairs/izmir-fuari-2026/5.jpeg",
+          "/assets/fairs/izmir-fuari-2026/6.jpeg",
+          "/assets/fairs/izmir-fuari-2026/7.jpeg",
+          "/assets/fairs/izmir-fuari-2026/8.jpeg",
+          "/assets/fairs/izmir-fuari-2026/9.jpeg",
+          "/assets/fairs/izmir-fuari-2026/10.jpeg",
+          "/assets/fairs/izmir-fuari-2026/11.jpeg",
+          "/assets/fairs/izmir-fuari-2026/12.jpeg",
+          "/assets/fairs/izmir-fuari-2026/13.jpeg",
+          "/assets/fairs/izmir-fuari-2026/14.jpeg",
+          "/assets/fairs/izmir-fuari-2026/15.jpeg",
+          "/assets/fairs/izmir-fuari-2026/16.jpeg",
+          "/assets/fairs/izmir-fuari-2026/17.jpeg",
+          "/assets/fairs/izmir-fuari-2026/18.jpeg",
+          "/assets/fairs/izmir-fuari-2026/19.jpeg",
+          "/assets/fairs/izmir-fuari-2026/20.jpeg",
+          "/assets/fairs/izmir-fuari-2026/21.jpeg",
+          "/assets/fairs/izmir-fuari-2026/22.jpeg",
+          "/assets/fairs/izmir-fuari-2026/23.jpeg",
+          "/assets/fairs/izmir-fuari-2026/24.jpeg",
+          "/assets/fairs/izmir-fuari-2026/25.jpeg",
+          "/assets/fairs/izmir-fuari-2026/26.jpeg",
+          "/assets/fairs/izmir-fuari-2026/27.jpeg",
+          "/assets/fairs/izmir-fuari-2026/28.jpeg",
+          "/assets/fairs/izmir-fuari-2026/29.jpeg",
+          "/assets/fairs/izmir-fuari-2026/30.jpeg"
+        ]
       },
       {
         "slug": "xiamen-2026-new",
@@ -973,8 +1044,18 @@
         "date": "2026-03-01",
         "category": "Fuarlar",
         "featured": false,
-        "image": "/assets/events/xiamen2026_new.jpg",
-        "images": []
+        "image": "/assets/fairs/xiamen-2026-new/1.jpeg",
+        "images": [
+          "/assets/fairs/xiamen-2026-new/1.jpeg",
+          "/assets/fairs/xiamen-2026-new/2.jpeg",
+          "/assets/fairs/xiamen-2026-new/3.jpeg",
+          "/assets/fairs/xiamen-2026-new/4.jpeg",
+          "/assets/fairs/xiamen-2026-new/5.jpeg",
+          "/assets/fairs/xiamen-2026-new/6.jpeg",
+          "/assets/fairs/xiamen-2026-new/7.jpeg",
+          "/assets/fairs/xiamen-2026-new/8.jpeg",
+          "/assets/fairs/xiamen-2026-new/9.jpeg"
+        ]
       },
       {
         "slug": "2024-ihracat-sampiyonu-murat-yener",
@@ -1000,13 +1081,26 @@
         "date": "2024-06-01",
         "category": "News & Announcements",
         "featured": true,
-        "image": "/assets/events/afyon-blok-mermer-fuari/img-1208.heic",
+        "image": "/assets/fairs/afyon-blok-mermer-fuari/1.docx",
         "images": [
-          "/assets/events/afyon-blok-mermer-fuari/img-1208.heic",
-          "/assets/events/afyon-blok-mermer-fuari/img-1213.heic",
-          "/assets/events/afyon-blok-mermer-fuari/img-1219.heic",
-          "/assets/events/afyon-blok-mermer-fuari/img-1222.heic",
-          "/assets/events/afyon-blok-mermer-fuari/img-1234.heic"
+          "/assets/fairs/afyon-blok-mermer-fuari/1.docx",
+          "/assets/fairs/afyon-blok-mermer-fuari/2.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/3.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/4.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/5.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/6.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/7.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/8.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/9.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/10.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/11.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/12.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/13.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/14.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/15.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/16.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/17.heic",
+          "/assets/fairs/afyon-blok-mermer-fuari/18.heic"
         ]
       },
       {
@@ -1016,13 +1110,13 @@
         "date": "2024-06-01",
         "category": "News & Announcements",
         "featured": true,
-        "image": "/assets/events/izmir-fuar-2025/4ac03e42-e208-4c71-a36c-79974ffeb0c3.heic",
+        "image": "/assets/fairs/izmir-fuar-2025/1.heic",
         "images": [
-          "/assets/events/izmir-fuar-2025/4ac03e42-e208-4c71-a36c-79974ffeb0c3.heic",
-          "/assets/events/izmir-fuar-2025/76281752-c8eb-46dd-99da-d070a437cc7d.heic",
-          "/assets/events/izmir-fuar-2025/7b299a2c-8a31-44e6-8b50-83b1326701a3.heic",
-          "/assets/events/izmir-fuar-2025/7fc8350d-abc9-4c0d-bd8c-491e3a48ee3e.heic",
-          "/assets/events/izmir-fuar-2025/c737418c-d0e0-4283-b5b8-3d53a574f698.heic"
+          "/assets/fairs/izmir-fuar-2025/1.heic",
+          "/assets/fairs/izmir-fuar-2025/2.heic",
+          "/assets/fairs/izmir-fuar-2025/3.heic",
+          "/assets/fairs/izmir-fuar-2025/4.heic",
+          "/assets/fairs/izmir-fuar-2025/5.heic"
         ]
       },
       {
@@ -1032,13 +1126,41 @@
         "date": "2024-06-01",
         "category": "News & Announcements",
         "featured": true,
-        "image": "/assets/events/izmir-fuar-2026/img-0491.heic",
+        "image": "/assets/fairs/izmir-fuar-2026/1.heic",
         "images": [
-          "/assets/events/izmir-fuar-2026/img-0491.heic",
-          "/assets/events/izmir-fuar-2026/img-0505.heic",
-          "/assets/events/izmir-fuar-2026/img-0513.heic",
-          "/assets/events/izmir-fuar-2026/img-0515.heic",
-          "/assets/events/izmir-fuar-2026/img-0525.heic"
+          "/assets/fairs/izmir-fuar-2026/1.heic",
+          "/assets/fairs/izmir-fuar-2026/2.heic",
+          "/assets/fairs/izmir-fuar-2026/3.heic",
+          "/assets/fairs/izmir-fuar-2026/4.heic",
+          "/assets/fairs/izmir-fuar-2026/5.heic",
+          "/assets/fairs/izmir-fuar-2026/6.heic",
+          "/assets/fairs/izmir-fuar-2026/7.heic",
+          "/assets/fairs/izmir-fuar-2026/8.heic",
+          "/assets/fairs/izmir-fuar-2026/9.heic",
+          "/assets/fairs/izmir-fuar-2026/10.heic",
+          "/assets/fairs/izmir-fuar-2026/11.heic",
+          "/assets/fairs/izmir-fuar-2026/12.heic",
+          "/assets/fairs/izmir-fuar-2026/13.heic",
+          "/assets/fairs/izmir-fuar-2026/14.heic",
+          "/assets/fairs/izmir-fuar-2026/15.heic",
+          "/assets/fairs/izmir-fuar-2026/16.heic",
+          "/assets/fairs/izmir-fuar-2026/17.heic",
+          "/assets/fairs/izmir-fuar-2026/18.heic",
+          "/assets/fairs/izmir-fuar-2026/19.jpg",
+          "/assets/fairs/izmir-fuar-2026/20.jpg",
+          "/assets/fairs/izmir-fuar-2026/21.heic",
+          "/assets/fairs/izmir-fuar-2026/22.heic",
+          "/assets/fairs/izmir-fuar-2026/23.heic",
+          "/assets/fairs/izmir-fuar-2026/24.heic",
+          "/assets/fairs/izmir-fuar-2026/25.heic",
+          "/assets/fairs/izmir-fuar-2026/26.heic",
+          "/assets/fairs/izmir-fuar-2026/27.heic",
+          "/assets/fairs/izmir-fuar-2026/28.heic",
+          "/assets/fairs/izmir-fuar-2026/29.heic",
+          "/assets/fairs/izmir-fuar-2026/30.heic",
+          "/assets/fairs/izmir-fuar-2026/31.heic",
+          "/assets/fairs/izmir-fuar-2026/32.heic",
+          "/assets/fairs/izmir-fuar-2026/33.heic"
         ]
       },
       {
@@ -1048,13 +1170,21 @@
         "date": "2024-06-01",
         "category": "News & Announcements",
         "featured": true,
-        "image": "/assets/events/xiamen-2026/img-0275.jpg",
+        "image": "/assets/fairs/xiamen-2026/1.jpg",
         "images": [
-          "/assets/events/xiamen-2026/img-0275.jpg",
-          "/assets/events/xiamen-2026/img-0281.jpg",
-          "/assets/events/xiamen-2026/img-0284.jpg",
-          "/assets/events/xiamen-2026/img-0288.jpg",
-          "/assets/events/xiamen-2026/img-0292.jpg"
+          "/assets/fairs/xiamen-2026/1.jpg",
+          "/assets/fairs/xiamen-2026/2.jpg",
+          "/assets/fairs/xiamen-2026/3.jpg",
+          "/assets/fairs/xiamen-2026/4.jpg",
+          "/assets/fairs/xiamen-2026/5.jpg",
+          "/assets/fairs/xiamen-2026/6.jpg",
+          "/assets/fairs/xiamen-2026/7.jpg",
+          "/assets/fairs/xiamen-2026/8.jpeg",
+          "/assets/fairs/xiamen-2026/9.jpeg",
+          "/assets/fairs/xiamen-2026/10.jpeg",
+          "/assets/fairs/xiamen-2026/11.jpeg",
+          "/assets/fairs/xiamen-2026/12.jpeg",
+          "/assets/fairs/xiamen-2026/13.jpeg"
         ]
       }
     ],
