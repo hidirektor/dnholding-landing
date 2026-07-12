@@ -84,14 +84,6 @@ export function ProjectBento({ projects, lang, dict }: ProjectBentoProps) {
         <Link href={`/projects/${p2?.slug}`} className="absolute inset-0 z-20" aria-label={p2?.title} />
         {p2 && (
           <>
-            <Image
-              src="/images/project2.jpg"
-              alt={p2.title}
-              fill
-              className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-50 mix-blend-luminosity"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/80 to-black/60 pointer-events-none" />
-            
             <div className="relative z-10 flex justify-between items-start gap-4">
               <h3 className="text-white font-bold text-lg lg:text-2xl leading-snug max-w-[70%] uppercase tracking-wider">
                 {p2.title}
