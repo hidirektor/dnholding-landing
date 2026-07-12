@@ -17,7 +17,7 @@ const docs: Doc[] = [
       <>
         <h2>1. Giriş</h2>
         <p>
-          DN Holding ("biz", "bizim" veya "şirket") olarak gizliliğinize saygı duyuyoruz ve 
+          DN Holding (&quot;biz&quot;, &quot;bizim&quot; veya &quot;şirket&quot;) olarak gizliliğinize saygı duyuyoruz ve 
           kişisel verilerinizi korumaya kararlıyız. Bu gizlilik politikası, web sitemizi ziyaret 
           ettiğinizde (nereden ziyaret ettiğinizden bağımsız olarak) kişisel verilerinize nasıl 
           bakacağımızı size bildirecek ve gizlilik haklarınız ile yasanın sizi nasıl koruduğu 
@@ -58,13 +58,13 @@ const docs: Doc[] = [
         </p>
         <h2>2. Kullanım Lisansı</h2>
         <p>
-          DN Holding'in web sitesindeki materyallerin (bilgi veya yazılım) bir kopyasını yalnızca 
+          DN Holding&apos;in web sitesindeki materyallerin (bilgi veya yazılım) bir kopyasını yalnızca 
           kişisel, ticari olmayan geçici görüntüleme için geçici olarak indirme izni verilir. 
           Bu, bir mülkiyet devri değil, bir lisans verilmesidir.
         </p>
         <h2>3. Sorumluluk Reddi</h2>
         <p>
-          DN Holding'in web sitesindeki materyaller "olduğu gibi" sağlanmaktadır. 
+          DN Holding&apos;in web sitesindeki materyaller &quot;olduğu gibi&quot; sağlanmaktadır. 
           DN Holding, zımni garantiler veya satılabilirlik, belirli bir amaca uygunluk 
           veya fikri mülkiyet haklarının ihlal edilmemesi dahil olmak üzere hiçbir garanti vermez.
         </p>
@@ -104,7 +104,7 @@ const docs: Doc[] = [
       <>
         <h2>1. Veri Sorumlusunun Kimliği</h2>
         <p>
-          6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, kişisel verileriniz; 
+          6698 sayılı Kişisel Verilerin Korunması Kanunu (&quot;KVKK&quot;) uyarınca, kişisel verileriniz; 
           veri sorumlusu olarak DN Holding tarafından aşağıda açıklanan kapsamda toplanacak ve işlenebilecektir.
         </p>
         <h2>2. Kişisel Verilerin İşlenme Amacı</h2>

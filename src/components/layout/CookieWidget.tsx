@@ -53,7 +53,7 @@ export function CookieWidget({ dict }: CookieWidgetProps) {
           <div className="max-w-[1400px] mx-auto px-6 md:px-8 py-5 flex flex-col lg:flex-row items-center justify-between gap-6">
             
             <div className="flex-1 text-[13px] md:text-sm text-[var(--color-text-secondary)] dark:text-white/80 leading-relaxed">
-              We use cookies to improve your experience on our website. To accept all cookies, click 'Accept All,' alternatively you can set the preferred cookies by clicking on 'Cookie Preference.'
+              We use cookies to improve your experience on our website. To accept all cookies, click &apos;Accept All,&apos; alternatively you can set the preferred cookies by clicking on &apos;Cookie Preference.&apos;
               <br />
               <a href="/privacy" className="text-accent dark:text-[#ca8a2a] underline underline-offset-2 hover:text-accent-light dark:hover:text-[#b07824] mt-2 inline-block">
                 Learn more
