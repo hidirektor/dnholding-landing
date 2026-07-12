@@ -7,13 +7,10 @@ import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
 import {NewsCard} from "@/components/content/NewsCard";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  const lang = await getCurrentLocale();
-  const isTR = lang === "tr";
+  const dict = await getDictionary();
   return {
-    title: isTR ? "Medya & Haberler" : "Media & News",
-    description: isTR
-      ? "DN Holding'den en güncel haberler ve basın bültenleri."
-      : "Latest news and press releases from DN Holding.",
+    title: dict.media.title,
+    description: dict.media.subtitle,
   };
 }
 
@@ -28,9 +25,15 @@ export default async function MediaPage({ params }: { params: Promise<{ slug: st
     { label: dict.nav.media, href: `/media` },
   ];
 
-  const haberler = dict.data.news.filter((a: any) => a.category === "Haberler" || a.category === "Haberler & Duyurular");
-  const fuarlar = dict.data.news.filter((a: any) => a.category === "Fuarlar");
-  const etkinlikler = dict.data.news.filter((a: any) => a.category === "Etkinlikler");
+  const haberler = dict.data.news.filter((a: any) => 
+    a.category.includes(dict.media.tabs.news) ||
+    a.category.includes("Duyuru") || 
+    a.category.includes("Announcements") || 
+    a.category.includes("Ankündigungen") || 
+    a.category.includes("Annonces")
+  );
+  const fuarlar = dict.data.news.filter((a: any) => a.category.includes(dict.media.tabs.fairs));
+  const etkinlikler = dict.data.news.filter((a: any) => a.category.includes(dict.media.tabs.events));
 
   return (
     <>

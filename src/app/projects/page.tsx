@@ -7,13 +7,10 @@ import {BreadcrumbNav} from "@/components/content/BreadcrumbNav";
 import {ProjectCard} from "@/components/content/ProjectCard";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  const lang = await getCurrentLocale();
-  const isTR = lang === "tr";
+  const dict = await getDictionary();
   return {
-    title: isTR ? "Projeler & Referanslar" : "Projects & References",
-    description: isTR
-      ? "DN Holding'in tamamladığı projeler ve referanslar."
-      : "Projects completed and references of DN Holding.",
+    title: dict.projects.title,
+    description: dict.projects.subtitle,
   };
 }
 

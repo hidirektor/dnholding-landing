@@ -12,134 +12,10 @@ import styles from "./Header.module.css";
 
 interface HeaderProps {
   lang: Locale;
+  dict: any;
 }
 
-const navItems = {
-  tr: [
-    { label: "Ana Sayfa", href: "/" },
-    { label: "Hakkımızda", href: "/about" },
-    {
-      label: "Grup Şirketler",
-      href: "/companies",
-      children: [
-        { label: "DN MERMER A.Ş.", href: "/companies/dn-mermer" },
-        { label: "2M ULUSLARASI MADENCİLİK", href: "/companies/2m-uluslararasi-madencilik" },
-        { label: "4T MADENCİLİK A.Ş.", href: "/companies/4t-madencilik" },
-        { label: "ALM MADEN A.Ş.", href: "/companies/alm-maden" },
-        { label: "HD MADEN MERMER A.Ş.", href: "/companies/hd-maden-mermer" },
-        { label: "MBY MADEN A.Ş.", href: "/companies/mby-maden" },
-        { label: "YAMAN MADEN A.Ş.", href: "/companies/yaman-maden" },
-        { label: "YMY ENERJİ A.Ş.", href: "/companies/ymy-enerji" },
-        { label: "YNR MADEN A.Ş.", href: "/companies/ynr-maden" },
-      ],
-    },
-    { label: "Faaliyet Alanları", href: "/business-areas" },
-    { label: "Ürünler/Hizmetler", href: "/products" },
-    { label: "Projeler", href: "/projects" },
-    {
-      label: "Medya",
-      href: "/media",
-      children: [
-        { label: "Haberler", href: "/media#haberler" },
-        { label: "Fuarlar", href: "/media#fuarlar" },
-        { label: "Etkinlikler", href: "/media#etkinlikler" },
-      ],
-    },
-  ],
-  en: [
-    { label: "Home", href: "/" },
-    { label: "About Us", href: "/about" },
-    {
-      label: "Group Companies",
-      href: "/companies",
-      children: [
-        { label: "DN MARBLE INC.", href: "/companies/dn-mermer" },
-        { label: "2M INTL. MINING", href: "/companies/2m-uluslararasi-madencilik" },
-        { label: "4T MINING INC.", href: "/companies/4t-madencilik" },
-        { label: "ALM MINING INC.", href: "/companies/alm-maden" },
-        { label: "HD MINING MARBLE INC.", href: "/companies/hd-maden-mermer" },
-        { label: "MBY MINING INC.", href: "/companies/mby-maden" },
-        { label: "YAMAN MINING INC.", href: "/companies/yaman-maden" },
-        { label: "YMY ENERGY INC.", href: "/companies/ymy-enerji" },
-        { label: "YNR MINING INC.", href: "/companies/ynr-maden" },
-      ],
-    },
-    { label: "Business Areas", href: "/business-areas" },
-    { label: "Products/Services", href: "/products" },
-    { label: "Projects", href: "/projects" },
-    {
-      label: "Media",
-      href: "/media",
-      children: [
-        { label: "News", href: "/media#haberler" },
-        { label: "Fairs", href: "/media#fuarlar" },
-        { label: "Events", href: "/media#etkinlikler" },
-      ],
-    },
-  ],
-  de: [
-    { label: "Startseite", href: "/" },
-    { label: "Über Uns", href: "/about" },
-    {
-      label: "Konzerngesellschaften",
-      href: "/companies",
-      children: [
-        { label: "DN MARMOR", href: "/companies/dn-mermer" },
-        { label: "2M INTL. BERGBAU", href: "/companies/2m-uluslararasi-madencilik" },
-        { label: "4T BERGBAU", href: "/companies/4t-madencilik" },
-        { label: "ALM BERGBAU", href: "/companies/alm-maden" },
-        { label: "HD BERGBAU MARMOR", href: "/companies/hd-maden-mermer" },
-        { label: "MBY BERGBAU", href: "/companies/mby-maden" },
-        { label: "YAMAN BERGBAU", href: "/companies/yaman-maden" },
-        { label: "YMY ENERGIE", href: "/companies/ymy-enerji" },
-        { label: "YNR BERGBAU", href: "/companies/ynr-maden" },
-      ],
-    },
-    { label: "Geschäftsfelder", href: "/business-areas" },
-    { label: "Produkte/Dienstleistungen", href: "/products" },
-    { label: "Projekte", href: "/projects" },
-    {
-      label: "Medien",
-      href: "/media",
-      children: [
-        { label: "Nachrichten", href: "/media#haberler" },
-        { label: "Messen", href: "/media#fuarlar" },
-        { label: "Veranstaltungen", href: "/media#etkinlikler" },
-      ],
-    },
-  ],
-  fr: [
-    { label: "Accueil", href: "/" },
-    { label: "À Propos", href: "/about" },
-    {
-      label: "Entreprises du Groupe",
-      href: "/companies",
-      children: [
-        { label: "DN MARBRE", href: "/companies/dn-mermer" },
-        { label: "2M INTL. EXPLOITATION", href: "/companies/2m-uluslararasi-madencilik" },
-        { label: "4T EXPLOITATION", href: "/companies/4t-madencilik" },
-        { label: "ALM EXPLOITATION", href: "/companies/alm-maden" },
-        { label: "HD EXPLOITATION MARBRE", href: "/companies/hd-maden-mermer" },
-        { label: "MBY EXPLOITATION", href: "/companies/mby-maden" },
-        { label: "YAMAN EXPLOITATION", href: "/companies/yaman-maden" },
-        { label: "YMY ÉNERGIE", href: "/companies/ymy-enerji" },
-        { label: "YNR EXPLOITATION", href: "/companies/ynr-maden" },
-      ],
-    },
-    { label: "Domaines d'Activité", href: "/business-areas" },
-    { label: "Produits/Services", href: "/products" },
-    { label: "Projets", href: "/projects" },
-    {
-      label: "Médias",
-      href: "/media",
-      children: [
-        { label: "Nouvelles", href: "/media#haberler" },
-        { label: "Foires", href: "/media#fuarlar" },
-        { label: "Événements", href: "/media#etkinlikler" },
-      ],
-    },
-  ]
-};
+
 
 const themeLabels: Record<string, { theme: string; language: string }> = {
   tr: { theme: "Tema", language: "Dil" },
@@ -155,7 +31,7 @@ const contactLabels: Record<string, string> = {
   fr: "CONTACTEZ-NOUS",
 };
 
-export function Header({ lang }: HeaderProps) {
+export function Header({ lang, dict }: HeaderProps) {
   const pathname = usePathname();
   const scrollDirection = useScrollDirection();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -167,7 +43,31 @@ export function Header({ lang }: HeaderProps) {
   const router = useRouter();
   const { theme, setTheme, resolvedTheme } = useTheme();
 
-  const items = navItems[lang] || navItems.tr;
+  const items = [
+    { label: dict?.nav?.home || "Home", href: "/" },
+    { label: dict?.nav?.about || "About Us", href: "/about" },
+    {
+      label: dict?.nav?.companies || "Group Companies",
+      href: "/companies",
+      children: dict?.data?.companies?.map((c: any) => ({
+        label: c.name,
+        href: `/companies/${c.slug}`
+      })) || []
+    },
+    { label: dict?.nav?.areas || "Business Areas", href: "/business-areas" },
+    { label: dict?.nav?.products || "Products/Services", href: "/products" },
+    { label: dict?.nav?.projects || "Projects", href: "/projects" },
+    {
+      label: dict?.nav?.media || "Media",
+      href: "/media",
+      children: [
+        { label: dict?.media?.tabs?.news || "News", href: "/media#haberler" },
+        { label: dict?.media?.tabs?.fairs || "Fairs", href: "/media#fuarlar" },
+        { label: dict?.media?.tabs?.events || "Events", href: "/media#etkinlikler" }
+      ]
+    }
+  ];
+
   const labels = themeLabels[lang] || themeLabels.en;
   const contactLabel = contactLabels[lang] || contactLabels.en;
 

@@ -101,7 +101,7 @@ export default async function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col bg-surface text-text transition-colors duration-300">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem storageKey="dn-theme">
-          <Header lang={lang} />
+          <Header lang={lang} dict={dict} />
           <main className="flex-1">{children}</main>
           <Footer lang={lang} dict={dict} />
           <CookieWidget dict={dict} />
