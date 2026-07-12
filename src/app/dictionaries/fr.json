@@ -1078,7 +1078,7 @@
         "name": "Traverten",
         "description": "Doğal ve estetik traverten taşları.",
         "category": "Traverten",
-        "image": "/assets/products/traverten.jpg"
+        "image": "/assets/image/products/traverten.jpg"
       },
       {
         "id": "prod-limra",
@@ -1086,7 +1086,7 @@
         "name": "Limra",
         "description": "Açık renkli, zarif limra taşı.",
         "category": "Limra",
-        "image": "/assets/products/limra.jpg"
+        "image": "/assets/image/products/limra.jpg"
       },
       {
         "id": "prod-mermer",
@@ -1094,7 +1094,7 @@
         "name": "Mermer",
         "description": "Yüksek kaliteli doğal mermer.",
         "category": "Mermer",
-        "image": "/assets/products/mermer.jpg"
+        "image": "/assets/image/products/mermer.jpg"
       },
       {
         "id": "p1",
