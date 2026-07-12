@@ -40,7 +40,9 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
     { label: company.name, href: `/companies/${slug}` },
   ];
 
-  const companyProjects = dict.data.projects.filter((p: any) => p.company === company.name).slice(0, 3);
+  const companyProjects = dict.data.projects ? dict.data.projects.filter((p: any) => p.company === company.name).slice(0, 3) : [];
+  const companyQuarries = dict.data.quarries ? dict.data.quarries.filter((q: any) => q.companySlug === slug) : [];
+  const companyProducts = dict.data.products ? dict.data.products.filter((p: any) => p.companySlug === slug) : [];
 
   return (
     <>
@@ -88,6 +90,62 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
       </Section>
 
 
+      {/* Quarries */}
+      {companyQuarries.length > 0 && (
+        <Section variant="surface">
+          <Container>
+            <ScrollReveal>
+              <div className="mb-12">
+                <Heading level="h2" display>Ocaklarımız</Heading>
+              </div>
+            </ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {companyQuarries.map((quarry: any, idx: number) => (
+                <ScrollReveal key={quarry.slug} delay={idx * 100}>
+                  <div className="bg-white dark:bg-[var(--card-bg)] border border-border dark:border-[var(--card-border)] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div className="h-48 relative bg-slate-100 dark:bg-slate-800">
+                       <Image src={quarry.image || "/assets/placeholder.jpg"} alt={quarry.name} fill className="object-cover" />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold mb-2">{quarry.name}</h3>
+                      <h4 className="text-sm text-accent mb-4 font-semibold">{quarry.title}</h4>
+                      <p className="text-[var(--text-muted)] text-sm whitespace-pre-wrap leading-relaxed">{quarry.description}</p>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </Container>
+        </Section>
+      )}
+
+      {/* Products */}
+      {companyProducts.length > 0 && (
+        <Section variant="default">
+          <Container>
+            <ScrollReveal>
+              <div className="mb-12">
+                <Heading level="h2" display>Ürünlerimiz</Heading>
+              </div>
+            </ScrollReveal>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {companyProducts.map((product: any, idx: number) => (
+                <ScrollReveal key={product.id} delay={idx * 100}>
+                  <div className="bg-[var(--card-bg)] border border-border dark:border-[var(--card-border)] rounded-2xl overflow-hidden group">
+                    <div className="h-64 relative bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                       <Image src={product.image || "/assets/placeholder.jpg"} alt={product.name} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div className="p-6 text-center">
+                      <h3 className="text-xl font-bold">{product.name}</h3>
+                      <p className="text-[var(--text-muted)] text-sm mt-2">{product.description}</p>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </Container>
+        </Section>
+      )}
 
       {/* CTA */}
       <Section variant="default">

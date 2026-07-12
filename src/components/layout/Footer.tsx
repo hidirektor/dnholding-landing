@@ -179,8 +179,9 @@ export function Footer({ lang }: FooterProps) {
   const data = footerData[lang] || footerData.tr;
 
   return (
-    <footer className={styles.footer}>
-      {/* Main Footer */}
+    <div className="dark">
+      <footer className={styles.footer}>
+        {/* Main Footer */}
       <Container>
         <div className={styles.grid}>
           {/* About Column */}
@@ -269,6 +270,10 @@ export function Footer({ lang }: FooterProps) {
                 {data.contact.phone}
               </a>
               <a href={`mailto:${data.contact.email}`}>{data.contact.email}</a>
+              <div className="mt-4 pt-4 border-t border-border/10 dark:border-white/10">
+                <p className="font-semibold text-xs mb-1">Çalışma Saatleri</p>
+                <p className="text-xs opacity-80">Haftaiçi 08:00-17:00 | Cumartesi : 08:00-16:00</p>
+              </div>
             </address>
           </div>
         </div>
@@ -299,7 +304,8 @@ export function Footer({ lang }: FooterProps) {
           </div>
         </Container>
       </div>
-    </footer>
+      </footer>
+    </div>
   );
 }
 

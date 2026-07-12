@@ -187,14 +187,6 @@
   "data": {
     "companies": [
       {
-        "slug": "dn-holding",
-        "name": "DN HOLDING A.Ş",
-        "description": "2024 yılı itibarıyla kurumsal yapılanmasını tamamlayan ve uluslararası alanda güçlü bir pozisyona sahip olan holding.",
-        "sector": "Holding",
-        "accentColor": "#1f2937",
-        "featured": true
-      },
-      {
         "slug": "dn-mermer",
         "name": "DN Mermer A.Ş.",
         "description": "Yarım asra yaklaşan tecrübesiyle traverten ve limra taşlarında uzmanlaşmış, doğal taş sektörünün lider firması.",
@@ -252,6 +244,83 @@
       }
     ],
     "projects": [
+      {
+        "slug": "albavena-usa",
+        "title": "ALBAVENA - USA - SPECIAL VILLA PROJECT",
+        "description": "ALBAVENA - USA - SPECIAL VILLA PROJECT",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "USA",
+        "image": "/assets/projects/albavena/1.jpg",
+        "images": []
+      },
+      {
+        "slug": "monaco-sand-usa",
+        "title": "MONACO SAND - USA - SPECIAL VILLA PROJECT",
+        "description": "MONACO SAND - USA - SPECIAL VILLA PROJECT",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "USA",
+        "image": "/assets/projects/monaco-sand/1.jpg",
+        "images": []
+      },
+      {
+        "slug": "musiad-project-istanbul",
+        "title": "MÜSİAD PROJECT - İSTANBUL",
+        "description": "MÜSİAD PROJECT - İSTANBUL",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Türkiye",
+        "image": "/assets/projects/musiad/1.jpg",
+        "images": []
+      },
+      {
+        "slug": "russia-hotel-project",
+        "title": "RUSSIA - HOTEL PROJECT",
+        "description": "RUSSIA - HOTEL PROJECT",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Russia",
+        "image": "/assets/projects/russia-hotel/1.jpg",
+        "images": []
+      },
+      {
+        "slug": "trade-center-riyad",
+        "title": "TRADE CENTER AND SHOPPING MALL PROJECT - SAUDI ARABIA - RİYAD",
+        "description": "TRADE CENTER AND SHOPPING MALL PROJECT - SAUDI ARABIA - RİYAD",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Saudi Arabia",
+        "image": "/assets/projects/riyad-trade-center/1.jpg",
+        "images": []
+      },
+      {
+        "slug": "travertine-france",
+        "title": "TRAVERTINE - FRANSA - HOTEL LA FABRIQUE",
+        "description": "TRAVERTINE - FRANSA - HOTEL LA FABRIQUE",
+        "company": "DN Mermer",
+        "category": "Traverten",
+        "year": "2024",
+        "location": "France",
+        "image": "/assets/projects/france-hotel/1.jpg",
+        "images": []
+      },
+      {
+        "slug": "turkey-antalya-turkish-bath",
+        "title": "TURKEY ANTALYA - TURKISH BATH PROJECT",
+        "description": "TURKEY ANTALYA - TURKISH BATH PROJECT",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "Türkiye",
+        "image": "/assets/projects/antalya-bath/1.jpg",
+        "images": []
+      },
       {
         "slug": "4-15311-pattern-forest-dr-cypress-111924",
         "title": "15311 Pattern Forest Dr Cypress 111924",
@@ -489,6 +558,126 @@
     ],
     "news": [
       {
+        "slug": "honaz-kaklik-anaokulu",
+        "title": "Honaz Kaklık Anaokulu Proje Protokol İmza Görüntüleri",
+        "excerpt": "Honaz Kaklık Anaokulu Proje Protokol İmza Görüntüleri.",
+        "date": "2024-02-01",
+        "category": "Haberler",
+        "featured": false,
+        "image": "/assets/news/anaokulu.jpg",
+        "images": []
+      },
+      {
+        "slug": "honaz-kaklik-murat-yener-akademi",
+        "title": "Honaz Kaklık Murat YENER Gelişim Akademisi Gündüz Bakımevi Projesi",
+        "excerpt": "Honaz Kaklık Murat YENER Gelişim Akademisi Gündüz Bakımevi Projesi.",
+        "date": "2024-03-01",
+        "category": "Haberler",
+        "featured": false,
+        "image": "/assets/news/akademi.jpg",
+        "images": []
+      },
+      {
+        "slug": "izmir-izfas-2024",
+        "title": "1. İzmir İZFAŞ 2024",
+        "excerpt": "1. İzmir İZFAŞ 2024",
+        "date": "2024-04-01",
+        "category": "Fuarlar",
+        "featured": false,
+        "image": "/assets/events/izfas2024.jpg",
+        "images": []
+      },
+      {
+        "slug": "verona-2024",
+        "title": "2. Verona 2024",
+        "excerpt": "2. Verona 2024",
+        "date": "2024-05-01",
+        "category": "Fuarlar",
+        "featured": false,
+        "image": "/assets/events/verona2024.jpg",
+        "images": []
+      },
+      {
+        "slug": "xiamen-2024",
+        "title": "3. Xiamen 2024",
+        "excerpt": "3. Xiamen 2024",
+        "date": "2024-06-01",
+        "category": "Fuarlar",
+        "featured": false,
+        "image": "/assets/events/xiamen2024.jpg",
+        "images": []
+      },
+      {
+        "slug": "izmir-fuari-2025",
+        "title": "4. İzmir Fuarı 2025",
+        "excerpt": "4. İzmir Fuarı 2025",
+        "date": "2025-01-01",
+        "category": "Fuarlar",
+        "featured": false,
+        "image": "/assets/events/izmir2025.jpg",
+        "images": []
+      },
+      {
+        "slug": "izmir-izfas-2025",
+        "title": "5. İzmir İZFAŞ 2025",
+        "excerpt": "5. İzmir İZFAŞ 2025",
+        "date": "2025-02-01",
+        "category": "Fuarlar",
+        "featured": false,
+        "image": "/assets/events/izfas2025.jpg",
+        "images": []
+      },
+      {
+        "slug": "verona-2025",
+        "title": "6. Verona 2025",
+        "excerpt": "6. Verona 2025",
+        "date": "2025-03-01",
+        "category": "Fuarlar",
+        "featured": false,
+        "image": "/assets/events/verona2025.jpg",
+        "images": []
+      },
+      {
+        "slug": "xiamen-2025",
+        "title": "7. Xiamen 2025",
+        "excerpt": "7. Xiamen 2025",
+        "date": "2025-04-01",
+        "category": "Fuarlar",
+        "featured": false,
+        "image": "/assets/events/xiamen2025.jpg",
+        "images": []
+      },
+      {
+        "slug": "afyon-blok-mermer-fuari-2026",
+        "title": "8. Afyon Blok Mermer Fuarı 2026",
+        "excerpt": "8. Afyon Blok Mermer Fuarı 2026",
+        "date": "2026-01-01",
+        "category": "Fuarlar",
+        "featured": false,
+        "image": "/assets/events/afyon2026.jpg",
+        "images": []
+      },
+      {
+        "slug": "izmir-fuari-2026",
+        "title": "9. İzmir Fuarı 2026",
+        "excerpt": "9. İzmir Fuarı 2026",
+        "date": "2026-02-01",
+        "category": "Fuarlar",
+        "featured": false,
+        "image": "/assets/events/izmir2026.jpg",
+        "images": []
+      },
+      {
+        "slug": "xiamen-2026-new",
+        "title": "10. Xiamen 2026",
+        "excerpt": "10. Xiamen 2026",
+        "date": "2026-03-01",
+        "category": "Fuarlar",
+        "featured": false,
+        "image": "/assets/events/xiamen2026_new.jpg",
+        "images": []
+      },
+      {
         "slug": "2024-ihracat-sampiyonu-murat-yener",
         "title": "2024 Ihracat Sampiyonu Murat Yener",
         "excerpt": "Details for 2024 Ihracat Sampiyonu Murat Yener. Explore our event and news highlights.",
@@ -593,6 +782,30 @@
     ],
     "products": [
       {
+        "id": "prod-traverten",
+        "companySlug": "dn-mermer",
+        "name": "Traverten",
+        "description": "Doğal ve estetik traverten taşları.",
+        "category": "Traverten",
+        "image": "/assets/products/traverten.jpg"
+      },
+      {
+        "id": "prod-limra",
+        "companySlug": "dn-mermer",
+        "name": "Limra",
+        "description": "Açık renkli, zarif limra taşı.",
+        "category": "Limra",
+        "image": "/assets/products/limra.jpg"
+      },
+      {
+        "id": "prod-mermer",
+        "companySlug": "dn-mermer",
+        "name": "Mermer",
+        "description": "Yüksek kaliteli doğal mermer.",
+        "category": "Mermer",
+        "image": "/assets/products/mermer.jpg"
+      },
+      {
         "id": "p1",
         "companySlug": "dn-mermer",
         "name": "Mermer4675",
@@ -607,6 +820,48 @@
         "description": "Premium quality natural stone.",
         "category": "Mermer",
         "image": "/assets/products/products-2.jpg"
+      }
+    ],
+    "quarries": [
+      {
+        "slug": "denizli-traverten-ocaklari",
+        "name": "Denizli Traverten Ocakları",
+        "title": "Ballık Boğazının Kalbinde, Travertenin En Saf Hali",
+        "description": "Türkiye’nin en büyük ocaklarından biri olarak, Denizli travertenine hayat veriyoruz.\nDoğanın sabrıyla şekillenen bu eşsiz taşı, güçle, özenle ve ustalıkla çıkarıyor; her ölçekteki talebi karşılayacak kapasiteyle sunuyoruz.\nMimariye değer katan, mekanlara kimlik kazandıran travertenlerimizle projelerinize doğal bir imza atmaya hazırız.",
+        "companySlug": "dn-mermer",
+        "image": "/assets/quarries/denizli.jpg"
+      },
+      {
+        "slug": "demre-shell-beige-ocagi",
+        "name": "Demre Shell Beige Ocağı",
+        "title": "Demre’nin Derinliklerinden Doğan Beyaz Bir İnci Shell Beige",
+        "description": "Antalya’nın zarif mirası Shell Beige, Demredeki ocaklarımızda gün yüzüne çıkıyor.\nDoğal dokusu, açık renk tonları ve zamansız asaletiyle bu özel taş, Akdeniz’in güneşiyle şekillenip dünyaya açılıyor.\nShell Beige’in zarafetini projelerinize taşırken, Anadolu’nun saklı güzelliklerini mimariyle buluşturuyoruz.",
+        "companySlug": "dn-mermer",
+        "image": "/assets/quarries/demre.jpg"
+      },
+      {
+        "slug": "karaman-traverten-ocaklari",
+        "name": "Karaman Traverten Ocakları",
+        "title": "Karaman Taşkale’den Doğan Doğal Zarafet",
+        "description": "Anadolu’nun taş belleği Taşkale’de 350 hektarlık genişliğe sahip ocak alanımızda, doğanın milyonlarca yılda şekillendirdiği eşsiz bir mirası gün yüzüne çıkarıyoruz.\n\nVeincut kesim tekniği ile işlediğimiz travertenler; zarif su yollarıyla bezenmiş, açık tonların ferahlığını taşıyan özel Light ve Medium seleksiyonlarıyla öne çıkıyor. Her biri doğanın ince işçiliğini ve zamanın sabrını yansıtan bu taşlar, mimari projelere benzersiz bir estetik katmak üzere titizlikle hazırlanıyor.\n\nYüksek üretim kapasitemizle, yurtiçi ve yurtdışı talepleri karşılayabilecek güce sahibiz. Estetikle sağlamlığın, doğallıkla ustalığın buluşma noktası.",
+        "companySlug": "dn-mermer",
+        "image": "/assets/quarries/karaman.jpg"
+      },
+      {
+        "slug": "mugla-kavaklidere-nymbus-ocagi",
+        "name": "Muğla Kavaklıdere Nymbus Ocağı",
+        "title": "Nymbus Ocağı",
+        "description": "DN Mermer bünyesinde faaliyet gösteren Nymbus Ocağı, Muğla ili Kavaklıdere bölgesinde yer almaktadır. Bölgenin zengin doğal taş rezervi sayesinde yüksek kaliteli mermer blok üretimi gerçekleştirilmektedir.\nNymbus Ocağı’ndan çıkarılan mermerler; güçlü yapısı, dengeli damar dağılımı ve doğal yüzey karakteri ile mimari projeler, iç ve dış mekân uygulamaları için ideal çözümler sunar. Üretim süreçlerimiz modern ocak işletmeciliği, sürdürülebilirlik ve kalite kontrol prensipleri doğrultusunda yürütülmektedir.\nDN Mermer, Muğla Kavaklıdere Nymbus Ocağı’nda üretilen doğal mermer blokları ulusal ve uluslararası pazarlara yüksek kalite standartlarında sunmaktadır.",
+        "companySlug": "dn-mermer",
+        "image": "/assets/quarries/mugla.jpg"
+      },
+      {
+        "slug": "isparta-tundra-ocagi",
+        "name": "Isparta Tundra Ocağı",
+        "title": "Tundra Ocağı",
+        "description": "Isparta’nın eşsiz doğal yapısında hayat bulan Tundra mermeri, kendine özgü gri tonları ve sofistike damarlarıyla modern mimarinin vazgeçilmez taşlarından biridir.\nOcaklarımızda özenle çıkarılan Tundra mermerlerimizi, yüksek kalite anlayışımız ve sürdürülebilir üretim yaklaşımımızla dünya projelerine sunuyor; doğal taşın seçkin yorumunu yaşam alanlarına taşıyoruz.",
+        "companySlug": "dn-mermer",
+        "image": "/assets/quarries/isparta.jpg"
       }
     ]
   },

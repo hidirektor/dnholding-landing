@@ -3,12 +3,13 @@ import Link from "next/link";
 export function WhatsAppButton() {
   return (
     <Link
-      href="https://wa.me/905000000000" // Placeholder number
+      href="https://wa.me/905321136846"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-[104px] right-0 z-50 flex items-center justify-center w-14 h-14 bg-white dark:bg-primary-dark shadow-[var(--shadow-large)] border border-border dark:border-white/10 border-r-0 rounded-l-3xl transition-transform hover:scale-110 duration-300 group"
+      className="fixed bottom-[104px] right-0 z-50 flex items-center justify-center h-14 px-4 bg-white dark:bg-primary-dark shadow-[var(--shadow-large)] border border-border dark:border-white/10 border-r-0 rounded-l-3xl transition-transform hover:scale-105 duration-300 group gap-2"
       aria-label="Contact us on WhatsApp"
     >
+      <span className="text-sm font-semibold text-slate-700 dark:text-slate-200 hidden sm:block">Sales & Marketing</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="28"
