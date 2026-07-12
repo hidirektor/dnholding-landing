@@ -376,8 +376,14 @@
         "category": "Mermer",
         "year": "2024",
         "location": "Russia",
-        "image": "/assets/projects/russia-hotel/1.jpg",
-        "images": []
+        "image": "/assets/projects/russia-hotel-project/1.jpeg",
+        "images": [
+          "/assets/projects/russia-hotel-project/1.jpeg",
+          "/assets/projects/russia-hotel-project/2.jpeg",
+          "/assets/projects/russia-hotel-project/3.jpeg",
+          "/assets/projects/russia-hotel-project/4.jpeg",
+          "/assets/projects/russia-hotel-project/5.jpeg"
+        ]
       },
       {
         "slug": "trade-center-riyad",
@@ -387,8 +393,22 @@
         "category": "Mermer",
         "year": "2024",
         "location": "Saudi Arabia",
-        "image": "/assets/projects/riyad-trade-center/1.jpg",
-        "images": []
+        "image": "/assets/projects/trade-center-riyad/1.jpeg",
+        "images": [
+          "/assets/projects/trade-center-riyad/1.jpeg",
+          "/assets/projects/trade-center-riyad/2.jpeg",
+          "/assets/projects/trade-center-riyad/3.jpeg",
+          "/assets/projects/trade-center-riyad/4.jpeg",
+          "/assets/projects/trade-center-riyad/5.jpeg",
+          "/assets/projects/trade-center-riyad/6.jpeg",
+          "/assets/projects/trade-center-riyad/7.jpeg",
+          "/assets/projects/trade-center-riyad/8.jpeg",
+          "/assets/projects/trade-center-riyad/9.jpeg",
+          "/assets/projects/trade-center-riyad/10.jpeg",
+          "/assets/projects/trade-center-riyad/11.jpeg",
+          "/assets/projects/trade-center-riyad/12.jpeg",
+          "/assets/projects/trade-center-riyad/13.jpeg"
+        ]
       },
       {
         "slug": "travertine-france",
@@ -398,8 +418,15 @@
         "category": "Traverten",
         "year": "2024",
         "location": "France",
-        "image": "/assets/projects/france-hotel/1.jpg",
-        "images": []
+        "image": "/assets/projects/travertine-france/1.jpeg",
+        "images": [
+          "/assets/projects/travertine-france/1.jpeg",
+          "/assets/projects/travertine-france/2.jpeg",
+          "/assets/projects/travertine-france/3.jpeg",
+          "/assets/projects/travertine-france/4.jpeg",
+          "/assets/projects/travertine-france/5.jpeg",
+          "/assets/projects/travertine-france/6.jpeg"
+        ]
       },
       {
         "slug": "turkey-antalya-turkish-bath",
@@ -409,8 +436,13 @@
         "category": "Mermer",
         "year": "2024",
         "location": "Türkiye",
-        "image": "/assets/projects/antalya-bath/1.jpg",
-        "images": []
+        "image": "/assets/projects/turkey-antalya-turkish-bath/1.jpeg",
+        "images": [
+          "/assets/projects/turkey-antalya-turkish-bath/1.jpeg",
+          "/assets/projects/turkey-antalya-turkish-bath/2.jpeg",
+          "/assets/projects/turkey-antalya-turkish-bath/3.jpeg",
+          "/assets/projects/turkey-antalya-turkish-bath/4.jpeg"
+        ]
       },
       {
         "slug": "4-15311-pattern-forest-dr-cypress-111924",
