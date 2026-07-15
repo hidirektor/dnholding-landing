@@ -74,7 +74,8 @@
         "4T Madencilik A.Ş.",
         "Demtalya Madencilik A.Ş.",
         "HD Maden A.Ş.",
-        "2M Uluslararası Madencilik A.Ş."
+        "2M Uluslararası Madencilik A.Ş.",
+        "Stoneline"
       ]
     },
     "vision": {
@@ -299,6 +300,14 @@
         "sector": "Maden",
         "accentColor": "#b45309",
         "featured": false
+      },
+      {
+        "slug": "stoneline",
+        "name": "Stoneline",
+        "description": "Stoneline is an important brand of our group specializing in the natural stone sector.",
+        "sector": "Mermer",
+        "accentColor": "#64748b",
+        "featured": true
       }
     ],
     "projects": [
