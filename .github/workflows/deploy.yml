@@ -16,7 +16,10 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t dnholding-landing:latest .
+          docker build \
+            --build-arg NEXT_PUBLIC_CLOUDFLARE_SITE_KEY="${{ secrets.NEXT_PUBLIC_CLOUDFLARE_SITE_KEY }}" \
+            --build-arg NEXT_PUBLIC_CLOUDFLARE_SECRET_KEY="${{ secrets.NEXT_PUBLIC_CLOUDFLARE_SECRET_KEY }}" \
+            -t dnholding-landing:latest .
 
       - name: Stop and Remove Old Container
         run: |
@@ -29,6 +32,8 @@ jobs:
             --name dnholding-landing \
             --restart unless-stopped \
             -p 3000:3000 \
+            -e NEXT_PUBLIC_CLOUDFLARE_SITE_KEY="${{ secrets.NEXT_PUBLIC_CLOUDFLARE_SITE_KEY }}" \
+            -e NEXT_PUBLIC_CLOUDFLARE_SECRET_KEY="${{ secrets.NEXT_PUBLIC_CLOUDFLARE_SECRET_KEY }}" \
             dnholding-landing:latest
 
       - name: Clean up unused Docker images
