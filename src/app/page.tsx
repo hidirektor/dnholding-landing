@@ -36,6 +36,7 @@ export default async function HomePage() {
           suffix: stat.suffix,
           prefix: stat.prefix,
         }))}
+        bgVideo="/assets/videos/hero-bg-2.mp4"
       />
 
       {/* ─── Business Areas ─── */}

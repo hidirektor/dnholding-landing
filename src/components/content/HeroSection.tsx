@@ -21,6 +21,7 @@ interface HeroSectionProps {
     suffix?: string;
     prefix?: string;
   }[];
+  bgVideo?: string;
 }
 
 export function HeroSection({
@@ -33,6 +34,7 @@ export function HeroSection({
   scrollText,
   variant = "default",
   bgImage = "/assets/image/background/hero-bg.jpg",
+  bgVideo,
   stats,
 }: HeroSectionProps) {
   return (
@@ -44,14 +46,26 @@ export function HeroSection({
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <div className={`absolute inset-0 z-10 ${variant === "bottom" ? "bg-black/60" : "bg-black/40"}`} />
-        <Image
-          src={bgImage}
-          alt={title || "DN Holding Epic Quarry"}
-          fill
-          className="object-cover"
-          priority
-          quality={100}
-        />
+        {bgVideo ? (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover scale-[1.35]"
+          >
+            <source src={bgVideo} type="video/mp4" />
+          </video>
+        ) : (
+          <Image
+            src={bgImage}
+            alt={title || "DN Holding Epic Quarry"}
+            fill
+            className="object-cover"
+            priority
+            quality={100}
+          />
+        )}
       </div>
 
       <Container className={`relative z-20 flex-1 flex flex-col w-full ${
