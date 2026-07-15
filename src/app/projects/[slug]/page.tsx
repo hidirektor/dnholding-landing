@@ -79,7 +79,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <Container narrow>
           <ScrollReveal>
             <div className="prose prose-lg max-w-none">
-              <p className="text-[var(--text-muted)] text-lg leading-relaxed">
+              <p className="text-[var(--text-muted)] text-lg leading-relaxed whitespace-pre-line">
                 {project.description}
               </p>
             </div>
