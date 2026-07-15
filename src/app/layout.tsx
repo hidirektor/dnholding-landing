@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const lang = await getCurrentLocale();
 
   const titleByLang: Record<string, string> = {
-    tr: "DN Holding | Hamdan Mükemmele",
+    tr: "DN Holding | Küresel Değer, Kalıcı Etki",
     en: "DN Holding | From Raw to Perfect",
     de: "DN Holding | Von Roh zu Perfekt",
     fr: "DN Holding | Du Brut à la Perfection",

@@ -23,7 +23,7 @@ const businessAreas: Record<string, { icon: React.ReactNode; image: string; titl
   tr: [
     {
       icon: <IconConstruction />,
-      image: "/assets/image/sector/marble-block.jpg",
+      image: "/assets/image/sector/section-mermer.jpeg",
       title: "Mermer",
       description:
         "Dünya standartlarında yüksek kaliteli mermer üretimi ve ihracatıyla projelerinize estetik ve değer katıyoruz.",
@@ -37,7 +37,7 @@ const businessAreas: Record<string, { icon: React.ReactNode; image: string; titl
     },
     {
       icon: <IconEnergy />,
-      image: "/assets/image/sector/solar-plant.jpg",
+      image: "/assets/image/sector/section-energy.jpeg",
       title: "Enerji",
       description:
         "Yenilenebilir enerji yatırımları, enerji üretim tesisleri ve enerji dağıtım altyapıları ile sürdürülebilir geleceğe katkıda bulunuyoruz.",
@@ -46,7 +46,7 @@ const businessAreas: Record<string, { icon: React.ReactNode; image: string; titl
   en: [
     {
       icon: <IconConstruction />,
-      image: "/assets/image/sector/marble-block.jpg",
+      image: "/assets/image/sector/section-mermer.jpeg",
       title: "Marble",
       description:
         "We add aesthetics and value to your projects with our world-class high-quality marble production and export.",
@@ -60,7 +60,7 @@ const businessAreas: Record<string, { icon: React.ReactNode; image: string; titl
     },
     {
       icon: <IconEnergy />,
-      image: "/assets/image/sector/solar-plant.jpg",
+      image: "/assets/image/sector/section-energy.jpeg",
       title: "Energy",
       description:
         "Contributing to a sustainable future with renewable energy investments, power generation facilities, and energy distribution infrastructure.",
