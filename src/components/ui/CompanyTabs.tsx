@@ -19,6 +19,18 @@ function getSectorImage(sector: string) {
   return "/assets/image/background/hero-bg.jpg";
 }
 
+const companyImages: Record<string, string> = {
+  "dn-mermer": "/assets/image/sector/marble-block.jpg",
+  "2m-uluslararasi-madencilik": "/assets/image/sector/chrome-ore.jpg",
+  "4t-madencilik": "/assets/quarries/karaman.jpg",
+  "alm-maden": "/assets/quarries/isparta.jpg",
+  "hd-maden-mermer": "/assets/quarries/demre.jpg",
+  "mby-maden": "/assets/quarries/denizli.jpg",
+  "yaman-maden": "/assets/about/about-1.jpg",
+  "ymy-enerji": "/assets/image/sector/solar-plant.jpg",
+  "ynr-maden": "/assets/about/about-2.jpg",
+};
+
 function CompanyLogo({ slug, name, isActive }: { slug: string, name: string, isActive: boolean }) {
   const [error, setError] = useState(false);
   const src = error ? "/assets/image/logo/logo_dnholding.png" : `/assets/image/companies/${slug}.png`;
@@ -71,7 +83,7 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
         {/* Background Image */}
         {activeCompany && (
           <Image
-            src={getSectorImage(activeCompany.sector)}
+            src={activeCompany.image || companyImages[activeCompany.slug] || getSectorImage(activeCompany.sector)}
             alt={activeCompany.name}
             fill
             className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-80 mix-blend-luminosity"

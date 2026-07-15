@@ -68,7 +68,6 @@
         "Ayrıca holding bünyesindeki şirketler:"
       ],
       "companies": [
-        "DN HOLDING A.Ş",
         "DN Mermer A.Ş.",
         "Yaman Maden A.Ş.",
         "YMY Enerji A.Ş.",
@@ -1106,46 +1105,6 @@
         "featured": true
       },
       {
-        "slug": "2m-uluslararasi-madencilik",
-        "name": "2M Uluslararası Madencilik A.Ş.",
-        "description": "Sürdürülebilir madencilik faaliyetleriyle uluslararası pazarlara hizmet veren şirket.",
-        "sector": "Maden",
-        "accentColor": "#b45309",
-        "featured": false
-      },
-      {
-        "slug": "4t-madencilik",
-        "name": "4T Madencilik A.Ş.",
-        "description": "Doğal kaynakların ekonomiye kazandırılması amacıyla çevreye duyarlı madencilik yapar.",
-        "sector": "Maden",
-        "accentColor": "#9a3412",
-        "featured": false
-      },
-      {
-        "slug": "alm-maden",
-        "name": "ALM Maden A.Ş.",
-        "description": "Doğal taş ve maden sektöründe sürdürülebilir kalite ve güvenin adresi.",
-        "sector": "Maden",
-        "accentColor": "#57534e",
-        "featured": false
-      },
-      {
-        "slug": "hd-maden-mermer",
-        "name": "HD Maden Mermer A.Ş.",
-        "description": "Maden sektöründe entegre üretim tesisleriyle global pazara hitap etmektedir.",
-        "sector": "Maden",
-        "accentColor": "#57534e",
-        "featured": false
-      },
-      {
-        "slug": "mby-maden",
-        "name": "MBY Maden A.Ş.",
-        "description": "Doğal taş ve maden sektöründe sürdürülebilir kalite ve güvenin adresi.",
-        "sector": "Maden",
-        "accentColor": "#9a3412",
-        "featured": false
-      },
-      {
         "slug": "yaman-maden",
         "name": "Yaman Maden A.Ş.",
         "description": "2018 yılından bu yana sektörde ihracat şampiyonluğunu kesintisiz olarak sürdüren şirket.",
@@ -1162,9 +1121,33 @@
         "featured": true
       },
       {
-        "slug": "ynr-maden",
-        "name": "YNR Maden A.Ş.",
-        "description": "Doğal taş ve maden sektöründe sürdürülebilir kalite ve güvenin adresi.",
+        "slug": "4t-madencilik",
+        "name": "4T Madencilik A.Ş.",
+        "description": "Doğal kaynakların ekonomiye kazandırılması amacıyla çevreye duyarlı madencilik yapar.",
+        "sector": "Maden",
+        "accentColor": "#9a3412",
+        "featured": false
+      },
+      {
+        "slug": "demtalya-madencilik",
+        "name": "Demtalya Madencilik A.Ş.",
+        "description": "Doğal taş ve maden sektöründe hizmet vermektedir.",
+        "sector": "Maden",
+        "accentColor": "#9a3412",
+        "featured": false
+      },
+      {
+        "slug": "hd-maden-mermer",
+        "name": "HD Maden A.Ş.",
+        "description": "Maden sektöründe entegre üretim tesisleriyle global pazara hitap etmektedir.",
+        "sector": "Maden",
+        "accentColor": "#57534e",
+        "featured": false
+      },
+      {
+        "slug": "2m-uluslararasi-madencilik",
+        "name": "2M Uluslararası Madencilik A.Ş.",
+        "description": "Sürdürülebilir madencilik faaliyetleriyle uluslararası pazarlara hizmet veren şirket.",
         "sector": "Maden",
         "accentColor": "#b45309",
         "featured": false

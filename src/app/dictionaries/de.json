@@ -119,7 +119,6 @@
         "Adopting sustainable production as a responsibility, DN Holding also reflects its environmentally sensitive approach in its energy policies. Currently meeting 40% of its annual energy needs with its own Rooftop Solar Power Plant project, the holding aims to produce energy twice as much as its own consumption with new solar power plant projects continuing in three different locations. With these projects, which will be commissioned at the end of 2026, it aims not only to meet its own needs but also to make a meaningful contribution to the country's energy."
       ],
       "companies": [
-        "DN HOLDING A.Ş",
         "DN Mermer A.Ş.",
         "Yaman Maden A.Ş.",
         "YMY Enerji A.Ş.",
@@ -238,46 +237,6 @@
         "featured": true
       },
       {
-        "slug": "2m-uluslararasi-madencilik",
-        "name": "2M Uluslararası Madencilik A.Ş.",
-        "description": "Uluslararası standartlarda, sürdürülebilir madencilik faaliyetleri yürütmektedir.",
-        "sector": "Maden",
-        "accentColor": "#b45309",
-        "featured": true
-      },
-      {
-        "slug": "4t-madencilik",
-        "name": "4T Madencilik A.Ş.",
-        "description": "DoÄŸal kaynaklarÄ±n ekonomiye kazandÄ±rÄ±lmasÄ± amacÄ±yla Ã§evreye duyarlÄ± madencilik yapar.",
-        "sector": "Maden",
-        "accentColor": "#9a3412",
-        "featured": true
-      },
-      {
-        "slug": "alm-maden",
-        "name": "ALM Maden A.Ş.",
-        "description": "YenilikÃ§i teknolojilerle maden arama, Ã§Ä±karma ve zenginleÅŸtirme projeleri yÃ¼rÃ¼tmektedir.",
-        "sector": "Maden",
-        "accentColor": "#854d0e",
-        "featured": false
-      },
-      {
-        "slug": "hd-maden-mermer",
-        "name": "HD Maden Mermer A.Ş.",
-        "description": "Maden ve mermer sektörlerinde entegre üretim tesisleriyle global pazara hitap etmektedir.",
-        "sector": "Mermer & Maden",
-        "accentColor": "#57534e",
-        "featured": false
-      },
-      {
-        "slug": "mby-maden",
-        "name": "MBY Maden A.Ş.",
-        "description": "Kaliteli hammadde Ã¼retimi ile yerel ve uluslararasÄ± sanayinin ihtiyaÃ§larÄ±nÄ± karÅŸÄ±lamaktadÄ±r.",
-        "sector": "Maden",
-        "accentColor": "#b45309",
-        "featured": false
-      },
-      {
         "slug": "yaman-maden",
         "name": "Yaman Maden A.Ş.",
         "description": "KapsamlÄ± madencilik faaliyetleri ile Ã¼lkemizin yeraltÄ± zenginliklerini deÄŸerlendirmektedir.",
@@ -294,12 +253,36 @@
         "featured": true
       },
       {
-        "slug": "ynr-maden",
-        "name": "YNR Maden A.Ş.",
-        "description": "Modern ekipmanlar ve uzman kadrosuyla verimli madencilik operasyonlarÄ± gerÃ§ekleÅŸtirmektedir.",
+        "slug": "4t-madencilik",
+        "name": "4T Madencilik A.Ş.",
+        "description": "DoÄŸal kaynaklarÄ±n ekonomiye kazandÄ±rÄ±lmasÄ± amacÄ±yla Ã§evreye duyarlÄ± madencilik yapar.",
+        "sector": "Maden",
+        "accentColor": "#9a3412",
+        "featured": true
+      },
+      {
+        "slug": "demtalya-madencilik",
+        "name": "Demtalya Madencilik A.Ş.",
+        "description": "Bietet Dienstleistungen im Naturstein- und Bergbausektor an.",
+        "sector": "Maden",
+        "accentColor": "#9a3412",
+        "featured": false
+      },
+      {
+        "slug": "hd-maden-mermer",
+        "name": "HD Maden A.Ş.",
+        "description": "Maden ve mermer sektörlerinde entegre üretim tesisleriyle global pazara hitap etmektedir.",
+        "sector": "Mermer & Maden",
+        "accentColor": "#57534e",
+        "featured": false
+      },
+      {
+        "slug": "2m-uluslararasi-madencilik",
+        "name": "2M Uluslararası Madencilik A.Ş.",
+        "description": "Uluslararası standartlarda, sürdürülebilir madencilik faaliyetleri yürütmektedir.",
         "sector": "Maden",
         "accentColor": "#b45309",
-        "featured": false
+        "featured": true
       }
     ],
     "projects": [
