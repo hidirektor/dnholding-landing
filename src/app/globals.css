@@ -6,16 +6,16 @@
    ============================================ */
 
 @theme inline {
-  /* ─── Color Palette (Corporate Blue & White) ─── */
+  /* ─── Color Palette (Corporate Blue & Gold) ─── */
   --color-primary: #0f2b4c;
   --color-primary-light: #163f6e;
-  --color-primary-dark: #0a192f;
-  --color-accent: #2563eb;
-  --color-accent-light: #3b82f6;
-  --color-accent-dark: #1d4ed8;
+  --color-primary-dark: #071629;
+  --color-accent: #ca8a2a;
+  --color-accent-light: #dfa03b;
+  --color-accent-dark: #a66e1d;
   --color-surface: #ffffff;
-  --color-surface-dark: #f8fafc;
-  --color-surface-darker: #f1f5f9;
+  --color-surface-dark: #fbfbfb;
+  --color-surface-darker: #f4f4f4;
   --color-text: #0f172a;
   --color-text-secondary: #475569;
   --color-text-light: #94a3b8;
@@ -24,7 +24,7 @@
   --color-border-light: #f1f5f9;
   --color-success: #10b981;
   --color-error: #ef4444;
-  --color-overlay: rgba(15, 43, 76, 0.85);
+  --color-overlay: rgba(15, 43, 76, 0.90);
 
   /* ─── Typography ─── */
   --font-outfit: "Outfit", sans-serif;
@@ -53,7 +53,7 @@
   --shadow-subtle: 0 1px 2px 0 rgba(15, 43, 76, 0.03);
   --shadow-medium: 0 4px 12px rgba(15, 43, 76, 0.05);
   --shadow-large: 0 8px 30px rgba(15, 43, 76, 0.08);
-  --shadow-glow: 0 0 20px rgba(37, 99, 235, 0.2);
+  --shadow-glow: 0 0 20px rgba(202, 138, 42, 0.2);
 
   /* ─── Border Radius ─── */
   --radius-sm: 0.125rem;
@@ -96,11 +96,11 @@
   --accordion-bg-hover: #f8fafc;
   --accordion-bg-active: #ffffff;
   --accordion-border: #e2e8f0;
-  --accordion-border-hover: #2563eb;
+  --accordion-border-hover: #ca8a2a;
   --accordion-icon-bg: #f1f5f9;
   --accordion-icon-color: #475569;
   --accordion-text: #0f172a;
-  --accordion-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.1);
+  --accordion-shadow: 0 10px 25px -5px rgba(202, 138, 42, 0.1);
 
   /* Settings Panel */
   --settings-bg: #ffffff;
@@ -151,7 +151,7 @@
   --accordion-bg-hover: #163f6e;
   --accordion-bg-active: #0f2b4c;
   --accordion-border: #1e3a8a;
-  --accordion-border-hover: #3b82f6;
+  --accordion-border-hover: #dfa03b;
   --accordion-icon-bg: rgba(255, 255, 255, 0.1);
   --accordion-icon-color: #f8fafc;
   --accordion-text: #ffffff;
@@ -207,12 +207,12 @@ body {
 
 /* ─── Selection ─── */
 ::selection {
-  background-color: rgba(37, 99, 235, 0.2);
+  background-color: rgba(202, 138, 42, 0.2);
   color: var(--color-primary);
 }
 
 .dark ::selection {
-  background-color: rgba(59, 130, 246, 0.3);
+  background-color: rgba(223, 160, 59, 0.3);
   color: #ffffff;
 }
 
@@ -337,8 +337,8 @@ body {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.3); }
-  50% { box-shadow: 0 0 20px 4px rgba(37, 99, 235, 0.15); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(202, 138, 42, 0.3); }
+  50% { box-shadow: 0 0 20px 4px rgba(202, 138, 42, 0.15); }
 }
 
 @keyframes float {

@@ -7,6 +7,7 @@ import {Section} from "@/components/layout/Section";
 import {Heading} from "@/components/ui/Heading";
 import {Card} from "@/components/ui/Card";
 import {Button} from "@/components/ui/Button";
+import {ProductionProcess} from "@/components/content/ProductionProcess";
 
 interface Product {
   id: string;
@@ -52,6 +53,15 @@ export function ProductsClient({
           </Container>
         </div>
       </Section>
+
+      {/* Production Process Section */}
+      {dict.production && (
+        <ProductionProcess 
+          title={dict.production.title} 
+          subtitle={dict.production.subtitle} 
+          steps={dict.production.steps} 
+        />
+      )}
 
       <Section variant="default" padding="default">
         <Container>

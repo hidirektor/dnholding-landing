@@ -31,7 +31,16 @@ export function ProjectCard({ title, description, company, category, image, slug
       <div className="absolute inset-x-4 bottom-4 p-6 z-20 flex flex-col justify-end bg-white/70 dark:bg-black/40 backdrop-blur-xl rounded-2xl border border-white/40 dark:border-white/10 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-[var(--ease-premium)]">
         <div className="flex flex-wrap gap-2 mb-3">
           <Badge variant="accent" className="bg-accent text-white border-none shadow-sm">{category}</Badge>
-          <Badge variant="outline" className="text-primary dark:text-white/90 border-primary/20 dark:border-white/20 bg-white/50 dark:bg-white/5">{company}</Badge>
+          {!(company === "DN Mermer" && (
+            category.toLowerCase().includes("mermer") || 
+            category.toLowerCase().includes("traverten") || 
+            category.toLowerCase().includes("marble") || 
+            category.toLowerCase().includes("travertine")
+          )) && (
+            <Badge variant="outline" className="text-primary dark:text-white/90 border-primary/20 dark:border-white/20 bg-white/50 dark:bg-white/5">
+              {company}
+            </Badge>
+          )}
         </div>
         
         <h3 className="text-xl font-bold text-primary dark:text-white mb-2 font-display group-hover:text-accent transition-colors">{title}</h3>

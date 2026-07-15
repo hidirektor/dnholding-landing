@@ -83,9 +83,10 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
                 {article.excerpt}
               </p>
               <div className="border-t border-border pt-6">
-                <p className="text-[var(--text-muted)] leading-relaxed whitespace-pre-line">
-                  {(article as any).content || article.excerpt}
-                </p>
+                <div 
+                  className="text-[var(--text-muted)] leading-relaxed whitespace-pre-line space-y-4"
+                  dangerouslySetInnerHTML={{ __html: (article as any).content || article.excerpt }}
+                />
               </div>
             </article>
           </ScrollReveal>

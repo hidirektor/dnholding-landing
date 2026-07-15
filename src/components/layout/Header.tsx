@@ -246,7 +246,7 @@ export function Header({ lang, dict }: HeaderProps) {
               aria-label="DN Holding Home"
             >
               <Image 
-                src="/assets/image/logo/logo_dnholding-text.png" 
+                src="/assets/image/logo/dnholding_v2.png" 
                 alt="DN Holding Logo" 
                 width={200} 
                 height={50} 
