@@ -299,14 +299,6 @@
         "sector": "Maden",
         "accentColor": "#b45309",
         "featured": false
-      },
-      {
-        "slug": "stoneline",
-        "name": "Stoneline",
-        "description": "Stoneline is an important brand of our group specializing in the natural stone sector.",
-        "sector": "Marble",
-        "accentColor": "#64748b",
-        "featured": true
       }
     ],
     "projects": [
