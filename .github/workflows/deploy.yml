@@ -1,0 +1,36 @@
+name: Deploy to Self-Hosted Runner
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Build Docker Image
+        run: |
+          docker build -t dnholding-landing:latest .
+
+      - name: Stop and Remove Old Container
+        run: |
+          docker stop dnholding-landing || true
+          docker rm dnholding-landing || true
+
+      - name: Run New Container
+        run: |
+          docker run -d \
+            --name dnholding-landing \
+            --restart unless-stopped \
+            -p 3000:3000 \
+            dnholding-landing:latest
+
+      - name: Clean up unused Docker images
+        run: |
+          docker image prune -f
