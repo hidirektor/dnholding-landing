@@ -126,7 +126,7 @@
         "Demtalya Madencilik A.Ş.",
         "HD Maden A.Ş.",
         "2M Uluslararası Madencilik A.Ş.",
-        "Stoneline"
+        "Stoneline Group"
       ]
     }
   },
@@ -287,8 +287,8 @@
       },
       {
         "slug": "stoneline",
-        "name": "Stoneline",
-        "description": "Stoneline is an important brand of our group specializing in the natural stone sector.",
+        "name": "Stoneline Group",
+        "description": "Stoneline Group is an important brand of our group specializing in the natural stone sector.",
         "sector": "Mermer",
         "accentColor": "#64748b",
         "featured": true
