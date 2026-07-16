@@ -13,12 +13,14 @@ interface NewsCardProps {
 }
 
 export function NewsCard({ title, excerpt, date, category, image, slug, lang }: NewsCardProps) {
+  const displayImage = image?.includes('logo_dnholding') ? undefined : image;
+
   return (
     <Link href={`/media/${slug}`} className="block h-full group relative">
       <div className="h-full flex flex-col bg-transparent rounded-2xl overflow-hidden transition-all duration-500 group-hover:bg-slate-50 dark:group-hover:bg-white/5 border border-transparent group-hover:border-slate-200 dark:group-hover:border-white/10 group-hover:-translate-y-2 hover:shadow-xl dark:group-hover:shadow-2xl">
         <div className="relative aspect-[16/9] overflow-hidden rounded-t-2xl bg-slate-200 dark:bg-black/40">
-          {image ? (
-            <div className="absolute inset-0 bg-cover bg-center transition-transform duration-[1500ms] group-hover:scale-110 opacity-90 dark:opacity-70 group-hover:opacity-100" style={{ backgroundImage: `url(${image || "/assets/about/about-1.jpg"})` }} />
+          {displayImage ? (
+            <div className="absolute inset-0 bg-cover bg-center transition-transform duration-[1500ms] group-hover:scale-110 opacity-90 dark:opacity-70 group-hover:opacity-100" style={{ backgroundImage: `url(${displayImage})` }} />
           ) : (
             <div className="absolute inset-0 bg-gradient-to-br from-black/5 dark:from-white/5 to-transparent transition-transform duration-[1500ms] group-hover:scale-110" />
           )}
