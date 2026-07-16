@@ -296,26 +296,43 @@
     ],
     "projects": [
       {
-        "slug": "albavena-usa",
-        "title": "Albavena - USA - Special Villa Project",
-        "description": "Albavena - USA - Special Villa Project",
+        "slug": "formula-1-qatar-lusail-circuit",
+        "title": "Formula 1 Qatar Lusail Circuit",
+        "description": "Formula 1 Qatar Lusail Circuit projesi, DN Holding standartlarında tamamlanmıştır.",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",
-        "location": "USA",
-        "image": "/assets/projects/albavena/1.jpg",
-        "images": []
+        "location": "Global",
+        "image": "/assets/projects/formula-1-qatar-lusail-circuit/1.jpeg",
+        "images": [
+          "/assets/projects/formula-1-qatar-lusail-circuit/1.jpeg",
+          "/assets/projects/formula-1-qatar-lusail-circuit/2.jpeg",
+          "/assets/projects/formula-1-qatar-lusail-circuit/3.jpeg",
+          "/assets/projects/formula-1-qatar-lusail-circuit/4.jpeg",
+          "/assets/projects/formula-1-qatar-lusail-circuit/5.jpeg",
+          "/assets/projects/formula-1-qatar-lusail-circuit/6.jpeg",
+          "/assets/projects/formula-1-qatar-lusail-circuit/7.jpeg",
+          "/assets/projects/formula-1-qatar-lusail-circuit/8.jpeg"
+        ]
       },
       {
-        "slug": "monaco-sand-usa",
-        "title": "Monaco Sand - USA - Special Villa Project",
-        "description": "Monaco Sand - USA - Special Villa Project",
+        "slug": "goldwynn-nassau-hotel",
+        "title": "Goldwynn Nassau Hotel",
+        "description": "Goldwynn Nassau Hotel projesi, DN Holding standartlarında tamamlanmıştır.",
         "company": "DN Mermer",
         "category": "Mermer",
         "year": "2024",
-        "location": "USA",
-        "image": "/assets/projects/monaco-sand/1.jpg",
-        "images": []
+        "location": "Global",
+        "image": "/assets/projects/goldwynn-nassau-hotel/1.jpeg",
+        "images": [
+          "/assets/projects/goldwynn-nassau-hotel/1.jpeg",
+          "/assets/projects/goldwynn-nassau-hotel/2.jpg",
+          "/assets/projects/goldwynn-nassau-hotel/3.jpeg",
+          "/assets/projects/goldwynn-nassau-hotel/4.jpeg",
+          "/assets/projects/goldwynn-nassau-hotel/5.jpeg",
+          "/assets/projects/goldwynn-nassau-hotel/6.jpeg",
+          "/assets/projects/goldwynn-nassau-hotel/7.jpeg"
+        ]
       },
       {
         "slug": "musiad-project-istanbul",
@@ -599,45 +616,6 @@
         ]
       },
       {
-        "slug": "formula-1-qatar-lusail-circuit",
-        "title": "Formula 1 Qatar Lusail Circuit",
-        "description": "Formula 1 Qatar Lusail Circuit projesi, DN Holding standartlarında tamamlanmıştır.",
-        "company": "DN Mermer",
-        "category": "Mermer",
-        "year": "2024",
-        "location": "Global",
-        "image": "/assets/projects/formula-1-qatar-lusail-circuit/1.jpeg",
-        "images": [
-          "/assets/projects/formula-1-qatar-lusail-circuit/1.jpeg",
-          "/assets/projects/formula-1-qatar-lusail-circuit/2.jpeg",
-          "/assets/projects/formula-1-qatar-lusail-circuit/3.jpeg",
-          "/assets/projects/formula-1-qatar-lusail-circuit/4.jpeg",
-          "/assets/projects/formula-1-qatar-lusail-circuit/5.jpeg",
-          "/assets/projects/formula-1-qatar-lusail-circuit/6.jpeg",
-          "/assets/projects/formula-1-qatar-lusail-circuit/7.jpeg",
-          "/assets/projects/formula-1-qatar-lusail-circuit/8.jpeg"
-        ]
-      },
-      {
-        "slug": "goldwynn-nassau-hotel",
-        "title": "Goldwynn Nassau Hotel",
-        "description": "Goldwynn Nassau Hotel projesi, DN Holding standartlarında tamamlanmıştır.",
-        "company": "DN Mermer",
-        "category": "Mermer",
-        "year": "2024",
-        "location": "Global",
-        "image": "/assets/projects/goldwynn-nassau-hotel/1.jpeg",
-        "images": [
-          "/assets/projects/goldwynn-nassau-hotel/1.jpeg",
-          "/assets/projects/goldwynn-nassau-hotel/2.jpg",
-          "/assets/projects/goldwynn-nassau-hotel/3.jpeg",
-          "/assets/projects/goldwynn-nassau-hotel/4.jpeg",
-          "/assets/projects/goldwynn-nassau-hotel/5.jpeg",
-          "/assets/projects/goldwynn-nassau-hotel/6.jpeg",
-          "/assets/projects/goldwynn-nassau-hotel/7.jpeg"
-        ]
-      },
-      {
         "slug": "honaz-kaklik-anaokulu-proje-protokol",
         "title": "Honaz Kaklik Anaokulu Proje Protokol",
         "description": "Honaz Kaklik Anaokulu Proje Protokol projesi, DN Holding standartlarında tamamlanmıştır.",
@@ -759,6 +737,28 @@
           "/assets/projects/ges-projesi/5.jpeg",
           "/assets/projects/ges-projesi/6.jpeg"
         ]
+      },
+      {
+        "slug": "albavena-usa",
+        "title": "Albavena - USA - Special Villa Project",
+        "description": "Albavena - USA - Special Villa Project",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "USA",
+        "image": "/assets/projects/albavena/1.jpg",
+        "images": []
+      },
+      {
+        "slug": "monaco-sand-usa",
+        "title": "Monaco Sand - USA - Special Villa Project",
+        "description": "Monaco Sand - USA - Special Villa Project",
+        "company": "DN Mermer",
+        "category": "Mermer",
+        "year": "2024",
+        "location": "USA",
+        "image": "/assets/projects/monaco-sand/1.jpg",
+        "images": []
       }
     ],
     "news": [
