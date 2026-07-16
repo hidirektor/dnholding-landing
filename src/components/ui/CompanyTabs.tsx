@@ -22,13 +22,14 @@ function getSectorImage(sector: string) {
 const companyImages: Record<string, string> = {
   "dn-mermer": "/assets/image/sector/section-mermer.jpeg",
   "2m-uluslararasi-madencilik": "/assets/image/sector/section-mine.JPG",
-  "4t-madencilik": "/assets/quarries/karaman.jpg",
+  "4t-madencilik": "/assets/image/company-background/4t-bg.jpg",
   "alm-maden": "/assets/quarries/isparta.jpg",
   "hd-maden-mermer": "/assets/quarries/demre.jpg",
   "mby-maden": "/assets/quarries/denizli.jpg",
-  "yaman-maden": "/assets/about/about-1.jpg",
+  "yaman-maden": "/assets/image/company-background/yaman-bg.jpg",
   "ymy-enerji": "/assets/image/sector/section-energy.jpeg",
   "ynr-maden": "/assets/about/about-2.jpg",
+  "demtalya-madencilik": "/assets/image/company-background/demtalya-bg.jpg",
 };
 
 function CompanyLogo({ slug, name, isActive }: { slug: string, name: string, isActive: boolean }) {
