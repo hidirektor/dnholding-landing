@@ -15,13 +15,13 @@ function getSectorImage(sector: string) {
   const s = sector.toLowerCase();
   if (s.includes("mermer") || s.includes("marble")) return "/assets/image/sector/section-mermer.jpeg";
   if (s.includes("enerji") || s.includes("energy")) return "/assets/image/sector/section-energy.jpeg";
-  if (s.includes("maden") || s.includes("mining")) return "/assets/image/sector/chrome-ore.jpg";
+  if (s.includes("maden") || s.includes("mining")) return "/assets/image/sector/section-mine.JPG";
   return "/assets/image/background/hero-bg.jpg";
 }
 
 const companyImages: Record<string, string> = {
   "dn-mermer": "/assets/image/sector/section-mermer.jpeg",
-  "2m-uluslararasi-madencilik": "/assets/image/sector/chrome-ore.jpg",
+  "2m-uluslararasi-madencilik": "/assets/image/sector/section-mine.JPG",
   "4t-madencilik": "/assets/quarries/karaman.jpg",
   "alm-maden": "/assets/quarries/isparta.jpg",
   "hd-maden-mermer": "/assets/quarries/demre.jpg",

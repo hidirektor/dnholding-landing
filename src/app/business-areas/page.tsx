@@ -30,7 +30,7 @@ const businessAreas: Record<string, { icon: React.ReactNode; image: string; titl
     },
     {
       icon: <IconMining />,
-      image: "/assets/image/sector/chrome-ore.jpg",
+      image: "/assets/image/sector/section-mine.JPG",
       title: "Maden",
       description:
         "Çevreye duyarlı ve sürdürülebilir madencilik faaliyetleri ile ülkemizin yeraltı zenginliklerini ekonomiye kazandırıyoruz.",
@@ -53,7 +53,7 @@ const businessAreas: Record<string, { icon: React.ReactNode; image: string; titl
     },
     {
       icon: <IconMining />,
-      image: "/assets/image/sector/chrome-ore.jpg",
+      image: "/assets/image/sector/section-mine.JPG",
       title: "Mining",
       description:
         "We bring our country's underground riches to the economy with environmentally friendly and sustainable mining activities.",

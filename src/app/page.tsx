@@ -36,7 +36,7 @@ export default async function HomePage() {
           suffix: stat.suffix,
           prefix: stat.prefix,
         }))}
-        bgVideo="/assets/videos/hero-bg-2.mp4"
+        bgVideo="/assets/videos/hero-bg-3.mp4"
       />
 
       {/* ─── Business Areas ─── */}
@@ -47,7 +47,7 @@ export default async function HomePage() {
           items={[
             { icon: <IconConstruction />, label: dict.home.areas.items[0], href: "/business-areas/construction", image: "/assets/image/sector/section-mermer.jpeg" },
             { icon: <IconEnergy />, label: dict.home.areas.items[1], href: "/business-areas/energy", image: "/assets/image/sector/section-energy.jpeg" },
-            { icon: <IconMining />, label: dict.home.areas.items[2], href: "/business-areas/mining", image: "/assets/image/sector/chrome-ore.jpg" },
+            { icon: <IconMining />, label: dict.home.areas.items[2], href: "/business-areas/mining", image: "/assets/image/sector/section-mine.JPG" },
           ]}
         />
       </Section>
