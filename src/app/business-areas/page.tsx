@@ -115,7 +115,7 @@ export default async function BusinessAreasPage({ params }: { params: Promise<{ 
               <ScrollReveal key={area.title} delay={index * 80}>
                 <div className="group h-full rounded-[var(--radius-xl)] border border-[var(--card-border)] hover:border-accent/30 bg-[var(--card-bg)] hover:shadow-[var(--shadow-large)] transition-all duration-[var(--duration-medium)] flex flex-col items-center overflow-hidden">
                   <div className="relative w-full h-48 sm:h-56 mb-6 overflow-hidden">
-                    <Image src={area.image} alt={area.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <Image src={area.image} alt={area.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     <div className="absolute bottom-4 left-4 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white">
                       {area.icon}

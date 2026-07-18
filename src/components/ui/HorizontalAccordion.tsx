@@ -41,7 +41,7 @@ export function HorizontalAccordion({ items, className }: HorizontalAccordionPro
                 "absolute inset-0 transition-all duration-[1000ms] pointer-events-none z-0",
                 isActive ? "opacity-100 scale-100" : "opacity-0 scale-110 group-hover:opacity-20"
               )}>
-                <Image src={item.image} alt={item.label} fill className="object-cover" />
+                <Image src={item.image} alt={item.label} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent" />
               </div>
             )}

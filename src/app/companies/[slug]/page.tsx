@@ -110,7 +110,7 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
                 <ScrollReveal key={quarry.slug} delay={idx * 100}>
                   <div className="bg-white dark:bg-[var(--card-bg)] border border-border dark:border-[var(--card-border)] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <div className="h-48 relative bg-slate-100 dark:bg-slate-800">
-                       <Image src={quarry.image || "/assets/placeholder.jpg"} alt={quarry.name} fill className="object-cover" />
+                       <Image src={quarry.image || "/assets/placeholder.jpg"} alt={quarry.name} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
                     </div>
                     <div className="p-6">
                       <h3 className="text-xl font-bold mb-2">{quarry.name}</h3>
@@ -139,7 +139,7 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
                 <ScrollReveal key={product.id} delay={idx * 100}>
                   <div className="bg-[var(--card-bg)] border border-border dark:border-[var(--card-border)] rounded-2xl overflow-hidden group">
                     <div className="h-64 relative bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                       <Image src={product.image || "/assets/placeholder.jpg"} alt={product.name} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                       <Image src={product.image || "/assets/placeholder.jpg"} alt={product.name} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
                     </div>
                     <div className="p-6 text-center">
                       <h3 className="text-xl font-bold">{product.name}</h3>

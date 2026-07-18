@@ -86,7 +86,7 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
           <Image
             src={activeCompany.image || companyImages[activeCompany.slug] || getSectorImage(activeCompany.sector)}
             alt={activeCompany.name}
-            fill
+            fill sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-80 mix-blend-luminosity"
           />
         )}

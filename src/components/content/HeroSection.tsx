@@ -61,6 +61,7 @@ export function HeroSection({
             src={bgImage}
             alt={title || "DN Holding Epic Quarry"}
             fill
+            sizes="100vw"
             className="object-cover"
             priority
             quality={100}
