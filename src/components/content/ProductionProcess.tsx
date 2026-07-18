@@ -32,6 +32,21 @@ function ImageSlider({ images, alt }: { images: string[]; alt: string }) {
 
   if (!images || images.length === 0) return null;
 
+  const handlePrev = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const handleNext = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const handleDotClick = (e: React.MouseEvent, index: number) => {
+    e.stopPropagation();
+    setCurrentIndex(index);
+  };
+
   return (
     <div className="relative w-full h-full group">
       {images.map((img, idx) => (
@@ -46,17 +61,45 @@ function ImageSlider({ images, alt }: { images: string[]; alt: string }) {
           }`}
         />
       ))}
+      
       {images.length > 1 && (
-        <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-center gap-2">
-          {images.map((_, idx) => (
-            <div
-              key={idx}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                idx === currentIndex ? "bg-white w-6" : "bg-white/50"
-              }`}
-            />
-          ))}
-        </div>
+        <>
+          <div className="absolute inset-y-0 left-0 flex items-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <button 
+              onClick={handlePrev}
+              className="p-2 m-4 rounded-full bg-black/20 text-white hover:bg-black/40 transition-colors backdrop-blur-sm cursor-pointer"
+              aria-label="Previous image"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="m15 18-6-6 6-6"/>
+              </svg>
+            </button>
+          </div>
+          <div className="absolute inset-y-0 right-0 flex items-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <button 
+              onClick={handleNext}
+              className="p-2 m-4 rounded-full bg-black/20 text-white hover:bg-black/40 transition-colors backdrop-blur-sm cursor-pointer"
+              aria-label="Next image"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="m9 18 6-6-6-6"/>
+              </svg>
+            </button>
+          </div>
+
+          <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-center gap-2">
+            {images.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={(e) => handleDotClick(e, idx)}
+                className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                  idx === currentIndex ? "bg-white w-6" : "bg-white/50 w-2 hover:bg-white/80"
+                }`}
+                aria-label={`Go to slide ${idx + 1}`}
+              />
+            ))}
+          </div>
+        </>
       )}
     </div>
   );
