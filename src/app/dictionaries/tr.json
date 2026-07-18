@@ -1233,7 +1233,7 @@
         "name": "Traverten",
         "description": "Doğal ve estetik traverten taşları.",
         "category": "Traverten",
-        "image": "/assets/image/products/traverten.jpg"
+        "image": "/assets/image/products/traverten.jpeg"
       },
       {
         "id": "prod-limra",
@@ -1241,7 +1241,7 @@
         "name": "Limra",
         "description": "Açık renkli, zarif limra taşı.",
         "category": "Limra",
-        "image": "/assets/image/products/limra.jpg"
+        "image": "/assets/image/products/limra.jpeg"
       },
       {
         "id": "prod-mermer",
@@ -1249,7 +1249,7 @@
         "name": "Mermer",
         "description": "Yüksek kaliteli doğal mermer.",
         "category": "Mermer",
-        "image": "/assets/image/products/mermer.jpg"
+        "image": "/assets/image/products/mermer.jpeg"
       }
     ],
     "quarries": [
@@ -1455,28 +1455,128 @@
       "title": "KVKK Aydınlatma Metni",
       "content": [
         {
-          "type": "h2",
-          "text": "1. Veri Sorumlusunun Kimliği"
+          "type": "p",
+          "text": "6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”), 3359 sayılı Sağlık Hizmetleri Temel Kanunu, 663 sayılı Sağlık Bakanlığı ve Bağlı Kuruluşlarının Teşkilat ve Görevleri Hakkında Kanun Hükmünde Kararname, Sağlık Bakanlığı düzenlemeleri ve sair mevzuat hükümlerine uygun olarak; özel nitelikli kişisel verileriniz de dahil olmak üzere, sağlık hizmetlerimiz ve diğer hizmetlerimizden faydalanırken tarafımıza sağlamış olduğunuz kişisel verilerinizin kanuna uygun olarak toplanması ve işlenmesi adına sizlere işbu Aydınlatma Metni kapsamında DN HOLDING A.Ş tarafından bazı bilgilendirmelerde bulunulmaktadır."
         },
         {
           "type": "p",
-          "text": "6698 sayılı Kişisel Verilerin Korunması Kanunu (\"KVKK\") uyarınca, kişisel verileriniz; veri sorumlusu olarak DN Holding tarafından aşağıda açıklanan kapsamda toplanacak ve işlenebilecektir."
-        },
-        {
-          "type": "h2",
-          "text": "2. Kişisel Verilerin İşlenme Amacı"
+          "text": "Veri Sorumlusu sıfatına sahip DN HOLDING A.Ş kişisel verilerinizi işbu Aydınlatma Metninde açıklandığı şekilde, kaydedebilecek, saklayabilecek, güncelleyebilecek, mevzuatın ya da anlaşmaların izin verdiği ve/veya zorunlu kıldığı durumlarda üçüncü kişilerle (hizmet alan kişinin yakınları ve/veya hizmet alanın çalışanı/sigortalısı olduğu kamu ve/veya özel hukuk tüzel kişileri, diğer kamu ve/veya özel hukuk tüzel kişileri, kliniğimizin tabi olduğu mevzuatta belirtilen amaçlara konu faaliyetlerini yürütmek üzere hizmet aldığı veya işbirliği yaptığı üçüncü kişilere) paylaşabilecek, aktarabilecek, sınıflandırılabilecek, KVKK ve ilgili mevzuatta sayılan şekillerde işleyebilecektir."
         },
         {
           "type": "p",
-          "text": "Toplanan kişisel verileriniz, Şirketimiz tarafından sunulan ürün ve hizmetlerden sizleri faydalandırmak için gerekli çalışmaların iş birimlerimiz tarafından yapılması, Şirketimizin hukuki ve ticari güvenliğinin temini amaçlarıyla işlenmektedir."
-        },
-        {
-          "type": "h2",
-          "text": "3. İşlenen Kişisel Verilerin Kimlere Aktarılabileceği"
+          "text": "Özel nitelikli kişisel verilerden, ilgili kişilerin sağlık verileri, ilgilinin açık rızası aranmaksızın ancak kamu sağlığının korunması, koruyucu hekimlik, tıbbi teşhis, tedavi ve bakım hizmetlerinin yürütülmesi, sağlık hizmetleri ile finansmanın planlanması ve yönetim amaçlarıyla, sır saklama yükümlülüğü altında bulunan kişiler veya yetkili kurum ve kuruluşlar tarafından işlenebilir. Ayrıca türü fark etmeksizin, tüm özel nitelikli kişisel veriler, kanun gereği ancak KVKK tarafından belirlenen yeterli önlemlerin alınması halinde işlenebilir."
         },
         {
           "type": "p",
-          "text": "İşlenen kişisel verileriniz, yasal zorunluluklar dahilinde yetkili kamu kurum ve kuruluşları ile Şirketimizin faaliyetlerini yürütmek üzere hizmet aldığı üçüncü taraflarla paylaşılabilecektir."
+          "text": "Kişisel verileriniz DN HOLDING A.Ş tarafından sağlanmakta olan kamu sağlığının korunması, koruyucu hekimlik, tıbbî teşhis, tedavi ve bakım hizmetlerinin yürütülmesi, sağlık hizmetleri ile finansmanının planlanması ve yönetimi amaçlarıyla; sözlü, yazılı, görsel ya da elektronik ortamda, çağrı merkezi, internet sitesi, sözlü, yazılı ve benzeri kanallar aracılığıyla elde edilmektedir."
+        },
+        {
+          "type": "h2",
+          "text": "İşlenen Kişisel Verileriniz ve Bunların İşlenme Amaçları"
+        },
+        {
+          "type": "p",
+          "text": "Sağlık verileriniz başta olmak üzere özel nitelikli kişisel verileriniz de dahil olmak üzere aşağıda sayılan kişisel verileriniz, DN HOLDING A.Ş tarafından aşağıda yer alanlar dâhil ve bunlarla sınırlı olmaksızın bu maddede belirtilen amaçlar ile bağlantılı, sınırlı ve ölçülü şekilde işlenebilmektedir:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "<strong>Kimlik Bilgileriniz :</strong> Adınız, soyadınız, T.C. kimlik numaranız, pasaport numaranız veya geçici TC kimlik numaranız, doğum yeri ve tarihiniz, medeni haliniz, cinsiyetiniz, sigorta veya hasta protokol numaranız ve sizi tanımlayabileceğimiz diğer kimlik verileriniz;",
+            "<strong>İletişim Bilgileriniz :</strong> Adresiniz, telefon numaranız, elektronik posta adresiniz ve sair iletişim verileriniz, müşteri temsilcileri ya da hasta hizmetleri tarafından çağrı merkezi standartları gereği tutulan sesli görüşme kayıtlarınız ile elektronik posta, mektup veya sair vasıtalar aracılığı ile tarafımızla iletişime geçtiğinizde elde edilen kişisel verileriniz;",
+            "<strong>Muhasebesel Bilgileriniz :</strong> Banka hesap numaranız, IBAN numaranız, kredi kartı bilginiz, faturalama bilgileriniz gibi finansal verileriniz; sağlık hizmetlerinin finansmanı ve planlaması amacıyla özel sağlık sigortasına ilişkin verileriniz ve Sosyal Güvenlik Kurumu verileriniz; kliniğimizi ziyaret etmeniz halinde güvenlik ve denetim amaçlı tutulmakta olan kamera kayıtları görüntüleriniz,",
+            "<strong>İnsan Kaynakları :</strong> Söz konusu amaç ve yasal yükümlülüklerini yerine getirebilmeyi sağlayacak kişisel verilerinizi (ad, soyad, doğum tarihi, cep telefonu numarası, e-posta, cinsiyet, adres, meslek, eğitim, medeni durum, araç plakası, sosyal medya hesaplarıyla bağlanılması durumunda üyenin o kanallar aracılığıyla paylaşılmasına onay verdiği bilgiler, üyenin tüm alışveriş bilgileri, yani hangi üye işyeri, alışveriş noktası ve zamanı, ne kadar ödeme yaptığı, hangi kampanyadan faydalandığı, aldığı indirim tutarı, alışverişindeki ürün bilgileri, uygulama üzerindeki gezinme ve tıklama bilgileri, uygulamayı açtığı lokasyon bilgileri) sizlerden talep etmektedir. Bu kişisel veriler açık rızanıza istinaden, işbu Gizlilik/Kişisel Verilerin Korunması Politikası ile belirlenen amaçlar ve kapsam dışında kullanılmamak kaydı ile bilgi güvenliği tedbirleri de alınarak işlenecek ve saklanacaktır."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "KVKK Gereği Kişisel Veri İşlenmesinde Açık Rıza Aranmayan Haller"
+        },
+        {
+          "type": "p",
+          "text": "Aşağıda yer alan hallerden en az birinin bulunması durumunda kişisel verilerinizin Açık Rıza’nızın bulunmadığı durumlarda da işlenmesi mümkün olacaktır."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Kanunlarda açıkça öngörülmesi,",
+            "Fiili imkansızlık nedeniyle rızasını açıklayamayacak durumda bulunan veya rızasına hukuki geçerlilik tanınmayan kişinin kendisinin hayatı veya beden bütünlüğünün korunması için zorunlu olması,",
+            "Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması kaydıyla sözleşmenin taraflarına ait kişisel verilerin işlenmesinin gerekli olması,",
+            "DN HOLDING A.Ş ’nin hukuki yükümlülüğünü yerine getirebilmesi için zorunlu olması,",
+            "İlgili kişinin kendisi tarafından alenileştirilmiş olması,",
+            "Bir hakkın tesisi, kullanılması veya korunması için veri işlemenin zorunlu olması,",
+            "İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, DN HOLDING A.Ş ’nin meşru menfaatleri için veri işlenmesinin zorunlu olması.",
+            "Ayrıca sağlık ve cinsel hayata ilişkin kişisel verileriniz ise ancak kamu sağlığının korunması, koruyucu hekimlik, tıbbî teşhis, tedavi ve bakım hizmetlerinin yürütülmesi, sağlık hizmetleri ile finansmanının planlanması ve yönetimi amacıyla, DN HOLDING A.Ş tarafından Açık Rıza’nız aranmaksızın işlenebilecektir."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Kişisel Verilerinizin Aktarımı"
+        },
+        {
+          "type": "p",
+          "text": "Hizmet alanlarımıza ait kişisel verileriniz, DN HOLDING A.Ş tarafından sunulan hizmetlerden ilgili kişileri faydalandırmak için gerekli çalışmaların iş birimleri tarafından yapılması ve ilgili iş süreçlerinin yürütülmesi, DN HOLDING A.Ş ’nin ticari yahut bilimsel stratejilerinin planlanması ve icrası, DN HOLDING A.Ş ile ilişki içerisinde olan kişilerin hukuki, teknik ve ticari güvenliğinin temini amacıyla; özel sigorta şirketleri, Sağlık Bakanlığı ve bağlı alt birimleri, Sosyal Güvenlik Kurumu, Emniyet Genel Müdürlüğü ve sair kolluk kuvvetleri, Nüfus Genel Müdürlüğü, Türkiye Eczacılar Birliği, Mahkemeler ve her türlü yargı makamı, merkezi ve sair üçüncü kişiler, yetki vermiş olduğunuz temsilcileriniz, konuya ilişkin vekalet verdiğiniz avukatlar, vergi ve finans danışmanları ve denetçiler de dâhil olmak üzere danışmanlık aldığımız üçüncü kişiler, düzenleyici ve denetleyici kurumlar, resmi merciler dâhil sağlık hizmetlerini yukarıda belirtilen amaçlarla geliştirmek veya yürütmek üzere işbirliği yaptığımız iş ortaklarımız ve diğer üçüncü kişiler ile Kanun’un 8. ve 9. maddelerinde belirtilen kişisel veri aktarım şartları ve amaçları çerçevesinde yurt içindeki üçüncü kişilere aktarabileceği gibi yurt dışına da aktarabilecektir."
+        },
+        {
+          "type": "h2",
+          "text": "Kişisel Verilerinizin Toplanması ve İşlenmesinin Yöntemi ve Hukuki Sebepleri"
+        },
+        {
+          "type": "p",
+          "text": "Kişisel verileriniz, her türlü sözlü, yazılı, görsel ya da elektronik ortamda, yukarıda yer verilen amaçlar ve sağlık hizmetlerinin belirlenen yasal çerçevede verilebilmesi ve bu kapsamda DN HOLDING A.Ş ’nin akdi ve kanuni yükümlülüklerini tam ve gereği gibi ifa edebilmesi için elde edilir."
+        },
+        {
+          "type": "h2",
+          "text": "Veri Sahiplerinin Kanun Kapsamındaki Hakları"
+        },
+        {
+          "type": "p",
+          "text": "Dilediğiniz zaman DN HOLDING A.Ş ’ye başvurarak kişisel verilerinizin;"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "İşlenip işlenmediğini, işlenme amacını ve amacına uygun kullanıp kullanılmadığı öğrenebilir ve işlenmiş ise bu konuda bilgi isteyebilir,",
+            "Kanun’a uygun olarak yurt içinde ve yurt dışında bilgilerinizin paylaşıldığı üçüncü kişileri öğrenebilir,",
+            "Bilgilerinizin eksik ya da hatalı işlendiğini düşünüyorsanız düzeltilmesini isteyebilir,",
+            "Kanunun 7. maddesinde öngörülen şartlar çerçevesinde bilgilerinizin silinmesini ya da yok edilmesini talep edebilir,",
+            "Bilgilerinizin aktarıldığı üçüncü kişilere (c) ve (d) bentlerinde belirtilen taleplerinizin bildirilmesini ve aynı işlemleri gerçekleştirmelerini isteyebilir,",
+            "Bilgilerinizin, otomatik sistemler ile analiz edilmesi nedeniyle aleyhinize bir sonucun ortaya çıkmasına itiraz edebilir veya Kanuna aykırı olarak kaydedildiğini veya kullanıldığını düşünüyorsanız ve bu sebeple zarara uğramışsanız zararın giderilmesini isteyebilirsiniz."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Bu amaçlarla yaptığınız başvurunun ek bir maliyet gerektirmesi durumunda, Kişisel Verileri Koruma Kurulu tarafından çıkarılan Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ ile belirlenen ücreti ödemeniz söz konusu olacaktır. Başvurunuza yazılı cevap verilmesi halinde ilk 10 (on) sayfaya kadar ücret alınmayacak, 10 (on) sayfanın üzerindeki her sayfa için 1 TL işlem ücreti alınacaktır. Başvurunuza verilecek cevabın CD, flash bellek gibi bir kayıt ortamında verilmesi halinde ise, kayıt ortamının maliyeti kadar ücret tarafınıza yansıtılacaktır."
+        },
+        {
+          "type": "p",
+          "text": "Başvurunuzda yer alan talepleriniz, talebin niteliğine göre en kısa sürede ve en geç 30 (otuz) gün içinde sonuçlandırılacaktır. Kanun kapsamındaki haklarınızdan yararlanmak için başvurularınızı, Türkçe olmak kaydıyla yazılı olarak DN HOLDING A.Ş ’ye iletebilir, detaylı bilgi almak için Kişisel Verileri Koruma Kurumu’nun internet sayfasını ziyaret edebilirsiniz."
+        },
+        {
+          "type": "p",
+          "text": "Başvurularınızı;"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "<a href='https://www.dnholding.com.tr/' class='text-accent hover:underline' target='_blank'>https://www.dnholding.com.tr/</a> adresinde bulunan formu doldurduktan sonra ıslak imzalı bir nüshasının bizzat elden veya noter aracılığı ile [ Kaklık mah. Mermer Ocakları Kümesi Küme Evler No:5 - Honaz - Denizli / Türkiye ] adresine iletilmesi,",
+            "<a href='https://www.dnholding.com.tr/' class='text-accent hover:underline' target='_blank'>https://www.dnholding.com.tr/</a> adresinde bulunan formun doldurulup 5070 Sayılı Elektronik İmza Kanunu kapsamındaki güvenli elektronik imzanızla veya mobil imzanızla imzalandıktan sonra güvenli elektronik imzalı formun kliniğe ait kliniğin sisteminde kayıtlı bulunan elektronik posta adresiniz ile gönderilmesi, yöntemlerinden biriyle yapabilirsiniz."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Kişisel veri sahibi olarak sahip olduğunuz ve yukarıda belirtilen haklarınızı kullanmak için yapacağınız ve kullanmayı talep ettiğiniz hakka ilişkin açıklamalarınızı içeren başvuruda; talep ettiğiniz hususun açık ve anlaşılır olması, talep ettiğiniz konunun şahsınız ile ilgili olması veya başkası adına hareket ediyor iseniz bu konuda noter tarafından tasdiklenmiş özel vekâletnamenizi ibraz etmeniz gerekecektir."
+        },
+        {
+          "type": "p",
+          "text": "Başvurularınızda, ad-soyad, imza, T.C. kimlik numarası, ikamet veya işyeri adresi, e-posta adresi, telefon ve faks numarası, talep konusu unsurlarının bulunması “Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ” uyarınca zorunludur. Söz konusu unsurları barındırmayan başvurular klinik tarafından reddedilecektir."
+        },
+        {
+          "type": "p",
+          "text": "Kliniğin işbu aydınlatma metninde Kanun’dan, ikincil düzenlemelerden ve Kurul kararlarından doğan sebeplerle değişiklik yapma hakkı her zaman saklıdır. Aydınlatma metninde yapılacak değişiklikler ve güncel metin tarafınıza tebliğ edildiği tarih itibariyle derhal geçerlilik kazanacaktır."
+        },
+        {
+          "type": "p",
+          "text": "<strong>DN HOLDING A.Ş</strong>"
         }
       ]
     }
@@ -1488,42 +1588,92 @@
       {
         "title": "Blok Nakliye",
         "description": "DN Mermer, doğal taş üretiminin ilk adımından son adımına kadar tüm süreci kendi bünyesinde yöneten entegre bir yapıya sahiptir. Kendi ocaklarımızdan büyük bir titizlikle çıkarılan mermer bloklar, kara nakliyesi ile fabrikalarımıza sevk edilir. Bu süreçte her blok, hasarsız ve güvenli şekilde taşınacak biçimde düzenlenir.",
-        "image": "/assets/image/production/1-blok-nakliye.jpeg"
+        "image": "/assets/image/production/1-blok-nakliye.jpeg",
+        "images": [
+          "/assets/image/production/1-blok-nakliye.jpeg"
+        ]
       },
       {
         "title": "Ham Kesim",
         "description": "Fabrikalarımıza ulaşan ham bloklar, blok sahasında stoklanır. Yıkanarak kontrolleri yapılır. Üretim hattımıza alınarak gelişmiş ham kesim makinelerinde işlenir. Bloklar sipariş durumuna göre Katrak kesim, telli kesim ve ST kesim makinelerimiz ile taşlar istenilen kalınlıkta profesyonel olarak kesim işlemi yapılır. Bu aşamada hız, hassasiyet ve ölçü tutarlılığı ön plandadır.",
-        "image": "/assets/image/production/2-ham-kesim.jpeg"
+        "image": "/assets/image/production/2-ham-kesim.jpeg",
+        "images": [
+          "/assets/image/process/ham-kesim1.webp",
+          "/assets/image/process/ham-kesim-2.webp",
+          "/assets/image/process/ham-kesim-3.webp",
+          "/assets/image/process/ham-kesim-4.webp",
+          "/assets/image/process/ham-kesim-5.webp"
+        ]
       },
       {
         "title": "Silim İşlemi (Cilalama & Honlama)",
         "description": "Ham kesim makinalarında kesilen taşlar, yüzey işlemleri için silim hattına alınır. Otomatik silim makineleri ile yüzeylerde isteğe göre honlama, cilalama, eskitme veya fırçalama gibi işlemler uygulanır. Bu aşama, taşın dokusunu ve estetik kalitesini ön plana çıkarır.",
-        "image": "/assets/image/production/3-silim.jpeg"
+        "image": "/assets/image/production/3-silim.jpeg",
+        "images": [
+          "/assets/image/process/silim-isleme1.webp",
+          "/assets/image/process/silim-isleme2.webp"
+        ]
       },
       {
         "title": "Ebatlama ve Plaka İşleme",
         "description": "Yüzeyi işlenmiş plakalar, istenen projeye istenen standard veya özel ölçülerde ebatlanır. Mimari projelere uygun olarak üretilen ebatlı taşlar, modern ebatlama makineleriyle yüksek hassasiyetle hazırlanır. Bu sayede yüksek ölçü doğruluğu ve uygulama kolaylığı sağlanır.",
-        "image": "/assets/image/production/4-ebatlama.jpeg"
+        "image": "/assets/image/production/4-ebatlama.jpeg",
+        "images": [
+          "/assets/image/process/ebatlama1.webp",
+          "/assets/image/process/ebatlama-2.webp",
+          "/assets/image/process/ebatlama3.webp",
+          "/assets/image/process/ebatlama4.webp",
+          "/assets/image/process/ebatlama5.webp"
+        ]
       },
       {
         "title": "Kenar İşlemleri",
         "description": "İstenilen projeye uygun olarak kenar işlemleri uygulanır. Ürünlere pah kırma, bullnose yapma gibi teknik kenar detayları verilir. Bu işlemler, taşın son kullanım alanına göre güvenli ve estetik hale gelmesini sağlar.",
-        "image": "/assets/image/production/5-kenar-islemleri.jpeg"
+        "image": "/assets/image/production/5-kenar-islemleri.jpeg",
+        "images": [
+          "/assets/image/process/kenar-islemleri.webp",
+          "/assets/image/process/kenar-islemleri2.webp"
+        ]
       },
       {
         "title": "Kalite Kontrol",
         "description": "Üretimin tüm aşamalarını tamamlayan malzemeler, sevkiyat öncesi kalite kontrol bölümünde titizlikle incelenir. Plakaların ölçü ve gönye kontrolü yapılır, yüzey kalitesi cila parlaklığı ve homojenlik denetlenir. Çatlak, kırık, leke veya damar hatası olup olmadığı gözden geçirilir. Kenar işlemlerinin düzgünlüğü ve ebatlama hassasiyeti kontrol edilir. Son olarak ambalaj ve kasa hazırlığına uygunluk teyit edilerek onay verilir.",
-        "image": "/assets/image/production/6-kalite-kontrol.jpeg"
+        "image": "/assets/image/production/6-kalite-kontrol.jpeg",
+        "images": [
+          "/assets/image/process/kalite-kontrol1.webp",
+          "/assets/image/process/kalite-kontrol2.webp",
+          "/assets/image/process/kalite-kontrol3.webp",
+          "/assets/image/process/kalite-kontrol4.webp",
+          "/assets/image/process/kalite-kontrol5.webp",
+          "/assets/image/process/kalite-kontrol6.webp"
+        ]
       },
       {
         "title": "Ambalaj, Bundle ve Kasa Hazırlığı",
         "description": "Tüm üretim süreci tamamlanan ürünler, sahada özel olarak paketlenir. Plakalar ve ebatlı taşlar, ahşap kasalara dikkatle yerleştirilir ve bundle’lanır. Her ürün taşıma esnasında zarar görmeyecek şekilde koruyucu malzemelerle desteklenir.",
-        "image": "/assets/image/production/7-ambalaj.jpeg"
+        "image": "/assets/image/production/7-ambalaj.jpeg",
+        "images": [
+          "/assets/image/process/ambalaj1.webp",
+          "/assets/image/process/ambalaj2.webp",
+          "/assets/image/process/ambalaj3.webp",
+          "/assets/image/process/ambalaj4.webp"
+        ]
       },
       {
         "title": "Sevkiyat",
         "description": "Hazırlanan kasalar, ihracat ve ithalat standartlarına uygun olarak kamyonlara ve konteynerlere yüklenir. DN Mermer lojistik birimi, tüm sevkiyat sürecini titizlikle planlayarak ürünlerin zamanında ve hasarsız şekilde dünya genelindeki müşterilere ulaşmasını sağlar.",
-        "image": "/assets/image/production/8-sevkiyat.jpeg"
+        "image": "/assets/image/production/8-sevkiyat.jpeg",
+        "images": [
+          "/assets/image/process/sevkiyat1.webp",
+          "/assets/image/process/sevkiyat2.webp",
+          "/assets/image/process/sevkiyat3.webp",
+          "/assets/image/process/sevkiyat4.webp",
+          "/assets/image/process/sevkiyat5.webp",
+          "/assets/image/process/sevkiyat6.webp",
+          "/assets/image/process/sevkiyat7.webp",
+          "/assets/image/process/sevkiyat8.webp",
+          "/assets/image/process/sevkiyat9.webp"
+        ]
       }
     ]
   }

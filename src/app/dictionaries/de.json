@@ -1134,7 +1134,7 @@
         "name": "Traverten",
         "description": "Doğal ve estetik traverten taşları.",
         "category": "Traverten",
-        "image": "/assets/image/products/traverten.jpg"
+        "image": "/assets/image/products/traverten.jpeg"
       },
       {
         "id": "prod-limra",
@@ -1142,7 +1142,7 @@
         "name": "Limra",
         "description": "Açık renkli, zarif limra taşı.",
         "category": "Limra",
-        "image": "/assets/image/products/limra.jpg"
+        "image": "/assets/image/products/limra.jpeg"
       },
       {
         "id": "prod-mermer",
@@ -1150,7 +1150,7 @@
         "name": "Mermer",
         "description": "Yüksek kaliteli doğal mermer.",
         "category": "Mermer",
-        "image": "/assets/image/products/mermer.jpg"
+        "image": "/assets/image/products/mermer.jpeg"
       }
     ],
     "quarries": [
@@ -1281,7 +1281,127 @@
       "content": [
         {
           "type": "p",
-          "text": "Gemäß dem Gesetz zum Schutz personenbezogener Daten werden Ihre Daten von DN Holding verarbeitet."
+          "text": "In accordance with the Personal Data Protection Law No. 6698 (\"KVKK\"), the Basic Law on Health Services No. 3359, the Decree Law No. 663 on the Organization and Duties of the Ministry of Health and its Affiliated Institutions, Ministry of Health regulations, and other legislative provisions; DN HOLDING A.Ş provides some information within the scope of this Disclosure Text regarding the collection and processing of your personal data, including special categories of personal data, which you have provided to us while benefiting from our health services and other services."
+        },
+        {
+          "type": "p",
+          "text": "DN HOLDING A.Ş, having the title of Data Controller, may record, store, update, share, transfer, classify, and process your personal data in the ways listed in KVKK and relevant legislation, with third parties (relatives of the person receiving the service and/or public and/or private law legal entities where the person receiving the service is an employee/insured, other public and/or private law legal entities, third parties from whom our clinic receives services or cooperates to carry out activities subject to the purposes specified in the legislation to which it is subject) where permitted and/or required by legislation or agreements, as explained in this Disclosure Text."
+        },
+        {
+          "type": "p",
+          "text": "Among the special categories of personal data, the health data of the relevant persons may be processed by persons under the obligation of confidentiality or authorized institutions and organizations without seeking the explicit consent of the relevant person, but only for the purposes of protecting public health, preventive medicine, medical diagnosis, treatment and care services, planning and management of health services and financing. In addition, regardless of its type, all special categories of personal data can only be processed if adequate measures determined by KVKK are taken as required by law."
+        },
+        {
+          "type": "p",
+          "text": "Your personal data is obtained by DN HOLDING A.Ş verbally, in writing, visually or electronically, through the call center, website, verbal, written and similar channels for the purposes of protecting public health, preventive medicine, medical diagnosis, conducting treatment and care services, planning and managing health services and their financing."
+        },
+        {
+          "type": "h2",
+          "text": "Your Processed Personal Data and Their Processing Purposes"
+        },
+        {
+          "type": "p",
+          "text": "Your personal data listed below, including your special categories of personal data, especially your health data, may be processed by DN HOLDING A.Ş in a connected, limited and proportionate manner for the purposes specified in this article, including but not limited to the following:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "<strong>Your Identity Information:</strong> Your name, surname, T.R. identity number, passport number or temporary TR identity number, place and date of birth, marital status, gender, insurance or patient protocol number and other identity data by which we can identify you;",
+            "<strong>Your Contact Information:</strong> Your address, telephone number, electronic mail address and other communication data, your voice call records kept by customer representatives or patient services in accordance with call center standards, and your personal data obtained when you contact us via e-mail, letter or other means;",
+            "<strong>Your Accounting Information:</strong> Your financial data such as your bank account number, IBAN number, credit card information, billing information; your data on private health insurance and Social Security Institution data for the purpose of financing and planning health services; your camera recordings kept for security and inspection purposes if you visit our clinic,",
+            "<strong>Human Resources:</strong> Requests your personal data (name, surname, date of birth, mobile phone number, e-mail, gender, address, profession, education, marital status, vehicle license plate, information that the member has consented to be shared through those channels if connected via social media accounts, all shopping information of the member, i.e., which member workplace, shopping point and time, how much payment they made, which campaign they benefited from, the discount amount they received, product information in their shopping, browsing and clicking information on the application, location information where they opened the application) that will enable to fulfill the said purpose and legal obligations. These personal data will be processed and stored based on your explicit consent, provided that they are not used outside the purposes and scope determined by this Privacy/Personal Data Protection Policy, by taking information security measures."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Cases Where Explicit Consent is Not Required for Processing Personal Data Under KVKK"
+        },
+        {
+          "type": "p",
+          "text": "In the presence of at least one of the cases below, it will be possible to process your personal data even if you do not have Explicit Consent."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Being expressly provided for in the laws,",
+            "Being necessary for the protection of the life or physical integrity of the person who is unable to express their consent due to actual impossibility or whose consent is not legally valid,",
+            "Being necessary to process personal data of the parties to a contract, provided that it is directly related to the establishment or performance of the contract,",
+            "Being mandatory for DN HOLDING A.Ş to fulfill its legal obligation,",
+            "Being made public by the data subject themselves,",
+            "Data processing being mandatory for the establishment, exercise or protection of any right,",
+            "Data processing being mandatory for the legitimate interests of DN HOLDING A.Ş, provided that it does not harm the fundamental rights and freedoms of the data subject.",
+            "In addition, your personal data concerning health and sexual life may be processed by DN HOLDING A.Ş without your Explicit Consent only for the purposes of protecting public health, preventive medicine, medical diagnosis, treatment and care services, planning and managing health services and their financing."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Transfer of Your Personal Data"
+        },
+        {
+          "type": "p",
+          "text": "Your personal data belonging to our service receivers may be transferred to domestic third parties within the framework of the personal data transfer conditions and purposes specified in Articles 8 and 9 of the Law, and may also be transferred abroad, by DN HOLDING A.Ş in order to carry out the necessary work by the business units to benefit the relevant persons from the services offered, to carry out the relevant business processes, to plan and execute the commercial or scientific strategies of DN HOLDING A.Ş, and to ensure the legal, technical and commercial security of persons in relationship with DN HOLDING A.Ş; to private insurance companies, the Ministry of Health and its affiliated sub-units, Social Security Institution, General Directorate of Security and other law enforcement agencies, General Directorate of Population, Turkish Pharmacists' Association, Courts and all kinds of judicial authorities, central and other third parties, your authorized representatives, lawyers you have given power of attorney regarding the matter, third parties we receive consultancy from including tax and financial consultants and auditors, regulatory and supervisory institutions, official authorities, business partners and other third parties we cooperate with to develop or run health services for the purposes stated above."
+        },
+        {
+          "type": "h2",
+          "text": "Method and Legal Reasons for Collecting and Processing Your Personal Data"
+        },
+        {
+          "type": "p",
+          "text": "Your personal data is obtained in all kinds of verbal, written, visual or electronic media, in order to provide health services within the determined legal framework for the purposes stated above and to enable DN HOLDING A.Ş to fully and properly fulfill its contractual and legal obligations in this context."
+        },
+        {
+          "type": "h2",
+          "text": "Rights of Data Subjects Under the Law"
+        },
+        {
+          "type": "p",
+          "text": "By applying to DN HOLDING A.Ş at any time, regarding your personal data;"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "You can learn whether it has been processed, the purpose of processing and whether it is used appropriately, and if it has been processed, you can request information on this matter,",
+            "You can learn the third parties to whom your information is shared domestically and abroad in accordance with the Law,",
+            "If you think your information has been processed incompletely or incorrectly, you can request its correction,",
+            "You can request the deletion or destruction of your information within the framework of the conditions stipulated in Article 7 of the Law,",
+            "You can request that your requests specified in subparagraphs (c) and (d) be notified to the third parties to whom your information is transferred and that they perform the same transactions,",
+            "You can object to the occurrence of a result against you due to the analysis of your information by automatic systems, or if you think that it has been recorded or used in violation of the Law and you have suffered damage due to this reason, you can request the compensation of the damage."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In case the application you made for these purposes requires an additional cost, you will have to pay the fee determined by the Communiqué on the Procedures and Principles of Application to the Data Controller issued by the Personal Data Protection Board. If your application is answered in writing, no fee will be charged up to the first 10 (ten) pages, and a processing fee of 1 TL will be charged for each page over 10 (ten) pages. If the answer to your application is given on a recording medium such as a CD or flash memory, a fee up to the cost of the recording medium will be reflected to you."
+        },
+        {
+          "type": "p",
+          "text": "Your requests in your application will be concluded as soon as possible and at the latest within 30 (thirty) days depending on the nature of the request. To benefit from your rights under the law, you can submit your applications in writing, provided that they are in Turkish, to DN HOLDING A.Ş, and visit the website of the Personal Data Protection Authority for detailed information."
+        },
+        {
+          "type": "p",
+          "text": "You can make your applications via one of the following methods;"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "After filling out the form at <a href='https://www.dnholding.com.tr/' class='text-accent hover:underline' target='_blank'>https://www.dnholding.com.tr/</a>, delivering a wet-signed copy by hand or via notary public to the address [ Kaklık mah. Mermer Ocakları Kümesi Küme Evler No:5 - Honaz - Denizli / Türkiye ],",
+            "After filling out the form at <a href='https://www.dnholding.com.tr/' class='text-accent hover:underline' target='_blank'>https://www.dnholding.com.tr/</a> and signing it with your secure electronic signature or mobile signature within the scope of the Electronic Signature Law No. 5070, sending the secure electronically signed form to the clinic's registered e-mail address."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In the application containing your explanations regarding the right you have as a personal data owner and which you request to use; the matter you request must be clear and understandable, the subject you request must be related to your person, or if you are acting on behalf of someone else, you will need to submit your special power of attorney certified by a notary public regarding this matter."
+        },
+        {
+          "type": "p",
+          "text": "In your applications, it is mandatory to include name-surname, signature, TR identity number, residence or workplace address, e-mail address, telephone and fax number, and the subject of the request in accordance with the “Communiqué on the Procedures and Principles of Application to the Data Controller”. Applications that do not contain the aforementioned elements will be rejected by the clinic."
+        },
+        {
+          "type": "p",
+          "text": "The clinic reserves the right to make changes in this clarification text at any time due to reasons arising from the Law, secondary regulations and Board decisions. The changes to be made in the clarification text and the updated text will become valid immediately as of the date they are notified to you."
+        },
+        {
+          "type": "p",
+          "text": "<strong>DN HOLDING A.Ş</strong>"
         }
       ]
     }
@@ -1293,42 +1413,92 @@
       {
         "title": "Block Transportation",
         "description": "DN Mermer has an integrated structure that manages the entire natural stone production process in-house. Marble blocks extracted from our own quarries are transported to our factories. Each block is secured to ensure safe transport without damage.",
-        "image": "/assets/image/production/1-blok-nakliye.jpeg"
+        "image": "/assets/image/production/1-blok-nakliye.jpeg",
+        "images": [
+          "/assets/image/production/1-blok-nakliye.jpeg"
+        ]
       },
       {
         "title": "Rough Cutting",
         "description": "Raw blocks arriving at our factories are stocked, washed, and inspected. They are processed in our production line using advanced cutting machines such as gang saws and wire saws according to the order. Speed, precision, and dimensional consistency are prioritized.",
-        "image": "/assets/image/production/2-ham-kesim.jpeg"
+        "image": "/assets/image/production/2-ham-kesim.jpeg",
+        "images": [
+          "/assets/image/process/ham-kesim1.webp",
+          "/assets/image/process/ham-kesim-2.webp",
+          "/assets/image/process/ham-kesim-3.webp",
+          "/assets/image/process/ham-kesim-4.webp",
+          "/assets/image/process/ham-kesim-5.webp"
+        ]
       },
       {
         "title": "Polishing & Honing",
         "description": "Stones cut in rough cutting machines are taken to the polishing line. Automatic polishing machines apply processes like honing, polishing, antiquing, or brushing. This highlights the texture and aesthetic quality of the stone.",
-        "image": "/assets/image/production/3-silim.jpeg"
+        "image": "/assets/image/production/3-silim.jpeg",
+        "images": [
+          "/assets/image/process/silim-isleme1.webp",
+          "/assets/image/process/silim-isleme2.webp"
+        ]
       },
       {
         "title": "Sizing and Slab Processing",
         "description": "Surface-treated slabs are cut to standard or custom sizes according to the project. Produced with modern sizing machines with high precision, this ensures accuracy and ease of application.",
-        "image": "/assets/image/production/4-ebatlama.jpeg"
+        "image": "/assets/image/production/4-ebatlama.jpeg",
+        "images": [
+          "/assets/image/process/ebatlama1.webp",
+          "/assets/image/process/ebatlama-2.webp",
+          "/assets/image/process/ebatlama3.webp",
+          "/assets/image/process/ebatlama4.webp",
+          "/assets/image/process/ebatlama5.webp"
+        ]
       },
       {
         "title": "Edge Processing",
         "description": "Edge treatments are applied according to the project requirements. Technical details like chamfering and bullnosing are given to the products, making them safe and aesthetic for their final use.",
-        "image": "/assets/image/production/5-kenar-islemleri.jpeg"
+        "image": "/assets/image/production/5-kenar-islemleri.jpeg",
+        "images": [
+          "/assets/image/process/kenar-islemleri.webp",
+          "/assets/image/process/kenar-islemleri2.webp"
+        ]
       },
       {
         "title": "Quality Control",
         "description": "Materials completing all production stages are meticulously inspected before shipment. Dimensions, surface quality, polish gloss, and homogeneity are checked. Cracks, stains, or vein defects are reviewed, ensuring everything is ready for packaging.",
-        "image": "/assets/image/production/6-kalite-kontrol.jpeg"
+        "image": "/assets/image/production/6-kalite-kontrol.jpeg",
+        "images": [
+          "/assets/image/process/kalite-kontrol1.webp",
+          "/assets/image/process/kalite-kontrol2.webp",
+          "/assets/image/process/kalite-kontrol3.webp",
+          "/assets/image/process/kalite-kontrol4.webp",
+          "/assets/image/process/kalite-kontrol5.webp",
+          "/assets/image/process/kalite-kontrol6.webp"
+        ]
       },
       {
         "title": "Packaging and Bundle Preparation",
         "description": "Products completing the production process are specially packaged. Slabs and cut stones are carefully placed in wooden crates and bundled, supported with protective materials to prevent damage during transport.",
-        "image": "/assets/image/production/7-ambalaj.jpeg"
+        "image": "/assets/image/production/7-ambalaj.jpeg",
+        "images": [
+          "/assets/image/process/ambalaj1.webp",
+          "/assets/image/process/ambalaj2.webp",
+          "/assets/image/process/ambalaj3.webp",
+          "/assets/image/process/ambalaj4.webp"
+        ]
       },
       {
         "title": "Shipment",
         "description": "Prepared crates are loaded onto trucks and containers in accordance with export and import standards. The DN Mermer logistics unit plans the entire shipment process meticulously, ensuring timely and damage-free delivery worldwide.",
-        "image": "/assets/image/production/8-sevkiyat.jpeg"
+        "image": "/assets/image/production/8-sevkiyat.jpeg",
+        "images": [
+          "/assets/image/process/sevkiyat1.webp",
+          "/assets/image/process/sevkiyat2.webp",
+          "/assets/image/process/sevkiyat3.webp",
+          "/assets/image/process/sevkiyat4.webp",
+          "/assets/image/process/sevkiyat5.webp",
+          "/assets/image/process/sevkiyat6.webp",
+          "/assets/image/process/sevkiyat7.webp",
+          "/assets/image/process/sevkiyat8.webp",
+          "/assets/image/process/sevkiyat9.webp"
+        ]
       }
     ]
   }
