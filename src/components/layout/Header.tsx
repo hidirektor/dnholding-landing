@@ -9,6 +9,9 @@ import {cn} from "@/lib/utils";
 import {useScrollDirection} from "@/hooks/useScrollDirection";
 import type {Locale} from "@/app/dictionaries";
 import styles from "./Header.module.css";
+import dynamic from "next/dynamic";
+
+const BrochureModal = dynamic(() => import("@/components/brochure/BrochureModal"), { ssr: false });
 
 interface HeaderProps {
   lang: Locale;
@@ -38,6 +41,7 @@ export function Header({ lang, dict }: HeaderProps) {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const settingsRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
@@ -326,7 +330,13 @@ export function Header({ lang, dict }: HeaderProps) {
             {/* Right Side */}
             <div className={styles.rightSection}>
               {/* Desktop CTA */}
-              <Link href="/contact" className="hidden md:inline-flex items-center justify-center bg-white text-black font-medium text-sm px-7 py-2.5 rounded-full hover:bg-white/90 transition-colors mr-4 md:mr-0">
+              <button 
+                onClick={() => setIsBrochureOpen(true)} 
+                className="hidden md:inline-flex items-center justify-center bg-transparent border border-white/30 text-white font-medium text-sm px-4 py-2 rounded-full hover:bg-white/10 transition-colors whitespace-nowrap"
+              >
+                Broşür
+              </button>
+              <Link href="/contact" className="hidden md:inline-flex items-center justify-center bg-white text-black font-medium text-sm px-5 py-2 rounded-full hover:bg-white/90 transition-colors whitespace-nowrap">
                 {contactLabel}
               </Link>
               {/* Mobile Toggle */}
@@ -477,8 +487,22 @@ export function Header({ lang, dict }: HeaderProps) {
               </div>
             </div>
           </div>
+          
+          <div className="flex justify-center w-full mt-4 px-6">
+            <button 
+              onClick={() => {
+                setIsBrochureOpen(true);
+                closeMobile();
+              }} 
+              className="w-full max-w-xs flex items-center justify-center bg-transparent border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-medium text-sm px-7 py-3 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            >
+              Broşür
+            </button>
+          </div>
         </nav>
       </div>
+
+      <BrochureModal isOpen={isBrochureOpen} onClose={() => setIsBrochureOpen(false)} />
     </>
   );
 }
