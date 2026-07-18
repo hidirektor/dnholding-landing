@@ -110,7 +110,7 @@
           "year": "2005",
           "title": "İhracat",
           "description": "Amerika başta olmak üzere uluslararası pazarlara ilk ihracatımız başladı.",
-          "image": "/assets/about/about-2.jpg"
+          "image": "/assets/image/about-us/ihracat.jpeg"
         },
         {
           "year": "2018",
@@ -122,7 +122,7 @@
           "year": "2024",
           "title": "DN Holding Oluşumu",
           "description": "Kurumsal yapılanmamızı tamamlayarak DN Holding çatısı altında tüm faaliyetlerimizi birleştirdik.",
-          "image": "/assets/about/about-4.jpg"
+          "image": "/assets/image/about-us/olusum.jpeg"
         }
       ]
     },

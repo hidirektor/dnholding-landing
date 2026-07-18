@@ -8,6 +8,7 @@ interface AnimatedCounterProps {
   suffix?: string;
   prefix?: string;
   duration?: number;
+  format?: boolean;
 }
 
 export function AnimatedCounter({
@@ -15,6 +16,7 @@ export function AnimatedCounter({
   suffix = "",
   prefix = "",
   duration = 2000,
+  format = true,
 }: AnimatedCounterProps) {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
@@ -41,7 +43,7 @@ export function AnimatedCounter({
   return (
     <span ref={ref}>
       {prefix}
-      {count.toLocaleString()}
+      {format ? count.toLocaleString() : count}
       {suffix}
     </span>
   );

@@ -104,9 +104,6 @@ export default async function HomePage() {
                   <div className="text-5xl lg:text-6xl font-bold text-[var(--text-heading)] mb-2 tracking-tight">
                     {stat.prefix}{stat.value}<span className="text-accent text-4xl">{stat.suffix}</span>
                   </div>
-                  <p className="text-xs text-[var(--text-subtle)] leading-relaxed mt-2 uppercase tracking-widest">
-                    DN HOLDING
-                  </p>
                 </ScrollReveal>
               ))}
             </div>

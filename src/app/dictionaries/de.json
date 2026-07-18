@@ -81,12 +81,14 @@
         {
           "year": "1998",
           "title": "Gründung",
-          "description": "Die Grundsteine der DN Holding wurden gelegt."
+          "description": "Die Grundsteine der DN Holding wurden gelegt.",
+          "image": "/assets/image/about-us/olusum.jpeg"
         },
         {
           "year": "2005",
           "title": "Globalisierung",
-          "description": "Die ersten internationalen Investitionen begannen."
+          "description": "Die ersten internationalen Investitionen begannen.",
+          "image": "/assets/image/about-us/ihracat.jpeg"
         }
       ]
     },

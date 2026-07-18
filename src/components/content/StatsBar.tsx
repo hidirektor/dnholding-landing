@@ -28,6 +28,7 @@ export function StatsBar({ stats, variant = "default" }: StatsBarProps) {
                     value={stat.value}
                     suffix={stat.suffix}
                     prefix={stat.prefix}
+                    format={!(stat.label.toUpperCase().includes('YIL') || stat.label.toUpperCase().includes('YEAR') || stat.label.toUpperCase().includes('JAHR') || stat.label.toUpperCase().includes('ANN'))}
                   />
                 </div>
                 <p className={cn("text-sm md:text-base font-medium uppercase tracking-wider", isDark ? "text-white/60" : "text-[var(--text-muted)]")}>
