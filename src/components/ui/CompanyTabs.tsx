@@ -4,6 +4,9 @@ import React, {useMemo, useState} from "react";
 import {cn} from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const BrochureModal = dynamic(() => import("@/components/brochure/BrochureModal"), { ssr: false });
 
 interface CompanyTabsProps {
   companies: any[];
@@ -15,13 +18,13 @@ function getSectorImage(sector: string) {
   const s = sector.toLowerCase();
   if (s.includes("mermer") || s.includes("marble")) return "/assets/image/sector/section-mermer.jpeg";
   if (s.includes("enerji") || s.includes("energy")) return "/assets/image/sector/section-energy.jpeg";
-  if (s.includes("maden") || s.includes("mining")) return "/assets/image/sector/section-mine.JPG";
+  if (s.includes("maden") || s.includes("mining")) return "/assets/image/sector/section-mine.jpg";
   return "/assets/image/background/hero-bg.jpg";
 }
 
 const companyImages: Record<string, string> = {
   "dn-mermer": "/assets/image/sector/section-mermer.jpeg",
-  "2m-uluslararasi-madencilik": "/assets/image/sector/section-mine.JPG",
+  "2m-uluslararasi-madencilik": "/assets/image/sector/section-mine.jpg",
   "4t-madencilik": "/assets/image/company-background/4t-bg.jpg",
   "alm-maden": "/assets/quarries/isparta.jpg",
   "hd-maden-mermer": "/assets/quarries/demre.jpg",
@@ -62,6 +65,7 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
 
   const [activeSector, setActiveSector] = useState("All");
   const [activeCompanyIndex, setActiveCompanyIndex] = useState(0);
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   const activeCompanies = useMemo(() => {
     if (activeSector === "All") return companies;
@@ -112,7 +116,22 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
                   {activeCompany.description}
                 </p>
               </div>
-              <div className="shrink-0">
+              <div className="shrink-0 flex items-center gap-6">
+                {activeCompany.slug === "dn-mermer" && (
+                  <button 
+                    onClick={() => setIsBrochureOpen(true)}
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-accent transition-colors group/btn"
+                  >
+                    <span className="border-b border-white/30 group-hover/btn:border-accent pb-0.5">
+                      {lang === 'tr' ? 'Broşür' : 'Brochure'}
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transform group-hover/btn:-translate-y-0.5 transition-transform">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                      <polyline points="7 10 12 15 17 10" />
+                      <line x1="12" x2="12" y1="15" y2="3" />
+                    </svg>
+                  </button>
+                )}
                 <Link
                   href={`/companies/${activeCompany.slug}`}
                   className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-accent transition-colors group/link"
@@ -193,6 +212,7 @@ export function CompanyTabs({ companies, lang }: CompanyTabsProps) {
         </div>
       </div>
 
+      <BrochureModal isOpen={isBrochureOpen} onClose={() => setIsBrochureOpen(false)} />
     </div>
   );
 }

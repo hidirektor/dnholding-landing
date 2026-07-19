@@ -47,7 +47,7 @@ export default async function HomePage() {
           items={[
             { icon: <IconConstruction />, label: dict.home.areas.items[0], href: "/business-areas/construction", image: "/assets/image/sector/section-mermer.jpeg" },
             { icon: <IconEnergy />, label: dict.home.areas.items[1], href: "/business-areas/energy", image: "/assets/image/sector/section-energy.jpeg" },
-            { icon: <IconMining />, label: dict.home.areas.items[2], href: "/business-areas/mining", image: "/assets/image/sector/section-mine.JPG" },
+            { icon: <IconMining />, label: dict.home.areas.items[2], href: "/business-areas/mining", image: "/assets/image/sector/section-mine.jpg" },
           ]}
         />
       </Section>
