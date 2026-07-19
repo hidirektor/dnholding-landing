@@ -11,6 +11,7 @@ import {notFound} from "next/navigation";
 import Image from "next/image";
 import fs from "fs";
 import path from "path";
+import {CompanyBrochureButton} from "@/components/brochure/CompanyBrochureButton";
 
 export async function generateStaticParams() {
   return trDict.data.companies.map((company) => ({ slug: company.slug }));
@@ -79,6 +80,7 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
                   <p className="text-[var(--text-muted)] text-lg mt-4 max-w-2xl">
                     {company.description}
                   </p>
+                  <CompanyBrochureButton lang={locale} slug={company.slug} />
                 </div>
               </div>
             </ScrollReveal>
