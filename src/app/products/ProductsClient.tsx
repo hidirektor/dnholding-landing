@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useState} from "react";
+import React, {useState, useDeferredValue, useMemo} from "react";
 import Image from "next/image";
 import {Container} from "@/components/layout/Container";
 import {Section} from "@/components/layout/Section";
@@ -33,11 +33,13 @@ export function ProductsClient({
   dict: any;
 }) {
   const [activeCompany, setActiveCompany] = useState<string>("all");
+  const deferredCompany = useDeferredValue(activeCompany);
 
-  const filteredProducts =
-    activeCompany === "all"
+  const filteredProducts = useMemo(() => {
+    return deferredCompany === "all"
       ? products
-      : products.filter((p) => p.companySlug === activeCompany);
+      : products.filter((p) => p.companySlug === deferredCompany);
+  }, [deferredCompany, products]);
 
   return (
     <>
