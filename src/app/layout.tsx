@@ -83,8 +83,13 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     manifest: "/manifest.json",
     icons: {
-      icon: "/favicon.ico",
-      apple: "/apple-icon.png",
+      icon: [
+        { url: "/favicon/favicon.ico" },
+        { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+        { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+        { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      ],
+      apple: "/favicon/apple-icon.png",
     },
   };
 }
