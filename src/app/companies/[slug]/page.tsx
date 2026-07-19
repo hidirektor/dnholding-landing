@@ -107,15 +107,17 @@ export default async function CompanyDetailPage({ params }: { params: Promise<{ 
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {companyQuarries.map((quarry: any, idx: number) => (
-                <ScrollReveal key={quarry.slug} delay={idx * 100}>
-                  <div className="bg-white dark:bg-[var(--card-bg)] border border-border dark:border-[var(--card-border)] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                    <div className="h-48 relative bg-slate-100 dark:bg-slate-800">
+                <ScrollReveal key={quarry.slug} delay={idx * 100} className="h-full">
+                  <div className="bg-white dark:bg-[var(--card-bg)] border border-border dark:border-[var(--card-border)] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
+                    <div className="h-48 relative bg-slate-100 dark:bg-slate-800 shrink-0">
                        <Image src={quarry.image || "/assets/placeholder.jpg"} alt={quarry.name} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
                     </div>
-                    <div className="p-6">
+                    <div className="p-6 flex flex-col flex-grow">
                       <h3 className="text-xl font-bold mb-2">{quarry.name}</h3>
                       <h4 className="text-sm text-accent mb-4 font-semibold">{quarry.title}</h4>
-                      <p className="text-[var(--text-muted)] text-sm whitespace-pre-wrap leading-relaxed">{quarry.description}</p>
+                      <div className="overflow-y-auto h-64 pr-2" style={{ scrollbarWidth: 'thin' }}>
+                        <p className="text-[var(--text-muted)] text-sm whitespace-pre-wrap leading-relaxed">{quarry.description}</p>
+                      </div>
                     </div>
                   </div>
                 </ScrollReveal>
