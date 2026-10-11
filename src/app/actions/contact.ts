@@ -10,7 +10,7 @@ export async function submitContactForm(data: FormData) {
     }
 
     const verifyEndpoint = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
-    const secretKey = process.env.NEXT_PUBLIC_CLOUDFLARE_SECRET_KEY || "";
+    const secretKey = process.env.CLOUDFLARE_SECRET_KEY || "";
 
     const res = await fetch(verifyEndpoint, {
       method: "POST",

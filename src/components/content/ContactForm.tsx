@@ -103,7 +103,7 @@ export function ContactForm({ lang, dict }: ContactFormProps) {
         {process.env.NODE_ENV === "production" && (
           <div className="flex justify-center w-full">
             <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer />
-            <div className="cf-turnstile" data-sitekey={process.env.NEXT_PUBLIC_CLOUDFLARE_SITE_KEY}></div>
+            <div className="cf-turnstile" data-sitekey={process.env.CLOUDFLARE_SITE_KEY}></div>
           </div>
         )}
 
