@@ -206,7 +206,12 @@
         "project": "Coopération de projet"
       },
       "success": "Envoyé avec succès ✓",
-      "submitting": "Envoi en cours..."
+      "submitting": "Envoi en cours...",
+      "modalTitle": "Message Envoyé",
+      "modalMessage": "Votre message a été transmis avec succès. Nous vous contacterons dans les plus brefs délais.",
+      "modalClose": "OK",
+      "captchaRequired": "Veuillez compléter le CAPTCHA.",
+      "captchaFailed": "La validation CAPTCHA a échoué. Veuillez réessayer."
     },
     "info": {
       "addressTitle": "Adresse",
@@ -1183,7 +1188,7 @@
     "contactTitle": "Contact",
     "address": "DN Holding A.Ş. Honaz V.D. / 3021350358, Kaklık Mah. Mermer Fabrikaları Kümesi Küme Evleri Çetın Beton No: 8 Honaz / Denizli",
     "phone": "+90 258 816 24 14",
-    "email": "info@dnholding.com",
+    "email": "info@dnholding.com.tr",
     "copyright": "© 2026 DN Holding. Tous droits réservés.",
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation",

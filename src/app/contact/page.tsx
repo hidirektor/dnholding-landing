@@ -62,7 +62,11 @@ export default async function ContactPage({ params }: { params: Promise<{ slug: 
             {/* Contact Form */}
             <div className="lg:col-span-3">
               <ScrollReveal>
-                <ContactForm lang={locale} dict={dict.contact.form} />
+                <ContactForm 
+                  lang={locale} 
+                  dict={dict.contact.form} 
+                  siteKey={process.env.CLOUDFLARE_SITE_KEY || process.env.NEXT_PUBLIC_CLOUDFLARE_SITE_KEY || ""} 
+                />
               </ScrollReveal>
             </div>
 
@@ -141,10 +145,10 @@ export default async function ContactPage({ params }: { params: Promise<{ slug: 
                     </div>
                     <h3 className="font-semibold text-lg">{dict.contact.info.emailTitle}</h3>
                     <a
-                      href="mailto:info@dnholding.com"
+                      href="mailto:info@dnholding.com.tr"
                       className="text-[var(--text-muted)] hover:text-accent transition-colors"
                     >
-                      info@dnholding.com
+                      info@dnholding.com.tr
                     </a>
                   </div>
 
