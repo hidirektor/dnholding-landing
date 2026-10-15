@@ -154,16 +154,16 @@ export async function submitContactForm(data: FormData): Promise<ContactFormResu
       };
     }
   } else {
-    // When SMTP credentials are not configured in environment, log to console
-    console.warn("SMTP settings are not configured in environment. Logged form submission:", {
-      to: TARGET_EMAIL,
-      name,
-      email,
-      phone,
-      company,
-      subject: subjectTitle,
-      message,
+    // When SMTP credentials are not configured in environment, log error and return failure
+    console.error("SMTP credentials missing in environment:", {
+      hasHost: !!smtpHost,
+      hasUser: !!smtpUser,
+      hasPass: !!smtpPass,
     });
+    return {
+      success: false,
+      error: "E-posta sunucu ayarları eksik olduğu için mesaj iletilemedi. Lütfen sistem yöneticisiyle iletişime geçiniz.",
+    };
   }
 
   return { success: true };
