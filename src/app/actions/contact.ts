@@ -63,13 +63,14 @@ export async function submitContactForm(data: FormData): Promise<ContactFormResu
   };
   const subjectTitle = subjectMap[subjectKey] || subjectKey;
 
-  // Send Email to info@dnholding.com.tr
-  const targetEmail = process.env.MAIL_TO || "info@dnholding.com.tr";
+  // Target recipient email (fixed constant)
+  const TARGET_EMAIL = "info@dnholding.com.tr";
+
   const smtpHost = process.env.SMTP_HOST;
   const smtpPort = Number(process.env.SMTP_PORT || "465");
   const smtpUser = process.env.SMTP_USER;
   const smtpPass = process.env.SMTP_PASS || process.env.SMTP_PASSWORD;
-  const mailFrom = process.env.MAIL_FROM || smtpUser || "info@dnholding.com.tr";
+  const mailFrom = smtpUser;
 
   if (smtpHost && smtpUser && smtpPass) {
     try {
@@ -129,7 +130,7 @@ export async function submitContactForm(data: FormData): Promise<ContactFormResu
 
       await transporter.sendMail({
         from: `"DN Holding İletişim Formu" <${mailFrom}>`,
-        to: targetEmail,
+        to: TARGET_EMAIL,
         replyTo: email,
         subject: `Yeni İletişim Formu: ${subjectTitle} - ${name}`,
         text: `Ad Soyad: ${name}\nE-posta: ${email}\nTelefon: ${phone || "—"}\nŞirket: ${company || "—"}\nKonu: ${subjectTitle}\n\nMesaj:\n${message}\n\nTarih: ${submissionDate}`,
@@ -145,7 +146,7 @@ export async function submitContactForm(data: FormData): Promise<ContactFormResu
   } else {
     // When SMTP credentials are not configured in environment, log to console
     console.warn("SMTP settings are not configured in environment. Logged form submission:", {
-      to: targetEmail,
+      to: TARGET_EMAIL,
       name,
       email,
       phone,

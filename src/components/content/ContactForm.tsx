@@ -42,7 +42,7 @@ export function ContactForm({ lang, dict, siteKey }: ContactFormProps) {
   const turnstileContainerRef = useRef<HTMLDivElement>(null);
   const turnstileWidgetIdRef = useRef<string | null>(null);
 
-  const activeSiteKey = siteKey || process.env.NEXT_PUBLIC_CLOUDFLARE_SITE_KEY || "";
+  const activeSiteKey = siteKey || "";
 
   // Render Cloudflare Turnstile explicitly
   const renderTurnstileWidget = useCallback(() => {

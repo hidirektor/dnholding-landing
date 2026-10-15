@@ -33,13 +33,10 @@ jobs:
             -p 3000:3000 \
             -e CLOUDFLARE_SITE_KEY="${{ secrets.CLOUDFLARE_SITE_KEY }}" \
             -e CLOUDFLARE_SECRET_KEY="${{ secrets.CLOUDFLARE_SECRET_KEY }}" \
-            -e NEXT_PUBLIC_CLOUDFLARE_SITE_KEY="${{ secrets.CLOUDFLARE_SITE_KEY }}" \
             -e SMTP_HOST="${{ secrets.SMTP_HOST }}" \
             -e SMTP_PORT="${{ secrets.SMTP_PORT }}" \
             -e SMTP_USER="${{ secrets.SMTP_USER }}" \
             -e SMTP_PASS="${{ secrets.SMTP_PASS }}" \
-            -e MAIL_TO="${{ secrets.MAIL_TO }}" \
-            -e MAIL_FROM="${{ secrets.MAIL_FROM }}" \
             dnholding-landing:latest
 
       - name: Clean up unused Docker images

@@ -65,7 +65,7 @@ export default async function ContactPage({ params }: { params: Promise<{ slug: 
                 <ContactForm 
                   lang={locale} 
                   dict={dict.contact.form} 
-                  siteKey={process.env.CLOUDFLARE_SITE_KEY || process.env.NEXT_PUBLIC_CLOUDFLARE_SITE_KEY || ""} 
+                  siteKey={process.env.CLOUDFLARE_SITE_KEY || ""} 
                 />
               </ScrollReveal>
             </div>
