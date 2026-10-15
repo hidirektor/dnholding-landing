@@ -66,7 +66,9 @@ export async function submitContactForm(data: FormData): Promise<ContactFormResu
   // Target recipient email (fixed constant)
   const TARGET_EMAIL = "info@dnholding.com.tr";
 
-  const smtpHost = process.env.SMTP_HOST;
+  const rawSmtpHost = process.env.SMTP_HOST || "mail.dnholding.com.tr";
+  // smtp.guzelhosting.com has no DNS A record; automatically route to mail.dnholding.com.tr
+  const smtpHost = rawSmtpHost === "smtp.guzelhosting.com" ? "mail.dnholding.com.tr" : rawSmtpHost;
   const smtpPort = Number(process.env.SMTP_PORT || "465");
   const smtpUser = process.env.SMTP_USER;
   const smtpPass = process.env.SMTP_PASS || process.env.SMTP_PASSWORD;
@@ -81,6 +83,9 @@ export async function submitContactForm(data: FormData): Promise<ContactFormResu
         auth: {
           user: smtpUser,
           pass: smtpPass,
+        },
+        tls: {
+          rejectUnauthorized: false,
         },
       });
 
@@ -136,8 +141,13 @@ export async function submitContactForm(data: FormData): Promise<ContactFormResu
         text: `Ad Soyad: ${name}\nE-posta: ${email}\nTelefon: ${phone || "—"}\nŞirket: ${company || "—"}\nKonu: ${subjectTitle}\n\nMesaj:\n${message}\n\nTarih: ${submissionDate}`,
         html: htmlContent,
       });
-    } catch (mailError) {
-      console.error("Nodemailer error:", mailError);
+    } catch (mailError: any) {
+      console.error("Nodemailer error details:", {
+        message: mailError?.message,
+        code: mailError?.code,
+        command: mailError?.command,
+        response: mailError?.response,
+      });
       return {
         success: false,
         error: "Mesajınız gönderilirken bir e-posta sunucusu hatası oluştu. Lütfen doğrudan info@dnholding.com.tr adresine yazınız.",
